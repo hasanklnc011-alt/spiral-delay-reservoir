@@ -37,11 +37,11 @@ kolu başına 5 mW sinyal + 5 mW LO ölçeğidir; konservatif eşzamanlı toplam
 - Her iki profilde 9/10 data seed hardware-medyanı `≤0.05`.
 
 40 kanal aynı port ve güçte yalnız marjinal kazanç verdiğinden 30 kanal seçildi.
-Ayrıntılar: [[🏰 300-Projects/Photonic-Reservoir/p4-optimization/RESULTS|P4 sonuçları]].
+Ayrıntılar: [P4 sonuçları](RESULTS.md).
 
 ## Araştırma hattı bağlantıları
 
-- [[🏰 300-Projects/Photonic-Reservoir/Photonic-Reservoir|Photonic Reservoir proje merkezi]]
-- [[🏰 300-Projects/Photonic-Reservoir/p3-realistic/RESULTS|P3 gerçekçi sistem sonuçları]]
-- [[🏰 300-Projects/Photonic-Reservoir/MODEL-AND-ACCEPTANCE|Kabul protokolü]]
-- [[🏰 300-Projects/Photonic-Reservoir/HANDOFF|Güncel handoff]]
+- [Photonic Reservoir proje merkezi](../docs/_source_records/project-hub-note.md)
+- [P3 gerçekçi sistem sonuçları](../p3-realistic/RESULTS.md)
+- [Kabul protokolü](../MODEL-AND-ACCEPTANCE.md)
+- [Güncel handoff](../docs/_source_records/HANDOFF.md)

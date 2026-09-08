@@ -140,8 +140,8 @@ job'unun başarıyla bitmesi yeterli değildir.
 
 ## Araştırma hattı bağlantıları
 
-- [[🏰 300-Projects/Photonic-Reservoir/Photonic-Reservoir|Photonic Reservoir proje merkezi]]
-- [[🏰 300-Projects/Photonic-Reservoir/p5-publication/RESULTS|P5 yayın sonucu]]
-- [[🏰 300-Projects/Photonic-Reservoir/p4-optimization/RESULTS|P4 fiziksel zarfı]]
-- [[🏰 300-Projects/Photonic-Reservoir/p3-realistic/RESULTS|P3 sistem modeli]]
-- [[🏰 300-Projects/3 halkalı Ring/Tidy3D-Small-Ring|Eski Tidy3D referansı]]
+- [Photonic Reservoir proje merkezi](../docs/_source_records/project-hub-note.md)
+- [P5 yayın sonucu](../p5-publication/RESULTS.md)
+- [P4 fiziksel zarfı](../p4-optimization/RESULTS.md)
+- [P3 sistem modeli](../p3-realistic/RESULTS.md)
+- Eski Tidy3D referansı (MayOS vault note, outside this repository)

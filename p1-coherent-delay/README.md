@@ -22,7 +22,7 @@ buraya kopyalanmaz.
 ## Sonuç — ideal-v1
 
 P1 geçiş kapısı geçti. Kanonik sonuç:
-[[🏰 300-Projects/Photonic-Reservoir/p1-coherent-delay/RESULTS|P1 ideal-v1 sonuçları]].
+[P1 ideal-v1 sonuçları](RESULTS.md).
 
 - Full-quadratic oracle: `0.022164` medyan validation NMSE.
 - Coherent field-u square-law: `0.022534`.
@@ -39,6 +39,6 @@ Bu sonuç 230 ideal intensity kanallı bir üst sınırdır; fiziksel PIC sonucu
 
 ## Araştırma hattı bağlantıları
 
-- [[🏰 300-Projects/Photonic-Reservoir/Photonic-Reservoir|Photonic Reservoir proje merkezi]]
-- [[🏰 300-Projects/Photonic-Reservoir/P0-BENCHMARK-AND-BLIND-PROTOCOL|P0 benchmark protokolü]]
-- [[🏰 300-Projects/Photonic-Reservoir/MODEL-AND-ACCEPTANCE|Güncel kabul protokolü]]
+- [Photonic Reservoir proje merkezi](../docs/_source_records/project-hub-note.md)
+- [P0 benchmark protokolü](../P0-BENCHMARK-AND-BLIND-PROTOCOL.md)
+- [Güncel kabul protokolü](../MODEL-AND-ACCEPTANCE.md)

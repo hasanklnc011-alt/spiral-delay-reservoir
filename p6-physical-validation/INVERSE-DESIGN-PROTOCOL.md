@@ -76,8 +76,8 @@ hükmünü değiştirebilir. Optimizasyon history'sinden P5 blind'a dönmek yasa
 
 ## Araştırma hattı bağlantıları
 
-- [[🏰 300-Projects/Photonic-Reservoir/p6-physical-validation/CUSTOM-PROCESS-VALIDATION|Custom-process planı]]
-- [[🏰 300-Projects/Photonic-Reservoir/p6-physical-validation/G3C-STATUS|G3-C durumu]]
-- [[🏰 300-Projects/Photonic-Reservoir/p6-physical-validation/G3D-STATUS|G3-D durumu]]
-- [[🏰 300-Projects/Photonic-Reservoir/p6-physical-validation/EM-FDTD-PLAN|EM/FDTD planı]]
-- [[🏰 300-Projects/Photonic-Reservoir/Photonic-Reservoir|Proje merkezi]]
+- [Custom-process planı](CUSTOM-PROCESS-VALIDATION.md)
+- [G3-C durumu](G3C-STATUS.md)
+- [G3-D durumu](G3D-STATUS.md)
+- [EM/FDTD planı](EM-FDTD-PLAN.md)
+- [Proje merkezi](../docs/_source_records/project-hub-note.md)

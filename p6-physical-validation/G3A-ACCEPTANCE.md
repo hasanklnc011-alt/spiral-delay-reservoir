@@ -24,8 +24,8 @@ reddedilmiş tarihsel kanıt olarak korunur ve kabul edilen v2 sonucunu değişt
 
 ## Araştırma hattı bağlantıları
 
-- [[🏰 300-Projects/Photonic-Reservoir/p6-physical-validation/P6-PROTOCOL|P6 protokolü]]
-- [[🏰 300-Projects/Photonic-Reservoir/p6-physical-validation/G1-ACCEPTANCE|G1 kesit kabulü]]
-- [[🏰 300-Projects/Photonic-Reservoir/p6-physical-validation/EM-FDTD-PLAN|EM/FDTD planı]]
-- [[🏰 300-Projects/Photonic-Reservoir/p6-physical-validation/STATUS|P6 durum]]
-- [[🏰 300-Projects/Photonic-Reservoir/Photonic-Reservoir|Proje merkezi]]
+- [P6 protokolü](P6-PROTOCOL.md)
+- G1 kesit kabulü
+- [EM/FDTD planı](EM-FDTD-PLAN.md)
+- [P6 durum](STATUS.md)
+- [Proje merkezi](../docs/_source_records/project-hub-note.md)

@@ -1,3 +1,8 @@
+> **Note.** This is the project's original literature-review note (in Turkish), kept verbatim as a
+> primary record. The curated English bibliography is in [`references.md`](references.md) and
+> [`references.bib`](references.bib); design-decision links are in
+> [`source_to_design_map.md`](source_to_design_map.md).
+
 ---
 title: MRR RNN - Literatür Taraması
 type: literature-review
@@ -96,6 +101,6 @@ Tait tipi weight-bank CTRNN ikinci aşama mimari seçeneğidir.
 
 ## İlişkili notlar
 
-- [[🏰 300-Projects/Photonic-Reservoir/Photonic-Reservoir|Photonic Reservoir çalışması]]
-- [[🏰 300-Projects/3 halkalı Ring/Tidy3D-Small-Ring|Tidy3D Small-Ring FDTD]]
-- [[🏰 300-Projects/2D FDFD tabanlı, fixed-point ve truncated RNN/2D FDFD tabanlı, fixed-point ve truncated RNN|FDFD Kerr Photonic RNN]]
+- [Photonic Reservoir çalışması](../_source_records/project-hub-note.md)
+- Tidy3D Small-Ring FDTD (MayOS vault note, outside this repository)
+- FDFD Kerr Photonic RNN (MayOS vault note, outside this repository)

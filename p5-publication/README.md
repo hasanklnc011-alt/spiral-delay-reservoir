@@ -17,11 +17,11 @@ dijital ikiz raporlanan üst sınır, delayed-input ve no-PIC ise üstünlük ko
 V2 aday kilidi sonrası yapılan tek kör koşu geçti: medyan test NMSE `0.038705`, 8/10
 seed `<0.05`; delayed-input'a karşı `%74.7`, no-PIC'e karşı `%94.9` kazanç. Dijital
 ikize göre fiziksel ceza `%19.2`. Ayrıntılar:
-[[🏰 300-Projects/Photonic-Reservoir/p5-publication/RESULTS|P5 kör test sonuçları]].
+[P5 kör test sonuçları](RESULTS.md).
 
 ## Araştırma hattı bağlantıları
 
-- [[🏰 300-Projects/Photonic-Reservoir/Photonic-Reservoir|Photonic Reservoir proje merkezi]]
-- [[🏰 300-Projects/Photonic-Reservoir/p4-optimization/RESULTS|P4 seçilen aday]]
-- [[🏰 300-Projects/Photonic-Reservoir/P0-BENCHMARK-AND-BLIND-PROTOCOL|P0 kör test protokolü]]
-- [[🏰 300-Projects/Photonic-Reservoir/MODEL-AND-ACCEPTANCE|Kabul kapıları]]
+- [Photonic Reservoir proje merkezi](../docs/_source_records/project-hub-note.md)
+- [P4 seçilen aday](../p4-optimization/RESULTS.md)
+- [P0 kör test protokolü](../P0-BENCHMARK-AND-BLIND-PROTOCOL.md)
+- [Kabul kapıları](../MODEL-AND-ACCEPTANCE.md)

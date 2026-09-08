@@ -33,7 +33,7 @@ test skorunun çalıştırılması. Bunlar P1 ve sonrasındadır.
 - `src/photonic_reservoir/protocol.py` — bütünlük ve aday-kilidi doğrulayıcısı.
 - `scripts/verify_p0_protocol.py` — yeniden üretilebilir P0 kontrolü.
 - `tests/test_protocol.py` ve `tests/test_benchmark.py` — regresyon kanıtı.
-- [[🏰 300-Projects/Photonic-Reservoir/MODEL-AND-ACCEPTANCE|Model ve kabul protokolü]].
+- [Model ve kabul protokolü](MODEL-AND-ACCEPTANCE.md).
 
 ## Başarı ve kalite eşikleri
 
@@ -80,7 +80,7 @@ Başarılı çıktı 20 dataset commitment'ının doğrulandığını ve
 
 ## Araştırma hattı bağlantıları
 
-- [[🏰 300-Projects/Photonic-Reservoir/Photonic-Reservoir|Photonic Reservoir çalışma merkezi]]
-- [[🏰 300-Projects/Photonic-Reservoir/MODEL-AND-ACCEPTANCE|Model ve kabul protokolü]]
-- [[🧠 500-Knowledge/concepts/AI-Proje-Baslatma-Protokolu|AI Proje Başlatma Protokolü]]
-- [[🧠 500-Knowledge/concepts/Photonic-Research-Lines-Synthesis|Fotonik araştırma hatları sentezi]]
+- [Photonic Reservoir çalışma merkezi](docs/_source_records/project-hub-note.md)
+- [Model ve kabul protokolü](MODEL-AND-ACCEPTANCE.md)
+- AI Proje Başlatma Protokolü (MayOS vault note, outside this repository)
+- Fotonik araştırma hatları sentezi (MayOS vault note, outside this repository)

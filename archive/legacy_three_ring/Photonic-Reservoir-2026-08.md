@@ -14,7 +14,7 @@ incelemek; lineer ve doğrusal olmayan modelleri karşılaştırmak.
 
 ## Orijinal çalışma konumu
 
-`C:\Users\hasan\OneDrive\Desktop\eski dosyalarım\photonic_reservoir`
+`<local Tidy3D reference project, path redacted>`
 
 Orijinal kod ve Tidy3D verileri salt-okunur kanıt kaynağıdır. Yeni kanonik,
 Git-izlenebilir TCMT paketi bu proje klasöründedir.
@@ -26,8 +26,8 @@ Git-izlenebilir TCMT paketi bu proje klasöründedir.
 - `configs/` — smoke, NARMA-10 tarama, seçilmiş üç-ring ve seçilmiş delay adayları.
 - `runs/` — üzerine yazılmayan config/commit/claim-level manifestleri ve metrikler.
 - `evidence/` — eski Tidy3D dosya hash'leri ve sıkı FDTD kanıt denetimi.
-- [[🏰 300-Projects/Photonic-Reservoir/MODEL-AND-ACCEPTANCE|Model ve kabul protokolü]].
-- [[🏰 300-Projects/Photonic-Reservoir/P0-BENCHMARK-AND-BLIND-PROTOCOL|P0 benchmark ve kör test protokolü]].
+- [Model ve kabul protokolü](../../MODEL-AND-ACCEPTANCE.md).
+- [P0 benchmark ve kör test protokolü](../../P0-BENCHMARK-AND-BLIND-PROTOCOL.md).
 
 ## Doğrulanmış yeni sonuçlar
 
@@ -66,10 +66,10 @@ Git-izlenebilir TCMT paketi bu proje klasöründedir.
 
 ## Literatür taraması
 
-- [[🏰 300-Projects/Photonic-Reservoir/MRR-RNN-Literatur-Taramasi|MRR RNN - Literatür Taraması]]
+- [MRR RNN - Literatür Taraması](../../docs/references/literature_review.md)
 
 ## Araştırma hattı bağlantıları
 
-- [[🏰 300-Projects/3 halkalı Ring/Tidy3D-Small-Ring|Tidy3D Small-Ring FDTD]]
-- [[🏰 300-Projects/2D FDFD tabanlı, fixed-point ve truncated RNN/2D FDFD tabanlı, fixed-point ve truncated RNN|FDFD Kerr Photonic RNN]]
-- [[🧠 500-Knowledge/concepts/Photonic-Research-Lines-Synthesis|Fotonik araştırma hatları sentezi]]
+- Tidy3D Small-Ring FDTD (MayOS vault note, outside this repository)
+- FDFD Kerr Photonic RNN (MayOS vault note, outside this repository)
+- Fotonik araştırma hatları sentezi (MayOS vault note, outside this repository)

@@ -35,7 +35,7 @@ $env:PYTHONPATH = "$PWD\src"
 python -m unittest discover -s tests -v
 python -m photonic_reservoir run --config configs/smoke.json
 python -m photonic_reservoir evidence `
-  --source "C:\Users\hasan\OneDrive\Desktop\eski dosyalarım\tidy3d_small_ring" `
+  --source <local Tidy3D reference project, path redacted> `
   --output evidence/legacy_tidy3d_manifest.json
 ```
 
@@ -45,6 +45,6 @@ python -m photonic_reservoir evidence `
 
 ## Araştırma hattı bağlantıları
 
-- [[🏰 300-Projects/Photonic-Reservoir/Photonic-Reservoir|Photonic Reservoir proje hafızası]]
-- [[🏰 300-Projects/Photonic-Reservoir/MRR-RNN-Literatur-Taramasi|MRR RNN literatür taraması]]
-- [[🏰 300-Projects/3 halkalı Ring/Tidy3D-Small-Ring|Tidy3D Small-Ring FDTD]]
+- [Photonic Reservoir proje hafızası](../../docs/_source_records/project-hub-note.md)
+- [MRR RNN literatür taraması](../../docs/references/literature_review.md)
+- Tidy3D Small-Ring FDTD (MayOS vault note, outside this repository)

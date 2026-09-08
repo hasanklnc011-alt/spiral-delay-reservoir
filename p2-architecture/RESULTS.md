@@ -47,6 +47,6 @@ ve optik güç bütçesi henüz modellenmedi. Bunlar P3 kabul kapılarıdır. Se
 
 ## Araştırma hattı bağlantıları
 
-- [[🏰 300-Projects/Photonic-Reservoir/Photonic-Reservoir|Photonic Reservoir proje merkezi]]
-- [[🏰 300-Projects/Photonic-Reservoir/p1-coherent-delay/RESULTS|P1 ideal üst sınır]]
-- [[🏰 300-Projects/Photonic-Reservoir/MODEL-AND-ACCEPTANCE|Güncel kabul protokolü]]
+- [Photonic Reservoir proje merkezi](../docs/_source_records/project-hub-note.md)
+- [P1 ideal üst sınır](../p1-coherent-delay/RESULTS.md)
+- [Güncel kabul protokolü](../MODEL-AND-ACCEPTANCE.md)

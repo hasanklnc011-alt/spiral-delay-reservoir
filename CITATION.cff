@@ -1,8 +1,32 @@
 cff-version: 1.2.0
-message: "If you use this archived research record, please cite the repository and consult the evidence-boundary documentation."
-title: "Hybrid Electro-Photonic PIC / Photonic Reservoir"
+message: >-
+  If you refer to this work, please cite the repository and consult the
+  evidence-boundary statement in README.md. No license has been chosen yet;
+  contact the author before redistributing.
+title: >-
+  Photonic Reservoir Computing with a Coherent Optical Delay Line and
+  Square-Law Readout
 type: software
 authors:
   - family-names: "Kılınç"
     given-names: "Hasan"
-abstract: "An archival research record for a reservoir-computing-inspired photonic architecture, including a conceptual Blender presentation model."
+repository-code: "https://github.com/hasanklnc011-alt/07_hybrid_electro_photonic_pic_smoked_blue"
+date-released: "2026-09-09"
+keywords:
+  - photonic reservoir computing
+  - coherent optical delay
+  - square-law photodetection
+  - NARMA-10
+  - blind evaluation
+  - integrated photonics
+  - FDTD component validation
+abstract: >-
+  A staged, blind-tested study of an integrated-photonic architecture that
+  generates temporal nonlinear features for the NARMA-10 benchmark using
+  coherent time-delayed optical fields and square-law photodetection with a
+  trained linear readout. A locked one-shot blind evaluation reaches median
+  test NMSE 0.0387 (8/10 seeds below 0.05), beating same-memory linear and
+  memory-free controls. A component-level electromagnetic validation campaign
+  for the selected architecture is included; its current verdict is
+  NOT_PHYSICALLY_ACCEPTED (5 of 11 gates pass). The result is a physically
+  parameterized system simulation, not a fabricated device.

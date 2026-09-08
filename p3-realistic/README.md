@@ -30,7 +30,7 @@ genişliğini gerçek slot hızına eşledi. En küçük geçen nominal mimari 3
 10 parallel photodiode × 3 time slot oldu: medyan `0.038246`, 9/10 seed `≤0.05`.
 Tek-PD 30-slot düzen gerçek-zaman bandwidth/switch kapılarını geçmedi.
 
-Ayrıntılar: [[🏰 300-Projects/Photonic-Reservoir/p3-realistic/RESULTS|P3 sonuçları]].
+Ayrıntılar: [P3 sonuçları](RESULTS.md).
 
 ## Devamlılık checkpoint'i
 
@@ -40,7 +40,7 @@ okunur; var olan run dosyası üzerine yazılmaz.
 
 ## Araştırma hattı bağlantıları
 
-- [[🏰 300-Projects/Photonic-Reservoir/Photonic-Reservoir|Photonic Reservoir proje merkezi]]
-- [[🏰 300-Projects/Photonic-Reservoir/p2-architecture/RESULTS|P2 mimari sonuçları]]
-- [[🏰 300-Projects/Photonic-Reservoir/MODEL-AND-ACCEPTANCE|Kabul protokolü]]
-- [[🏰 300-Projects/Photonic-Reservoir/HANDOFF|Güncel handoff]]
+- [Photonic Reservoir proje merkezi](../docs/_source_records/project-hub-note.md)
+- [P2 mimari sonuçları](../p2-architecture/RESULTS.md)
+- [Kabul protokolü](../MODEL-AND-ACCEPTANCE.md)
+- [Güncel handoff](../docs/_source_records/HANDOFF.md)

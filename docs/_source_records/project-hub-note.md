@@ -1,3 +1,5 @@
+> **Source record (Turkish), kept verbatim.** See [`docs/PROJECT_OVERVIEW.md`](../PROJECT_OVERVIEW.md).
+
 ---
 title: Photonic Reservoir — NMSE < 0.05
 type: project
@@ -25,14 +27,14 @@ Fiziksel olarak uygulanabilir on-chip optik çekirdekle NARMA-10 kör medyan NMS
 
 ## Güncel kanonik dosyalar
 
-- [[🏰 300-Projects/Photonic-Reservoir/P0-BENCHMARK-AND-BLIND-PROTOCOL|P0 benchmark ve kör test protokolü]]
-- [[🏰 300-Projects/Photonic-Reservoir/MODEL-AND-ACCEPTANCE|Model ve kabul protokolü]]
-- [[🏰 300-Projects/Photonic-Reservoir/HANDOFF|Güncel handoff]]
-- [[🏰 300-Projects/Photonic-Reservoir/p1-coherent-delay/RESULTS|P1 ideal-v1 sonuçları]]
-- [[🏰 300-Projects/Photonic-Reservoir/p2-architecture/RESULTS|P2 mimari sonuçları]]
-- [[🏰 300-Projects/Photonic-Reservoir/p3-realistic/RESULTS|P3 gerçekçi sistem sonuçları]]
-- [[🏰 300-Projects/Photonic-Reservoir/p4-optimization/RESULTS|P4 robust optimizasyon sonuçları]]
-- [[🏰 300-Projects/Photonic-Reservoir/p5-publication/RESULTS|P5 tek kör test sonuçları]]
+- [P0 benchmark ve kör test protokolü](../../P0-BENCHMARK-AND-BLIND-PROTOCOL.md)
+- [Model ve kabul protokolü](../../MODEL-AND-ACCEPTANCE.md)
+- [Güncel handoff](HANDOFF.md)
+- [P1 ideal-v1 sonuçları](../../p1-coherent-delay/RESULTS.md)
+- [P2 mimari sonuçları](../../p2-architecture/RESULTS.md)
+- [P3 gerçekçi sistem sonuçları](../../p3-realistic/RESULTS.md)
+- [P4 robust optimizasyon sonuçları](../../p4-optimization/RESULTS.md)
+- [P5 tek kör test sonuçları](../../p5-publication/RESULTS.md)
 
 ## Legacy sınırı
 
@@ -42,6 +44,6 @@ modu ve kontrol tasarımı öğrenmek için okunur.
 
 ## Araştırma hattı bağlantıları
 
-- [[🏰 300-Projects/Photonic-Reservoir/MRR-RNN-Literatur-Taramasi|MRR/RNN literatür taraması]]
-- [[🏰 300-Projects/Photonic-Reservoir/P0-BENCHMARK-AND-BLIND-PROTOCOL|P0 benchmark protokolü]]
-- [[🧠 500-Knowledge/concepts/Photonic-Research-Lines-Synthesis|Fotonik araştırma hatları sentezi]]
+- [MRR/RNN literatür taraması](../references/literature_review.md)
+- [P0 benchmark protokolü](../../P0-BENCHMARK-AND-BLIND-PROTOCOL.md)
+- Fotonik araştırma hatları sentezi (MayOS vault note, outside this repository)

@@ -46,7 +46,7 @@ bend loss'u ve faz stabilitesi P6 öncesinde ayrıca doğrulanmalıdır.
 
 ## Araştırma hattı bağlantıları
 
-- [[🏰 300-Projects/Photonic-Reservoir/Photonic-Reservoir|Photonic Reservoir proje merkezi]]
-- [[🏰 300-Projects/Photonic-Reservoir/p2-architecture/RESULTS|P2 mimari sonuçları]]
-- [[🏰 300-Projects/Photonic-Reservoir/MODEL-AND-ACCEPTANCE|Kabul protokolü]]
-- [[🏰 300-Projects/Photonic-Reservoir/HANDOFF|Güncel handoff]]
+- [Photonic Reservoir proje merkezi](../docs/_source_records/project-hub-note.md)
+- [P2 mimari sonuçları](../p2-architecture/RESULTS.md)
+- [Kabul protokolü](../MODEL-AND-ACCEPTANCE.md)
+- [Güncel handoff](../docs/_source_records/HANDOFF.md)

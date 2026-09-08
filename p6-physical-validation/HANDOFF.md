@@ -43,7 +43,7 @@ G4/G5 kapatılmaz. Tamamlanmış task'lar tekrar çalıştırılmaz.
 
 ## Araştırma hattı bağlantıları
 
-- [[🏰 300-Projects/Photonic-Reservoir/p6-physical-validation/STATUS|P6 durum]]
-- [[🏰 300-Projects/Photonic-Reservoir/p6-physical-validation/INVERSE-DESIGN-PROTOCOL|Inverse-design protokolü]]
-- [[🏰 300-Projects/Photonic-Reservoir/p6-physical-validation/CUSTOM-PROCESS-VALIDATION|Custom-process doğrulama]]
-- [[🏰 300-Projects/Photonic-Reservoir/Photonic-Reservoir|Proje merkezi]]
+- [P6 durum](STATUS.md)
+- Inverse-design protokolü
+- [Custom-process doğrulama](CUSTOM-PROCESS-VALIDATION.md)
+- [Proje merkezi](../docs/_source_records/project-hub-note.md)

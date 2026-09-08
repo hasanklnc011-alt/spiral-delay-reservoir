@@ -56,8 +56,8 @@ iterasyonu ve Tait weight-bank CTRNN bu modelle karıştırılmaz.
 
 ## Kanonik dosyalar
 
-- [[🏰 300-Projects/Photonic-Reservoir/Photonic-Reservoir|Proje merkezi]]
-- [[🏰 300-Projects/Photonic-Reservoir/MODEL-AND-ACCEPTANCE|Model ve kabul protokolü]]
+- [Proje merkezi](../../docs/_source_records/project-hub-note.md)
+- [Model ve kabul protokolü](../../MODEL-AND-ACCEPTANCE.md)
 - `src/photonic_reservoir/`, `configs/`, `runs/`, `evidence/`, `tests/`
 
 ## Kararlar

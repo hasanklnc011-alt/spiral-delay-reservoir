@@ -13,7 +13,7 @@ task ID ve v2 kanıtıyla koşulacaktır. P5 kör sonucu kullanılmadı.
 
 ## Araştırma hattı bağlantıları
 
-- [[🏰 300-Projects/Photonic-Reservoir/p6-physical-validation/G3C-STATUS|G3-C durumu]]
-- [[🏰 300-Projects/Photonic-Reservoir/p6-physical-validation/P6-PROTOCOL|P6 protokolü]]
-- [[🏰 300-Projects/Photonic-Reservoir/p6-physical-validation/STATUS|P6 durum]]
-- [[🏰 300-Projects/Photonic-Reservoir/Photonic-Reservoir|Proje merkezi]]
+- [G3-C durumu](G3C-STATUS.md)
+- [P6 protokolü](P6-PROTOCOL.md)
+- [P6 durum](STATUS.md)
+- [Proje merkezi](../docs/_source_records/project-hub-note.md)

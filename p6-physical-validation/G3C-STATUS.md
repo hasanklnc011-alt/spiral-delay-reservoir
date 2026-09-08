@@ -88,8 +88,8 @@ convergence/corner çalıştırılmadı. G3-C `FAIL/REDESIGN` kalır.
 
 ## Araştırma hattı bağlantıları
 
-- [[🏰 300-Projects/Photonic-Reservoir/p6-physical-validation/P6-PROTOCOL|P6 protokolü]]
-- [[🏰 300-Projects/Photonic-Reservoir/p6-physical-validation/G2-LAYOUT-ACCEPTANCE|G2 layout kabulü]]
-- [[🏰 300-Projects/Photonic-Reservoir/p6-physical-validation/G3B-ACCEPTANCE|G3-B bend kabulü]]
-- [[🏰 300-Projects/Photonic-Reservoir/p6-physical-validation/STATUS|P6 durum]]
-- [[🏰 300-Projects/Photonic-Reservoir/Photonic-Reservoir|Proje merkezi]]
+- [P6 protokolü](P6-PROTOCOL.md)
+- G2 layout kabulü
+- G3-B bend kabulü
+- [P6 durum](STATUS.md)
+- [Proje merkezi](../docs/_source_records/project-hub-note.md)

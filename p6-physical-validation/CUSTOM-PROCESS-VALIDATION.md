@@ -92,9 +92,9 @@ sonraki-faz mimarisi açılır.
 
 ## Araştırma hattı bağlantıları
 
-- [[🏰 300-Projects/Photonic-Reservoir/p6-physical-validation/PDK-SELECTION|PDK seçim kararı]]
-- [[🏰 300-Projects/Photonic-Reservoir/p6-physical-validation/P6-PROTOCOL|P6 protokolü]]
-- [[🏰 300-Projects/Photonic-Reservoir/p6-physical-validation/G3C-STATUS|G3-C durumu]]
-- [[🏰 300-Projects/Photonic-Reservoir/p6-physical-validation/G3D-STATUS|G3-D durumu]]
-- [[🏰 300-Projects/Photonic-Reservoir/p6-physical-validation/G4-STATUS|G4 durumu]]
-- [[🏰 300-Projects/Photonic-Reservoir/Photonic-Reservoir|Proje merkezi]]
+- [PDK seçim kararı](PDK-SELECTION.md)
+- [P6 protokolü](P6-PROTOCOL.md)
+- [G3-C durumu](G3C-STATUS.md)
+- [G3-D durumu](G3D-STATUS.md)
+- [G4 durumu](G4-STATUS.md)
+- [Proje merkezi](../docs/_source_records/project-hub-note.md)

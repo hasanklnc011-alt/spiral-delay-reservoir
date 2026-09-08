@@ -39,11 +39,11 @@ kanıtı bekleyen OPEN durumunda. P5 kör sonucu yeniden çalıştırılmadı.
 
 ## Araştırma hattı bağlantıları
 
-- [[🏰 300-Projects/Photonic-Reservoir/p6-physical-validation/P6-PROTOCOL|P6 protokolü]]
-- [[🏰 300-Projects/Photonic-Reservoir/p6-physical-validation/G3C-STATUS|G3-C durumu]]
-- [[🏰 300-Projects/Photonic-Reservoir/p6-physical-validation/G3D-STATUS|G3-D durumu]]
-- [[🏰 300-Projects/Photonic-Reservoir/p6-physical-validation/G4-STATUS|G4 durumu]]
-- [[🏰 300-Projects/Photonic-Reservoir/p6-physical-validation/G5-STATUS|G5 durumu]]
-- [[🏰 300-Projects/Photonic-Reservoir/p6-physical-validation/CUSTOM-PROCESS-VALIDATION|Custom-process doğrulama planı]]
-- [[🏰 300-Projects/Photonic-Reservoir/p6-physical-validation/STATUS|P6 durum]]
-- [[🏰 300-Projects/Photonic-Reservoir/Photonic-Reservoir|Proje merkezi]]
+- [P6 protokolü](P6-PROTOCOL.md)
+- [G3-C durumu](G3C-STATUS.md)
+- [G3-D durumu](G3D-STATUS.md)
+- [G4 durumu](G4-STATUS.md)
+- [G5 durumu](G5-STATUS.md)
+- [Custom-process doğrulama planı](CUSTOM-PROCESS-VALIDATION.md)
+- [P6 durum](STATUS.md)
+- [Proje merkezi](../docs/_source_records/project-hub-note.md)

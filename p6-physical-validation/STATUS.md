@@ -218,10 +218,10 @@ gelmeden G5 fail-closed kalır.
 
 ## Araştırma hattı bağlantıları
 
-- [[🏰 300-Projects/Photonic-Reservoir/Photonic-Reservoir|Photonic Reservoir proje merkezi]]
-- [[🏰 300-Projects/Photonic-Reservoir/p6-physical-validation/P6-PROTOCOL|P6 protokolü]]
-- [[🏰 300-Projects/Photonic-Reservoir/p6-physical-validation/COMPONENT-MODEL|Bileşen modeli]]
-- [[🏰 300-Projects/Photonic-Reservoir/p6-physical-validation/EM-FDTD-PLAN|EM/FDTD planı]]
-- [[🏰 300-Projects/Photonic-Reservoir/p6-physical-validation/PDK-SELECTION|PDK seçim kapısı]]
-- [[🏰 300-Projects/Photonic-Reservoir/p6-physical-validation/CUSTOM-PROCESS-VALIDATION|Custom-process doğrulama planı]]
-- [[🏰 300-Projects/Photonic-Reservoir/p5-publication/RESULTS|P5 dondurulmuş sonucu]]
+- [Photonic Reservoir proje merkezi](../docs/_source_records/project-hub-note.md)
+- [P6 protokolü](P6-PROTOCOL.md)
+- [Bileşen modeli](COMPONENT-MODEL.md)
+- [EM/FDTD planı](EM-FDTD-PLAN.md)
+- [PDK seçim kapısı](PDK-SELECTION.md)
+- [Custom-process doğrulama planı](CUSTOM-PROCESS-VALIDATION.md)
+- [P5 dondurulmuş sonucu](../p5-publication/RESULTS.md)

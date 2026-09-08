@@ -59,8 +59,8 @@ değeri, quadratic temporal özellikleri fiziksel koherent girişim ve photodete
 
 ## Araştırma hattı bağlantıları
 
-- [[🏰 300-Projects/Photonic-Reservoir/Photonic-Reservoir|Photonic Reservoir proje merkezi]]
-- [[🏰 300-Projects/Photonic-Reservoir/p4-optimization/RESULTS|P4 seçilen aday]]
-- [[🏰 300-Projects/Photonic-Reservoir/P0-BENCHMARK-AND-BLIND-PROTOCOL|P0 protokol geçmişi]]
-- [[🏰 300-Projects/Photonic-Reservoir/MODEL-AND-ACCEPTANCE|Kabul protokolü]]
-- [[🏰 300-Projects/Photonic-Reservoir/HANDOFF|Güncel handoff]]
+- [Photonic Reservoir proje merkezi](../docs/_source_records/project-hub-note.md)
+- [P4 seçilen aday](../p4-optimization/RESULTS.md)
+- [P0 protokol geçmişi](../P0-BENCHMARK-AND-BLIND-PROTOCOL.md)
+- [Kabul protokolü](../MODEL-AND-ACCEPTANCE.md)
+- [Güncel handoff](../docs/_source_records/HANDOFF.md)

@@ -1,3 +1,6 @@
+> **The project's original README (Turkish), kept verbatim.** The current English README is at
+> the repository root. Obsidian links have been converted to plain text / relative links.
+
 # Photonic Reservoir — NMSE < 0.05 Araştırma Hattı
 
 Bu depo artık yeni NARMA-10 araştırma hattını ve eski üç-ring çalışmasını fiziksel
@@ -39,7 +42,7 @@ P0 aşamasında doğru sonuç `blind_test_authorized: false` değeridir.
 
 ## Araştırma hattı bağlantıları
 
-- [[🏰 300-Projects/Photonic-Reservoir/Photonic-Reservoir|Photonic Reservoir proje merkezi]]
-- [[🏰 300-Projects/Photonic-Reservoir/P0-BENCHMARK-AND-BLIND-PROTOCOL|P0 benchmark ve kör test protokolü]]
-- [[🏰 300-Projects/Photonic-Reservoir/MRR-RNN-Literatur-Taramasi|MRR/RNN literatür taraması]]
-- [[🧠 500-Knowledge/concepts/Photonic-Research-Lines-Synthesis|Fotonik araştırma hatları sentezi]]
+- [Photonic Reservoir proje merkezi](project-hub-note.md)
+- [P0 benchmark ve kör test protokolü](../../P0-BENCHMARK-AND-BLIND-PROTOCOL.md)
+- [MRR/RNN literatür taraması](../references/literature_review.md)
+- Fotonik araştırma hatları sentezi (MayOS vault note, outside this repository)

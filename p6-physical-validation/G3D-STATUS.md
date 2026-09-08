@@ -74,8 +74,8 @@ G3-D `FAIL/REDESIGN` kalır.
 
 ## Araştırma hattı bağlantıları
 
-- [[🏰 300-Projects/Photonic-Reservoir/p6-physical-validation/P6-PROTOCOL|P6 protokolü]]
-- [[🏰 300-Projects/Photonic-Reservoir/p6-physical-validation/EM-FDTD-PLAN|EM/FDTD planı]]
-- [[🏰 300-Projects/Photonic-Reservoir/p6-physical-validation/G3C-STATUS|G3-C durumu]]
-- [[🏰 300-Projects/Photonic-Reservoir/p6-physical-validation/G6-PHYSICAL-ACCEPTANCE|G6 kabul denetimi]]
-- [[🏰 300-Projects/Photonic-Reservoir/Photonic-Reservoir|Proje merkezi]]
+- [P6 protokolü](P6-PROTOCOL.md)
+- [EM/FDTD planı](EM-FDTD-PLAN.md)
+- [G3-C durumu](G3C-STATUS.md)
+- [G6 kabul denetimi](G6-PHYSICAL-ACCEPTANCE.md)
+- [Proje merkezi](../docs/_source_records/project-hub-note.md)

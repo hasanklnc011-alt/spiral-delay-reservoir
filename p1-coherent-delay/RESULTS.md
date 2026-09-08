@@ -53,7 +53,7 @@ time-multiplex mimariye indirgerken validation medyanını `≤0.04` tutmaya ça
 
 ## Araştırma hattı bağlantıları
 
-- [[🏰 300-Projects/Photonic-Reservoir/Photonic-Reservoir|Photonic Reservoir proje merkezi]]
-- [[🏰 300-Projects/Photonic-Reservoir/P0-BENCHMARK-AND-BLIND-PROTOCOL|P0 benchmark protokolü]]
-- [[🏰 300-Projects/Photonic-Reservoir/MODEL-AND-ACCEPTANCE|Güncel kabul protokolü]]
-- [[🏰 300-Projects/Photonic-Reservoir/p1-coherent-delay/README|P1 çalışma alanı]]
+- [Photonic Reservoir proje merkezi](../docs/_source_records/project-hub-note.md)
+- [P0 benchmark protokolü](../P0-BENCHMARK-AND-BLIND-PROTOCOL.md)
+- [Güncel kabul protokolü](../MODEL-AND-ACCEPTANCE.md)
+- [P1 çalışma alanı](README.md)

@@ -118,7 +118,7 @@ Tidy3D `results/` alanına yazılmaz.
 
 ## Araştırma hattı bağlantıları
 
-- [[🏰 300-Projects/Photonic-Reservoir/p6-physical-validation/P6-PROTOCOL|P6 protokolü]]
-- [[🏰 300-Projects/Photonic-Reservoir/p6-physical-validation/COMPONENT-MODEL|Bileşen modeli]]
-- [[🏰 300-Projects/Photonic-Reservoir/Photonic-Reservoir|Proje merkezi]]
-- [[🏰 300-Projects/3 halkalı Ring/Tidy3D-Small-Ring|Eski Tidy3D referansı]]
+- [P6 protokolü](P6-PROTOCOL.md)
+- [Bileşen modeli](COMPONENT-MODEL.md)
+- [Proje merkezi](../docs/_source_records/project-hub-note.md)
+- Eski Tidy3D referansı (MayOS vault note, outside this repository)

@@ -1,20 +1,67 @@
-@misc{donati2024,
-  doi = {10.1364/OE.514617},
-  url = {https://doi.org/10.1364/OE.514617},
-  note = {Verified DOI recorded in the project literature review}
+% Bibliography for the Photonic Reservoir (coherent-delay) project.
+%
+% The DOI in each entry is the authoritative identifier and was recorded in the
+% project literature review (docs/references/literature_review.md). Author lists
+% and titles below are taken from that review and from the DOI landing metadata;
+% they were NOT independently re-verified in this repository. Resolve each DOI
+% before citing in a manuscript.
+
+@article{donati2024_ring_tdrc_feedback,
+  author  = {Donati, Giovanni and others},
+  title   = {Time-delay reservoir computing with a silicon microring resonator and optical feedback},
+  journal = {Optics Express},
+  year    = {2024},
+  doi     = {10.1364/OE.514617},
+  url     = {https://doi.org/10.1364/OE.514617},
+  note    = {Add-drop Si microring, through-to-add fiber feedback loop; memory = free-carrier/thermal inertia + fiber echo; masked input, linear readout only. Metadata not independently verified.}
 }
-@misc{bazzanella2022,
-  doi = {10.1109/JLT.2022.3183694},
-  url = {https://doi.org/10.1109/JLT.2022.3183694},
-  note = {Verified DOI recorded in the project literature review}
+
+@article{bazzanella2022_single_ring_memory,
+  author  = {Bazzanella, Davide and others},
+  title   = {A microring as a reservoir computing node: memory/nonlinear tasks and the effect of input non-idealities},
+  journal = {Journal of Lightwave Technology},
+  year    = {2022},
+  doi     = {10.1109/JLT.2022.3183694},
+  url     = {https://doi.org/10.1109/JLT.2022.3183694},
+  note    = {Feedback-free single Si microring, time-multiplexed virtual nodes; TPA free-carrier dispersion + thermo-optic effect; offline ridge regression; the same readout must be applied to the input signal. Metadata not independently verified.}
 }
-@misc{gironcastro2024,
-  doi = {10.1364/OE.509437},
-  url = {https://doi.org/10.1364/OE.509437},
-  note = {Verified DOI recorded in the project literature review}
+
+@article{gironcastro2024_tcmt_map,
+  author  = {Giron Castro, Bernard J. and others},
+  title   = {Multi-parametric analysis of a silicon microring-resonator time-delay reservoir computing system},
+  journal = {Optics Express},
+  year    = {2024},
+  doi     = {10.1364/OE.509437},
+  url     = {https://doi.org/10.1364/OE.509437},
+  note    = {Temporal coupled-mode theory for cavity field a(t), carrier density dN(t), temperature dT(t) with 4th-order Runge-Kutta; 50 virtual nodes; power-detuning operating regimes A/B/C; NARMA-10 with ridge readout. Metadata not independently verified.}
 }
-@misc{tait2017,
-  doi = {10.1038/s41598-017-07754-z},
-  url = {https://doi.org/10.1038/s41598-017-07754-z},
-  note = {Verified DOI recorded in the project literature review}
+
+@article{tait2017_broadcast_and_weight,
+  author  = {Tait, Alexander N. and others},
+  title   = {Neuromorphic photonic networks using silicon photonic weight banks},
+  journal = {Scientific Reports},
+  year    = {2017},
+  doi     = {10.1038/s41598-017-07754-z},
+  url     = {https://doi.org/10.1038/s41598-017-07754-z},
+  note    = {Broadcast-and-weight architecture; microring weight banks, balanced photodetectors, MZM neurons; continuous-time RNN model ds/dt = (W y - s)/tau + W_in u; a DISTINCT architecture (trained physical RNN). Metadata not independently verified.}
+}
+
+@article{dong2026_deep_three_ring,
+  author  = {Dong, and others},
+  title   = {Deep photonic reservoir computing based on microring resonators},
+  journal = {Optics and Laser Technology},
+  year    = {2026},
+  doi     = {10.1016/j.optlastec.2025.114614},
+  url     = {https://doi.org/10.1016/j.optlastec.2025.114614},
+  note    = {Three serial add-drop Si microrings, inter-layer feedback; TCMT + TPA/FCA/FCD/TO with RK4; NARMA-10 NMSE 0.455 (1 ring) / 0.103 (2) / 0.071 (3). Closest architectural reference for the archived three-ring line. Metadata not independently verified.}
+}
+
+@article{ren2024_nonlinear_plus_linear_array,
+  author  = {Ren, and others},
+  title   = {Photonic reservoir computing with a nonlinear microring and a linear high-Q microring array},
+  journal = {Optics Express},
+  year    = {2024},
+  doi     = {10.1364/OE.518063},
+  url     = {https://doi.org/10.1364/OE.518063},
+  note    = {Nonlinear Si microring combined with a high-Q linear microring array to raise memory capacity without a long fiber delay; NARMA-10, Mackey-Glass, Santa Fe. Full text not obtained during the project; parameters to be completed on a later reading. Metadata not independently verified.}
 }

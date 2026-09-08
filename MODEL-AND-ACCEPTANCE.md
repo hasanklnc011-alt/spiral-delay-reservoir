@@ -82,12 +82,12 @@ Kör sonuç artık optimizasyona geri beslenemez.
 
 ## Araştırma hattı bağlantıları
 
-- [[🏰 300-Projects/Photonic-Reservoir/Photonic-Reservoir|Photonic Reservoir proje merkezi]]
-- [[🏰 300-Projects/Photonic-Reservoir/P0-BENCHMARK-AND-BLIND-PROTOCOL|P0 benchmark ve kör test protokolü]]
-- [[🏰 300-Projects/Photonic-Reservoir/p1-coherent-delay/RESULTS|P1 sonuçları]]
-- [[🏰 300-Projects/Photonic-Reservoir/p2-architecture/RESULTS|P2 sonuçları]]
-- [[🏰 300-Projects/Photonic-Reservoir/p3-realistic/RESULTS|P3 sonuçları]]
-- [[🏰 300-Projects/Photonic-Reservoir/p4-optimization/RESULTS|P4 sonuçları]]
-- [[🏰 300-Projects/Photonic-Reservoir/p5-publication/RESULTS|P5 sonuçları]]
-- [[🏰 300-Projects/Photonic-Reservoir/HANDOFF|Güncel handoff]]
-- [[🧠 500-Knowledge/concepts/Photonic-Research-Lines-Synthesis|Fotonik araştırma hatları sentezi]]
+- [Photonic Reservoir proje merkezi](docs/_source_records/project-hub-note.md)
+- [P0 benchmark ve kör test protokolü](P0-BENCHMARK-AND-BLIND-PROTOCOL.md)
+- [P1 sonuçları](p1-coherent-delay/RESULTS.md)
+- [P2 sonuçları](p2-architecture/RESULTS.md)
+- [P3 sonuçları](p3-realistic/RESULTS.md)
+- [P4 sonuçları](p4-optimization/RESULTS.md)
+- [P5 sonuçları](p5-publication/RESULTS.md)
+- [Güncel handoff](docs/_source_records/HANDOFF.md)
+- Fotonik araştırma hatları sentezi (MayOS vault note, outside this repository)

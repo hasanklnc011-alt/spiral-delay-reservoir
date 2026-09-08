@@ -15,6 +15,6 @@ etkilemiş olması nedeniyle yeni yayın protokolü değildir.
 
 ## Araştırma hattı bağlantıları
 
-- [[🏰 300-Projects/Photonic-Reservoir/Photonic-Reservoir|Güncel Photonic Reservoir hattı]]
-- [[🏰 300-Projects/Photonic-Reservoir/P0-BENCHMARK-AND-BLIND-PROTOCOL|P0 benchmark protokolü]]
-- [[🏰 300-Projects/Photonic-Reservoir/MRR-RNN-Literatur-Taramasi|MRR/RNN literatür taraması]]
+- [Güncel Photonic Reservoir hattı](../../docs/_source_records/project-hub-note.md)
+- [P0 benchmark protokolü](../../P0-BENCHMARK-AND-BLIND-PROTOCOL.md)
+- [MRR/RNN literatür taraması](../../docs/references/literature_review.md)

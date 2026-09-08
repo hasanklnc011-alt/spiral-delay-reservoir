@@ -16,10 +16,10 @@ train/validation kullanılarak fiziksel olarak yorumlanabilir bir ölçüm büt�
 P3'te kayıp, gürültü ve tolerans taraması 30-slot adayla başlayacaktır. 30-slot adayın
 medyanı `0.026459`, başarı oranı 9/10'dur. 20-slot mimari Pareto/minimum ablation olarak korunur.
 
-Ayrıntılar: [[🏰 300-Projects/Photonic-Reservoir/p2-architecture/RESULTS|P2 sonuçları]].
+Ayrıntılar: [P2 sonuçları](RESULTS.md).
 
 ## Araştırma hattı bağlantıları
 
-- [[🏰 300-Projects/Photonic-Reservoir/Photonic-Reservoir|Photonic Reservoir proje merkezi]]
-- [[🏰 300-Projects/Photonic-Reservoir/p1-coherent-delay/RESULTS|P1 ideal üst sınır]]
-- [[🏰 300-Projects/Photonic-Reservoir/MODEL-AND-ACCEPTANCE|Güncel kabul protokolü]]
+- [Photonic Reservoir proje merkezi](../docs/_source_records/project-hub-note.md)
+- [P1 ideal üst sınır](../p1-coherent-delay/RESULTS.md)
+- [Güncel kabul protokolü](../MODEL-AND-ACCEPTANCE.md)

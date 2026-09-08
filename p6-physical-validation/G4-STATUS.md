@@ -42,10 +42,10 @@ hedefi olarak kullanılmadı.
 
 ## Araştırma hattı bağlantıları
 
-- [[🏰 300-Projects/Photonic-Reservoir/p6-physical-validation/P6-PROTOCOL|P6 protokolü]]
-- [[🏰 300-Projects/Photonic-Reservoir/p6-physical-validation/COMPONENT-MODEL|Bileşen modeli]]
-- [[🏰 300-Projects/Photonic-Reservoir/p6-physical-validation/G3C-STATUS|G3-C splitter durumu]]
-- [[🏰 300-Projects/Photonic-Reservoir/p6-physical-validation/PDK-SELECTION|PDK seçim kapısı]]
-- [[🏰 300-Projects/Photonic-Reservoir/p6-physical-validation/CUSTOM-PROCESS-VALIDATION|Custom-process doğrulama planı]]
-- [[🏰 300-Projects/Photonic-Reservoir/p6-physical-validation/STATUS|P6 durum]]
-- [[🏰 300-Projects/Photonic-Reservoir/Photonic-Reservoir|Proje merkezi]]
+- [P6 protokolü](P6-PROTOCOL.md)
+- [Bileşen modeli](COMPONENT-MODEL.md)
+- [G3-C splitter durumu](G3C-STATUS.md)
+- [PDK seçim kapısı](PDK-SELECTION.md)
+- [Custom-process doğrulama planı](CUSTOM-PROCESS-VALIDATION.md)
+- [P6 durum](STATUS.md)
+- [Proje merkezi](../docs/_source_records/project-hub-note.md)

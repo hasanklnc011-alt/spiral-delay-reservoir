@@ -45,8 +45,8 @@ lisanslı model/S-parametre/measurement verileri gelmeden G4 ve G5 `OPEN` kalır
 
 ## Araştırma hattı bağlantıları
 
-- [[🏰 300-Projects/Photonic-Reservoir/p6-physical-validation/P6-PROTOCOL|P6 protokolü]]
-- [[🏰 300-Projects/Photonic-Reservoir/p6-physical-validation/G1-ACCEPTANCE|G1 kabulü]]
-- [[🏰 300-Projects/Photonic-Reservoir/p6-physical-validation/G4-STATUS|G4 durumu]]
-- [[🏰 300-Projects/Photonic-Reservoir/p6-physical-validation/G6-PHYSICAL-ACCEPTANCE|G6 denetimi]]
-- [[🏰 300-Projects/Photonic-Reservoir/Photonic-Reservoir|Proje merkezi]]
+- [P6 protokolü](P6-PROTOCOL.md)
+- G1 kabulü
+- [G4 durumu](G4-STATUS.md)
+- [G6 denetimi](G6-PHYSICAL-ACCEPTANCE.md)
+- [Proje merkezi](../docs/_source_records/project-hub-note.md)

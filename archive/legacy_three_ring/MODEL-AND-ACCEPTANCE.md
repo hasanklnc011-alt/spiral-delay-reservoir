@@ -72,7 +72,7 @@ yararlı rejim, bu Q değerlerinde örtüşmüyor.** Bu, high-Q yönünün gerek
 ## P0 sonrası NMSE < 0.05 yayın kapıları
 
 Yeni mimari hattının kanonik benchmark sözleşmesi
-[[🏰 300-Projects/Photonic-Reservoir/P0-BENCHMARK-AND-BLIND-PROTOCOL|P0 — NARMA-10 Benchmark ve Kör Test Protokolü]]
+[P0 — NARMA-10 Benchmark ve Kör Test Protokolü](../../P0-BENCHMARK-AND-BLIND-PROTOCOL.md)
 ve `configs/p0_narma10_protocol.json` dosyasındadır.
 
 - Geliştirme seçimi yalnız train/validation üzerinde yapılır; medyan validation

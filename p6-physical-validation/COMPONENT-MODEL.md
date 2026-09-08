@@ -123,7 +123,7 @@ elektroniği ve TEC ayrı kalemdir.
 
 ## Araştırma hattı bağlantıları
 
-- [[🏰 300-Projects/Photonic-Reservoir/p6-physical-validation/P6-PROTOCOL|P6 protokolü]]
-- [[🏰 300-Projects/Photonic-Reservoir/p5-publication/RESULTS|P5 dondurulmuş sonuç]]
-- [[🏰 300-Projects/Photonic-Reservoir/p4-optimization/RESULTS|P4 adayı]]
-- [[🏰 300-Projects/Photonic-Reservoir/Photonic-Reservoir|Proje merkezi]]
+- [P6 protokolü](P6-PROTOCOL.md)
+- [P5 dondurulmuş sonuç](../p5-publication/RESULTS.md)
+- [P4 adayı](../p4-optimization/RESULTS.md)
+- [Proje merkezi](../docs/_source_records/project-hub-note.md)

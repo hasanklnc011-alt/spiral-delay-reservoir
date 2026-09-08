@@ -1,3 +1,6 @@
+> **Source record (Turkish), kept verbatim.** The English narrative is in the repository
+> [`README.md`](../../README.md) and [`docs/`](../). Obsidian links have been converted.
+
 ---
 title: Photonic Reservoir NMSE < 0.05 — Handoff
 type: handoff
@@ -65,11 +68,11 @@ bileşenlerde EM/FDTD doğrulama planı kur. P5 kör sonucu değişmez yayın ka
 
 ## Araştırma hattı bağlantıları
 
-- [[🏰 300-Projects/Photonic-Reservoir/Photonic-Reservoir|Photonic Reservoir proje merkezi]]
-- [[🏰 300-Projects/Photonic-Reservoir/P0-BENCHMARK-AND-BLIND-PROTOCOL|P0 benchmark protokolü]]
-- [[🏰 300-Projects/Photonic-Reservoir/MODEL-AND-ACCEPTANCE|Güncel model ve kabul protokolü]]
-- [[🏰 300-Projects/Photonic-Reservoir/p2-architecture/RESULTS|P2 mimari sonuçları]]
-- [[🏰 300-Projects/Photonic-Reservoir/p3-realistic/RESULTS|P3 gerçekçi sistem sonuçları]]
-- [[🏰 300-Projects/Photonic-Reservoir/p4-optimization/RESULTS|P4 robust optimizasyon sonuçları]]
-- [[🏰 300-Projects/Photonic-Reservoir/p5-publication/RESULTS|P5 tek kör test sonuçları]]
-- [[🏰 300-Projects/Photonic-Reservoir/MRR-RNN-Literatur-Taramasi|MRR/RNN literatür taraması]]
+- [Photonic Reservoir proje merkezi](project-hub-note.md)
+- [P0 benchmark protokolü](../../P0-BENCHMARK-AND-BLIND-PROTOCOL.md)
+- [Güncel model ve kabul protokolü](../../MODEL-AND-ACCEPTANCE.md)
+- [P2 mimari sonuçları](../../p2-architecture/RESULTS.md)
+- [P3 gerçekçi sistem sonuçları](../../p3-realistic/RESULTS.md)
+- [P4 robust optimizasyon sonuçları](../../p4-optimization/RESULTS.md)
+- [P5 tek kör test sonuçları](../../p5-publication/RESULTS.md)
+- [MRR/RNN literatür taraması](../references/literature_review.md)
