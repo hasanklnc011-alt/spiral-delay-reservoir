@@ -56,9 +56,9 @@ credibility rather than reducing it.
 
 ## Repository limitations
 
-- The 67 P6 HDF5 solver outputs are tracked with **Git LFS**; a plain `git clone`
+- The 67 P6 HDF5 files (59 curated solver outputs + 8 unclassified) are tracked with **Git LFS**; a plain `git clone`
   without LFS fetches pointer files only.
-- Six unlabeled solver-scratch HDF5 files are kept under
+- Eight unlabeled solver-scratch HDF5 files are kept under
   `p6-physical-validation/_unclassified_solver_scratch/` with **unclear
   provenance** — they were preserved rather than deleted, but are not cited by any
   result.

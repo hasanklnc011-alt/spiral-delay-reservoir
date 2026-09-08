@@ -69,8 +69,8 @@ and the G5 composition that depends on all of the above. The chosen route is a
 
 - `layout/spiral-centerline-v1.{gds,csv,svg}` — the accepted delay route (Git LFS).
 - `runs/*.json` — machine-readable gate results, hash-locked.
-- `runs/*.hdf5` — 67 FDTD / mode-solve outputs (Git LFS); `git lfs pull` to fetch.
-- `_unclassified_solver_scratch/` — 6 unlabeled solver downloads, provenance
+- `runs/*.hdf5` — 59 curated FDTD / mode-solve outputs (Git LFS); `git lfs pull` to fetch.
+- `_unclassified_solver_scratch/` — 8 unlabeled solver downloads, provenance
   unclear, kept for completeness, cited by nothing.
 - `configs/baseline-v1.json` — P5 inputs frozen into P6 + P6's open assumptions.
 

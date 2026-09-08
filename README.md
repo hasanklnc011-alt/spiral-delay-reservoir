@@ -289,8 +289,8 @@ p6-physical-validation/        Component/EM campaign: gate docs, code, configs, 
   README.md                    Verdict-first landing page
   SCRIPT_INDEX.md              What each g*.py / inverse_design_*.py script does
   layout/                      spiral-centerline-v1.{gds,csv,svg}  (Git LFS)
-  runs/                        JSON summaries + 67 HDF5 solver outputs (Git LFS)
-  _unclassified_solver_scratch/  Unlabeled solver downloads, provenance unclear (Git LFS)
+  runs/                        JSON summaries + 59 HDF5 solver outputs (Git LFS)
+  _unclassified_solver_scratch/  8 unlabeled solver downloads, provenance unclear (Git LFS)
 artifacts/
   blender/                     mcp.blend (author scene), build_spiral_reference.py, renders
   figures/                     Mirror of docs/figures

@@ -44,8 +44,8 @@ through `docs/`, the README, per-phase indices, and a P6 landing page.
 than the prettier `studies/p1_ideal_coherent_delay`. **Status:** accepted.
 
 ## ADR-007 — Raw evidence via Git LFS, not exclusion
-**Context:** 67 P6 HDF5 solver outputs (~169 MB) are cited by the provenance
+**Context:** the curated P6 HDF5 solver outputs (~169 MB, 59 files) are cited by the provenance
 hash checks. **Decision:** track them (and the GDS + large centerline CSV + the
 Blender files) with Git LFS under their original paths, rather than excluding
-them. Six unlabeled scratch HDF5 files are kept in a clearly named
+them. Eight unlabeled scratch HDF5 files are kept in a clearly named
 `_unclassified_solver_scratch/` folder. **Status:** accepted.

@@ -36,8 +36,8 @@ configs/                       (P0 protocol JSON)
 p1-coherent-delay/ … p5-publication/    (per-phase README/RESULTS/configs/runs — unchanged internally)
 p6-physical-validation/        (unchanged internally + new README landing + SCRIPT_INDEX.md)
   layout/*.{gds,csv,svg}       (Git LFS)
-  runs/*.hdf5                  (Git LFS, 67 files)
-  _unclassified_solver_scratch/*.hdf5   (Git LFS, 6 files, provenance unclear)
+  runs/*.hdf5                  (Git LFS, 59 curated files)
+  _unclassified_solver_scratch/*.hdf5   (Git LFS, 8 files, provenance unclear)
 docs/
   PROJECT_OVERVIEW / SCIENTIFIC_BACKGROUND / METHODOLOGY / RESULTS_SUMMARY /
   PHYSICAL_VALIDATION / DEVELOPMENT_HISTORY / LIMITATIONS / REPRODUCIBILITY /
@@ -140,8 +140,7 @@ relative Markdown link. Vault-external targets (`🧠 500-Knowledge/…`,
 ## 11. Large files / Git LFS
 
 `.gitattributes` now tracks `*.blend`, `*.hdf5`, `*.gds`, and the large
-`spiral-centerline-v1.csv` with Git LFS: **71 LFS objects** total (67 P6 HDF5 +
-6 scratch HDF5 − overlap, plus 2 `.blend` + 1 `.gds` + 1 `.csv`). Working tree
+`spiral-centerline-v1.csv` with Git LFS: **71 LFS objects** total (67 HDF5 = 59 curated runs + 8 unclassified scratch, plus 2 `.blend` + 1 `.gds` + 1 `.csv`). Working tree
 ≈ 190 MB. A plain `git clone` fetches LFS pointers; `git lfs pull` fetches the
 binaries. `.gitignore` blanket-ignores `*.hdf5` but re-includes
 `p6-physical-validation/runs/**` and `.../_unclassified_solver_scratch/**`, so the
