@@ -323,6 +323,9 @@ Where to go for a specific thing:
 6. [`docs/LIMITATIONS.md`](docs/LIMITATIONS.md) and
    [`docs/DEVELOPMENT_HISTORY.md`](docs/DEVELOPMENT_HISTORY.md).
 
+For a plain-language walkthrough of every phase (in Turkish, written for a reader
+new to the topic): [`docs/SUREC-ACIKLAMASI-TR.md`](docs/SUREC-ACIKLAMASI-TR.md).
+
 ## 13. Reproducibility
 
 Python ≥ 3.11 (developed on 3.14). Dependencies are pinned in
