@@ -12,5 +12,11 @@ Thumbs.db
 *.blend2
 *.blend@
 *.autosave
+# Solver output binaries are ignored by default to prevent accidental commits of
+# scratch runs. Curated P6 evidence under results/raw/ is force-tracked via Git LFS
+# and explicitly re-included below.
 *.hdf5
+!studies/p6_physical_validation/results/raw/**
 *.log
+*.egg-info/
+src/**/*.egg-info/
