@@ -1,0 +1,10 @@
+{
+  "name":"p6-g3c-coupler-mode-estimate-v1",
+  "source_sha256":"11303cfcce59d1f786c704a57ae51db7c72ac128fed1c4983fcc370c613c04e6",
+  "jobs":[
+    {"mesh":20.0,"task_name":"p6_g3c_coupler_gap200nm_m20","task_id":"mo-d4cb1625-de35-4128-b4f5-f1174f04787e","task_status":"draft","serialized_solver_sha256":"9395599fdae00f3f4f1df6f658c18fddd86e5e1b3a72d4e6e4581bfa5a5ee406","estimated_flexcredits":0.005317075555555556,"solve_started":false},
+    {"mesh":25.0,"task_name":"p6_g3c_coupler_gap200nm_m25","task_id":"mo-3b92e522-cece-4797-818b-afd44d5ea076","task_status":"draft","serialized_solver_sha256":"a2e6e916c4486f3e5c82b92f679b4d65818ee1abc0869d6009429ce41e67f75c","estimated_flexcredits":0.005712248888888889,"solve_started":false}
+  ],
+  "estimated_total_flexcredits":0.011029324444444445,
+  "within_limits":true
+}

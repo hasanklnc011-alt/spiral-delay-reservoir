@@ -1,0 +1,14 @@
+{
+  "name":"p6-g3b-bend-r10-result-v3",
+  "source_sha256":"6aeb2100fb284d153f346a2ea88b4661187c0f16e3ceace7998cd432fe73bd0a",
+  "task_id":"fdve-feadf0fb-c0d6-4294-8bf7-e7eb5af0268c",
+  "task_status":"success",
+  "result_file":"g3b-bend-r10-dense_m15-result-v3.hdf5",
+  "result_sha256":"33b62c60cc69832cf141e175bef12fc3af0baa0c8e74bf8e6316bdf33a1627e1",
+  "actual_flexcredits":0.05160219521013626,
+  "center_transmission_db":-0.010662204567031913,
+  "center_reflection_db":-36.56977464036213,
+  "max_abs_energy_residual":0.0026495114637248296,
+  "worst_reflection_db":-32.158526082726105,
+  "pilot_passed":true
+}

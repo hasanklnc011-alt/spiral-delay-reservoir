@@ -1,0 +1,33 @@
+{
+  "name": "p6-g1-remote-subpixel-preflight-v1",
+  "claim_level": "serialization/preflight only; no upload, solve, cost, or G1 acceptance",
+  "tidy3d_version": "2.12.0",
+  "config_sha256": "f93c5def4d9ba3ec0889c67dd0e2e22cf6a56b80fb9926e0b6abcbfc05253b9d",
+  "source_sha256": "c8b94afb3b6e933c5083e6e4661a8d243d86798d368128a34e0f46b3ab62d059",
+  "serialized_mode_solver_sha256": "ad90bfc682eb8f6954652531ae0ec8fe067ede35f263fb8c8db215ed32321a13",
+  "serialized_bytes": 5228,
+  "wavelengths_um": [
+    1.52,
+    1.525,
+    1.53,
+    1.5350000000000001,
+    1.54,
+    1.545,
+    1.55,
+    1.5550000000000002,
+    1.56,
+    1.565,
+    1.57,
+    1.5750000000000002,
+    1.58
+  ],
+  "frequency_count": 13,
+  "min_steps_per_wvl": 20.0,
+  "subpixel_spec_present": true,
+  "simulation_cells_before_remote_subpixel_discretization": 1179900,
+  "cloud_called": false,
+  "upload_allowed": false,
+  "solve_allowed": false,
+  "cost_estimate_status": "BLOCKED_UNTIL_USER_CREDIT_APPROVAL_AND_UPLOAD",
+  "passed": true
+}

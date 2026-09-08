@@ -1,0 +1,27 @@
+{
+  "name": "p6-g1-220nm-pdk-migration-local-probe-v1",
+  "source_sha256": "605386548861b8d62236ae8784dcf5c7e595dc8bf5d52690f1857473fd2e72a9",
+  "p5_blind_rerun": false,
+  "cloud_called": false,
+  "height_um": 0.22,
+  "screen_mesh": 20.0,
+  "screen": [
+    {"claim_level": "local no-subpixel candidate nomination only", "cloud_called": false, "width_um": 0.3, "height_um": 0.22, "mesh": 20.0, "fundamental_n_eff": 1.8465737720240762, "fundamental_n_group": 4.099789239409115, "fundamental_te_fraction": 0.9402916369652948, "fundamental_mode_area_um2": 0.26556133892590383, "relative_group_index_error": 0.024947309852278776, "nomination_gate_passed": false},
+    {"claim_level": "local no-subpixel candidate nomination only", "cloud_called": false, "width_um": 0.31, "height_um": 0.22, "mesh": 20.0, "fundamental_n_eff": 1.8174934388798194, "fundamental_n_group": 3.956781915906621, "fundamental_te_fraction": 0.9310082039432911, "fundamental_mode_area_um2": 0.27857581642552803, "relative_group_index_error": 0.010804521023344726, "nomination_gate_passed": true},
+    {"claim_level": "local no-subpixel candidate nomination only", "cloud_called": false, "width_um": 0.35, "height_um": 0.22, "mesh": 20.0, "fundamental_n_eff": 1.9995562529940578, "fundamental_n_group": 4.327422749348494, "fundamental_te_fraction": 0.9393069769674456, "fundamental_mode_area_um2": 0.24718249541944967, "relative_group_index_error": 0.08185568733712345, "nomination_gate_passed": false},
+    {"claim_level": "local no-subpixel candidate nomination only", "cloud_called": false, "width_um": 0.4, "height_um": 0.22, "mesh": 20.0, "fundamental_n_eff": 2.2372306291330237, "fundamental_n_group": 4.369648310340001, "fundamental_te_fraction": 0.9663767528404883, "fundamental_mode_area_um2": 0.21139261615859692, "relative_group_index_error": 0.09241207758500014, "nomination_gate_passed": false},
+    {"claim_level": "local no-subpixel candidate nomination only", "cloud_called": false, "width_um": 0.45, "height_um": 0.22, "mesh": 20.0, "fundamental_n_eff": 2.3620400983297682, "fundamental_n_group": 4.274724016485079, "fundamental_te_fraction": 0.9768178097779959, "fundamental_mode_area_um2": 0.1983420308388151, "relative_group_index_error": 0.06868100412126976, "nomination_gate_passed": false},
+    {"claim_level": "local no-subpixel candidate nomination only", "cloud_called": false, "width_um": 0.5, "height_um": 0.22, "mesh": 20.0, "fundamental_n_eff": 2.424127953771591, "fundamental_n_group": 4.208683559387736, "fundamental_te_fraction": 0.9782047549506238, "fundamental_mode_area_um2": 0.19763999669164717, "relative_group_index_error": 0.052170889846933965, "nomination_gate_passed": false}
+  ],
+  "selected_width_um": 0.31,
+  "convergence": [
+    {"claim_level": "local no-subpixel candidate nomination only", "cloud_called": false, "width_um": 0.31, "height_um": 0.22, "mesh": 15.0, "fundamental_n_eff": 1.8075119231822834, "fundamental_n_group": 3.9181608871049622, "fundamental_te_fraction": 0.9402660937981118, "fundamental_mode_area_um2": 0.28392339715114784, "relative_group_index_error": 0.02045977822375944, "nomination_gate_passed": false},
+    {"claim_level": "local no-subpixel candidate nomination only", "cloud_called": false, "width_um": 0.31, "height_um": 0.22, "mesh": 20.0, "fundamental_n_eff": 1.8174934388798194, "fundamental_n_group": 3.956781915906621, "fundamental_te_fraction": 0.9310082039432911, "fundamental_mode_area_um2": 0.27857581642552803, "relative_group_index_error": 0.010804521023344726, "nomination_gate_passed": true},
+    {"claim_level": "local no-subpixel candidate nomination only", "cloud_called": false, "width_um": 0.31, "height_um": 0.22, "mesh": 25.0, "fundamental_n_eff": 1.9442070410851497, "fundamental_n_group": 4.338530897216514, "fundamental_te_fraction": 0.9429206882807757, "fundamental_mode_area_um2": 0.24670113843418937, "relative_group_index_error": 0.08463272430412849, "nomination_gate_passed": false}
+  ],
+  "relative_group_index_span": 0.10325563891877075,
+  "local_convergence_threshold": 0.005,
+  "local_convergence_passed": false,
+  "migration_g1_accepted": false,
+  "claim_limit": "local no-subpixel impact probe only; PDK selection and remote subpixel corners required"
+}

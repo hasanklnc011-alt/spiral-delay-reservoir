@@ -1,0 +1,15 @@
+{
+  "name":"p6-g3b-bend-r20-result-v2",
+  "source_sha256":"d79d20966e5e7689b2ee6f00cdb7949932c337cf21764275a141045907f90d00",
+  "task_id":"fdve-6d21b34d-c533-49c3-83a7-e0db8b9b53b3",
+  "task_status":"success",
+  "result_file":"g3b-bend-r20-dense_m15-result-v2.hdf5",
+  "result_sha256":"85b42320d3e318eac3a6bfcb32b92082dec8a8ba4642d7e9a074f7377b200c04",
+  "actual_flexcredits":0.18103326145431903,
+  "center_transmission_db":-0.00404958187670837,
+  "center_reflection_db":-39.12041630075024,
+  "max_abs_energy_residual":0.0017213076379671843,
+  "worst_reflection_db":-28.653545168983886,
+  "pilot_passed":false,
+  "failure_reason":"dense arc confirms physical wideband reflection miss; polygon faceting is not the cause"
+}

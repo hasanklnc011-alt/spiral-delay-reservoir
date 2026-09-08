@@ -1,0 +1,1170 @@
+{
+  "claim_level": "P4 development-only hardware-robust optimization; blind test remains sealed",
+  "development_only": true,
+  "test_evaluations": 0,
+  "p0_protocol_sha256": "2a66934d024178a15cacfccd282a3c27ca4d96a357b0820f3fcae59360ebc95a",
+  "source_sha256": "60da2ea4a743dc96854d70ea2c7b85bb7bd31fcdd97cb919402a2336a556fb6a",
+  "config_sha256": "c9974222316f4aaeba3032e9cdcf7a003665202c4cbf12ec0a3a32b517b2caa7",
+  "hardware_seeds": [
+    101,
+    211,
+    307,
+    401,
+    503
+  ],
+  "candidates": [
+    {
+      "channels": 30,
+      "parallel_ports": 10,
+      "time_multiplex_steps": 3,
+      "signal_power_mw_per_port": 5.0,
+      "lo_power_mw_per_port": 5.0,
+      "receiver_noise_bandwidth_factor": 1.0,
+      "hardware_realizations": 5,
+      "feasibility": {
+        "parallel_ports": 10,
+        "time_multiplex_steps": 3,
+        "symbol_rate_hz": 10000000000.0,
+        "slot_rate_hz": 30000000000.0,
+        "required_detector_bandwidth_hz": 15000000000.0,
+        "max_delay_length_cm": 14.240141755,
+        "checks": {
+          "delay_length": true,
+          "detector_bandwidth": true,
+          "switch_rate": true,
+          "total_optical_power": true
+        },
+        "passed": true,
+        "estimated_total_optical_power_mw": 100.0
+      },
+      "summary": {
+        "median_validation_nmse": 0.03372330304421596,
+        "p90_validation_nmse": 0.051649528818256074,
+        "max_validation_nmse": 0.09603323660888083,
+        "fraction_runs_at_or_below_0_05": 0.9,
+        "data_seed_medians": {
+          "11": 0.02895143007141868,
+          "23": 0.09467534934751812,
+          "37": 0.03311842797410465,
+          "41": 0.04543397765450139,
+          "53": 0.03374559313813306,
+          "67": 0.03350646463875992,
+          "71": 0.03191492004015292,
+          "97": 0.0386454410811461,
+          "109": 0.0381874185165515,
+          "113": 0.029432761081528314
+        },
+        "data_seeds_at_or_below_0_05": 9,
+        "passed": true
+      },
+      "scores": [
+        {
+          "data_seed": 11,
+          "hardware_seed": 101,
+          "validation_nmse": 0.02866236505689704,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "data_seed": 23,
+          "hardware_seed": 101,
+          "validation_nmse": 0.09387849288535287,
+          "best_alpha": 1e-10
+        },
+        {
+          "data_seed": 37,
+          "hardware_seed": 101,
+          "validation_nmse": 0.03311248187899809,
+          "best_alpha": 1e-10
+        },
+        {
+          "data_seed": 41,
+          "hardware_seed": 101,
+          "validation_nmse": 0.04432459800706292,
+          "best_alpha": 1.0
+        },
+        {
+          "data_seed": 53,
+          "hardware_seed": 101,
+          "validation_nmse": 0.03379343893785069,
+          "best_alpha": 1.0
+        },
+        {
+          "data_seed": 67,
+          "hardware_seed": 101,
+          "validation_nmse": 0.03270293477805591,
+          "best_alpha": 1e-10
+        },
+        {
+          "data_seed": 71,
+          "hardware_seed": 101,
+          "validation_nmse": 0.032126375375024545,
+          "best_alpha": 1.0
+        },
+        {
+          "data_seed": 97,
+          "hardware_seed": 101,
+          "validation_nmse": 0.038050541284532786,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "data_seed": 109,
+          "hardware_seed": 101,
+          "validation_nmse": 0.0384679921348232,
+          "best_alpha": 1.0
+        },
+        {
+          "data_seed": 113,
+          "hardware_seed": 101,
+          "validation_nmse": 0.02915776767757451,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "data_seed": 11,
+          "hardware_seed": 211,
+          "validation_nmse": 0.029628683729132313,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "data_seed": 23,
+          "hardware_seed": 211,
+          "validation_nmse": 0.09465727457348859,
+          "best_alpha": 1e-10
+        },
+        {
+          "data_seed": 37,
+          "hardware_seed": 211,
+          "validation_nmse": 0.033747329376013026,
+          "best_alpha": 0.01
+        },
+        {
+          "data_seed": 41,
+          "hardware_seed": 211,
+          "validation_nmse": 0.04619776754640902,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "data_seed": 53,
+          "hardware_seed": 211,
+          "validation_nmse": 0.03374559313813306,
+          "best_alpha": 1.0
+        },
+        {
+          "data_seed": 67,
+          "hardware_seed": 211,
+          "validation_nmse": 0.03351350721460262,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "data_seed": 71,
+          "hardware_seed": 211,
+          "validation_nmse": 0.031656420462777404,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "data_seed": 97,
+          "hardware_seed": 211,
+          "validation_nmse": 0.038007913182968985,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "data_seed": 109,
+          "hardware_seed": 211,
+          "validation_nmse": 0.03914043607662373,
+          "best_alpha": 1.0
+        },
+        {
+          "data_seed": 113,
+          "hardware_seed": 211,
+          "validation_nmse": 0.02981707672384946,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "data_seed": 11,
+          "hardware_seed": 307,
+          "validation_nmse": 0.02895143007141868,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "data_seed": 23,
+          "hardware_seed": 307,
+          "validation_nmse": 0.09489954803010858,
+          "best_alpha": 1e-10
+        },
+        {
+          "data_seed": 37,
+          "hardware_seed": 307,
+          "validation_nmse": 0.03311842797410465,
+          "best_alpha": 0.1
+        },
+        {
+          "data_seed": 41,
+          "hardware_seed": 307,
+          "validation_nmse": 0.04530716804396886,
+          "best_alpha": 1.0
+        },
+        {
+          "data_seed": 53,
+          "hardware_seed": 307,
+          "validation_nmse": 0.03291800959078979,
+          "best_alpha": 0.1
+        },
+        {
+          "data_seed": 67,
+          "hardware_seed": 307,
+          "validation_nmse": 0.033485468707395286,
+          "best_alpha": 1.0
+        },
+        {
+          "data_seed": 71,
+          "hardware_seed": 307,
+          "validation_nmse": 0.03191492004015292,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "data_seed": 97,
+          "hardware_seed": 307,
+          "validation_nmse": 0.039810058088237336,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "data_seed": 109,
+          "hardware_seed": 307,
+          "validation_nmse": 0.037433568280436855,
+          "best_alpha": 1.0
+        },
+        {
+          "data_seed": 113,
+          "hardware_seed": 307,
+          "validation_nmse": 0.029491711068012388,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "data_seed": 11,
+          "hardware_seed": 401,
+          "validation_nmse": 0.028091121323325363,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "data_seed": 23,
+          "hardware_seed": 401,
+          "validation_nmse": 0.09467534934751812,
+          "best_alpha": 1e-10
+        },
+        {
+          "data_seed": 37,
+          "hardware_seed": 401,
+          "validation_nmse": 0.03251627387188535,
+          "best_alpha": 1e-10
+        },
+        {
+          "data_seed": 41,
+          "hardware_seed": 401,
+          "validation_nmse": 0.04543397765450139,
+          "best_alpha": 0.1
+        },
+        {
+          "data_seed": 53,
+          "hardware_seed": 401,
+          "validation_nmse": 0.03385728222851171,
+          "best_alpha": 1.0
+        },
+        {
+          "data_seed": 67,
+          "hardware_seed": 401,
+          "validation_nmse": 0.03350646463875992,
+          "best_alpha": 0.1
+        },
+        {
+          "data_seed": 71,
+          "hardware_seed": 401,
+          "validation_nmse": 0.030823432638044754,
+          "best_alpha": 1.0
+        },
+        {
+          "data_seed": 97,
+          "hardware_seed": 401,
+          "validation_nmse": 0.0386454410811461,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "data_seed": 109,
+          "hardware_seed": 401,
+          "validation_nmse": 0.0381874185165515,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "data_seed": 113,
+          "hardware_seed": 401,
+          "validation_nmse": 0.028174255687372682,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "data_seed": 11,
+          "hardware_seed": 503,
+          "validation_nmse": 0.02950921305704492,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "data_seed": 23,
+          "hardware_seed": 503,
+          "validation_nmse": 0.09603323660888083,
+          "best_alpha": 1e-10
+        },
+        {
+          "data_seed": 37,
+          "hardware_seed": 503,
+          "validation_nmse": 0.033701012950298856,
+          "best_alpha": 1.0
+        },
+        {
+          "data_seed": 41,
+          "hardware_seed": 503,
+          "validation_nmse": 0.04695742169968969,
+          "best_alpha": 1.0
+        },
+        {
+          "data_seed": 53,
+          "hardware_seed": 503,
+          "validation_nmse": 0.03339591917995657,
+          "best_alpha": 1.0
+        },
+        {
+          "data_seed": 67,
+          "hardware_seed": 503,
+          "validation_nmse": 0.03457941096432123,
+          "best_alpha": 1.0
+        },
+        {
+          "data_seed": 71,
+          "hardware_seed": 503,
+          "validation_nmse": 0.03209302009365359,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "data_seed": 97,
+          "hardware_seed": 503,
+          "validation_nmse": 0.03923264659677351,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "data_seed": 109,
+          "hardware_seed": 503,
+          "validation_nmse": 0.038066281168057145,
+          "best_alpha": 0.1
+        },
+        {
+          "data_seed": 113,
+          "hardware_seed": 503,
+          "validation_nmse": 0.029432761081528314,
+          "best_alpha": 1.0
+        }
+      ],
+      "selected_channel_labels": [
+        "pair:0,9",
+        "pair:1,10",
+        "self:9",
+        "self:0",
+        "pair:2,11",
+        "self:10",
+        "self:1",
+        "pair:3,12",
+        "self:11",
+        "pair:4,13",
+        "lo:10",
+        "self:2",
+        "self:12",
+        "lo:11",
+        "pair:10,19",
+        "pair:5,14",
+        "lo:12",
+        "pair:6,15",
+        "self:13",
+        "pair:7,16",
+        "pair:8,17",
+        "pair:9,18",
+        "self:14",
+        "self:3",
+        "lo:13",
+        "self:15",
+        "self:17",
+        "self:16",
+        "lo:14",
+        "self:18"
+      ],
+      "passed": true
+    },
+    {
+      "channels": 40,
+      "parallel_ports": 10,
+      "time_multiplex_steps": 4,
+      "signal_power_mw_per_port": 5.0,
+      "lo_power_mw_per_port": 5.0,
+      "receiver_noise_bandwidth_factor": 1.0,
+      "hardware_realizations": 5,
+      "feasibility": {
+        "parallel_ports": 10,
+        "time_multiplex_steps": 4,
+        "symbol_rate_hz": 10000000000.0,
+        "slot_rate_hz": 40000000000.0,
+        "required_detector_bandwidth_hz": 20000000000.0,
+        "max_delay_length_cm": 14.240141755,
+        "checks": {
+          "delay_length": true,
+          "detector_bandwidth": true,
+          "switch_rate": true,
+          "total_optical_power": true
+        },
+        "passed": true,
+        "estimated_total_optical_power_mw": 100.0
+      },
+      "summary": {
+        "median_validation_nmse": 0.03341945994211816,
+        "p90_validation_nmse": 0.0501515216928182,
+        "max_validation_nmse": 0.0942832748472076,
+        "fraction_runs_at_or_below_0_05": 0.9,
+        "data_seed_medians": {
+          "11": 0.028361492995391185,
+          "23": 0.09364509660214058,
+          "37": 0.0323154058171681,
+          "41": 0.045322410254887056,
+          "53": 0.033238030574838984,
+          "67": 0.033632867727665036,
+          "71": 0.031159423514229435,
+          "97": 0.038211770963122796,
+          "109": 0.037536585970246054,
+          "113": 0.02865532070991704
+        },
+        "data_seeds_at_or_below_0_05": 9,
+        "passed": true
+      },
+      "scores": [
+        {
+          "data_seed": 11,
+          "hardware_seed": 101,
+          "validation_nmse": 0.028361492995391185,
+          "best_alpha": 1.0
+        },
+        {
+          "data_seed": 23,
+          "hardware_seed": 101,
+          "validation_nmse": 0.09201137909458701,
+          "best_alpha": 1e-10
+        },
+        {
+          "data_seed": 37,
+          "hardware_seed": 101,
+          "validation_nmse": 0.03149114730774007,
+          "best_alpha": 1e-10
+        },
+        {
+          "data_seed": 41,
+          "hardware_seed": 101,
+          "validation_nmse": 0.04550042642595493,
+          "best_alpha": 1.0
+        },
+        {
+          "data_seed": 53,
+          "hardware_seed": 101,
+          "validation_nmse": 0.03339505811708662,
+          "best_alpha": 1.0
+        },
+        {
+          "data_seed": 67,
+          "hardware_seed": 101,
+          "validation_nmse": 0.033632867727665036,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "data_seed": 71,
+          "hardware_seed": 101,
+          "validation_nmse": 0.03265173914816223,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "data_seed": 97,
+          "hardware_seed": 101,
+          "validation_nmse": 0.03835595642227906,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "data_seed": 109,
+          "hardware_seed": 101,
+          "validation_nmse": 0.03838963772396943,
+          "best_alpha": 1.0
+        },
+        {
+          "data_seed": 113,
+          "hardware_seed": 101,
+          "validation_nmse": 0.028824633303506715,
+          "best_alpha": 1.0
+        },
+        {
+          "data_seed": 11,
+          "hardware_seed": 211,
+          "validation_nmse": 0.029675948987742305,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "data_seed": 23,
+          "hardware_seed": 211,
+          "validation_nmse": 0.0942165076425037,
+          "best_alpha": 1e-10
+        },
+        {
+          "data_seed": 37,
+          "hardware_seed": 211,
+          "validation_nmse": 0.03323294875476954,
+          "best_alpha": 1e-10
+        },
+        {
+          "data_seed": 41,
+          "hardware_seed": 211,
+          "validation_nmse": 0.045322410254887056,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "data_seed": 53,
+          "hardware_seed": 211,
+          "validation_nmse": 0.03223549972813208,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "data_seed": 67,
+          "hardware_seed": 211,
+          "validation_nmse": 0.03344386176714969,
+          "best_alpha": 1.0
+        },
+        {
+          "data_seed": 71,
+          "hardware_seed": 211,
+          "validation_nmse": 0.030570648334459702,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "data_seed": 97,
+          "hardware_seed": 211,
+          "validation_nmse": 0.03829236475856514,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "data_seed": 109,
+          "hardware_seed": 211,
+          "validation_nmse": 0.037536585970246054,
+          "best_alpha": 1.0
+        },
+        {
+          "data_seed": 113,
+          "hardware_seed": 211,
+          "validation_nmse": 0.028365172226416192,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "data_seed": 11,
+          "hardware_seed": 307,
+          "validation_nmse": 0.029015652471907166,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "data_seed": 23,
+          "hardware_seed": 307,
+          "validation_nmse": 0.09364509660214058,
+          "best_alpha": 1e-10
+        },
+        {
+          "data_seed": 37,
+          "hardware_seed": 307,
+          "validation_nmse": 0.03191013456787541,
+          "best_alpha": 1e-10
+        },
+        {
+          "data_seed": 41,
+          "hardware_seed": 307,
+          "validation_nmse": 0.044734962146400735,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "data_seed": 53,
+          "hardware_seed": 307,
+          "validation_nmse": 0.03335155149920699,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "data_seed": 67,
+          "hardware_seed": 307,
+          "validation_nmse": 0.0338492474001142,
+          "best_alpha": 1.0
+        },
+        {
+          "data_seed": 71,
+          "hardware_seed": 307,
+          "validation_nmse": 0.031159423514229435,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "data_seed": 97,
+          "hardware_seed": 307,
+          "validation_nmse": 0.037762822065399826,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "data_seed": 109,
+          "hardware_seed": 307,
+          "validation_nmse": 0.036678060809237134,
+          "best_alpha": 1e-10
+        },
+        {
+          "data_seed": 113,
+          "hardware_seed": 307,
+          "validation_nmse": 0.028578720461424935,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "data_seed": 11,
+          "hardware_seed": 401,
+          "validation_nmse": 0.027306927081708947,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "data_seed": 23,
+          "hardware_seed": 401,
+          "validation_nmse": 0.09226371191021969,
+          "best_alpha": 1e-10
+        },
+        {
+          "data_seed": 37,
+          "hardware_seed": 401,
+          "validation_nmse": 0.03265966939392921,
+          "best_alpha": 0.1
+        },
+        {
+          "data_seed": 41,
+          "hardware_seed": 401,
+          "validation_nmse": 0.044852611041439325,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "data_seed": 53,
+          "hardware_seed": 401,
+          "validation_nmse": 0.033238030574838984,
+          "best_alpha": 1.0
+        },
+        {
+          "data_seed": 67,
+          "hardware_seed": 401,
+          "validation_nmse": 0.03396265862041493,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "data_seed": 71,
+          "hardware_seed": 401,
+          "validation_nmse": 0.03147521666248746,
+          "best_alpha": 1.0
+        },
+        {
+          "data_seed": 97,
+          "hardware_seed": 401,
+          "validation_nmse": 0.038211770963122796,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "data_seed": 109,
+          "hardware_seed": 401,
+          "validation_nmse": 0.03666235170629105,
+          "best_alpha": 0.1
+        },
+        {
+          "data_seed": 113,
+          "hardware_seed": 401,
+          "validation_nmse": 0.030168254269126116,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "data_seed": 11,
+          "hardware_seed": 503,
+          "validation_nmse": 0.02764240218038828,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "data_seed": 23,
+          "hardware_seed": 503,
+          "validation_nmse": 0.0942832748472076,
+          "best_alpha": 1e-10
+        },
+        {
+          "data_seed": 37,
+          "hardware_seed": 503,
+          "validation_nmse": 0.0323154058171681,
+          "best_alpha": 1e-10
+        },
+        {
+          "data_seed": 41,
+          "hardware_seed": 503,
+          "validation_nmse": 0.04533308536153855,
+          "best_alpha": 1.0
+        },
+        {
+          "data_seed": 53,
+          "hardware_seed": 503,
+          "validation_nmse": 0.032738876847357136,
+          "best_alpha": 1.0
+        },
+        {
+          "data_seed": 67,
+          "hardware_seed": 503,
+          "validation_nmse": 0.03355046886321572,
+          "best_alpha": 1e-10
+        },
+        {
+          "data_seed": 71,
+          "hardware_seed": 503,
+          "validation_nmse": 0.030936045263235387,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "data_seed": 97,
+          "hardware_seed": 503,
+          "validation_nmse": 0.03799949811671141,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "data_seed": 109,
+          "hardware_seed": 503,
+          "validation_nmse": 0.038399669396920584,
+          "best_alpha": 1.0
+        },
+        {
+          "data_seed": 113,
+          "hardware_seed": 503,
+          "validation_nmse": 0.02865532070991704,
+          "best_alpha": 3.1622776601683795
+        }
+      ],
+      "selected_channel_labels": [
+        "pair:0,9",
+        "pair:1,10",
+        "self:9",
+        "self:0",
+        "pair:2,11",
+        "self:10",
+        "self:1",
+        "pair:3,12",
+        "self:11",
+        "pair:4,13",
+        "lo:10",
+        "self:2",
+        "self:12",
+        "lo:11",
+        "pair:10,19",
+        "pair:5,14",
+        "lo:12",
+        "pair:6,15",
+        "self:13",
+        "pair:7,16",
+        "pair:8,17",
+        "pair:9,18",
+        "self:14",
+        "self:3",
+        "lo:13",
+        "self:15",
+        "self:17",
+        "self:16",
+        "lo:14",
+        "self:18",
+        "self:19",
+        "lo:18",
+        "lo:19",
+        "lo:17",
+        "lo:16",
+        "lo:15",
+        "lo:2",
+        "self:4",
+        "lo:3",
+        "lo:4"
+      ],
+      "passed": true
+    }
+  ],
+  "phase": "confirmation",
+  "selected_candidate": {
+    "channels": 30,
+    "parallel_ports": 10,
+    "time_multiplex_steps": 3,
+    "signal_power_mw_per_port": 5.0,
+    "lo_power_mw_per_port": 5.0,
+    "receiver_noise_bandwidth_factor": 1.0,
+    "hardware_realizations": 5,
+    "feasibility": {
+      "parallel_ports": 10,
+      "time_multiplex_steps": 3,
+      "symbol_rate_hz": 10000000000.0,
+      "slot_rate_hz": 30000000000.0,
+      "required_detector_bandwidth_hz": 15000000000.0,
+      "max_delay_length_cm": 14.240141755,
+      "checks": {
+        "delay_length": true,
+        "detector_bandwidth": true,
+        "switch_rate": true,
+        "total_optical_power": true
+      },
+      "passed": true,
+      "estimated_total_optical_power_mw": 100.0
+    },
+    "summary": {
+      "median_validation_nmse": 0.03372330304421596,
+      "p90_validation_nmse": 0.051649528818256074,
+      "max_validation_nmse": 0.09603323660888083,
+      "fraction_runs_at_or_below_0_05": 0.9,
+      "data_seed_medians": {
+        "11": 0.02895143007141868,
+        "23": 0.09467534934751812,
+        "37": 0.03311842797410465,
+        "41": 0.04543397765450139,
+        "53": 0.03374559313813306,
+        "67": 0.03350646463875992,
+        "71": 0.03191492004015292,
+        "97": 0.0386454410811461,
+        "109": 0.0381874185165515,
+        "113": 0.029432761081528314
+      },
+      "data_seeds_at_or_below_0_05": 9,
+      "passed": true
+    },
+    "scores": [
+      {
+        "data_seed": 11,
+        "hardware_seed": 101,
+        "validation_nmse": 0.02866236505689704,
+        "best_alpha": 3.1622776601683795
+      },
+      {
+        "data_seed": 23,
+        "hardware_seed": 101,
+        "validation_nmse": 0.09387849288535287,
+        "best_alpha": 1e-10
+      },
+      {
+        "data_seed": 37,
+        "hardware_seed": 101,
+        "validation_nmse": 0.03311248187899809,
+        "best_alpha": 1e-10
+      },
+      {
+        "data_seed": 41,
+        "hardware_seed": 101,
+        "validation_nmse": 0.04432459800706292,
+        "best_alpha": 1.0
+      },
+      {
+        "data_seed": 53,
+        "hardware_seed": 101,
+        "validation_nmse": 0.03379343893785069,
+        "best_alpha": 1.0
+      },
+      {
+        "data_seed": 67,
+        "hardware_seed": 101,
+        "validation_nmse": 0.03270293477805591,
+        "best_alpha": 1e-10
+      },
+      {
+        "data_seed": 71,
+        "hardware_seed": 101,
+        "validation_nmse": 0.032126375375024545,
+        "best_alpha": 1.0
+      },
+      {
+        "data_seed": 97,
+        "hardware_seed": 101,
+        "validation_nmse": 0.038050541284532786,
+        "best_alpha": 3.1622776601683795
+      },
+      {
+        "data_seed": 109,
+        "hardware_seed": 101,
+        "validation_nmse": 0.0384679921348232,
+        "best_alpha": 1.0
+      },
+      {
+        "data_seed": 113,
+        "hardware_seed": 101,
+        "validation_nmse": 0.02915776767757451,
+        "best_alpha": 3.1622776601683795
+      },
+      {
+        "data_seed": 11,
+        "hardware_seed": 211,
+        "validation_nmse": 0.029628683729132313,
+        "best_alpha": 3.1622776601683795
+      },
+      {
+        "data_seed": 23,
+        "hardware_seed": 211,
+        "validation_nmse": 0.09465727457348859,
+        "best_alpha": 1e-10
+      },
+      {
+        "data_seed": 37,
+        "hardware_seed": 211,
+        "validation_nmse": 0.033747329376013026,
+        "best_alpha": 0.01
+      },
+      {
+        "data_seed": 41,
+        "hardware_seed": 211,
+        "validation_nmse": 0.04619776754640902,
+        "best_alpha": 3.1622776601683795
+      },
+      {
+        "data_seed": 53,
+        "hardware_seed": 211,
+        "validation_nmse": 0.03374559313813306,
+        "best_alpha": 1.0
+      },
+      {
+        "data_seed": 67,
+        "hardware_seed": 211,
+        "validation_nmse": 0.03351350721460262,
+        "best_alpha": 3.1622776601683795
+      },
+      {
+        "data_seed": 71,
+        "hardware_seed": 211,
+        "validation_nmse": 0.031656420462777404,
+        "best_alpha": 3.1622776601683795
+      },
+      {
+        "data_seed": 97,
+        "hardware_seed": 211,
+        "validation_nmse": 0.038007913182968985,
+        "best_alpha": 3.1622776601683795
+      },
+      {
+        "data_seed": 109,
+        "hardware_seed": 211,
+        "validation_nmse": 0.03914043607662373,
+        "best_alpha": 1.0
+      },
+      {
+        "data_seed": 113,
+        "hardware_seed": 211,
+        "validation_nmse": 0.02981707672384946,
+        "best_alpha": 3.1622776601683795
+      },
+      {
+        "data_seed": 11,
+        "hardware_seed": 307,
+        "validation_nmse": 0.02895143007141868,
+        "best_alpha": 3.1622776601683795
+      },
+      {
+        "data_seed": 23,
+        "hardware_seed": 307,
+        "validation_nmse": 0.09489954803010858,
+        "best_alpha": 1e-10
+      },
+      {
+        "data_seed": 37,
+        "hardware_seed": 307,
+        "validation_nmse": 0.03311842797410465,
+        "best_alpha": 0.1
+      },
+      {
+        "data_seed": 41,
+        "hardware_seed": 307,
+        "validation_nmse": 0.04530716804396886,
+        "best_alpha": 1.0
+      },
+      {
+        "data_seed": 53,
+        "hardware_seed": 307,
+        "validation_nmse": 0.03291800959078979,
+        "best_alpha": 0.1
+      },
+      {
+        "data_seed": 67,
+        "hardware_seed": 307,
+        "validation_nmse": 0.033485468707395286,
+        "best_alpha": 1.0
+      },
+      {
+        "data_seed": 71,
+        "hardware_seed": 307,
+        "validation_nmse": 0.03191492004015292,
+        "best_alpha": 3.1622776601683795
+      },
+      {
+        "data_seed": 97,
+        "hardware_seed": 307,
+        "validation_nmse": 0.039810058088237336,
+        "best_alpha": 3.1622776601683795
+      },
+      {
+        "data_seed": 109,
+        "hardware_seed": 307,
+        "validation_nmse": 0.037433568280436855,
+        "best_alpha": 1.0
+      },
+      {
+        "data_seed": 113,
+        "hardware_seed": 307,
+        "validation_nmse": 0.029491711068012388,
+        "best_alpha": 3.1622776601683795
+      },
+      {
+        "data_seed": 11,
+        "hardware_seed": 401,
+        "validation_nmse": 0.028091121323325363,
+        "best_alpha": 3.1622776601683795
+      },
+      {
+        "data_seed": 23,
+        "hardware_seed": 401,
+        "validation_nmse": 0.09467534934751812,
+        "best_alpha": 1e-10
+      },
+      {
+        "data_seed": 37,
+        "hardware_seed": 401,
+        "validation_nmse": 0.03251627387188535,
+        "best_alpha": 1e-10
+      },
+      {
+        "data_seed": 41,
+        "hardware_seed": 401,
+        "validation_nmse": 0.04543397765450139,
+        "best_alpha": 0.1
+      },
+      {
+        "data_seed": 53,
+        "hardware_seed": 401,
+        "validation_nmse": 0.03385728222851171,
+        "best_alpha": 1.0
+      },
+      {
+        "data_seed": 67,
+        "hardware_seed": 401,
+        "validation_nmse": 0.03350646463875992,
+        "best_alpha": 0.1
+      },
+      {
+        "data_seed": 71,
+        "hardware_seed": 401,
+        "validation_nmse": 0.030823432638044754,
+        "best_alpha": 1.0
+      },
+      {
+        "data_seed": 97,
+        "hardware_seed": 401,
+        "validation_nmse": 0.0386454410811461,
+        "best_alpha": 3.1622776601683795
+      },
+      {
+        "data_seed": 109,
+        "hardware_seed": 401,
+        "validation_nmse": 0.0381874185165515,
+        "best_alpha": 3.1622776601683795
+      },
+      {
+        "data_seed": 113,
+        "hardware_seed": 401,
+        "validation_nmse": 0.028174255687372682,
+        "best_alpha": 3.1622776601683795
+      },
+      {
+        "data_seed": 11,
+        "hardware_seed": 503,
+        "validation_nmse": 0.02950921305704492,
+        "best_alpha": 3.1622776601683795
+      },
+      {
+        "data_seed": 23,
+        "hardware_seed": 503,
+        "validation_nmse": 0.09603323660888083,
+        "best_alpha": 1e-10
+      },
+      {
+        "data_seed": 37,
+        "hardware_seed": 503,
+        "validation_nmse": 0.033701012950298856,
+        "best_alpha": 1.0
+      },
+      {
+        "data_seed": 41,
+        "hardware_seed": 503,
+        "validation_nmse": 0.04695742169968969,
+        "best_alpha": 1.0
+      },
+      {
+        "data_seed": 53,
+        "hardware_seed": 503,
+        "validation_nmse": 0.03339591917995657,
+        "best_alpha": 1.0
+      },
+      {
+        "data_seed": 67,
+        "hardware_seed": 503,
+        "validation_nmse": 0.03457941096432123,
+        "best_alpha": 1.0
+      },
+      {
+        "data_seed": 71,
+        "hardware_seed": 503,
+        "validation_nmse": 0.03209302009365359,
+        "best_alpha": 3.1622776601683795
+      },
+      {
+        "data_seed": 97,
+        "hardware_seed": 503,
+        "validation_nmse": 0.03923264659677351,
+        "best_alpha": 3.1622776601683795
+      },
+      {
+        "data_seed": 109,
+        "hardware_seed": 503,
+        "validation_nmse": 0.038066281168057145,
+        "best_alpha": 0.1
+      },
+      {
+        "data_seed": 113,
+        "hardware_seed": 503,
+        "validation_nmse": 0.029432761081528314,
+        "best_alpha": 1.0
+      }
+    ],
+    "selected_channel_labels": [
+      "pair:0,9",
+      "pair:1,10",
+      "self:9",
+      "self:0",
+      "pair:2,11",
+      "self:10",
+      "self:1",
+      "pair:3,12",
+      "self:11",
+      "pair:4,13",
+      "lo:10",
+      "self:2",
+      "self:12",
+      "lo:11",
+      "pair:10,19",
+      "pair:5,14",
+      "lo:12",
+      "pair:6,15",
+      "self:13",
+      "pair:7,16",
+      "pair:8,17",
+      "pair:9,18",
+      "self:14",
+      "self:3",
+      "lo:13",
+      "self:15",
+      "self:17",
+      "self:16",
+      "lo:14",
+      "self:18"
+    ],
+    "passed": true
+  },
+  "optimization_found_candidate": true,
+  "p4_gate_passed": true
+}

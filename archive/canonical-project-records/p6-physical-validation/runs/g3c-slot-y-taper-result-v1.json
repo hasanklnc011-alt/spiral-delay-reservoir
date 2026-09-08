@@ -1,0 +1,16 @@
+{
+  "name": "p6-g3c-slot-y-taper-result-v1",
+  "source_sha256": "c78c2314aafb72c57a07ee79f5779f519c265a0fa71d1f71a32d2d4b17d0660b",
+  "task_id": "fdve-589a22f8-61cd-4f0a-ac62-c4af04e5fcb2",
+  "task_status": "success",
+  "result_file": "g3c-slot-y-taper-only_m15-result-v1.hdf5",
+  "result_sha256": "f4b17083900a788a630a7897df24f31075f195f6e29f171df9d9a69fd33c3017",
+  "actual_flexcredits": 0.06766199876252098,
+  "final_decay": 3.01e-08,
+  "metrics": {"center_guided_output_power": 1.0015875636923843, "center_excess_loss_db": -0.006889234409314011, "center_reflection_db": -9.584435809598217, "worst_reflection_db": -9.534455670441542, "max_abs_energy_residual": 0.11355560414916908},
+  "taper_passed": false,
+  "reflection_evidence_valid": true,
+  "output_power_evidence_valid": false,
+  "output_power_invalid_reason": "multimode output amplitude sum exceeded unity; do not use excess or residual as physical evidence",
+  "diagnostic_conclusion": "the w-to-2w input taper independently violates the -30 dB reflection gate"
+}

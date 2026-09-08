@@ -1,0 +1,43 @@
+{
+  "source_root": "<local source path redacted during archival>",
+  "source_policy": "read-only",
+  "claim_correction": "The three-ring NARMA-3 metric is produced by an FDTD-spectrum-fitted TCMT surrogate, not a direct temporal three-ring FDTD benchmark.",
+  "files": [
+    {
+      "relative_path": "results/ringdown_tau_refined.json",
+      "exists": true,
+      "size_bytes": 565,
+      "sha256": "9f674d7b3921fd07d7f56234335a01a3acca462880d22a805f0bd57239567fae"
+    },
+    {
+      "relative_path": "results/time_domain_memory_metrics_refined_w800_h400_r10_memory_t1ps.json",
+      "exists": true,
+      "size_bytes": 457,
+      "sha256": "1494a8c7ef1d0ee97ee8858e183744f5b6f24d8c7d95fee13da60dae39305597"
+    },
+    {
+      "relative_path": "results/fdtd_vs_tcmt_summary_w800_h400_r10_memory_t1ps.json",
+      "exists": true,
+      "size_bytes": 722,
+      "sha256": "c92b9b06d2a97cbfed72b15a1494e67e217e1951c56b2c50d7cc65efb1c80db4"
+    },
+    {
+      "relative_path": "results/explicit_three_ring_best_summary.json",
+      "exists": true,
+      "size_bytes": 3084,
+      "sha256": "c5ca88f09d54676299fb81786b772d13bd1971dceeae6a34f8fe78d49bf84c10"
+    },
+    {
+      "relative_path": "results/reservoir_narma3_explicit3ring_summary.json",
+      "exists": true,
+      "size_bytes": 3345,
+      "sha256": "16e647079e4e157fa8e2ed1a150a00a33516bf5e82ba99581d0c11d05ce83d30"
+    },
+    {
+      "relative_path": "results/explicit_three_ring_spectrum_best.csv",
+      "exists": true,
+      "size_bytes": 10459,
+      "sha256": "a46d53f4b28d8e6dd5a5d889c01bbbe7b81fce9b45984c664e08fdb29fd7c122"
+    }
+  ]
+}

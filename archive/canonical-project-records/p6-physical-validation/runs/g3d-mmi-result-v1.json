@@ -1,0 +1,107 @@
+{
+  "name": "p6-g3d-mmi-result-v1",
+  "builder_source_sha256": "236038d1a31cf73181502bfbe13451be281836edb60956264c83a2a7b043e87f",
+  "postprocessor_sha256": "80ccd62fa62db71f93dcfbd9b534d8a40d498e3357df526384385b35d6902c08",
+  "estimate_sha256": "768997f32b88318fa6332631a91d75c36dbbaffe771a63ba34d5f5122cfbb159",
+  "p5_blind_rerun": false,
+  "resume_reason": "first source completed; original runner failed only while parsing string solver log; second source remained draft",
+  "solve_restarted": false,
+  "geometry": {
+    "waveguide_width_um": 0.343,
+    "waveguide_height_um": 0.18,
+    "scale_from_official_400nm_seed": 0.8575,
+    "mmi_width_um": 0.8575,
+    "mmi_length_um": 2.5725000000000002,
+    "s_bend_length_um": 3.43,
+    "s_bend_offset_um": 0.8575,
+    "near_port_center_um": 0.25725,
+    "far_port_center_um": 1.11475,
+    "near_guide_gap_um": 0.17149999999999993
+  },
+  "tasks": [
+    {
+      "source_port": "upper",
+      "task_id": "fdve-2ef5fc59-0bfd-4446-a55c-68b78d2b8144",
+      "initial_status_on_resume": "success",
+      "task_status": "success",
+      "result_file": "g3d-mmi-upper_m15-result-v1.hdf5",
+      "result_sha256": "e9047098654818729bfa1f467948a7be62b448f89423806f111b8a859b9c8eba",
+      "actual_flexcredits": 0.047913525327318324,
+      "final_decay": 5.9e-08
+    },
+    {
+      "source_port": "lower",
+      "task_id": "fdve-8c425191-2ae6-4972-a113-e8d765f3785b",
+      "initial_status_on_resume": "success",
+      "task_status": "success",
+      "result_file": "g3d-mmi-lower_m15-result-v1.hdf5",
+      "result_sha256": "e2b6fead51cb5321269979af1190b473ae60507363ee54d7d9e945f6323aec91",
+      "actual_flexcredits": 0.047913525327318324,
+      "final_decay": 5.89e-08
+    }
+  ],
+  "actual_total_flexcredits": 0.09582705065463665,
+  "metrics": {
+    "center_wavelength_um": 1.55,
+    "center": {
+      "wavelength_um": 1.55,
+      "transmission_complex": [
+        [{"real": -0.270500607447821, "imag": -0.8072230871204077}, {"real": 0.060580105054686105, "imag": 0.04957238681961525}],
+        [{"real": 0.06055492162068423, "imag": 0.04956819868830072}, {"real": -0.27051433749330234, "imag": -0.8072073089713148}]
+      ],
+      "reflection_complex": [
+        [{"real": 0.14234169579086478, "imag": -0.1342360756501447}, {"real": 0.14947975710849773, "imag": -0.0413918073550588}],
+        [{"real": 0.14948309480969688, "imag": -0.04138956398002738}, {"real": 0.1422870350205499, "imag": -0.13433210002767235}]
+      ],
+      "full_s_max_singular_value": 1.0081159351296576,
+      "inputs": [
+        {
+          "source_port": "upper",
+          "output_powers": [0.7247796910098413, 0.0061239048536900695],
+          "total_output_power": 0.7309035958635314,
+          "excess_insertion_loss_db": 1.3613990149015776,
+          "imbalance_db": 20.731775810084688,
+          "relative_output_phase_deg": -147.8285994681202,
+          "quadrature_error_deg": 57.82859946812019,
+          "total_reflection_power": 0.06233877400691208
+        },
+        {
+          "source_port": "lower",
+          "output_powers": [0.006127370663430368, 0.7247616464461517],
+          "total_output_power": 0.7308890171095821,
+          "excess_insertion_loss_db": 1.361485641039064,
+          "imbalance_db": 20.72921049980859,
+          "relative_output_phase_deg": 147.82050930686626,
+          "quadrature_error_deg": 57.820509306866256,
+          "total_reflection_power": 0.062348192934117544
+        }
+      ]
+    },
+    "worst_excess_insertion_loss_db": 1.583692666751622,
+    "worst_imbalance_db": 23.931060019323844,
+    "worst_quadrature_error_deg": 74.40749565648838,
+    "worst_total_reflection_db": -11.609564744752115,
+    "worst_full_s_max_singular_value": 1.1659062759112577,
+    "coherent_equal_input_transfer_center": {
+      "0": {"output_power": [0.6181012009912672, 0.618099977744008], "total_output_power": 1.2362011787352754, "input_power": 2.0},
+      "90": {"output_power": [0.6599224643273156, 0.8018284850948407], "total_output_power": 1.4617509494221563, "input_power": 2.0},
+      "180": {"output_power": [0.8437129223552764, 0.843671124855676], "total_output_power": 1.6873840472109523, "input_power": 2.0},
+      "270": {"output_power": [0.801891659019228, 0.6599426175048433], "total_output_power": 1.4618342765240713, "input_power": 2.0}
+    },
+    "per_wavelength_sha256": "228d671b6aa836abe066169a23bc664695a466c7fe7df31431a1159c09559a2c",
+    "per_wavelength_points": 13
+  },
+  "gates": {
+    "target_excess_le_0p5_db": false,
+    "hard_excess_le_1p5_db": false,
+    "imbalance_le_0p5_db": false,
+    "quadrature_error_le_5_deg": false,
+    "reflection_below_minus_30_db": false,
+    "passive_singular_value_le_1p000001": false,
+    "final_decay_le_1e_7": true,
+    "two_independent_excitations": true
+  },
+  "pilot_passed": false,
+  "g3d_accepted": false,
+  "claim_limit": "m15 pilot only; acceptance requires passing m20/m25 convergence"
+}

@@ -1,0 +1,115 @@
+{
+  "created_utc": "20260828T170316Z",
+  "git_commit": "d870a2c62b6a2f76cd9d22e0efddb63dd8f4da97",
+  "claim_level": "TCMT",
+  "fdtd_dynamic_validation": 0,
+  "configuration_sha256": "23179c72c4",
+  "configs": {
+    "topology": {
+      "rings": [
+        {
+          "wavelength_m": 1.55e-06,
+          "radius_m": 1e-05,
+          "group_index": 2.1073185917217856,
+          "effective_area_m2": 7.378849169903934e-13,
+          "n2_m2_per_w": 2.5e-19,
+          "q_int": 576.2909022973579,
+          "q_ext": 2328.0635972229934,
+          "detuning_linewidths": -1.5
+        },
+        {
+          "wavelength_m": 1.55e-06,
+          "radius_m": 1e-05,
+          "group_index": 2.1073185917217856,
+          "effective_area_m2": 7.378849169903934e-13,
+          "n2_m2_per_w": 2.5e-19,
+          "q_int": 828.4181720524518,
+          "q_ext": 1000000000.0,
+          "detuning_linewidths": 0.0
+        },
+        {
+          "wavelength_m": 1.55e-06,
+          "radius_m": 1e-05,
+          "group_index": 2.1073185917217856,
+          "effective_area_m2": 7.378849169903934e-13,
+          "n2_m2_per_w": 2.5e-19,
+          "q_int": 1080.545441807546,
+          "q_ext": 1000000000.0,
+          "detuning_linewidths": 1.5
+        }
+      ],
+      "coupling_linewidths": [
+        0.45,
+        0.45
+      ],
+      "coupling_phases_rad": [
+        0.0,
+        0.0
+      ],
+      "kerr_enabled": 1,
+      "kerr_sensitivity_multiplier": 1.0
+    },
+    "drive": {
+      "symbol_time_s": 1e-12,
+      "n_virtual": 20,
+      "power_bias_w": 0.05,
+      "power_modulation_w": 0.045,
+      "minimum_power_w": 0.0002,
+      "mask_seed": 12,
+      "reset_each_symbol": 0,
+      "observation": "direct_power"
+    },
+    "solver": {
+      "steps_per_min_lifetime": 12.0,
+      "min_substeps_per_node": 2,
+      "integrator": "rk4",
+      "divergence_energy_j": 1e-06
+    },
+    "benchmark": {
+      "order": 3,
+      "n_washout": 100,
+      "n_train": 400,
+      "n_validation": 150,
+      "n_test": 249,
+      "seeds": [
+        11,
+        23,
+        37
+      ],
+      "ridge_alphas": [
+        1e-10,
+        3.1622776601683795e-10,
+        1e-09,
+        3.1622776601683795e-09,
+        1e-08,
+        3.162277660168379e-08,
+        1e-07,
+        3.162277660168379e-07,
+        1e-06,
+        3.162277660168379e-06,
+        1e-05,
+        3.1622776601683795e-05,
+        0.0001,
+        0.00031622776601683794,
+        0.001,
+        0.0031622776601683794,
+        0.01,
+        0.03162277660168379,
+        0.1,
+        0.31622776601683794,
+        1.0,
+        3.1622776601683795,
+        10.0,
+        31.622776601683793,
+        100.0
+      ],
+      "esn_state_dim": 20
+    },
+    "feedback": {
+      "enabled": 0,
+      "strength": 0.0,
+      "phase_rad": 0.0,
+      "delay_s": 0.0
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "name":"p6-g3a-straight-convergence-estimate-v1",
+  "source_sha256":"4279fb3568e28af8cfe43ab54d9a03e932c4dfef454d291ccd835e8e3feea493",
+  "jobs":[
+    {"name":"length4_m20","length_um":4.0,"mesh":20.0,"task_name":"p6_g3a_straight_length4_m20","task_id":"fdve-8e0c91e1-8bd3-4f55-91e2-668aa4c1ab1f","task_status":"draft","serialized_simulation_sha256":"40ad12f08dbc697a1b927aaef59f7b716f7eee22161407e4732235b02607ce25","estimated_flexcredits":0.09168315138885909,"solve_started":false},
+    {"name":"length8_m20","length_um":8.0,"mesh":20.0,"task_name":"p6_g3a_straight_length8_m20","task_id":"fdve-8c616a90-72bd-4126-9183-1cc674688f1e","task_status":"draft","serialized_simulation_sha256":"ca093e92ae7d0c946a421e508416ef941a3999d2acc2cb207910f84f463446d0","estimated_flexcredits":0.12772511970987704,"solve_started":false},
+    {"name":"length4_m25","length_um":4.0,"mesh":25.0,"task_name":"p6_g3a_straight_length4_m25","task_id":"fdve-78598194-bb3c-4e39-90ca-34392fcd519b","task_status":"draft","serialized_simulation_sha256":"01a8044f76630412074243662a4df5cc58fc5f5541493b47b7081b6133d6b55d","estimated_flexcredits":0.17713446103024613,"solve_started":false},
+    {"name":"length8_m25","length_um":8.0,"mesh":25.0,"task_name":"p6_g3a_straight_length8_m25","task_id":"fdve-2217bdeb-9bd5-4020-8e2d-ac4fb8f2726b","task_status":"draft","serialized_simulation_sha256":"6c4a8e21f7b5bfccb854d166dfe099a92865b5ca2bf24e9a32ae69152c7200e7","estimated_flexcredits":0.25311044399882654,"solve_started":false}
+  ],
+  "estimated_total_flexcredits":0.6496531761278088,
+  "within_limits":true
+}

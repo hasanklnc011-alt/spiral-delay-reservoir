@@ -1,0 +1,15 @@
+{
+  "name": "p6-g1-candidate-batch-estimate-v1",
+  "tidy3d_version": "2.12.0",
+  "source_sha256": "a2a1512c42778d6645ebdeb83024b72f8b975adbdce95f6b3427e6005ccacbb7",
+  "jobs": [
+    {"name": "w300_h220", "width_um": 0.3, "height_um": 0.22, "task_name": "p6_g1_candidate_w300_h220_mesh20", "task_id": "mo-7ee8f030-e6ec-4360-947e-f0e1573a7b0b", "task_status": "draft", "serialized_mode_solver_sha256": "7cad2bb5944437a110ee11c72a48c3106ce8f2e00c457938b090caf1264b452d", "estimated_flexcredits": 0.00425283911111111, "solve_started": false},
+    {"name": "w320_h200", "width_um": 0.32, "height_um": 0.2, "task_name": "p6_g1_candidate_w320_h200_mesh20", "task_id": "mo-93edd8d6-1840-446f-a86a-328b08d3b7ed", "task_status": "draft", "serialized_mode_solver_sha256": "00e32c96c8a7fd8a1650df93dde16159f4ff19e91d61d6ec1beb6c38faf5bbb7", "estimated_flexcredits": 0.004249997111111112, "solve_started": false},
+    {"name": "w330_h180", "width_um": 0.33, "height_um": 0.18, "task_name": "p6_g1_candidate_w330_h180_mesh20", "task_id": "mo-006b37e6-877f-490a-a470-b0a63393cf44", "task_status": "draft", "serialized_mode_solver_sha256": "f90e16610f9866b03988dea7aed88946a1af59cbb40b1425bd6511631db32db0", "estimated_flexcredits": 0.004249997111111112, "solve_started": false},
+    {"name": "w350_h180", "width_um": 0.35, "height_um": 0.18, "task_name": "p6_g1_candidate_w350_h180_mesh20", "task_id": "mo-e4b62b1e-fcfa-4a66-afee-f9e971b5b094", "task_status": "draft", "serialized_mode_solver_sha256": "aa9fef6400f33e31571a71a086fe41d47da9de8d92e976aaa9c43eb609736b29", "estimated_flexcredits": 0.004256357777777778, "solve_started": false}
+  ],
+  "estimated_total_flexcredits": 0.017009191111111113,
+  "pilot_total_limit_flexcredits": 0.5,
+  "within_pilot_limit": true,
+  "user_credit_approval": true
+}

@@ -1,0 +1,10 @@
+{
+  "name":"p6-g3a-straight-lossless-m15-estimate-v1",
+  "source_sha256":"d66fd60101d0c9e228dfe7110fcd9e96d881a951434efa312302cff9ce54e56e",
+  "jobs":[
+    {"name":"length4_m15","length_um":4.0,"task_name":"p6_g3a_lossless_length4_m15","task_id":"fdve-62730d4b-3c9a-4168-a607-dbf27f28bcf7","task_status":"draft","serialized_simulation_sha256":"fd3cdd2eb90b9cc0e6302814145bb8765f32c22c7b481702ad25b02d22b289ad","estimated_flexcredits":0.0312609860980245,"solve_started":false},
+    {"name":"length8_m15","length_um":8.0,"task_name":"p6_g3a_lossless_length8_m15","task_id":"fdve-b4b76dca-c746-4c4b-bebe-a2fc614da69d","task_status":"draft","serialized_simulation_sha256":"1abec39af66f63c49bc9196f590cb6cb44b67098c7e067f77f18d89f6a1a2775","estimated_flexcredits":0.03939639175874498,"solve_started":false}
+  ],
+  "estimated_total_flexcredits":0.07065737785676948,
+  "within_limits":true
+}

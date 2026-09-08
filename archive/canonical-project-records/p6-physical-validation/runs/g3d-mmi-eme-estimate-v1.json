@@ -1,0 +1,11 @@
+{
+  "name": "p6-g3d-mmi-eme-estimate-v1",
+  "source_sha256": "392e5128bb30e7d5bd02a1ac9d41e0b5c5359e29d2386f0b2c7745fb539010c1",
+  "task_name": "p6_g3d_mmi_eme_length_screen_v1",
+  "task_id": "eme-d0dd13ae-36e0-4c89-a928-273675015fca",
+  "task_status": "draft",
+  "serialized_simulation_sha256": "664692c17df3ec0e1b486e622c1815c58eb6d605043881bef7d33cb74a213b74",
+  "estimated_flexcredits": 0.1523188159111111,
+  "solve_started": false,
+  "within_limits": true
+}

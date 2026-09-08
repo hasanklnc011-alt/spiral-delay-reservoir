@@ -1,0 +1,31 @@
+{
+  "name": "p6-g6-physical-acceptance-audit-v1",
+  "source_sha256": "db090e2013790856e688a8e8f631332ff19439a9876216ca281fe4c5eacf5365",
+  "baseline_sha256": "f93c5def4d9ba3ec0889c67dd0e2e22cf6a56b80fb9926e0b6abcbfc05253b9d",
+  "p5_blind_rerun": false,
+  "requirements": {
+    "G0_provenance": {"status": "PASS", "evidence": "baseline blind/candidate hashes; rerun forbidden"},
+    "G1_delay_cross_section": {"status": "PASS", "evidence": "configs/g1-accepted-v1.json"},
+    "G2_layout": {"status": "PASS", "evidence": "runs/g2-spiral-layout-result-v1.json"},
+    "G3A_straight_reference": {"status": "PASS", "evidence": "G3A-ACCEPTANCE.md"},
+    "G3B_bend_and_crosstalk": {"status": "PASS", "evidence": "G3B-ACCEPTANCE.md"},
+    "G3C_splitter_tap": {"status": "FAIL_REDESIGN", "evidence": "G3C-STATUS.md"},
+    "G3D_coherent_combiner": {"status": "FAIL_REDESIGN", "evidence": "G3D-STATUS.md"},
+    "G4_fast_switch_phase": {"status": "OPEN", "evidence": "OPEN"},
+    "G4_photodiode_tia": {"status": "OPEN", "evidence": "OPEN"},
+    "G4_thermal": {"status": "OPEN", "evidence": "assumption-only; PDK/thermal solve missing"},
+    "G5_full_link": {"status": "OPEN", "evidence": "runs/g5-composition-result-v1.json"}
+  },
+  "passed_count": 5,
+  "total_count": 11,
+  "p6_accepted": false,
+  "verdict": "NOT_PHYSICALLY_ACCEPTED",
+  "next_required_evidence": [
+    "foundry-qualified or transition-redesigned splitter/tap complex S-matrix",
+    "accepted reciprocal 2x2 combiner complex S-matrix",
+    "fabricated propagation loss from PDK/cutback",
+    "30 GHz fast-switch S-parameters",
+    "50 GHz PD/TIA saturation/noise/linearity",
+    "phase-shifter and thermal PDK/solve/measurement"
+  ]
+}

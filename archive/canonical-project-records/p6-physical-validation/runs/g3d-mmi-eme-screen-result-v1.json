@@ -1,0 +1,31 @@
+{
+  "name": "p6-g3d-mmi-eme-screen-result-v1",
+  "source_sha256": "392e5128bb30e7d5bd02a1ac9d41e0b5c5359e29d2386f0b2c7745fb539010c1",
+  "estimate_sha256": "d34ba1aeee677c35d822a976ad50e9bb27619dc1250353f71e33fb937ce0cb5c",
+  "task_id": "eme-d0dd13ae-36e0-4c89-a928-273675015fca",
+  "task_status": "success",
+  "result_file": "g3d-mmi-eme-length-screen-v1.hdf5",
+  "result_sha256": "d034d1fe2c838327a1df22c65e08a6a32e045e05b5449835350abee1728e91a6",
+  "actual_flexcredits": 0.1523188159111111,
+  "p5_blind_rerun": false,
+  "analysis": {
+    "selected_length_um": 11.0,
+    "selected_metrics": {
+      "length_um": 11.0,
+      "inputs": [
+        {"source_port": "upper", "output_powers": [0.18003821068609896, 0.1655176950545734], "excess_insertion_loss_db": 4.614816802997924, "imbalance_db": 0.36520258185677384, "quadrature_error_deg": 79.33894643714973, "reflection_db": -11.180528450378091},
+        {"source_port": "lower", "output_powers": [0.16551769549690315, 0.18003821107967927], "excess_insertion_loss_db": 4.614816792492211, "imbalance_db": 0.3652025797447633, "quadrature_error_deg": 79.33894732499314, "reflection_db": -11.180528253942835}
+      ],
+      "worst_excess_insertion_loss_db": 4.614816802997924,
+      "worst_imbalance_db": 0.36520258185677384,
+      "worst_quadrature_error_deg": 79.33894732499314,
+      "worst_reflection_db": -11.180528253942835,
+      "full_s_max_singular_value": 0.931760448861744,
+      "selection_score": 24.979370245600194
+    },
+    "sweep_sha256": "b176a686e9b948536617f82b0ca27d7c5870e2ce507e89ef622cd6564a73bd50",
+    "sweep_points": 49,
+    "screen_passed": false,
+    "claim_limit": "EME center-wavelength length seed; no G3-D acceptance"
+  }
+}

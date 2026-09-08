@@ -1,0 +1,41 @@
+{
+  "name": "p6-inverse-design-source-port-objective-preflight-v1",
+  "tidy3d_version": "2.12.0",
+  "source_sha256": "60ac817a16ad1dc16cc21dd8f7cdb3bf1d79134a5453327032f0d2296b1e55aa",
+  "config_sha256": "03fa0aa7aa487f88800b96461e90a51b45d752ddaf3d3a253cd0e46ee9444257",
+  "p5_blind_rerun": false,
+  "cloud_called": false,
+  "wavelengths_um": [1.53, 1.55, 1.575],
+  "perfect_objective_checks": {
+    "splitter": 0.9999999999999996,
+    "quadrature_column": 0.9999999999999996
+  },
+  "splitter": {
+    "source_count": 1,
+    "monitor_names": ["left_0", "right_0", "right_1"],
+    "computational_grid_points": 2214919,
+    "serialized_simulation_sha256": "ff0ad757c3a7545cbcf3598de668eb04ca8b6a4ae227db230739210f826d26e1"
+  },
+  "combiner": {
+    "source_count": 2,
+    "simulation_keys": [
+      "p6_g3d_inverse_design_v1_0",
+      "p6_g3d_inverse_design_v1_1"
+    ],
+    "monitor_names": {
+      "p6_g3d_inverse_design_v1_0": ["left_0", "left_1", "right_0", "right_1"],
+      "p6_g3d_inverse_design_v1_1": ["left_0", "left_1", "right_0", "right_1"]
+    },
+    "computational_grid_points": {
+      "p6_g3d_inverse_design_v1_0": 2827541,
+      "p6_g3d_inverse_design_v1_1": 2827541
+    },
+    "serialized_simulation_sha256": {
+      "p6_g3d_inverse_design_v1_0": "1165464bff0dbfcc1274e6a4cc8232bd5362e7f76c87b4ad79bfffcd61e42b9f",
+      "p6_g3d_inverse_design_v1_1": "422ee70ac0871b3d3c9cdf0a24520b297487a9e362b822fecf691946e6e5b86d"
+    }
+  },
+  "preflight_passed": true,
+  "estimate_only_next": true,
+  "id0_can_accept_device": false
+}

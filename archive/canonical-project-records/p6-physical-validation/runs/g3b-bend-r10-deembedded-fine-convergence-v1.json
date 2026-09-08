@@ -1,0 +1,8 @@
+{
+  "name":"p6-g3b-bend-r10-deembedded-fine-convergence-v1",
+  "source_sha256":"299abfdc69806df58a5b140c6b71fadeb416836a7db31dbc370067da649841b9",
+  "reference":"m20/m25 two-length G3-A lossless straight phase slope",
+  "meshes":{"20":{"equivalent_neff":1.8723395120785267,"deembedded_excess_phase_deg":172.12570981454948,"center_transmission_db":-0.006279268158628306,"worst_reflection_db":-41.02617319240566,"max_abs_energy_residual":0.0017765401341882647},"25":{"equivalent_neff":1.8723220573458061,"deembedded_excess_phase_deg":171.6797823641059,"center_transmission_db":-0.0037176899173403076,"worst_reflection_db":-39.25893543691393,"max_abs_energy_residual":0.0014456036684021845}},
+  "convergence":{"insertion_loss_delta_db":0.0025615782412879984,"deembedded_phase_delta_deg":0.44592745044357684,"passed":true},
+  "g3b_bend_passed":true
+}

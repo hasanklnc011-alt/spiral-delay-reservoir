@@ -1,0 +1,29 @@
+{
+  "name": "p6-g1-selected-cross-section-v1",
+  "status": "PROVISIONAL_PENDING_REMOTE_CONVERGENCE_AND_CORNERS",
+  "platform": "silicon_strip_in_silica",
+  "wavelength_um": 1.55,
+  "width_um": 0.343,
+  "height_um": 0.18,
+  "group_index_target": 4.0,
+  "group_index_tolerance_fraction": 0.02,
+  "locked_delay_length_cm": 14.240141755,
+  "target_delay_s": 1.9e-09,
+  "selection_basis": {
+    "metric_scope": "G1 mode physics only; no P5 blind score",
+    "lower_bracket": {"width_um": 0.33, "height_um": 0.18, "n_group": 3.899197697369858},
+    "upper_bracket": {"width_um": 0.35, "height_um": 0.18, "n_group": 4.04948553473583},
+    "linear_target_width_um": 0.3434142735009987,
+    "fabrication_grid_selected_width_um": 0.343
+  },
+  "planned_corners": {
+    "width_um": [0.333, 0.343, 0.353],
+    "height_um": [0.17, 0.18, 0.19]
+  },
+  "acceptance": {
+    "relative_n_group_mesh_delta_max": 0.005,
+    "absolute_n_eff_mesh_delta_max": 0.001,
+    "guided_te_like_mode_count": 1,
+    "nominal_relative_group_index_error_max": 0.02
+  }
+}

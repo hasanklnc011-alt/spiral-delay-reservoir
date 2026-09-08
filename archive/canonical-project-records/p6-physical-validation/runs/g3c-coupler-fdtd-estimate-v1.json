@@ -1,0 +1,3 @@
+{
+  "name":"p6-g3c-coupler-fdtd-estimate-v1","source_sha256":"2d5a5e41b764436a75a5b33a6e4013c5c86d0a68e0525a5858bfae1592e826f0","task_name":"p6_g3c_coupler_50_50_m15","task_id":"fdve-8887bafa-e720-455a-990e-5f24d5110eda","task_status":"draft","serialized_simulation_sha256":"d6d2ddcc287e780a4e8f747b3f075f71e3fdeb463d495b7c902f72ecb4758a9c","simulation_cells":9374400,"computational_grid_points":5068536,"estimated_flexcredits":0.0834048831827439,"solve_started":false,"within_limits":true
+}

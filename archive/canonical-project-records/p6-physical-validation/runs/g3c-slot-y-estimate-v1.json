@@ -1,0 +1,13 @@
+{
+  "name": "p6-g3c-slot-y-estimate-v1",
+  "source_sha256": "0a2c0b9a83157400ae77b0e851d90074d61f1c958820fc2115d37ec1138c29d4",
+  "task_name": "p6_g3c_slot_y_m15",
+  "task_id": "fdve-fb0d60b5-e55c-41d4-ab74-ff1833cda8fa",
+  "task_status": "draft",
+  "serialized_simulation_sha256": "a0384b5f2280f5fcbc9121f9375f8fe6825cbdf5f70d859bad12d75ddab57d5e",
+  "simulation_cells": 18565218,
+  "computational_grid_points": 10025763,
+  "estimated_flexcredits": 0.25826718821745637,
+  "solve_started": false,
+  "within_limits": true
+}

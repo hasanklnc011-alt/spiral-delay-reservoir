@@ -1,0 +1,53 @@
+{
+  "name": "p6-g3c-mmi-sweep-estimate-v1",
+  "source_sha256": "f8ba2790fa963d1c2830d15c905efeb37361b504f2e1abc54a7a3a138a1dea8a",
+  "jobs": [
+    {
+      "length_um": 4.0,
+      "task_name": "p6_g3c_mmi_l4_m15",
+      "task_id": "fdve-d44820de-bccc-46f6-b9ff-ea3c2592f038",
+      "task_status": "draft",
+      "serialized_simulation_sha256": "8c9d50ff90035c5a774e12a86a6fe0ceda1118cee0b568d930c6d8562b127a8e",
+      "estimated_flexcredits": 0.06101023507842045,
+      "solve_started": false
+    },
+    {
+      "length_um": 6.0,
+      "task_name": "p6_g3c_mmi_l6_m15",
+      "task_id": "fdve-dc383942-14db-4852-98a2-e1fb969e940c",
+      "task_status": "draft",
+      "serialized_simulation_sha256": "ebd962550350bc4853389850ee2917e803e0044b647c6ca78da2d04ffecaf0bb",
+      "estimated_flexcredits": 0.06653213309931591,
+      "solve_started": false
+    },
+    {
+      "length_um": 8.0,
+      "task_name": "p6_g3c_mmi_l8_m15",
+      "task_id": "fdve-051a4ac0-fcfd-4429-a255-ba532619198a",
+      "task_status": "draft",
+      "serialized_simulation_sha256": "986af661870cd1d453f404c15f68069bbb2dbb8efe12638cc38846b794c86987",
+      "estimated_flexcredits": 0.07213586916352409,
+      "solve_started": false
+    },
+    {
+      "length_um": 10.0,
+      "task_name": "p6_g3c_mmi_l10_m15",
+      "task_id": "fdve-56a04015-dcd1-4c93-b65c-35a314961742",
+      "task_status": "draft",
+      "serialized_simulation_sha256": "6ba9746c8b79a9ca33133e9c22754c03369fd6f98db78510c7f7d8908198335f",
+      "estimated_flexcredits": 0.07765662750469213,
+      "solve_started": false
+    },
+    {
+      "length_um": 12.0,
+      "task_name": "p6_g3c_mmi_l12_m15",
+      "task_id": "fdve-d0bfd51e-6e08-4060-921d-a739c7b3fa74",
+      "task_status": "draft",
+      "serialized_simulation_sha256": "3549aaaabbd007f55522796a5f8338e16c9e5656bbc2575545a1540f1492390c",
+      "estimated_flexcredits": 0.08317682022743225,
+      "solve_started": false
+    }
+  ],
+  "estimated_total_flexcredits": 0.3605116850733848,
+  "within_limits": true
+}

@@ -1,0 +1,53 @@
+{
+  "name": "p6-g5-fail-closed-composition-v1",
+  "source_sha256": "307ad7a0ca1d1ba41ef1ca57f45fc16476a038ecffa29e38ab263b1e7aa95375",
+  "input_hashes": {
+    "baseline": "f93c5def4d9ba3ec0889c67dd0e2e22cf6a56b80fb9926e0b6abcbfc05253b9d",
+    "g1": "5736208c8a85ee26695439feeeb6fb069fbc1cb93d085cb2ae4e7502660efa1a",
+    "g2": "5bef048a9f1ecbfd6008f5deaed1b7ba59621bc37bbe55c0754acba6ea4979a8",
+    "g3b": "bcd594dbc59f6581511b619f3d6a55f8c09f8e0c43f70f710f36394792d4e64e",
+    "g3c": "5d6b6453a6c5ffb1f550298f07d2a4135d540bb4c017f943a249795d6fb993f4",
+    "g3cd": "cf733e42a35f440a5836b4b11eb3d3263ba237e4b665c577b173e0f4dfbb7a4c",
+    "g3c_slot_y": "42255aed6602b4e41627714a0b195f6f97108b0cceab0e16e10f5ffc9443d27e",
+    "g3c_slot_y_long": "24fb27cad3c478609de29b7c9c2815a89b493dcfbc9b46ceebf07ee4045e33c1",
+    "g3c_union_y": "a216a3a7dd992d7622e9dec6280d02541281469a8da22749dc29a8ea9ccd1221",
+    "g3d_mmi": "c5523ed58e97d8d77418bf5a4313749abbbf82cef33bcb2ffd24c6eafdaa9844",
+    "g3d_eme_width": "033b8b8416f6474483ed23b093eab4240bf1d645c3d8674116b36b6aad6e44d7",
+    "g4": "d2d162a64a2d5d63f3b519d4740711c0662af6ab8dcfeb142aca7d6281543317",
+    "custom_process": "14445938cf78b5e75945a92f6f235d7e59dc59d38466dadbb13ab7ccbf7dfce3"
+  },
+  "p5_blind_rerun": false,
+  "delay_path": {
+    "length_cm": 14.240061041238805,
+    "equivalent_90deg_bends_from_layout": 372.91051061244724,
+    "fine_fdtd_loss_db_per_90deg": 0.0037176899173403076,
+    "composed_bend_loss_db": 1.3863656453741209,
+    "propagation_loss_db_per_cm_assumption": 0.8,
+    "propagation_loss_db_assumption": 11.392048832991044,
+    "propagation_plus_bend_db_assumption": 12.778414478365164,
+    "propagation_plus_bend_db_per_cm_assumption": 0.8973567206881519,
+    "p5_stress_limit_db_per_cm": 1.0,
+    "assumption_within_stress_limit": true,
+    "physical_evidence_status": "OPEN_UNTIL_PROPAGATION_PDK_OR_CUTBACK"
+  },
+  "uncomposable_losses": {
+    "progressive_tap_excess_and_ratios": "OPEN_G3C",
+    "lo_tree_excess": "OPEN_G3C",
+    "coherent_combiner_excess": "OPEN_G3D",
+    "fast_switch_insertion": "OPEN_G4"
+  },
+  "gates": {
+    "g1_group_index": "PASS",
+    "g2_layout": "PASS",
+    "g3a_straight_reference": "PASS",
+    "g3b_bend": "PASS",
+    "fabricated_propagation_loss": "OPEN_PDK_OR_CUTBACK",
+    "g3c_progressive_tap_and_lo_splitter": "OPEN_REDESIGN",
+    "g3d_coherent_combiner": "OPEN_REDESIGN",
+    "fast_slot_switch": "OPEN",
+    "phase_thermal": "OPEN",
+    "photodiode_tia": "OPEN"
+  },
+  "g5_composition_complete": false,
+  "p6_accepted": false
+}

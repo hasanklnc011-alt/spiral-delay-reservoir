@@ -1,0 +1,11 @@
+{
+  "name":"p6-g1-thickness-refinement-estimate-v1",
+  "source_sha256":"70ad3087faf51d75fb74befd1416cba6b6ea0612023b10c688730030adc3175b",
+  "jobs":[
+    {"name":"height_175nm","width_um":0.343,"height_um":0.175,"mesh":20.0,"task_name":"p6_g1_selected_height_175nm","task_id":"mo-f9945d2b-54d0-4733-a438-7c4662bb5973","task_status":"draft","serialized_mode_solver_sha256":"ff56e2742f8a301b5436556abe2ba3cf72050ec02ee09a8e71357b423f025a3b","estimated_flexcredits":0.010382804444444444,"solve_started":false},
+    {"name":"height_185nm","width_um":0.343,"height_um":0.185,"mesh":20.0,"task_name":"p6_g1_selected_height_185nm","task_id":"mo-352f1b01-67d0-4709-987e-f51837631026","task_status":"draft","serialized_mode_solver_sha256":"4a809e9e93bffc3a91707e56a6928c8fd43a621b0a5cbe85e7db386c925fb951","estimated_flexcredits":0.010464797777777778,"solve_started":false}
+  ],
+  "estimated_total_flexcredits":0.02084760222222222,
+  "limit_flexcredits":0.1,
+  "within_limit":true
+}

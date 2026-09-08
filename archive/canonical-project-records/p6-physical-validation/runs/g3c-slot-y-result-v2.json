@@ -1,0 +1,19 @@
+{
+  "name": "p6-g3c-slot-y-result-v2",
+  "postprocessor_sha256": "8603035ac05532743f0d7493c9b64e5eb2c01debfd06e5726293336359437a7b",
+  "builder_source_sha256": "124e583d762e25f1b401f883b7f50f27ba30a3e8305c241c90c3c6f4cf35bf06",
+  "estimate_sha256": "4343187a0431429f3739123d00f3bb93097b567f9f7eeef0e89c2ecb18bb43fa",
+  "geometry": {"input_taper_um": 10.0, "slot_open_um": 40.0, "output_center_um": 1.0, "slot_boundary_fix": "both boundaries use +/-g/2"},
+  "task_id": "fdve-f01e88ab-7cc7-4d82-9cf5-fd4fdc566143",
+  "task_status": "success",
+  "result_file": "g3c-slot-y-v2_m15-result-v1.hdf5",
+  "result_sha256": "c722b107d5d57d916f37ba2fe5cafed852b6ad2619288e11b6af95d8197bd49d",
+  "actual_flexcredits": 0.30248278903406256,
+  "final_decay": 8.01e-08,
+  "metrics": {"center_upper_power": 0.4369719651972219, "center_lower_power": 0.45472068836804475, "center_total_output_power": 0.8916926535652667, "center_excess_loss_db": 0.49784811387977623, "center_imbalance_db": 0.1729113885353526, "center_phase_mismatch_deg": 1.029063777539808, "center_reflection_db": -13.11374714682676, "worst_reflection_db": -12.274507898249462, "max_abs_energy_residual": 0.06683657282771711},
+  "symmetry_acceptance_limit_db": 0.5,
+  "symmetry_invariant_passed": true,
+  "evidence_valid": true,
+  "pilot_passed": false,
+  "solve_restarted": false
+}

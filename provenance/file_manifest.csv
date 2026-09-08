@@ -1,0 +1,10 @@
+path,category,description,source/origin,used_in_final_project,generated_or_manual,notes
+README.md,documentation,Academic archive entry point,Archival staging,yes,manual,States evidence boundary
+blender/scenes/mcp.blend,essential,Canonical Blender file copy,C:/Users/<username>/OneDrive/Desktop/mcp.blend,yes,imported,Byte-identical SHA-256 copy
+blender/renders/p6_overview_session_render.png,documentation,Session render,Connected Blender MCP session,yes,generated,Association with mcp.blend unverified
+docs/,documentation,Academic documentation and navigation interface,Archival staging,yes,manual,Includes yellow-green static interface
+references/,documentation,Verified-ID bibliography and mapping,Project literature review,yes,manual,No unverified metadata invented
+provenance/,reproducibility,Audit and decision records,Archival staging,yes,manual,No private machine identifiers
+archive/canonical-project-records/,historical archive,Non-destructive source snapshot,MayOS Photonic-Reservoir project,yes,imported,HDF5 and caches excluded
+archive/canonical-project-records/**/*.hdf5,excluded generated data,Raw solver output,MayOS Photonic-Reservoir project,no,generated,Excluded for size; source paths remain in archive records
+archive/canonical-project-records/**/__pycache__/,excluded temporary,Python cache,MayOS Photonic-Reservoir project,no,generated,Excluded

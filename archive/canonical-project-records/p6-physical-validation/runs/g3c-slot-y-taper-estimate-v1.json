@@ -1,0 +1,11 @@
+{
+  "name": "p6-g3c-slot-y-taper-estimate-v1",
+  "source_sha256": "c78c2314aafb72c57a07ee79f5779f519c265a0fa71d1f71a32d2d4b17d0660b",
+  "task_name": "p6_g3c_slot_y_taper_only_m15",
+  "task_id": "fdve-589a22f8-61cd-4f0a-ac62-c4af04e5fcb2",
+  "task_status": "draft",
+  "serialized_simulation_sha256": "b4d51fb5d410bdb63a311c1d410f9d4741c58e997f3c49e5d43d65d736b979a5",
+  "estimated_flexcredits": 0.0740153778303084,
+  "solve_started": false,
+  "within_limits": true
+}

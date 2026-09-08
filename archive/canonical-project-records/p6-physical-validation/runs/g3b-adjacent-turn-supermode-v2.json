@@ -1,0 +1,16 @@
+{
+  "name":"p6-g3b-adjacent-turn-supermode-v2",
+  "tidy3d_version":"2.12.0",
+  "source_sha256":"6df9a5988f206a1d33c9111e1c703a53e76028a2cf488467e9806ffba55f1ec8",
+  "g1_config_sha256":"5736208c8a85ee26695439feeeb6fb069fbc1cb93d085cb2ae4e7502660efa1a",
+  "cloud_called":false,
+  "parallel_length_assumption_um":2991.859094053419,
+  "assumption":"exact G2 outer-turn circumference used as the conservative longest adjacent segment",
+  "selected_pitch_um":5.0,
+  "selected_mesh_results":[
+    {"mesh":20.0,"delta_neff":9.714740123456522e-11,"coupling_length_um":7977568006.464115,"max_segment_crosstalk_db":-124.59619004282408},
+    {"mesh":25.0,"delta_neff":1.7674084418217717e-11,"coupling_length_um":43849513313.46828,"max_segment_crosstalk_db":-139.39807529022738}
+  ],
+  "selected_worst_crosstalk_db":-124.59619004282408,
+  "passed":true
+}

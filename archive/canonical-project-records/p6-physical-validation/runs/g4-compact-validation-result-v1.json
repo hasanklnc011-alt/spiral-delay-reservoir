@@ -1,0 +1,13 @@
+{
+  "name": "p6-g4-compact-validation-v1",
+  "source_sha256": "46b7955a8e2e5d60832d6b47cdacca046da039b782cda72cf8fed784bac6bffc",
+  "config_sha256": "f93c5def4d9ba3ec0889c67dd0e2e22cf6a56b80fb9926e0b6abcbfc05253b9d",
+  "p5_blind_rerun": false,
+  "routing": {"pd_count": 10, "slot_count": 3, "slot_rate_hz": 30000000000.0, "slot_period_s": 3.3333333333333335e-11, "required_technology": "fast_EO_or_switch", "thermal_trim_role": "static_drift_and_fabrication_offset_only"},
+  "phase": {"maximum_coherent_differential_delay_s": 1.4e-09, "dynamic_phase_limit_deg_rms": 2.0, "laser_linewidth_hz_if_entire_dynamic_budget_is_laser": 138518.19460272454, "interpretation": "upper bound before pilot, feedback, and thermal-noise allocations"},
+  "receiver": {"p5_compatibility_bandwidth_hz": 50000000000.0, "responsivity_floor_a_per_w": 0.8, "input_noise_ceiling_a_per_sqrt_hz": 2e-11, "lo_arm_power_mw": 5.0, "encoded_signal_peak_power_mw": 1.25, "ideal_combiner_constructive_output_mw": 5.625000000000001, "ideal_combiner_destructive_output_mw": 0.6250000000000001, "required_linear_photocurrent_peak_a_at_responsivity_floor": 0.004500000000000001, "lo_only_photocurrent_a": 0.002, "saturation_and_tia_swing_evidence": "OPEN_PDK_OR_MEASUREMENT"},
+  "thermal": {"trim_count": 30, "p_pi_mw_assumption": 20.0, "thermal_control_bandwidth_hz_assumption": 10000.0, "thermal_to_slot_rate_ratio": 3.3333333333333335e-07, "average_heater_power_mw_assumption": 395.0, "maximum_heater_power_mw_assumption": 770.0, "heater_power_limit_mw": 800.0, "maximum_headroom_mw_assumption": 30.0, "evidence": "ASSUMPTION_ONLY_REQUIRES_PDK_THERMAL_SOLVE_OR_MEASUREMENT"},
+  "gates": {"routing_schedule_10pd_x_3slot": "PASS", "thermal_not_used_for_30ghz_routing": "PASS", "fast_eo_switch_s_parameter_and_bandwidth": "OPEN", "laser_linewidth_with_shared_phase_budget": "OPEN", "phase_shifter_p_pi_l_and_insertion": "OPEN", "thermal_time_constant": "OPEN", "thermal_crosstalk_matrix": "OPEN", "pd_50ghz_responsivity_noise": "OPEN", "pd_tia_linearity_at_required_current": "OPEN"},
+  "model_semantics_passed": true,
+  "g4_physical_accepted": false
+}

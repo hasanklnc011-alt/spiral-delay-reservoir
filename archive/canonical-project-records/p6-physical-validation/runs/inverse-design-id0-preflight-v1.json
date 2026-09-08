@@ -1,0 +1,42 @@
+{
+  "name": "p6-custom-process-inverse-design-id0-preflight-v1",
+  "tidy3d_version": "2.12.0",
+  "source_sha256": "39570b4e823a872c8d32a4acbb7aaf3ca5c2084b729dc2e7e7e81da852f98a35",
+  "config_sha256": "03fa0aa7aa487f88800b96461e90a51b45d752ddaf3d3a253cd0e46ee9444257",
+  "p5_blind_rerun": false,
+  "cloud_called": false,
+  "api_available": {
+    "TopologyDesignRegion": true,
+    "InverseDesign": true,
+    "InverseDesignMulti": true,
+    "AdamOptimizer": true,
+    "FilterProject": true,
+    "ErosionDilationPenalty": true
+  },
+  "wavelengths_um": [1.53, 1.55, 1.575],
+  "regions": {
+    "g3c_splitter": {
+      "size_um": [6.0, 4.0, 0.18],
+      "pixel_size_um": 0.04,
+      "parameter_grid": [150, 100, 1],
+      "parameter_count": 15000,
+      "serialized_region_sha256": "1b05a098871760cf88ab10545e03a02ce1f8d820b454ec2f90400ac8f2fc8b87",
+      "transformations": ["FilterProject"],
+      "penalties": ["ErosionDilationPenalty"]
+    },
+    "g3d_combiner": {
+      "size_um": [8.0, 5.0, 0.18],
+      "pixel_size_um": 0.04,
+      "parameter_grid": [200, 125, 1],
+      "parameter_count": 25000,
+      "serialized_region_sha256": "4a627d0f154da065b147bf769ef379c10f6fb3ee8a0b244e34bfaff4f73a37c6",
+      "transformations": ["FilterProject"],
+      "penalties": ["ErosionDilationPenalty"]
+    }
+  },
+  "separate_device_optimizations": true,
+  "multi_source_combiner_required": true,
+  "preflight_passed": true,
+  "next_gate": "construct source/monitor/objective simulations, then upload estimate only",
+  "id0_can_accept_device": false
+}

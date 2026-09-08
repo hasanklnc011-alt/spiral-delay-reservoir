@@ -1,0 +1,29 @@
+{
+  "name": "p6-g3d-mmi-eme-width-estimate-v1",
+  "source_sha256": "81aeaf9d37430d13356fada2f5498b34ece9ddfd3cfc1affe9183e9d170fbc18",
+  "tasks": [
+    {
+      "mmi_width_um": 1.2,
+      "task_name": "p6_g3d_mmi_eme_width_1p2_v1",
+      "task_id": "eme-62119270-5daf-48ae-b758-4da789d9e1c4",
+      "task_status": "draft",
+      "serialized_simulation_sha256": "42199c4e0371792484f416b6710cffcb84b22d9001e1ab23f45f16f9292f1bbb",
+      "estimated_flexcredits": 0.24950594231111117,
+      "solve_started": false,
+      "within_per_source_limit": true
+    },
+    {
+      "mmi_width_um": 1.4,
+      "task_name": "p6_g3d_mmi_eme_width_1p4_v1",
+      "task_id": "eme-18ebcf1e-e49d-4e45-b1be-76bda079b68d",
+      "task_status": "draft",
+      "serialized_simulation_sha256": "3dd624a7302af316f29d9c9cc1d775fa8f4a41d65d753eca12c7e75fd59a67c5",
+      "estimated_flexcredits": 0.24986688720000005,
+      "solve_started": false,
+      "within_per_source_limit": true
+    }
+  ],
+  "estimated_total_flexcredits": 0.4993728295111112,
+  "within_limits": true,
+  "solve_started": false
+}

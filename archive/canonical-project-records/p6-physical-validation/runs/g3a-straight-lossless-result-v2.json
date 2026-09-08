@@ -1,0 +1,65 @@
+{
+  "name": "p6-g3a-straight-lossless-result-v2",
+  "source_sha256": "eb91e71601b77d5868cd0013806ab2fa8becac1da198d14d389e90a2a9065de1",
+  "material_policy": "lossless scattering reference; fabricated propagation loss external",
+  "results": [
+    {
+      "name": "length4_m20",
+      "length_um": 4.0,
+      "mesh": 20.0,
+      "task_id": "fdve-e96b5db4-32e3-493c-b33a-8d57f8336cfb",
+      "task_status": "success",
+      "result_file": "g3a-lossless-length4_m20-result-v2.hdf5",
+      "result_sha256": "f1fe456bc8a06b466ace7f418d8bb594da906ebaa54439ebedfbd873a53a08a4",
+      "actual_flexcredits": 0.025
+    },
+    {
+      "name": "length8_m20",
+      "length_um": 8.0,
+      "mesh": 20.0,
+      "task_id": "fdve-99a35790-18fe-4d3c-bc62-d544a2b30859",
+      "task_status": "success",
+      "result_file": "g3a-lossless-length8_m20-result-v2.hdf5",
+      "result_sha256": "182961ce583ad36ef1c8c23f9168a30b3d7be1869c92bba13d65439b8636211b",
+      "actual_flexcredits": 0.025
+    },
+    {
+      "name": "length4_m25",
+      "length_um": 4.0,
+      "mesh": 25.0,
+      "task_id": "fdve-3e4d2aab-5412-477c-84c7-ab70d48915cc",
+      "task_status": "success",
+      "result_file": "g3a-lossless-length4_m25-result-v2.hdf5",
+      "result_sha256": "30a31bbe6c21aa225472d02c5aa20fd8950cbf4dd86a1594e0662bdb44e6de1b",
+      "actual_flexcredits": 0.025
+    },
+    {
+      "name": "length8_m25",
+      "length_um": 8.0,
+      "mesh": 25.0,
+      "task_id": "fdve-9770daa1-7afa-45fb-b8a3-7c3d6e8f19d5",
+      "task_status": "success",
+      "result_file": "g3a-lossless-length8_m25-result-v2.hdf5",
+      "result_sha256": "d11298b85027b9b8993f54508edce7ec38a1a5f86395d20ebd7c4c0a1c5cb47c",
+      "actual_flexcredits": 0.0335071982
+    }
+  ],
+  "convergence": {
+    "4": {
+      "insertion_loss_delta_db": 0.0001637066,
+      "phase_delta_deg": 0.0319142,
+      "fine_max_abs_energy_residual": 0.000349013,
+      "fine_worst_reflection_db": -67.0127,
+      "passed": true
+    },
+    "8": {
+      "insertion_loss_delta_db": 0.0002647826,
+      "phase_delta_deg": 0.0481302,
+      "fine_max_abs_energy_residual": 0.000391305,
+      "fine_worst_reflection_db": -67.1761,
+      "passed": true
+    }
+  },
+  "g3a_passed": true,
+  "actual_total_flexcredits": 0.1085071982
+}

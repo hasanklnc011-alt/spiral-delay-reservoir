@@ -1,0 +1,32 @@
+{
+  "name": "p6-g3d-mmi-preflight-v1",
+  "tidy3d_version": "2.12.0",
+  "source_sha256": "236038d1a31cf73181502bfbe13451be281836edb60956264c83a2a7b043e87f",
+  "g1_config_sha256": "5736208c8a85ee26695439feeeb6fb069fbc1cb93d085cb2ae4e7502660efa1a",
+  "cloud_called": false,
+  "p5_blind_rerun": false,
+  "design_basis": "Flexcompute official 2x2 SOI MMI seed, uniformly scaled by accepted width / 0.4 um",
+  "geometry": {
+    "waveguide_width_um": 0.343,
+    "waveguide_height_um": 0.18,
+    "scale_from_official_400nm_seed": 0.8575,
+    "mmi_width_um": 0.8575,
+    "mmi_length_um": 2.5725000000000002,
+    "s_bend_length_um": 3.43,
+    "s_bend_offset_um": 0.8575,
+    "near_port_center_um": 0.25725,
+    "far_port_center_um": 1.11475,
+    "near_guide_gap_um": 0.17149999999999993
+  },
+  "independent_excitations": ["upper", "lower"],
+  "serialized_simulation_sha256": {
+    "upper": "42e9f2ce6f762c86acbf6d542909a7694d6f8e0dd302fe67a1f2a0e9fd43cafa",
+    "lower": "3a79a697fa596696847e501a0d35400061565f79b1f7de4b4995f25ff85239a8"
+  },
+  "simulation_cells": {"upper": 5569584, "lower": 5569584},
+  "computational_grid_points": {"upper": 3013626, "lower": 3013626},
+  "geometry_symmetry_preflight_passed": true,
+  "upload_allowed": false,
+  "solve_allowed": false,
+  "preflight_passed": true
+}

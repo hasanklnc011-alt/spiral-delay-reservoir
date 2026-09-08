@@ -1,0 +1,78 @@
+{
+  "protocol_version": 1,
+  "protocol_id": "narma10-nmse-under-0.05-v1",
+  "status": "frozen",
+  "frozen_date": "2026-09-03",
+  "task": {
+    "name": "NARMA-10",
+    "order": 10,
+    "input_distribution": "numpy.default_rng(seed).uniform(0.0, 0.5)",
+    "alignment": "features[t] -> target[t+1]",
+    "metric": "NMSE = mean((target-prediction)^2) / var(target)"
+  },
+  "development": {
+    "usage": "train-and-validation-only; no test slice exists",
+    "seeds": [11, 23, 37, 41, 53, 67, 71, 97, 109, 113],
+    "split": {"washout": 1000, "train": 6000, "validation": 2000, "test": 0},
+    "gate": {"aggregate": "median_validation_nmse", "operator": "<=", "threshold": 0.04},
+    "dataset_sha256": {
+      "11": "463fc0010249fb9168098209442e597ea0d802b5fa4cc5a998f837e9a59cbb12",
+      "23": "418fa9be73c22922dffe8b7ab6429d4c189ddf0effe62cc405223b15bbc67c61",
+      "37": "45841bf3cad5bed01c621b73fd307b632e39cb840a8bb48def66f6a1dde69d20",
+      "41": "ac5055546b002c844c61ae660516d0003353b7f356179f90781a8a13c51eb49f",
+      "53": "2d2cdb847aba04c40ef4638c6e0d16a2bda9ecd8724f7185abd6df72e87643a5",
+      "67": "f462749bc5ac61e896d8c197e1d6606c9c940205878156009dc0eae817ecdbdc",
+      "71": "58677d7c8ba75981b7696e611274c35bd999c1fada6803bb84fbe3a6062d1a3f",
+      "97": "46105e6ff8496b59b990351718416da3183180e1c21ba71138e5ec0833c88093",
+      "109": "15bfc3b0ab7b4bb590ad08ef2bbb8d95d0d8e22e7ba2252426a641e37a2eb039",
+      "113": "d54a8fc59f84e1b4f4f164bb3037602a2b47a7d9112bf01e276cecf0508da63b"
+    }
+  },
+  "publication_blind": {
+    "usage": "one final evaluation after candidate lock; never for selection or tuning",
+    "seeds": [127, 131, 137, 139, 149, 151, 157, 163, 167, 173],
+    "split": {"washout": 1000, "train": 6000, "validation": 2000, "test": 3000},
+    "success_gates": {
+      "median_test_nmse": {"operator": "<", "threshold": 0.05},
+      "seed_count_below_0_05": {"operator": ">=", "threshold": 8},
+      "relative_gain_vs_each_control": {"operator": ">=", "threshold": 0.10},
+      "paired_bootstrap_difference_ci95_upper": {"operator": "<", "threshold": 0.0},
+      "required_controls": ["delayed_input", "same_delay_digital", "no_photonic_core"]
+    },
+    "authorization": {
+      "candidate_lock_required": true,
+      "lock_fields": ["status", "protocol_sha256", "candidate_config_sha256", "source_sha256", "locked_utc"],
+      "rerun_policy": "a failed blind evaluation ends this protocol version; changes require v2 and a new blind suite"
+    },
+    "dataset_sha256": {
+      "127": "cfc0bced6e6e960c178c2a024307e9541e8e55f198237933d1f22181194ca251",
+      "131": "734641c7e21e570812f4a005e9f8c57e7e1f8d1669fdf17280defdb00f733b96",
+      "137": "32ff6a310d3c319a5e221af8030046313cd367a90bc300edfc2d6c646414be03",
+      "139": "5939f3ff847270edce6754921df595a2cd41c139cc2eecaa0a79c01bf103f595",
+      "149": "f37ff94ef10010f968b86bdca8fc5de6d5a6f6c920423302dbd73a95c906a06c",
+      "151": "b1a9ba161e093d99bef00837438649d2999010cc6696d5d4dc553095a2da6141",
+      "157": "6a9e0606bb9f2cc0d3e43dcc7ed8454ba73b03bde703a440ce4017372f65bafe",
+      "163": "f3b758f5c1d11cf9df1f8363863c92e200f96d89bd7b814db3bdc09dbf4045c0",
+      "167": "faf419f979bc392548ebff20ed197cfa10887a3e97a281b754461eef2b9a8401",
+      "173": "c92d6c12e38368491e76ed99d860a25d660d4800072ae7c48e43ae2b83cde64a"
+    }
+  },
+  "rejected_datasets": [
+    {
+      "seed": 83,
+      "split": {"washout": 1000, "train": 6000, "validation": 2000, "test": 3000},
+      "reason": "recursive NARMA-10 target overflows near sample 9860; clipping is forbidden"
+    }
+  ],
+  "legacy_protocol": {
+    "config": "legacy-three-ring/configs/publication_narma10.json",
+    "status": "invalid-for-publication",
+    "reason": "contains divergent seed 83 and its test scores have already influenced development"
+  },
+  "stop_conditions": [
+    "stop a dataset immediately if any input, target, feature, prediction, or metric is non-finite",
+    "do not open the blind suite before a candidate lock validates",
+    "do not tune after the first blind evaluation under this protocol version"
+  ],
+  "protocol_sha256": "2a66934d024178a15cacfccd282a3c27ca4d96a357b0820f3fcae59360ebc95a"
+}

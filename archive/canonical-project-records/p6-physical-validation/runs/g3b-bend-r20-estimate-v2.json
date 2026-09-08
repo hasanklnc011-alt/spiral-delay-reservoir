@@ -1,0 +1,11 @@
+{
+  "name": "p6-g3b-bend-r20-estimate-v2",
+  "source_sha256": "d79d20966e5e7689b2ee6f00cdb7949932c337cf21764275a141045907f90d00",
+  "task_name": "p6_g3b_bend_r20_dense_m15",
+  "task_id": "fdve-6d21b34d-c533-49c3-83a7-e0db8b9b53b3",
+  "task_status": "draft",
+  "serialized_simulation_sha256": "45fbe4e76540ebf5808c8aa8a217348e72f8c2fc511e472ea5aba242a0a4ffc8",
+  "estimated_flexcredits": 0.4956020727727748,
+  "solve_started": false,
+  "within_limits": true
+}

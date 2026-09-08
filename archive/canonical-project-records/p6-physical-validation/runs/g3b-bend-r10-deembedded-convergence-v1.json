@@ -1,0 +1,9 @@
+{
+  "name":"p6-g3b-bend-r10-deembedded-convergence-v1",
+  "source_sha256":"5f9ac76f321457dc5d797d403356f070cec054f87ebfecbf5f25f55905903865",
+  "reference":"two-length lossless G3-A straight phase slope at each mesh",
+  "meshes":{"15":{"equivalent_neff":1.8754445671804643,"deembedded_excess_phase_deg":163.82772603049904},"20":{"equivalent_neff":1.8723395120785267,"deembedded_excess_phase_deg":172.1257098145511}},
+  "convergence":{"insertion_loss_delta_db":0.0043829364084036065,"deembedded_phase_delta_deg":8.297983784052064,"passed":false},
+  "g3b_bend_passed":false,
+  "interpretation":"m15 bend geometry is not phase converged; proceed to the planned m20-to-m25 pair"
+}

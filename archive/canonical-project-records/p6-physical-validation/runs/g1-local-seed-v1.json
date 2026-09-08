@@ -1,0 +1,56 @@
+{
+  "name": "p6-g1-local-seed-v1",
+  "claim_level": "local no-subpixel seed cross-section diagnostic; not G1 acceptance",
+  "tidy3d_version": "2.12.0",
+  "cloud_called": false,
+  "source_sha256": "71ceedaa553b9047d653908838b0cc266075a1480e305611e5752f0429a5b34a",
+  "config_sha256": "e6d1921f6ee4334642c7f927195ec2ec4c8d8e32c5eb1b7db04fd038a6f4773e",
+  "seed": {
+    "core": "silicon_Li1993_293K",
+    "cladding": "silica_Horiba",
+    "wavelength_um": 1.55,
+    "width_um": 0.45,
+    "height_um": 0.22
+  },
+  "mesh_results": [
+    {
+      "min_steps_per_wvl": 15.0,
+      "fundamental_n_eff": 2.254011604704366,
+      "fundamental_n_group": 4.217353089388788
+    },
+    {
+      "min_steps_per_wvl": 20.0,
+      "fundamental_n_eff": 2.3620400983297682,
+      "fundamental_n_group": 4.274724016485079
+    },
+    {
+      "min_steps_per_wvl": 25.0,
+      "fundamental_n_eff": 2.4476805128387094,
+      "fundamental_n_group": 4.264781998273878
+    }
+  ],
+  "medium_to_fine": {
+    "relative_n_group_delta": 0.002325768440924053,
+    "absolute_n_eff_delta": 0.08564041450894111,
+    "n_group_mesh_gate_passed": true,
+    "n_eff_mesh_gate_passed": false
+  },
+  "fine_mesh_delay_mapping": {
+    "delay_at_14_240141755_cm_ns": 2.025771449180092,
+    "symbols_at_10_gbd": 20.25771449180092,
+    "length_for_1_9_ns_cm": 13.3560325107014,
+    "relative_error_vs_locked_n_group_4": 0.06619549956846948
+  },
+  "warnings": [
+    "Local solver ran without subpixel averaging.",
+    "The third mode did not decay at plane boundaries on coarse/medium meshes.",
+    "A converged remote/subpixel solve is required before G1 acceptance."
+  ],
+  "g1_passed": false,
+  "failed_reasons": [
+    "absolute n_eff mesh delta exceeds 0.001",
+    "fine-mesh n_group misses the locked n_group=4 delay target by 6.62 percent",
+    "platform and cross-section remain provisional"
+  ]
+}
+

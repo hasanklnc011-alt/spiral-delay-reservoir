@@ -1,0 +1,12 @@
+{
+  "name":"p6-g3b-bend-r10-m25-convergence-result-v2",
+  "source_sha256":"349b6a4bc951e56ea259be657d59aeb0339962617a5ade23bdee00b039a93121",
+  "task_id":"fdve-c07ea9b6-ea64-489e-bc5a-daa541028866",
+  "task_status":"success",
+  "result_file":"g3b-bend-r10-dense_m25-result-v2.hdf5",
+  "result_sha256":"67e3b9368fe5508c0858a3900ffbf4dfadf3a8a51461a7e530208afae307bbe9",
+  "actual_flexcredits":0.0,
+  "convergence":{"insertion_loss_delta_db":0.0025615782412879984,"raw_phase_delta_deg":0.5274451825604097,"fine_max_abs_energy_residual":0.0014456036684021845,"fine_worst_reflection_db":-39.25893543691393,"raw_phase_passed":false},
+  "g3b_passed":false,
+  "next_action":"judge the final phase on straight-reference-deembedded m20/m25 data"
+}

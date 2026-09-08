@@ -1,0 +1,17 @@
+{
+  "name": "p6-g1-selected-validation-result-v1",
+  "source_sha256": "820aef9e24a521cb28f12b5cdd36f26250a745b9c2a76556d4f7c2f801c875b0",
+  "selected_config_sha256": "fb0921e24297ba703ebbf5b3a959803599e97664b932ae4dce4890374797d6ea",
+  "actual_total_flexcredits": 0.07374437311111111,
+  "convergence": {"relative_n_group_delta": 0.0017689410336004742, "absolute_n_eff_delta": 4.901722932171282e-05, "passed": true},
+  "nominal": {"mesh":25.0,"task_id":"mo-b218371b-02a7-4132-ac0f-01c45e68a354","result_file":"g1-selected-nominal_m25-result-v1.hdf5","result_sha256":"230f8965da941466edebd83dcf6b66642e11515f22a52cf16cf73299a0aad7ea","n_eff":1.8710746500263764,"n_group":4.012965400696482,"te_fraction":0.945955333258428,"guided_te_like_mode_count":1,"symbols_at_10_gbd":19.061585653308285,"case_passed":true},
+  "width_low": {"width_um":0.333,"task_id":"mo-3f6875da-ed75-4896-b9c7-acd3979d7852","result_file":"g1-selected-width_low-result-v1.hdf5","result_sha256":"e32477e2eaa12f85d4134f8e811d4bdbe67c25f07b5f6f8562718f241953eb56","n_group":3.9272030193932714,"symbols_at_10_gbd":18.65421434211804,"case_passed":true},
+  "width_high": {"width_um":0.353,"task_id":"mo-1d85c0a9-9ecc-45eb-9484-bba942d4dec1","result_file":"g1-selected-width_high-result-v1.hdf5","result_sha256":"1133fc66b5f0b18829dd64de01b98cee618678f66aef988478b397e3512bcd95","n_group":4.065518136081181,"symbols_at_10_gbd":19.31121114638561,"case_passed":true},
+  "height_low": {"height_um":0.17,"task_id":"mo-81f93197-8370-4f79-9018-306c6bd73834","result_file":"g1-selected-height_low-result-v1.hdf5","result_sha256":"0ef80597e0e6e0dafb6a761c3e84e05e24edce82b5131a0ca34c40cdd57a1477","n_group":3.8649280739708214,"symbols_at_10_gbd":18.3584083513614,"case_passed":false},
+  "height_high": {"height_um":0.19,"task_id":"mo-b1ec5de9-ae07-4c63-9e74-24e03ccf19a1","result_file":"g1-selected-height_high-result-v1.hdf5","result_sha256":"a82702492bbdd4348f64c9cc88852b0e0444ee63f5dacac1cf534fb6ae4ff8b3","n_group":4.122222483955561,"symbols_at_10_gbd":19.580556798788916,"case_passed":false},
+  "nominal_passed": true,
+  "width_plus_minus_10nm_passed": true,
+  "height_plus_minus_10nm_passed": false,
+  "g1_passed": false,
+  "next_action": "validate an explicit 180 plus/minus 5 nm device-layer thickness requirement"
+}

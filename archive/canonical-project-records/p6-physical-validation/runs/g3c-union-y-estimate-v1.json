@@ -1,0 +1,19 @@
+{
+  "name": "p6-g3c-union-y-estimate-v1",
+  "source_sha256": "f635760981cc5eef1e769339f5cd8deb7da36766db068401d6a78c0af8b10812",
+  "task_name": "p6_g3c_union_y_long_m15",
+  "task_id": "fdve-9d51b613-4456-4afb-93e8-e246403cc722",
+  "task_status": "draft",
+  "serialized_simulation_sha256": "c5187006c3975dcec337822df811013d373cfd594bc043f884d115ad7f67a228",
+  "geometry": {
+    "transition_um": 80.0,
+    "output_center_um": 1.0,
+    "width_doubling_taper": false,
+    "y_symmetry": -1
+  },
+  "simulation_cells": 29819024,
+  "computational_grid_points": 8141958,
+  "estimated_flexcredits": 0.30434028032565186,
+  "solve_started": false,
+  "within_limits": true
+}

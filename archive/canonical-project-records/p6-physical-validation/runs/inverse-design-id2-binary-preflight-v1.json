@@ -1,0 +1,52 @@
+{
+  "name": "p6-inverse-design-id2-binary-preflight-v1",
+  "tidy3d_version": "2.12.0",
+  "source_sha256": "61a12ab89dcd3c8063bcc28bcc736c9b2cb887e511b3af9b48bdfc21e7cfcc95",
+  "config_sha256": "03fa0aa7aa487f88800b96461e90a51b45d752ddaf3d3a253cd0e46ee9444257",
+  "p5_blind_rerun": false,
+  "cloud_called": false,
+  "threshold": 0.5,
+  "devices": {
+    "splitter": {
+      "summary_sha256": "8f32be356d20dd3538fcc6bd8d9223cb329ffe557007dd9a3e3c99a33bbe5f61",
+      "cache_sha256": "1a67410fcdabefe25884fe3158c47dea79da55994c852ec08efec91f85abca56",
+      "parameter_shape": [150, 100, 1],
+      "density_min": 0.0,
+      "density_max": 1.0,
+      "density_sha256": "e1971ee91e9f804c066f7145d600e44e9f4ba681a33c047c4164291c885c1dd9",
+      "grey_fraction_0p05_to_0p95": 0.6204666666666667,
+      "binary_fill_fraction": 0.5236,
+      "binary_seed_sha256": "b5e8539ba3a1f8d8c1759709fe865e343c311edeed5db1ee7d6b98e1ed78307a",
+      "minimum_feature_proxy_radius_pixels": 3,
+      "core_feature_proxy_violation_pixels": 101,
+      "gap_feature_proxy_violation_pixels": 233,
+      "simulation_count": 1,
+      "serialized_simulation_sha256": {
+        "splitter": "e63fadb2a2d19186fb36473608fe4bd58ad99463f24c1698f21d23a3ea3bdc14"
+      }
+    },
+    "combiner": {
+      "summary_sha256": "1686c6c01ea3aa30b516341c4920cedd2e81c715c216d6fcee810f09d6cb05e4",
+      "cache_sha256": "f13cef767e58c33ab27cb719943c115335118b56d8c575a3cf438bacf92b8bbd",
+      "parameter_shape": [200, 125, 1],
+      "density_min": 0.0,
+      "density_max": 1.0,
+      "density_sha256": "68df3d6441f36712f98f9a52986f5fb94847e1f29115397f7d43910f36cbf256",
+      "grey_fraction_0p05_to_0p95": 0.424,
+      "binary_fill_fraction": 0.4534,
+      "binary_seed_sha256": "b2e0ea633765921c76d2607427281bee9f671cfcd6b85374f2c84be3820151d5",
+      "minimum_feature_proxy_radius_pixels": 3,
+      "core_feature_proxy_violation_pixels": 297,
+      "gap_feature_proxy_violation_pixels": 68,
+      "simulation_count": 2,
+      "serialized_simulation_sha256": {
+        "p6_g3d_inverse_design_v1_0": "9d9156a7e9a155e94f4e43588653e5746e46c1dd262e3b40a725260491588036",
+        "p6_g3d_inverse_design_v1_1": "3ec781def80225cf9d05c98e49bb992cf69d4db4be33ac02ed0351b8c080cef5"
+      }
+    }
+  },
+  "preflight_passed": true,
+  "feature_proxy_is_acceptance": false,
+  "id2_can_accept_device": false,
+  "next_gate": "upload binary broadband FDTD estimate only"
+}

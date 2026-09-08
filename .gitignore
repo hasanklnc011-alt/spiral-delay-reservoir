@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.env.*
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.blend1
+*.blend2
+*.blend@
+*.autosave
+*.hdf5
+*.log

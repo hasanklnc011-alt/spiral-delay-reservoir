@@ -1,0 +1,51 @@
+{
+  "name": "p6-g3d-mmi-eme-width-preflight-v1",
+  "tidy3d_version": "2.12.0",
+  "source_sha256": "81aeaf9d37430d13356fada2f5498b34ece9ddfd3cfc1affe9183e9d170fbc18",
+  "g1_config_sha256": "5736208c8a85ee26695439feeeb6fb069fbc1cb93d085cb2ae4e7502660efa1a",
+  "cloud_called": false,
+  "p5_blind_rerun": false,
+  "selection_basis": "local mode diagnosis selected only 1.2 and 1.4 um bodies",
+  "widths_um": [1.2, 1.4],
+  "geometries": {
+    "1.2": {
+      "waveguide_width_um": 0.343,
+      "waveguide_height_um": 0.18,
+      "mmi_width_um": 1.2,
+      "reference_mmi_length_um": 12.0,
+      "s_bend_length_um": 3.43,
+      "s_bend_offset_um": 0.8575,
+      "near_port_center_um": 0.4285,
+      "far_port_center_um": 1.286,
+      "near_guide_gap_um": 0.514
+    },
+    "1.4": {
+      "waveguide_width_um": 0.343,
+      "waveguide_height_um": 0.18,
+      "mmi_width_um": 1.4,
+      "reference_mmi_length_um": 12.0,
+      "s_bend_length_um": 3.43,
+      "s_bend_offset_um": 0.8575,
+      "near_port_center_um": 0.5285,
+      "far_port_center_um": 1.3860000000000001,
+      "near_guide_gap_um": 0.714
+    }
+  },
+  "length_sweep_um": {
+    "start": 3.0,
+    "stop": 24.0,
+    "step": 0.25,
+    "points": 85
+  },
+  "eme_cells": {"1.2": 19, "1.4": 19},
+  "mmi_cell_index": 9,
+  "port_modes": 4,
+  "device_modes": 20,
+  "serialized_simulation_sha256": {
+    "1.2": "42199c4e0371792484f416b6710cffcb84b22d9001e1ab23f45f16f9292f1bbb",
+    "1.4": "3dd624a7302af316f29d9c9cc1d775fa8f4a41d65d753eca12c7e75fd59a67c5"
+  },
+  "cloud_status": "NOT_SUBMITTED",
+  "preflight_passed": true,
+  "claim_limit": "center-wavelength physics-guided seed; passing candidate still requires broadband two-source FDTD"
+}

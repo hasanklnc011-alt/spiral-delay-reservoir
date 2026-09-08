@@ -1,0 +1,8 @@
+cff-version: 1.2.0
+message: "If you use this archived research record, please cite the repository and consult the evidence-boundary documentation."
+title: "Hybrid Electro-Photonic PIC / Photonic Reservoir"
+type: software
+authors:
+  - family-names: "Kılınç"
+    given-names: "Hasan"
+abstract: "An archival research record for a reservoir-computing-inspired photonic architecture, including a conceptual Blender presentation model."

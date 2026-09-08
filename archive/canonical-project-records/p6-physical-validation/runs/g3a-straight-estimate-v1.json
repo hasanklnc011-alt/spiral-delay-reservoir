@@ -1,0 +1,12 @@
+{
+  "name":"p6-g3a-straight-estimate-v1",
+  "source_sha256":"a8ee65c191ed27853efb99bbfbaf418b02ecb0db07fa0d61d23171f19454b1b0",
+  "jobs":[
+    {"name":"length4_m15","length_um":4.0,"task_name":"p6_g3a_straight_length4_m15","task_id":"fdve-fec70411-08ae-4339-a829-a90d99fe1213","task_status":"draft","serialized_simulation_sha256":"d2959ad94b9d40cd165b7f1a78d6b780822ae3a6ab5b88967e77d7e21b280419","estimated_flexcredits":0.04496997338311225,"solve_started":false},
+    {"name":"length8_m15","length_um":8.0,"task_name":"p6_g3a_straight_length8_m15","task_id":"fdve-f4978537-953d-45a3-b5f4-06eacbf3ab28","task_status":"draft","serialized_simulation_sha256":"8afb16290b46bcfc0215c57934e833d4e4048cf54908f9e9e2a742f151da40ca","estimated_flexcredits":0.05902510178109463,"solve_started":false}
+  ],
+  "estimated_total_flexcredits":0.10399507516420688,
+  "per_source_limit_flexcredits":0.5,
+  "total_limit_flexcredits":3.0,
+  "within_limits":true
+}

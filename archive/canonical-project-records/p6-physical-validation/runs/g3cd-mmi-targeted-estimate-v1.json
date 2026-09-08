@@ -1,0 +1,15 @@
+{
+  "name": "p6-g3cd-mmi-targeted-estimate-v1",
+  "source_sha256": "edf9a39c913af1918dcbdbbea0f3f8ad18ccc20ff703fa473637c86e0553fe84",
+  "mode_screen_sha256": "26166efac045bcb35b9a6da6c8810de36bf4167b8b189543701af2cf9ed41672",
+  "modal_2pi_beat_length_um": 18.40557318748455,
+  "mmi_width_um": 2.0,
+  "output_offset_um": 0.5,
+  "jobs": [
+    {"length_um": 8.8, "task_name": "p6_g3cd_mmi_l8p8_m15", "task_id": "fdve-eb6e6ffc-a93d-4c16-89d4-9864b9b4df77", "task_status": "draft", "serialized_simulation_sha256": "c1f87fa35a0ac5ad1332a4c8673c960904d9f93fb541d032381f630ee01c71d8", "estimated_flexcredits": 0.0730485494687324, "solve_started": false},
+    {"length_um": 9.2, "task_name": "p6_g3cd_mmi_l9p2_m15", "task_id": "fdve-bec250f6-d6a9-45b0-9afa-041dd1e7af2b", "task_status": "draft", "serialized_simulation_sha256": "1ddd5a02acc46739b3586ae990aa421c40f9e526f3fb23e2d01149fd8e7ba1c4", "estimated_flexcredits": 0.07417735659318377, "solve_started": false},
+    {"length_um": 9.6, "task_name": "p6_g3cd_mmi_l9p6_m15", "task_id": "fdve-dbb1dbfc-f90a-470b-bb95-dd92d42dfff3", "task_status": "draft", "serialized_simulation_sha256": "0e3216cadf27fb6cddc3802e223714674eee405d685685cb272c87d30ab55cfd", "estimated_flexcredits": 0.0752255134651048, "solve_started": false}
+  ],
+  "estimated_total_flexcredits": 0.22245141952702097,
+  "within_limits": true
+}

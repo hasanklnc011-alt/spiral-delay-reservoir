@@ -1,0 +1,16 @@
+{
+  "name": "p6-g3b-bend-r20-result-v1",
+  "source_sha256": "8891de25c5b1296cdc9277a5288dd4c8d5c83780555ed22f7f3d1823d0e14559",
+  "task_id": "fdve-41586bb1-f543-4e4e-920f-12ac0afa685d",
+  "task_status": "success",
+  "result_file": "g3b-bend-r20_m15-result-v1.hdf5",
+  "result_sha256": "05958fb4f489cd61587efad49ad327db00c79aaeb6b8780d2fb463f63f85c61d",
+  "actual_flexcredits": 0.18420184256603578,
+  "center_wavelength_nm": 1550.0,
+  "center_transmission_db": -0.003634681264157356,
+  "center_reflection_db": -46.88774252580139,
+  "max_abs_energy_residual": 0.0015141086867205278,
+  "worst_reflection_db": -28.653828176912484,
+  "pilot_passed": false,
+  "failure_reason": "wideband worst reflection misses the -30 dB gate; retained as rejected 97-segment arc evidence"
+}

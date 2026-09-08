@@ -1,0 +1,204 @@
+{
+  "name": "p6-g2-spiral-layout-v1",
+  "topology": "single-series Archimedean spiral with 20 progressive taps",
+  "selection_note": "selected instead of provisional double spiral to avoid a central U-turn below the accepted bend radius; no P5 score used",
+  "target_centerline_um": 142401.41755,
+  "analytic_centerline_um": 142401.41754999998,
+  "gds_quantized_polyline_um": 142400.61041238805,
+  "relative_length_error": 5.668044783886978e-06,
+  "pitch_um": 5.0,
+  "waveguide_width_um": 0.343,
+  "minimum_drc_gap_um": 0.2,
+  "edge_gap_um": 4.657,
+  "inner_centerline_radius_um": 10.031025587482391,
+  "minimum_curvature_radius_um": 10.0,
+  "outer_centerline_radius_um": 476.1691638530415,
+  "turns": 93.22762765311181,
+  "die_bbox_um": [
+    982.338327706083,
+    982.338327706083
+  ],
+  "max_parallel_segment_upper_bound_um": 2991.859094053419,
+  "tap_spacing_um": 7494.811450000001,
+  "predicted_total_delay_ps": 1906.1585653308287,
+  "taps": [
+    {
+      "tap": 0,
+      "distance_um": 0.0,
+      "x_um": 10.031025587482391,
+      "y_um": 2.3732322103752334e-24,
+      "target_delay_ps": 0,
+      "predicted_delay_ps": 0.0
+    },
+    {
+      "tap": 1,
+      "distance_um": 7494.811450000001,
+      "x_um": 98.5651041575948,
+      "y_um": -48.08732149388379,
+      "target_delay_ps": 100,
+      "predicted_delay_ps": 100.32413501741205
+    },
+    {
+      "tap": 2,
+      "distance_um": 14989.622900000002,
+      "x_um": 146.8967040435867,
+      "y_um": -48.75421342985317,
+      "target_delay_ps": 200,
+      "predicted_delay_ps": 200.6482700348241
+    },
+    {
+      "tap": 3,
+      "distance_um": 22484.434350000003,
+      "x_um": 137.97537372940954,
+      "y_um": -129.7946307990924,
+      "target_delay_ps": 300,
+      "predicted_delay_ps": 300.9724050522362
+    },
+    {
+      "tap": 4,
+      "distance_um": 29979.245800000004,
+      "x_um": -33.172612716033335,
+      "y_um": -216.1288961111227,
+      "target_delay_ps": 400,
+      "predicted_delay_ps": 401.2965400696482
+    },
+    {
+      "tap": 5,
+      "distance_um": 37474.057250000005,
+      "x_um": 175.52279790941364,
+      "y_um": -170.09456710432485,
+      "target_delay_ps": 500,
+      "predicted_delay_ps": 501.6206750870603
+    },
+    {
+      "tap": 6,
+      "distance_um": 44968.868700000006,
+      "x_um": -260.95730458322873,
+      "y_um": -59.7495170388148,
+      "target_delay_ps": 600,
+      "predicted_delay_ps": 601.9448101044724
+    },
+    {
+      "tap": 7,
+      "distance_um": 52463.68015000001,
+      "x_um": 123.26753279077913,
+      "y_um": -261.53804525047025,
+      "target_delay_ps": 700,
+      "predicted_delay_ps": 702.2689451218844
+    },
+    {
+      "tap": 8,
+      "distance_um": 59958.49160000001,
+      "x_um": 110.42424057874402,
+      "y_um": -288.67255067193565,
+      "target_delay_ps": 800,
+      "predicted_delay_ps": 802.5930801392964
+    },
+    {
+      "tap": 9,
+      "distance_um": 67453.30305,
+      "x_um": -309.0784245430399,
+      "y_um": -109.19801986234764,
+      "target_delay_ps": 900,
+      "predicted_delay_ps": 902.9172151567083
+    },
+    {
+      "tap": 10,
+      "distance_um": 74948.11450000001,
+      "x_um": 283.0605654401238,
+      "y_um": 198.13814857227163,
+      "target_delay_ps": 1000,
+      "predicted_delay_ps": 1003.2413501741206
+    },
+    {
+      "tap": 11,
+      "distance_um": 82442.92595000002,
+      "x_um": -354.7613024912276,
+      "y_um": 73.85635128846094,
+      "target_delay_ps": 1100,
+      "predicted_delay_ps": 1103.5654851915326
+    },
+    {
+      "tap": 12,
+      "distance_um": 89937.73740000001,
+      "x_um": -144.6869560097979,
+      "y_um": -349.7204061806872,
+      "target_delay_ps": 1200,
+      "predicted_delay_ps": 1203.8896202089447
+    },
+    {
+      "tap": 13,
+      "distance_um": 97432.54885,
+      "x_um": 64.7585726087035,
+      "y_um": -388.5528826084308,
+      "target_delay_ps": 1300,
+      "predicted_delay_ps": 1304.2137552263566
+    },
+    {
+      "tap": 14,
+      "distance_um": 104927.36030000001,
+      "x_um": -4.129275795478294,
+      "y_um": -408.7521300725164,
+      "target_delay_ps": 1400,
+      "predicted_delay_ps": 1404.5378902437687
+    },
+    {
+      "tap": 15,
+      "distance_um": 112422.17175000002,
+      "x_um": -315.3000918776022,
+      "y_um": -282.15163987620707,
+      "target_delay_ps": 1500,
+      "predicted_delay_ps": 1504.8620252611809
+    },
+    {
+      "tap": 16,
+      "distance_um": 119916.98320000002,
+      "x_um": -336.5477218924217,
+      "y_um": 278.7250781435626,
+      "target_delay_ps": 1600,
+      "predicted_delay_ps": 1605.1861602785928
+    },
+    {
+      "tap": 17,
+      "distance_um": 127411.79465000001,
+      "x_um": 397.0240681234653,
+      "y_um": 212.72581258519605,
+      "target_delay_ps": 1700,
+      "predicted_delay_ps": 1705.5102952960046
+    },
+    {
+      "tap": 18,
+      "distance_um": 134906.6061,
+      "x_um": -174.0775768156443,
+      "y_um": -429.5412949507713,
+      "target_delay_ps": 1800,
+      "predicted_delay_ps": 1805.8344303134165
+    },
+    {
+      "tap": 19,
+      "distance_um": 142401.41755,
+      "x_um": 66.71469029972184,
+      "y_um": 471.47239866477537,
+      "target_delay_ps": 1900,
+      "predicted_delay_ps": 1906.1585653308287
+    }
+  ],
+  "gds": {
+    "path_elements": 9,
+    "maximum_join_gap_um": 0.0,
+    "database_unit_um": 0.001
+  },
+  "drc": {
+    "length_within_0p1_percent": true,
+    "minimum_radius_passed": true,
+    "edge_gap_passed": true,
+    "gds_path_continuity_passed": true,
+    "tap_count_passed": true
+  },
+  "files": {
+    "spiral-centerline-v1.csv": "29f93f7c5191c485ac7de1bdb2962e1ae00537550c2298ef126b016c1710cf5e",
+    "spiral-centerline-v1.gds": "cc3cdec5ab98b4f4a403314e94a47657b1d2993ee4b03b6a4e51b1d878bae28b",
+    "spiral-centerline-v1.svg": "0a64453bf0a4a406ea6aa1087c5963d3a26ae6d24907bdddd8028cdacf7f1114"
+  },
+  "passed": true
+}

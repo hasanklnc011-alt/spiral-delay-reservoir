@@ -1,0 +1,17 @@
+{
+  "claim_level": "legacy evidence audit",
+  "three_ring_static_spectrum": {
+    "power_nmse": 0.15432303428607888,
+    "power_correlation": 0.979932266071074,
+    "complex_nmse_after_global_gain": 1.1797509719871668,
+    "passed": false,
+    "note": "Static spectrum matching cannot validate temporal reservoir computation."
+  },
+  "single_ring_transient": {
+    "aligned_nmse": 0.20226722084369975,
+    "aligned_cosine_similarity": 0.9707239255353877,
+    "passed": false
+  },
+  "dynamic_three_ring_fdtd_validated": false,
+  "new_cloud_run_authorized": false
+}

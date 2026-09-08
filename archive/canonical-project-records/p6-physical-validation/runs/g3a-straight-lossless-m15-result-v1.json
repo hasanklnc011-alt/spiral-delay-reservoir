@@ -1,0 +1,9 @@
+{
+  "name":"p6-g3a-straight-lossless-m15-result-v1",
+  "source_sha256":"d66fd60101d0c9e228dfe7110fcd9e96d881a951434efa312302cff9ce54e56e",
+  "results":[
+    {"name":"length4_m15","length_um":4.0,"task_id":"fdve-62730d4b-3c9a-4168-a607-dbf27f28bcf7","task_status":"success","result_file":"g3a-lossless-length4_m15-result-v1.hdf5","result_sha256":"6fb7874b5384c341813a11fbda90ac68dfcf38e21444c5c2a5ad4cb0e9c477ff","actual_flexcredits":0.0,"center_transmission_db":0.0014490565930074396,"max_abs_energy_residual":0.0005551667370247149,"worst_reflection_db":-64.14932401370872},
+    {"name":"length8_m15","length_um":8.0,"task_id":"fdve-b4b76dca-c746-4c4b-bebe-a2fc614da69d","task_status":"success","result_file":"g3a-lossless-length8_m15-result-v1.hdf5","result_sha256":"e3d03b056ccfb5d4f52779eee5c3f0210339c84a5687f7fd9728faf5a3b8c2c1","actual_flexcredits":0.025,"center_transmission_db":0.0022710465117178505,"max_abs_energy_residual":0.0006186139589633433,"worst_reflection_db":-64.5798752194215}
+  ],
+  "actual_total_flexcredits":0.025
+}

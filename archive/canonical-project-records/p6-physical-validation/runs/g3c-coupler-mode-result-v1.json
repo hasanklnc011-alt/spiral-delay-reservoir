@@ -1,0 +1,15 @@
+{
+  "name":"p6-g3c-coupler-mode-result-v1",
+  "source_sha256":"11303cfcce59d1f786c704a57ae51db7c72ac128fed1c4983fcc370c613c04e6",
+  "results":[
+    {"mesh":20.0,"task_id":"mo-d4cb1625-de35-4128-b4f5-f1174f04787e","result_file":"g3c-coupler-gap200nm_m20-result-v1.hdf5","result_sha256":"0231cdb433c159555309f483469ad1e671b19b8e5f0cc8b31167c4379071c72d","actual_flexcredits":0.005317075555555556,"center_delta_neff":0.14395868311811078,"center_length_50_50_um":2.6917445450794792},
+    {"mesh":25.0,"task_id":"mo-3b92e522-cece-4797-818b-afd44d5ea076","result_file":"g3c-coupler-gap200nm_m25-result-v1.hdf5","result_sha256":"648e319154e091efeaecd397e19cf583f74614cf194e26573723d4a00af1f3d0","actual_flexcredits":0.005712248888888889,"center_delta_neff":0.1435066094426487,"center_length_50_50_um":2.7002240628844443}
+  ],
+  "center_length_relative_mesh_delta":0.0031403015481267157,
+  "selected_gap_um":0.2,
+  "fine_length_50_50_um":2.7002240628844443,
+  "fine_wavelength_length_variation_fraction_1520_1580nm":0.1926732723030905,
+  "simultaneous_operating_band":"10 GBd around 1550 nm; the 1520-1580 nm sweep is retargeting evidence, not one WDM band",
+  "progressive_interaction_length_range_um":[0.7753223186505086,5.400448125768888],
+  "mode_gate_passed":true
+}

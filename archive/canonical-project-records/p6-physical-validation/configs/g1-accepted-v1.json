@@ -1,0 +1,16 @@
+{
+  "name":"p6-g1-accepted-cross-section-v1",
+  "status":"ACCEPTED_FOR_P6_COMPONENT_VALIDATION_NOT_FOUNDRY_QUALIFIED",
+  "platform":"silicon_strip_in_silica",
+  "center_wavelength_um":1.55,
+  "width_um":0.343,
+  "height_um":0.18,
+  "required_process_window":{"width_tolerance_um":0.01,"device_layer_thickness_tolerance_um":0.005},
+  "rejected_process_window":{"device_layer_thickness_tolerance_um":0.01,"reason":"both +/-10 nm height corners fail the 2 percent delay gate"},
+  "nominal_fine_mesh":{"n_eff":1.8710746500263764,"n_group":4.012965400696482,"mode_area_um2":0.2614058935019393,"te_fraction":0.945955333258428,"guided_te_like_mode_count":1,"delay_s":1.9061585653308285e-09,"symbols_at_10_gbd":19.061585653308285},
+  "mesh_convergence":{"relative_n_group_delta":0.0017689410336004742,"absolute_n_eff_delta":0.00004901722932171282,"passed":true},
+  "corner_acceptance_at_1550nm":{"width_plus_minus_10nm":true,"height_plus_minus_5nm":true},
+  "nominal_sampled_wavelength_window_within_2_percent_um":[1.53,1.575],
+  "evidence_files":["runs/g1-selected-validation-result-v1.json","runs/g1-thickness-refinement-result-v1.json"],
+  "g1_passed":true
+}

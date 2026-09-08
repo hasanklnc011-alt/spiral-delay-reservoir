@@ -1,0 +1,15 @@
+{
+  "name": "p4-nominal-confirmation-v1",
+  "phase": "confirmation",
+  "base_profile": "nominal",
+  "channel_budgets": [30],
+  "parallel_port_counts": [10],
+  "signal_power_mw_per_port": [5.0],
+  "lo_to_signal_power_ratios": [1.0],
+  "receiver_noise_bandwidth_factors": [1.0],
+  "max_total_optical_power_mw": 100.0,
+  "hardware_seeds": [101, 211, 307, 401, 503],
+  "median_gate": 0.04,
+  "robust_seed_count": 8,
+  "ridge_alphas": [1e-10, 1e-8, 1e-6, 0.0001, 0.01, 0.1, 1.0, 3.1622776601683795, 10.0, 31.622776601683793, 100.0]
+}

@@ -1,0 +1,21 @@
+{
+  "name": "p6-g3c-union-y-result-v1",
+  "source_sha256": "f635760981cc5eef1e769339f5cd8deb7da36766db068401d6a78c0af8b10812",
+  "task_id": "fdve-9d51b613-4456-4afb-93e8-e246403cc722",
+  "task_status": "success",
+  "result_file": "g3c-union-y-long_m15-result-v1.hdf5",
+  "result_sha256": "76f22721f08e4a56b2dce61bc162556c0d042816de04a8836c157f57eb1f9a78",
+  "actual_flexcredits": 0.30434028032565186,
+  "final_decay": 4.08e-06,
+  "metrics": {
+    "center_single_output_power": 0.4556698785903922,
+    "center_total_output_power_inferred_by_symmetry": 0.9113397571807844,
+    "center_excess_loss_db": 0.4031968322414127,
+    "center_reflection_db": -12.890349251416547,
+    "worst_reflection_db": -12.225438187736577,
+    "max_abs_energy_residual": 0.0514138165457952
+  },
+  "nominal_balance_enforced_by_symmetry": true,
+  "fabrication_imbalance_status": "OPEN_UNTIL_NOMINAL_PASSES",
+  "pilot_passed": false
+}

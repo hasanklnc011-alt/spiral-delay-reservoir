@@ -1,0 +1,9 @@
+{
+  "status": "candidate_locked",
+  "protocol_sha256": "e6cbd95e7aa6b5b3aae9f73172099e4c591db334b2a7f0497768f999c70073f8",
+  "candidate_config_sha256": "c7c36b289bf1bdc0689f45b280f807ceaed3c470690cfe36cfd21be023baaa3c",
+  "source_sha256": "a0e6561a726a6d17a31dd1bde37257435f857549cb726d711bea6e5c4a17a080",
+  "preflight_sha256": "c7a1e7baa196727cab3c2543b21fb472cb0885be339c4143113553a9fb946aaf",
+  "authorized_blind_output": "p5-publication/runs/blind-v2.json",
+  "locked_utc": "2026-09-03T20:17:00.102063+00:00"
+}

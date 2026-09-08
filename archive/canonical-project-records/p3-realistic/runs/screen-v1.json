@@ -1,0 +1,4843 @@
+{
+  "claim_level": "P3 system-level physical tolerance model; not component/FDTD validation",
+  "development_only": true,
+  "test_evaluations": 0,
+  "p0_protocol_sha256": "2a66934d024178a15cacfccd282a3c27ca4d96a357b0820f3fcae59360ebc95a",
+  "p2_result_sha256": "9a0cf282616522f086e4cc8b2a920b216a3f07bf71aefcb1844ec7d2c6ae54af",
+  "source_sha256": "c3425b22d4c5dc52eaf2ec24de88448ea46786bb8f043828baacf3b74e4f9435",
+  "config_sha256": "078399ad702eeb97f82bc7c04e1675263158392ddd2fabfde7f410ae3b7c7593",
+  "candidates": [
+    {
+      "profile": "optimistic",
+      "channels": 20,
+      "parallel_ports": 1,
+      "time_multiplex_steps": 20,
+      "feasibility": {
+        "parallel_ports": 1,
+        "time_multiplex_steps": 20,
+        "symbol_rate_hz": 10000000000.0,
+        "slot_rate_hz": 200000000000.0,
+        "required_detector_bandwidth_hz": 100000000000.0,
+        "max_delay_length_cm": 14.240141755,
+        "checks": {
+          "delay_length": true,
+          "detector_bandwidth": false,
+          "switch_rate": false
+        },
+        "passed": false
+      },
+      "summary": {
+        "median_validation_nmse": 0.05723960004570196,
+        "min_validation_nmse": 0.0522463094583625,
+        "max_validation_nmse": 0.11221920254688127,
+        "seeds_at_or_below_robust_threshold": 0,
+        "passed": false
+      },
+      "scores": [
+        {
+          "seed": 11,
+          "validation_nmse": 0.0522463094583625,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "seed": 23,
+          "validation_nmse": 0.11221920254688127,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 37,
+          "validation_nmse": 0.05426667095867918,
+          "best_alpha": 10.0
+        },
+        {
+          "seed": 41,
+          "validation_nmse": 0.06564730631688263,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 53,
+          "validation_nmse": 0.05460234684138189,
+          "best_alpha": 1.0
+        },
+        {
+          "seed": 67,
+          "validation_nmse": 0.0567010941262558,
+          "best_alpha": 10.0
+        },
+        {
+          "seed": 71,
+          "validation_nmse": 0.05287659945141877,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "seed": 97,
+          "validation_nmse": 0.05809473862587014,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "seed": 109,
+          "validation_nmse": 0.06415638709949706,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "seed": 113,
+          "validation_nmse": 0.05777810596514812,
+          "best_alpha": 3.1622776601683795
+        }
+      ],
+      "selected_channel_labels": [
+        "pair:0,9",
+        "pair:1,10",
+        "self:9",
+        "self:0",
+        "pair:2,11",
+        "self:10",
+        "self:1",
+        "pair:3,12",
+        "self:11",
+        "pair:4,13",
+        "lo:10",
+        "self:2",
+        "self:12",
+        "lo:11",
+        "pair:10,19",
+        "pair:5,14",
+        "lo:12",
+        "pair:6,15",
+        "self:13",
+        "pair:7,16"
+      ],
+      "passed": false
+    },
+    {
+      "profile": "optimistic",
+      "channels": 20,
+      "parallel_ports": 2,
+      "time_multiplex_steps": 10,
+      "feasibility": {
+        "parallel_ports": 2,
+        "time_multiplex_steps": 10,
+        "symbol_rate_hz": 10000000000.0,
+        "slot_rate_hz": 100000000000.0,
+        "required_detector_bandwidth_hz": 50000000000.0,
+        "max_delay_length_cm": 14.240141755,
+        "checks": {
+          "delay_length": true,
+          "detector_bandwidth": true,
+          "switch_rate": true
+        },
+        "passed": true
+      },
+      "summary": {
+        "median_validation_nmse": 0.04174793168841898,
+        "min_validation_nmse": 0.03633861287198717,
+        "max_validation_nmse": 0.10572077457573455,
+        "seeds_at_or_below_robust_threshold": 8,
+        "passed": false
+      },
+      "scores": [
+        {
+          "seed": 11,
+          "validation_nmse": 0.037636689122071125,
+          "best_alpha": 10.0
+        },
+        {
+          "seed": 23,
+          "validation_nmse": 0.10572077457573455,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 37,
+          "validation_nmse": 0.04070905894306205,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 41,
+          "validation_nmse": 0.05741985952172051,
+          "best_alpha": 1.0
+        },
+        {
+          "seed": 53,
+          "validation_nmse": 0.04205996779370454,
+          "best_alpha": 1.0
+        },
+        {
+          "seed": 67,
+          "validation_nmse": 0.04143589558313342,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "seed": 71,
+          "validation_nmse": 0.03984750905464573,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "seed": 97,
+          "validation_nmse": 0.04872439350795996,
+          "best_alpha": 10.0
+        },
+        {
+          "seed": 109,
+          "validation_nmse": 0.04695812398272091,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "seed": 113,
+          "validation_nmse": 0.03633861287198717,
+          "best_alpha": 1e-10
+        }
+      ],
+      "selected_channel_labels": [
+        "pair:0,9",
+        "pair:1,10",
+        "self:9",
+        "self:0",
+        "pair:2,11",
+        "self:10",
+        "self:1",
+        "pair:3,12",
+        "self:11",
+        "pair:4,13",
+        "lo:10",
+        "self:2",
+        "self:12",
+        "lo:11",
+        "pair:10,19",
+        "pair:5,14",
+        "lo:12",
+        "pair:6,15",
+        "self:13",
+        "pair:7,16"
+      ],
+      "passed": false
+    },
+    {
+      "profile": "optimistic",
+      "channels": 20,
+      "parallel_ports": 3,
+      "time_multiplex_steps": 7,
+      "feasibility": {
+        "parallel_ports": 3,
+        "time_multiplex_steps": 7,
+        "symbol_rate_hz": 10000000000.0,
+        "slot_rate_hz": 70000000000.0,
+        "required_detector_bandwidth_hz": 35000000000.0,
+        "max_delay_length_cm": 14.240141755,
+        "checks": {
+          "delay_length": true,
+          "detector_bandwidth": true,
+          "switch_rate": true
+        },
+        "passed": true
+      },
+      "summary": {
+        "median_validation_nmse": 0.04456096519094329,
+        "min_validation_nmse": 0.037855323426275095,
+        "max_validation_nmse": 0.11017652309298509,
+        "seeds_at_or_below_robust_threshold": 7,
+        "passed": false
+      },
+      "scores": [
+        {
+          "seed": 11,
+          "validation_nmse": 0.03808018064134473,
+          "best_alpha": 10.0
+        },
+        {
+          "seed": 23,
+          "validation_nmse": 0.11017652309298509,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 37,
+          "validation_nmse": 0.044425674630770746,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 41,
+          "validation_nmse": 0.05986664597103764,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 53,
+          "validation_nmse": 0.04469625575111583,
+          "best_alpha": 0.1
+        },
+        {
+          "seed": 67,
+          "validation_nmse": 0.04363526626520855,
+          "best_alpha": 0.31622776601683794
+        },
+        {
+          "seed": 71,
+          "validation_nmse": 0.0403819072250869,
+          "best_alpha": 1.0
+        },
+        {
+          "seed": 97,
+          "validation_nmse": 0.05130801289177196,
+          "best_alpha": 10.0
+        },
+        {
+          "seed": 109,
+          "validation_nmse": 0.04995579719732592,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "seed": 113,
+          "validation_nmse": 0.037855323426275095,
+          "best_alpha": 1.0
+        }
+      ],
+      "selected_channel_labels": [
+        "pair:0,9",
+        "pair:1,10",
+        "self:9",
+        "self:0",
+        "pair:2,11",
+        "self:10",
+        "self:1",
+        "pair:3,12",
+        "self:11",
+        "pair:4,13",
+        "lo:10",
+        "self:2",
+        "self:12",
+        "lo:11",
+        "pair:10,19",
+        "pair:5,14",
+        "lo:12",
+        "pair:6,15",
+        "self:13",
+        "pair:7,16"
+      ],
+      "passed": false
+    },
+    {
+      "profile": "optimistic",
+      "channels": 20,
+      "parallel_ports": 4,
+      "time_multiplex_steps": 5,
+      "feasibility": {
+        "parallel_ports": 4,
+        "time_multiplex_steps": 5,
+        "symbol_rate_hz": 10000000000.0,
+        "slot_rate_hz": 50000000000.0,
+        "required_detector_bandwidth_hz": 25000000000.0,
+        "max_delay_length_cm": 14.240141755,
+        "checks": {
+          "delay_length": true,
+          "detector_bandwidth": true,
+          "switch_rate": true
+        },
+        "passed": true
+      },
+      "summary": {
+        "median_validation_nmse": 0.04559820359037704,
+        "min_validation_nmse": 0.03978519851930623,
+        "max_validation_nmse": 0.11079900166209093,
+        "seeds_at_or_below_robust_threshold": 6,
+        "passed": false
+      },
+      "scores": [
+        {
+          "seed": 11,
+          "validation_nmse": 0.04012739324825734,
+          "best_alpha": 10.0
+        },
+        {
+          "seed": 23,
+          "validation_nmse": 0.11079900166209093,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 37,
+          "validation_nmse": 0.04457699687183297,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 41,
+          "validation_nmse": 0.06057694131927299,
+          "best_alpha": 1.0
+        },
+        {
+          "seed": 53,
+          "validation_nmse": 0.04661941030892111,
+          "best_alpha": 0.31622776601683794
+        },
+        {
+          "seed": 67,
+          "validation_nmse": 0.044327677943844186,
+          "best_alpha": 1.0
+        },
+        {
+          "seed": 71,
+          "validation_nmse": 0.043682649791061665,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "seed": 97,
+          "validation_nmse": 0.053057437879837376,
+          "best_alpha": 10.0
+        },
+        {
+          "seed": 109,
+          "validation_nmse": 0.05068181875410595,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "seed": 113,
+          "validation_nmse": 0.03978519851930623,
+          "best_alpha": 1e-10
+        }
+      ],
+      "selected_channel_labels": [
+        "pair:0,9",
+        "pair:1,10",
+        "self:9",
+        "self:0",
+        "pair:2,11",
+        "self:10",
+        "self:1",
+        "pair:3,12",
+        "self:11",
+        "pair:4,13",
+        "lo:10",
+        "self:2",
+        "self:12",
+        "lo:11",
+        "pair:10,19",
+        "pair:5,14",
+        "lo:12",
+        "pair:6,15",
+        "self:13",
+        "pair:7,16"
+      ],
+      "passed": false
+    },
+    {
+      "profile": "optimistic",
+      "channels": 20,
+      "parallel_ports": 5,
+      "time_multiplex_steps": 4,
+      "feasibility": {
+        "parallel_ports": 5,
+        "time_multiplex_steps": 4,
+        "symbol_rate_hz": 10000000000.0,
+        "slot_rate_hz": 40000000000.0,
+        "required_detector_bandwidth_hz": 20000000000.0,
+        "max_delay_length_cm": 14.240141755,
+        "checks": {
+          "delay_length": true,
+          "detector_bandwidth": true,
+          "switch_rate": true
+        },
+        "passed": true
+      },
+      "summary": {
+        "median_validation_nmse": 0.04525455252362434,
+        "min_validation_nmse": 0.03864354121181977,
+        "max_validation_nmse": 0.10879257229216376,
+        "seeds_at_or_below_robust_threshold": 7,
+        "passed": false
+      },
+      "scores": [
+        {
+          "seed": 11,
+          "validation_nmse": 0.03995221459702625,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "seed": 23,
+          "validation_nmse": 0.10879257229216376,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 37,
+          "validation_nmse": 0.04479344452658238,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 41,
+          "validation_nmse": 0.06122568838663378,
+          "best_alpha": 3.1622776601683795e-10
+        },
+        {
+          "seed": 53,
+          "validation_nmse": 0.0457156605206663,
+          "best_alpha": 0.03162277660168379
+        },
+        {
+          "seed": 67,
+          "validation_nmse": 0.04460347077623719,
+          "best_alpha": 1.0
+        },
+        {
+          "seed": 71,
+          "validation_nmse": 0.04439920077178332,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "seed": 97,
+          "validation_nmse": 0.052512527008322624,
+          "best_alpha": 10.0
+        },
+        {
+          "seed": 109,
+          "validation_nmse": 0.049990254398040786,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "seed": 113,
+          "validation_nmse": 0.03864354121181977,
+          "best_alpha": 1e-10
+        }
+      ],
+      "selected_channel_labels": [
+        "pair:0,9",
+        "pair:1,10",
+        "self:9",
+        "self:0",
+        "pair:2,11",
+        "self:10",
+        "self:1",
+        "pair:3,12",
+        "self:11",
+        "pair:4,13",
+        "lo:10",
+        "self:2",
+        "self:12",
+        "lo:11",
+        "pair:10,19",
+        "pair:5,14",
+        "lo:12",
+        "pair:6,15",
+        "self:13",
+        "pair:7,16"
+      ],
+      "passed": false
+    },
+    {
+      "profile": "optimistic",
+      "channels": 20,
+      "parallel_ports": 10,
+      "time_multiplex_steps": 2,
+      "feasibility": {
+        "parallel_ports": 10,
+        "time_multiplex_steps": 2,
+        "symbol_rate_hz": 10000000000.0,
+        "slot_rate_hz": 20000000000.0,
+        "required_detector_bandwidth_hz": 10000000000.0,
+        "max_delay_length_cm": 14.240141755,
+        "checks": {
+          "delay_length": true,
+          "detector_bandwidth": true,
+          "switch_rate": true
+        },
+        "passed": true
+      },
+      "summary": {
+        "median_validation_nmse": 0.045989342058785646,
+        "min_validation_nmse": 0.03833956532783846,
+        "max_validation_nmse": 0.10936832342139723,
+        "seeds_at_or_below_robust_threshold": 6,
+        "passed": false
+      },
+      "scores": [
+        {
+          "seed": 11,
+          "validation_nmse": 0.03833956532783846,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "seed": 23,
+          "validation_nmse": 0.10936832342139723,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 37,
+          "validation_nmse": 0.04386174272911718,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 41,
+          "validation_nmse": 0.06088128613829147,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 53,
+          "validation_nmse": 0.04689031212514212,
+          "best_alpha": 1.0
+        },
+        {
+          "seed": 67,
+          "validation_nmse": 0.04508837199242916,
+          "best_alpha": 1.0
+        },
+        {
+          "seed": 71,
+          "validation_nmse": 0.04243834632897484,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "seed": 97,
+          "validation_nmse": 0.052938316702381666,
+          "best_alpha": 10.0
+        },
+        {
+          "seed": 109,
+          "validation_nmse": 0.050294269548048526,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 113,
+          "validation_nmse": 0.03854832380468488,
+          "best_alpha": 1e-10
+        }
+      ],
+      "selected_channel_labels": [
+        "pair:0,9",
+        "pair:1,10",
+        "self:9",
+        "self:0",
+        "pair:2,11",
+        "self:10",
+        "self:1",
+        "pair:3,12",
+        "self:11",
+        "pair:4,13",
+        "lo:10",
+        "self:2",
+        "self:12",
+        "lo:11",
+        "pair:10,19",
+        "pair:5,14",
+        "lo:12",
+        "pair:6,15",
+        "self:13",
+        "pair:7,16"
+      ],
+      "passed": false
+    },
+    {
+      "profile": "optimistic",
+      "channels": 20,
+      "parallel_ports": 20,
+      "time_multiplex_steps": 1,
+      "feasibility": {
+        "parallel_ports": 20,
+        "time_multiplex_steps": 1,
+        "symbol_rate_hz": 10000000000.0,
+        "slot_rate_hz": 10000000000.0,
+        "required_detector_bandwidth_hz": 5000000000.0,
+        "max_delay_length_cm": 14.240141755,
+        "checks": {
+          "delay_length": true,
+          "detector_bandwidth": true,
+          "switch_rate": true
+        },
+        "passed": true
+      },
+      "summary": {
+        "median_validation_nmse": 0.04658220505210105,
+        "min_validation_nmse": 0.038899009765948955,
+        "max_validation_nmse": 0.10944298719756247,
+        "seeds_at_or_below_robust_threshold": 6,
+        "passed": false
+      },
+      "scores": [
+        {
+          "seed": 11,
+          "validation_nmse": 0.039621016936898436,
+          "best_alpha": 10.0
+        },
+        {
+          "seed": 23,
+          "validation_nmse": 0.10944298719756247,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 37,
+          "validation_nmse": 0.045620662313059404,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 41,
+          "validation_nmse": 0.06125198904000855,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "seed": 53,
+          "validation_nmse": 0.04754374779114268,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "seed": 67,
+          "validation_nmse": 0.04397932685156827,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "seed": 71,
+          "validation_nmse": 0.044367401476949966,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "seed": 97,
+          "validation_nmse": 0.05252668153094366,
+          "best_alpha": 10.0
+        },
+        {
+          "seed": 109,
+          "validation_nmse": 0.05005660239533546,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "seed": 113,
+          "validation_nmse": 0.038899009765948955,
+          "best_alpha": 1.0
+        }
+      ],
+      "selected_channel_labels": [
+        "pair:0,9",
+        "pair:1,10",
+        "self:9",
+        "self:0",
+        "pair:2,11",
+        "self:10",
+        "self:1",
+        "pair:3,12",
+        "self:11",
+        "pair:4,13",
+        "lo:10",
+        "self:2",
+        "self:12",
+        "lo:11",
+        "pair:10,19",
+        "pair:5,14",
+        "lo:12",
+        "pair:6,15",
+        "self:13",
+        "pair:7,16"
+      ],
+      "passed": false
+    },
+    {
+      "profile": "optimistic",
+      "channels": 30,
+      "parallel_ports": 1,
+      "time_multiplex_steps": 30,
+      "feasibility": {
+        "parallel_ports": 1,
+        "time_multiplex_steps": 30,
+        "symbol_rate_hz": 10000000000.0,
+        "slot_rate_hz": 300000000000.0,
+        "required_detector_bandwidth_hz": 150000000000.0,
+        "max_delay_length_cm": 14.240141755,
+        "checks": {
+          "delay_length": true,
+          "detector_bandwidth": false,
+          "switch_rate": false
+        },
+        "passed": false
+      },
+      "summary": {
+        "median_validation_nmse": 0.04562639753336603,
+        "min_validation_nmse": 0.03908016758489529,
+        "max_validation_nmse": 0.10340817476801427,
+        "seeds_at_or_below_robust_threshold": 8,
+        "passed": false
+      },
+      "scores": [
+        {
+          "seed": 11,
+          "validation_nmse": 0.03908016758489529,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 23,
+          "validation_nmse": 0.10340817476801427,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 37,
+          "validation_nmse": 0.04307149169413453,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 41,
+          "validation_nmse": 0.05498073581105804,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "seed": 53,
+          "validation_nmse": 0.04263619439973481,
+          "best_alpha": 1.0
+        },
+        {
+          "seed": 67,
+          "validation_nmse": 0.04761917812579008,
+          "best_alpha": 1.0
+        },
+        {
+          "seed": 71,
+          "validation_nmse": 0.04338999850532853,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "seed": 97,
+          "validation_nmse": 0.04642601610465271,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "seed": 109,
+          "validation_nmse": 0.049552230841708046,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 113,
+          "validation_nmse": 0.044826778962079344,
+          "best_alpha": 3.1622776601683795
+        }
+      ],
+      "selected_channel_labels": [
+        "pair:0,9",
+        "pair:1,10",
+        "self:9",
+        "self:0",
+        "pair:2,11",
+        "self:10",
+        "self:1",
+        "pair:3,12",
+        "self:11",
+        "pair:4,13",
+        "lo:10",
+        "self:2",
+        "self:12",
+        "lo:11",
+        "pair:10,19",
+        "pair:5,14",
+        "lo:12",
+        "pair:6,15",
+        "self:13",
+        "pair:7,16",
+        "pair:8,17",
+        "pair:9,18",
+        "self:14",
+        "self:3",
+        "lo:13",
+        "self:15",
+        "self:17",
+        "self:16",
+        "lo:14",
+        "self:18"
+      ],
+      "passed": false
+    },
+    {
+      "profile": "optimistic",
+      "channels": 30,
+      "parallel_ports": 2,
+      "time_multiplex_steps": 15,
+      "feasibility": {
+        "parallel_ports": 2,
+        "time_multiplex_steps": 15,
+        "symbol_rate_hz": 10000000000.0,
+        "slot_rate_hz": 150000000000.0,
+        "required_detector_bandwidth_hz": 75000000000.0,
+        "max_delay_length_cm": 14.240141755,
+        "checks": {
+          "delay_length": true,
+          "detector_bandwidth": false,
+          "switch_rate": false
+        },
+        "passed": false
+      },
+      "summary": {
+        "median_validation_nmse": 0.038163305887840566,
+        "min_validation_nmse": 0.03171018814207588,
+        "max_validation_nmse": 0.09588181871129328,
+        "seeds_at_or_below_robust_threshold": 9,
+        "passed": true
+      },
+      "scores": [
+        {
+          "seed": 11,
+          "validation_nmse": 0.03171018814207588,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "seed": 23,
+          "validation_nmse": 0.09588181871129328,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 37,
+          "validation_nmse": 0.037094757328736905,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 41,
+          "validation_nmse": 0.04691737118052937,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 53,
+          "validation_nmse": 0.03618702281250833,
+          "best_alpha": 1.0
+        },
+        {
+          "seed": 67,
+          "validation_nmse": 0.03923185444694423,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 71,
+          "validation_nmse": 0.036274634756103014,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "seed": 97,
+          "validation_nmse": 0.041311550862699886,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "seed": 109,
+          "validation_nmse": 0.042511896298168955,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "seed": 113,
+          "validation_nmse": 0.03568239691339386,
+          "best_alpha": 3.1622776601683795
+        }
+      ],
+      "selected_channel_labels": [
+        "pair:0,9",
+        "pair:1,10",
+        "self:9",
+        "self:0",
+        "pair:2,11",
+        "self:10",
+        "self:1",
+        "pair:3,12",
+        "self:11",
+        "pair:4,13",
+        "lo:10",
+        "self:2",
+        "self:12",
+        "lo:11",
+        "pair:10,19",
+        "pair:5,14",
+        "lo:12",
+        "pair:6,15",
+        "self:13",
+        "pair:7,16",
+        "pair:8,17",
+        "pair:9,18",
+        "self:14",
+        "self:3",
+        "lo:13",
+        "self:15",
+        "self:17",
+        "self:16",
+        "lo:14",
+        "self:18"
+      ],
+      "passed": false
+    },
+    {
+      "profile": "optimistic",
+      "channels": 30,
+      "parallel_ports": 3,
+      "time_multiplex_steps": 10,
+      "feasibility": {
+        "parallel_ports": 3,
+        "time_multiplex_steps": 10,
+        "symbol_rate_hz": 10000000000.0,
+        "slot_rate_hz": 100000000000.0,
+        "required_detector_bandwidth_hz": 50000000000.0,
+        "max_delay_length_cm": 14.240141755,
+        "checks": {
+          "delay_length": true,
+          "detector_bandwidth": true,
+          "switch_rate": true
+        },
+        "passed": true
+      },
+      "summary": {
+        "median_validation_nmse": 0.03267833901426456,
+        "min_validation_nmse": 0.02789163909628956,
+        "max_validation_nmse": 0.08949064433714156,
+        "seeds_at_or_below_robust_threshold": 9,
+        "passed": true
+      },
+      "scores": [
+        {
+          "seed": 11,
+          "validation_nmse": 0.029048955873183173,
+          "best_alpha": 10.0
+        },
+        {
+          "seed": 23,
+          "validation_nmse": 0.08949064433714156,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 37,
+          "validation_nmse": 0.03169870487196021,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 41,
+          "validation_nmse": 0.04379794625957587,
+          "best_alpha": 1.0
+        },
+        {
+          "seed": 53,
+          "validation_nmse": 0.03195211558528038,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "seed": 67,
+          "validation_nmse": 0.033404562443248735,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "seed": 71,
+          "validation_nmse": 0.030334348163354306,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "seed": 97,
+          "validation_nmse": 0.036115614406835084,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "seed": 109,
+          "validation_nmse": 0.03693088005580141,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "seed": 113,
+          "validation_nmse": 0.02789163909628956,
+          "best_alpha": 3.1622776601683795
+        }
+      ],
+      "selected_channel_labels": [
+        "pair:0,9",
+        "pair:1,10",
+        "self:9",
+        "self:0",
+        "pair:2,11",
+        "self:10",
+        "self:1",
+        "pair:3,12",
+        "self:11",
+        "pair:4,13",
+        "lo:10",
+        "self:2",
+        "self:12",
+        "lo:11",
+        "pair:10,19",
+        "pair:5,14",
+        "lo:12",
+        "pair:6,15",
+        "self:13",
+        "pair:7,16",
+        "pair:8,17",
+        "pair:9,18",
+        "self:14",
+        "self:3",
+        "lo:13",
+        "self:15",
+        "self:17",
+        "self:16",
+        "lo:14",
+        "self:18"
+      ],
+      "passed": true
+    },
+    {
+      "profile": "optimistic",
+      "channels": 30,
+      "parallel_ports": 4,
+      "time_multiplex_steps": 8,
+      "feasibility": {
+        "parallel_ports": 4,
+        "time_multiplex_steps": 8,
+        "symbol_rate_hz": 10000000000.0,
+        "slot_rate_hz": 80000000000.0,
+        "required_detector_bandwidth_hz": 40000000000.0,
+        "max_delay_length_cm": 14.240141755,
+        "checks": {
+          "delay_length": true,
+          "detector_bandwidth": true,
+          "switch_rate": true
+        },
+        "passed": true
+      },
+      "summary": {
+        "median_validation_nmse": 0.03253271145653039,
+        "min_validation_nmse": 0.027897018444441053,
+        "max_validation_nmse": 0.09224749859440164,
+        "seeds_at_or_below_robust_threshold": 9,
+        "passed": true
+      },
+      "scores": [
+        {
+          "seed": 11,
+          "validation_nmse": 0.028360014276279776,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "seed": 23,
+          "validation_nmse": 0.09224749859440164,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 37,
+          "validation_nmse": 0.03191094741529412,
+          "best_alpha": 0.31622776601683794
+        },
+        {
+          "seed": 41,
+          "validation_nmse": 0.043176326527999805,
+          "best_alpha": 1.0
+        },
+        {
+          "seed": 53,
+          "validation_nmse": 0.03240614149228375,
+          "best_alpha": 1.0
+        },
+        {
+          "seed": 67,
+          "validation_nmse": 0.03265928142077703,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "seed": 71,
+          "validation_nmse": 0.029712939987298206,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "seed": 97,
+          "validation_nmse": 0.03618010388155886,
+          "best_alpha": 10.0
+        },
+        {
+          "seed": 109,
+          "validation_nmse": 0.036804447296797334,
+          "best_alpha": 1.0
+        },
+        {
+          "seed": 113,
+          "validation_nmse": 0.027897018444441053,
+          "best_alpha": 3.1622776601683795
+        }
+      ],
+      "selected_channel_labels": [
+        "pair:0,9",
+        "pair:1,10",
+        "self:9",
+        "self:0",
+        "pair:2,11",
+        "self:10",
+        "self:1",
+        "pair:3,12",
+        "self:11",
+        "pair:4,13",
+        "lo:10",
+        "self:2",
+        "self:12",
+        "lo:11",
+        "pair:10,19",
+        "pair:5,14",
+        "lo:12",
+        "pair:6,15",
+        "self:13",
+        "pair:7,16",
+        "pair:8,17",
+        "pair:9,18",
+        "self:14",
+        "self:3",
+        "lo:13",
+        "self:15",
+        "self:17",
+        "self:16",
+        "lo:14",
+        "self:18"
+      ],
+      "passed": true
+    },
+    {
+      "profile": "optimistic",
+      "channels": 30,
+      "parallel_ports": 5,
+      "time_multiplex_steps": 6,
+      "feasibility": {
+        "parallel_ports": 5,
+        "time_multiplex_steps": 6,
+        "symbol_rate_hz": 10000000000.0,
+        "slot_rate_hz": 60000000000.0,
+        "required_detector_bandwidth_hz": 30000000000.0,
+        "max_delay_length_cm": 14.240141755,
+        "checks": {
+          "delay_length": true,
+          "detector_bandwidth": true,
+          "switch_rate": true
+        },
+        "passed": true
+      },
+      "summary": {
+        "median_validation_nmse": 0.032601021340744586,
+        "min_validation_nmse": 0.027898404302601803,
+        "max_validation_nmse": 0.09293225850357974,
+        "seeds_at_or_below_robust_threshold": 9,
+        "passed": true
+      },
+      "scores": [
+        {
+          "seed": 11,
+          "validation_nmse": 0.027898404302601803,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "seed": 23,
+          "validation_nmse": 0.09293225850357974,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 37,
+          "validation_nmse": 0.0314138442993153,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 41,
+          "validation_nmse": 0.04295541622060994,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "seed": 53,
+          "validation_nmse": 0.030988077563836938,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "seed": 67,
+          "validation_nmse": 0.033788198382173874,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "seed": 71,
+          "validation_nmse": 0.02878281007585984,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "seed": 97,
+          "validation_nmse": 0.03702600362497936,
+          "best_alpha": 10.0
+        },
+        {
+          "seed": 109,
+          "validation_nmse": 0.03735099108353947,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "seed": 113,
+          "validation_nmse": 0.02835059667912694,
+          "best_alpha": 3.1622776601683795
+        }
+      ],
+      "selected_channel_labels": [
+        "pair:0,9",
+        "pair:1,10",
+        "self:9",
+        "self:0",
+        "pair:2,11",
+        "self:10",
+        "self:1",
+        "pair:3,12",
+        "self:11",
+        "pair:4,13",
+        "lo:10",
+        "self:2",
+        "self:12",
+        "lo:11",
+        "pair:10,19",
+        "pair:5,14",
+        "lo:12",
+        "pair:6,15",
+        "self:13",
+        "pair:7,16",
+        "pair:8,17",
+        "pair:9,18",
+        "self:14",
+        "self:3",
+        "lo:13",
+        "self:15",
+        "self:17",
+        "self:16",
+        "lo:14",
+        "self:18"
+      ],
+      "passed": true
+    },
+    {
+      "profile": "optimistic",
+      "channels": 30,
+      "parallel_ports": 10,
+      "time_multiplex_steps": 3,
+      "feasibility": {
+        "parallel_ports": 10,
+        "time_multiplex_steps": 3,
+        "symbol_rate_hz": 10000000000.0,
+        "slot_rate_hz": 30000000000.0,
+        "required_detector_bandwidth_hz": 15000000000.0,
+        "max_delay_length_cm": 14.240141755,
+        "checks": {
+          "delay_length": true,
+          "detector_bandwidth": true,
+          "switch_rate": true
+        },
+        "passed": true
+      },
+      "summary": {
+        "median_validation_nmse": 0.03302237596952647,
+        "min_validation_nmse": 0.026609517314703103,
+        "max_validation_nmse": 0.09172336362283152,
+        "seeds_at_or_below_robust_threshold": 9,
+        "passed": true
+      },
+      "scores": [
+        {
+          "seed": 11,
+          "validation_nmse": 0.02817473190585791,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "seed": 23,
+          "validation_nmse": 0.09172336362283152,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 37,
+          "validation_nmse": 0.03155675206968793,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "seed": 41,
+          "validation_nmse": 0.04313869652206924,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "seed": 53,
+          "validation_nmse": 0.032469791521857465,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "seed": 67,
+          "validation_nmse": 0.03357496041719548,
+          "best_alpha": 1.0
+        },
+        {
+          "seed": 71,
+          "validation_nmse": 0.0296275600744377,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "seed": 97,
+          "validation_nmse": 0.03641353419104373,
+          "best_alpha": 10.0
+        },
+        {
+          "seed": 109,
+          "validation_nmse": 0.036342890483902573,
+          "best_alpha": 1.0
+        },
+        {
+          "seed": 113,
+          "validation_nmse": 0.026609517314703103,
+          "best_alpha": 3.1622776601683795
+        }
+      ],
+      "selected_channel_labels": [
+        "pair:0,9",
+        "pair:1,10",
+        "self:9",
+        "self:0",
+        "pair:2,11",
+        "self:10",
+        "self:1",
+        "pair:3,12",
+        "self:11",
+        "pair:4,13",
+        "lo:10",
+        "self:2",
+        "self:12",
+        "lo:11",
+        "pair:10,19",
+        "pair:5,14",
+        "lo:12",
+        "pair:6,15",
+        "self:13",
+        "pair:7,16",
+        "pair:8,17",
+        "pair:9,18",
+        "self:14",
+        "self:3",
+        "lo:13",
+        "self:15",
+        "self:17",
+        "self:16",
+        "lo:14",
+        "self:18"
+      ],
+      "passed": true
+    },
+    {
+      "profile": "optimistic",
+      "channels": 30,
+      "parallel_ports": 20,
+      "time_multiplex_steps": 2,
+      "feasibility": {
+        "parallel_ports": 20,
+        "time_multiplex_steps": 2,
+        "symbol_rate_hz": 10000000000.0,
+        "slot_rate_hz": 20000000000.0,
+        "required_detector_bandwidth_hz": 10000000000.0,
+        "max_delay_length_cm": 14.240141755,
+        "checks": {
+          "delay_length": true,
+          "detector_bandwidth": true,
+          "switch_rate": true
+        },
+        "passed": true
+      },
+      "summary": {
+        "median_validation_nmse": 0.03174705139307728,
+        "min_validation_nmse": 0.027773329922587183,
+        "max_validation_nmse": 0.09340161669061599,
+        "seeds_at_or_below_robust_threshold": 9,
+        "passed": true
+      },
+      "scores": [
+        {
+          "seed": 11,
+          "validation_nmse": 0.027773329922587183,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "seed": 23,
+          "validation_nmse": 0.09340161669061599,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 37,
+          "validation_nmse": 0.03139650608359018,
+          "best_alpha": 1.0
+        },
+        {
+          "seed": 41,
+          "validation_nmse": 0.042665771985150494,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "seed": 53,
+          "validation_nmse": 0.03209759670256438,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "seed": 67,
+          "validation_nmse": 0.031366845383012036,
+          "best_alpha": 1.0
+        },
+        {
+          "seed": 71,
+          "validation_nmse": 0.028943850825423292,
+          "best_alpha": 1.0
+        },
+        {
+          "seed": 97,
+          "validation_nmse": 0.03554562430233557,
+          "best_alpha": 10.0
+        },
+        {
+          "seed": 109,
+          "validation_nmse": 0.03632452776706707,
+          "best_alpha": 1.0
+        },
+        {
+          "seed": 113,
+          "validation_nmse": 0.02828418512019136,
+          "best_alpha": 3.1622776601683795
+        }
+      ],
+      "selected_channel_labels": [
+        "pair:0,9",
+        "pair:1,10",
+        "self:9",
+        "self:0",
+        "pair:2,11",
+        "self:10",
+        "self:1",
+        "pair:3,12",
+        "self:11",
+        "pair:4,13",
+        "lo:10",
+        "self:2",
+        "self:12",
+        "lo:11",
+        "pair:10,19",
+        "pair:5,14",
+        "lo:12",
+        "pair:6,15",
+        "self:13",
+        "pair:7,16",
+        "pair:8,17",
+        "pair:9,18",
+        "self:14",
+        "self:3",
+        "lo:13",
+        "self:15",
+        "self:17",
+        "self:16",
+        "lo:14",
+        "self:18"
+      ],
+      "passed": true
+    },
+    {
+      "profile": "optimistic",
+      "channels": 30,
+      "parallel_ports": 30,
+      "time_multiplex_steps": 1,
+      "feasibility": {
+        "parallel_ports": 30,
+        "time_multiplex_steps": 1,
+        "symbol_rate_hz": 10000000000.0,
+        "slot_rate_hz": 10000000000.0,
+        "required_detector_bandwidth_hz": 5000000000.0,
+        "max_delay_length_cm": 14.240141755,
+        "checks": {
+          "delay_length": true,
+          "detector_bandwidth": true,
+          "switch_rate": true
+        },
+        "passed": true
+      },
+      "summary": {
+        "median_validation_nmse": 0.031204570090366604,
+        "min_validation_nmse": 0.027461895995519316,
+        "max_validation_nmse": 0.09193610078242413,
+        "seeds_at_or_below_robust_threshold": 9,
+        "passed": true
+      },
+      "scores": [
+        {
+          "seed": 11,
+          "validation_nmse": 0.027461895995519316,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "seed": 23,
+          "validation_nmse": 0.09193610078242413,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 37,
+          "validation_nmse": 0.031224913771922647,
+          "best_alpha": 0.31622776601683794
+        },
+        {
+          "seed": 41,
+          "validation_nmse": 0.043901392265787355,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "seed": 53,
+          "validation_nmse": 0.03086712134941777,
+          "best_alpha": 1.0
+        },
+        {
+          "seed": 67,
+          "validation_nmse": 0.031184226408810557,
+          "best_alpha": 0.31622776601683794
+        },
+        {
+          "seed": 71,
+          "validation_nmse": 0.029249395776733123,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "seed": 97,
+          "validation_nmse": 0.03647321985672265,
+          "best_alpha": 10.0
+        },
+        {
+          "seed": 109,
+          "validation_nmse": 0.03474602122053311,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 113,
+          "validation_nmse": 0.02782529189537644,
+          "best_alpha": 3.1622776601683795
+        }
+      ],
+      "selected_channel_labels": [
+        "pair:0,9",
+        "pair:1,10",
+        "self:9",
+        "self:0",
+        "pair:2,11",
+        "self:10",
+        "self:1",
+        "pair:3,12",
+        "self:11",
+        "pair:4,13",
+        "lo:10",
+        "self:2",
+        "self:12",
+        "lo:11",
+        "pair:10,19",
+        "pair:5,14",
+        "lo:12",
+        "pair:6,15",
+        "self:13",
+        "pair:7,16",
+        "pair:8,17",
+        "pair:9,18",
+        "self:14",
+        "self:3",
+        "lo:13",
+        "self:15",
+        "self:17",
+        "self:16",
+        "lo:14",
+        "self:18"
+      ],
+      "passed": true
+    },
+    {
+      "profile": "nominal",
+      "channels": 20,
+      "parallel_ports": 1,
+      "time_multiplex_steps": 20,
+      "feasibility": {
+        "parallel_ports": 1,
+        "time_multiplex_steps": 20,
+        "symbol_rate_hz": 10000000000.0,
+        "slot_rate_hz": 200000000000.0,
+        "required_detector_bandwidth_hz": 100000000000.0,
+        "max_delay_length_cm": 14.240141755,
+        "checks": {
+          "delay_length": true,
+          "detector_bandwidth": false,
+          "switch_rate": false
+        },
+        "passed": false
+      },
+      "summary": {
+        "median_validation_nmse": 0.07032104211020818,
+        "min_validation_nmse": 0.0639210224955751,
+        "max_validation_nmse": 0.1266964462239133,
+        "seeds_at_or_below_robust_threshold": 0,
+        "passed": false
+      },
+      "scores": [
+        {
+          "seed": 11,
+          "validation_nmse": 0.0645406919723442,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "seed": 23,
+          "validation_nmse": 0.1266964462239133,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 37,
+          "validation_nmse": 0.06653755956027337,
+          "best_alpha": 10.0
+        },
+        {
+          "seed": 41,
+          "validation_nmse": 0.08051457206581325,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 53,
+          "validation_nmse": 0.06695591946524096,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "seed": 67,
+          "validation_nmse": 0.06848378651814792,
+          "best_alpha": 10.0
+        },
+        {
+          "seed": 71,
+          "validation_nmse": 0.0639210224955751,
+          "best_alpha": 10.0
+        },
+        {
+          "seed": 97,
+          "validation_nmse": 0.072497396087248,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "seed": 109,
+          "validation_nmse": 0.07940414300533272,
+          "best_alpha": 10.0
+        },
+        {
+          "seed": 113,
+          "validation_nmse": 0.07215829770226845,
+          "best_alpha": 3.1622776601683795
+        }
+      ],
+      "selected_channel_labels": [
+        "pair:0,9",
+        "pair:1,10",
+        "self:9",
+        "self:0",
+        "pair:2,11",
+        "self:10",
+        "self:1",
+        "pair:3,12",
+        "self:11",
+        "pair:4,13",
+        "lo:10",
+        "self:2",
+        "self:12",
+        "lo:11",
+        "pair:10,19",
+        "pair:5,14",
+        "lo:12",
+        "pair:6,15",
+        "self:13",
+        "pair:7,16"
+      ],
+      "passed": false
+    },
+    {
+      "profile": "nominal",
+      "channels": 20,
+      "parallel_ports": 2,
+      "time_multiplex_steps": 10,
+      "feasibility": {
+        "parallel_ports": 2,
+        "time_multiplex_steps": 10,
+        "symbol_rate_hz": 10000000000.0,
+        "slot_rate_hz": 100000000000.0,
+        "required_detector_bandwidth_hz": 50000000000.0,
+        "max_delay_length_cm": 14.240141755,
+        "checks": {
+          "delay_length": true,
+          "detector_bandwidth": true,
+          "switch_rate": true
+        },
+        "passed": true
+      },
+      "summary": {
+        "median_validation_nmse": 0.06383743223808755,
+        "min_validation_nmse": 0.0602460081781682,
+        "max_validation_nmse": 0.1299968635478619,
+        "seeds_at_or_below_robust_threshold": 0,
+        "passed": false
+      },
+      "scores": [
+        {
+          "seed": 11,
+          "validation_nmse": 0.06131815424062598,
+          "best_alpha": 10.0
+        },
+        {
+          "seed": 23,
+          "validation_nmse": 0.1299968635478619,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 37,
+          "validation_nmse": 0.061077275129054594,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 41,
+          "validation_nmse": 0.08081413018084886,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "seed": 53,
+          "validation_nmse": 0.06271780619197444,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "seed": 67,
+          "validation_nmse": 0.06495705828420067,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "seed": 71,
+          "validation_nmse": 0.0602460081781682,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "seed": 97,
+          "validation_nmse": 0.06860927203463874,
+          "best_alpha": 10.0
+        },
+        {
+          "seed": 109,
+          "validation_nmse": 0.07102563410751421,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "seed": 113,
+          "validation_nmse": 0.06194918038005506,
+          "best_alpha": 1e-10
+        }
+      ],
+      "selected_channel_labels": [
+        "pair:0,9",
+        "pair:1,10",
+        "self:9",
+        "self:0",
+        "pair:2,11",
+        "self:10",
+        "self:1",
+        "pair:3,12",
+        "self:11",
+        "pair:4,13",
+        "lo:10",
+        "self:2",
+        "self:12",
+        "lo:11",
+        "pair:10,19",
+        "pair:5,14",
+        "lo:12",
+        "pair:6,15",
+        "self:13",
+        "pair:7,16"
+      ],
+      "passed": false
+    },
+    {
+      "profile": "nominal",
+      "channels": 20,
+      "parallel_ports": 3,
+      "time_multiplex_steps": 7,
+      "feasibility": {
+        "parallel_ports": 3,
+        "time_multiplex_steps": 7,
+        "symbol_rate_hz": 10000000000.0,
+        "slot_rate_hz": 70000000000.0,
+        "required_detector_bandwidth_hz": 35000000000.0,
+        "max_delay_length_cm": 14.240141755,
+        "checks": {
+          "delay_length": true,
+          "detector_bandwidth": true,
+          "switch_rate": true
+        },
+        "passed": true
+      },
+      "summary": {
+        "median_validation_nmse": 0.06509640687221457,
+        "min_validation_nmse": 0.05737778552898695,
+        "max_validation_nmse": 0.13367223267092043,
+        "seeds_at_or_below_robust_threshold": 0,
+        "passed": false
+      },
+      "scores": [
+        {
+          "seed": 11,
+          "validation_nmse": 0.05737778552898695,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "seed": 23,
+          "validation_nmse": 0.13367223267092043,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 37,
+          "validation_nmse": 0.06482373223092919,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 41,
+          "validation_nmse": 0.08048360863399952,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 53,
+          "validation_nmse": 0.06364758244740626,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 67,
+          "validation_nmse": 0.06536908151349995,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 71,
+          "validation_nmse": 0.057821993119569134,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 97,
+          "validation_nmse": 0.06891113487895284,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "seed": 109,
+          "validation_nmse": 0.07139597676313822,
+          "best_alpha": 10.0
+        },
+        {
+          "seed": 113,
+          "validation_nmse": 0.06103203229662473,
+          "best_alpha": 1e-10
+        }
+      ],
+      "selected_channel_labels": [
+        "pair:0,9",
+        "pair:1,10",
+        "self:9",
+        "self:0",
+        "pair:2,11",
+        "self:10",
+        "self:1",
+        "pair:3,12",
+        "self:11",
+        "pair:4,13",
+        "lo:10",
+        "self:2",
+        "self:12",
+        "lo:11",
+        "pair:10,19",
+        "pair:5,14",
+        "lo:12",
+        "pair:6,15",
+        "self:13",
+        "pair:7,16"
+      ],
+      "passed": false
+    },
+    {
+      "profile": "nominal",
+      "channels": 20,
+      "parallel_ports": 4,
+      "time_multiplex_steps": 5,
+      "feasibility": {
+        "parallel_ports": 4,
+        "time_multiplex_steps": 5,
+        "symbol_rate_hz": 10000000000.0,
+        "slot_rate_hz": 50000000000.0,
+        "required_detector_bandwidth_hz": 25000000000.0,
+        "max_delay_length_cm": 14.240141755,
+        "checks": {
+          "delay_length": true,
+          "detector_bandwidth": true,
+          "switch_rate": true
+        },
+        "passed": true
+      },
+      "summary": {
+        "median_validation_nmse": 0.06447719992565584,
+        "min_validation_nmse": 0.059530266212709675,
+        "max_validation_nmse": 0.13408803182502985,
+        "seeds_at_or_below_robust_threshold": 0,
+        "passed": false
+      },
+      "scores": [
+        {
+          "seed": 11,
+          "validation_nmse": 0.059530266212709675,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "seed": 23,
+          "validation_nmse": 0.13408803182502985,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 37,
+          "validation_nmse": 0.06297008418057512,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 41,
+          "validation_nmse": 0.07987580298062058,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "seed": 53,
+          "validation_nmse": 0.06410129426077754,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 67,
+          "validation_nmse": 0.06485310559053416,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 71,
+          "validation_nmse": 0.062114045561817544,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "seed": 97,
+          "validation_nmse": 0.07082379694246724,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "seed": 109,
+          "validation_nmse": 0.07170976123466549,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "seed": 113,
+          "validation_nmse": 0.06345061339147234,
+          "best_alpha": 1e-10
+        }
+      ],
+      "selected_channel_labels": [
+        "pair:0,9",
+        "pair:1,10",
+        "self:9",
+        "self:0",
+        "pair:2,11",
+        "self:10",
+        "self:1",
+        "pair:3,12",
+        "self:11",
+        "pair:4,13",
+        "lo:10",
+        "self:2",
+        "self:12",
+        "lo:11",
+        "pair:10,19",
+        "pair:5,14",
+        "lo:12",
+        "pair:6,15",
+        "self:13",
+        "pair:7,16"
+      ],
+      "passed": false
+    },
+    {
+      "profile": "nominal",
+      "channels": 20,
+      "parallel_ports": 5,
+      "time_multiplex_steps": 4,
+      "feasibility": {
+        "parallel_ports": 5,
+        "time_multiplex_steps": 4,
+        "symbol_rate_hz": 10000000000.0,
+        "slot_rate_hz": 40000000000.0,
+        "required_detector_bandwidth_hz": 20000000000.0,
+        "max_delay_length_cm": 14.240141755,
+        "checks": {
+          "delay_length": true,
+          "detector_bandwidth": true,
+          "switch_rate": true
+        },
+        "passed": true
+      },
+      "summary": {
+        "median_validation_nmse": 0.06431999221232443,
+        "min_validation_nmse": 0.06068559655651218,
+        "max_validation_nmse": 0.12936360949185388,
+        "seeds_at_or_below_robust_threshold": 0,
+        "passed": false
+      },
+      "scores": [
+        {
+          "seed": 11,
+          "validation_nmse": 0.06068559655651218,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "seed": 23,
+          "validation_nmse": 0.12936360949185388,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 37,
+          "validation_nmse": 0.06249004590269728,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 41,
+          "validation_nmse": 0.08107110170323586,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 53,
+          "validation_nmse": 0.06397037990174247,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 67,
+          "validation_nmse": 0.06463949752619147,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "seed": 71,
+          "validation_nmse": 0.0640004868984574,
+          "best_alpha": 10.0
+        },
+        {
+          "seed": 97,
+          "validation_nmse": 0.06958381216451948,
+          "best_alpha": 10.0
+        },
+        {
+          "seed": 109,
+          "validation_nmse": 0.07130338149763,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "seed": 113,
+          "validation_nmse": 0.061515895784977855,
+          "best_alpha": 1e-10
+        }
+      ],
+      "selected_channel_labels": [
+        "pair:0,9",
+        "pair:1,10",
+        "self:9",
+        "self:0",
+        "pair:2,11",
+        "self:10",
+        "self:1",
+        "pair:3,12",
+        "self:11",
+        "pair:4,13",
+        "lo:10",
+        "self:2",
+        "self:12",
+        "lo:11",
+        "pair:10,19",
+        "pair:5,14",
+        "lo:12",
+        "pair:6,15",
+        "self:13",
+        "pair:7,16"
+      ],
+      "passed": false
+    },
+    {
+      "profile": "nominal",
+      "channels": 20,
+      "parallel_ports": 10,
+      "time_multiplex_steps": 2,
+      "feasibility": {
+        "parallel_ports": 10,
+        "time_multiplex_steps": 2,
+        "symbol_rate_hz": 10000000000.0,
+        "slot_rate_hz": 20000000000.0,
+        "required_detector_bandwidth_hz": 10000000000.0,
+        "max_delay_length_cm": 14.240141755,
+        "checks": {
+          "delay_length": true,
+          "detector_bandwidth": true,
+          "switch_rate": true
+        },
+        "passed": true
+      },
+      "summary": {
+        "median_validation_nmse": 0.06574148336840685,
+        "min_validation_nmse": 0.05586231397037896,
+        "max_validation_nmse": 0.13131851747856577,
+        "seeds_at_or_below_robust_threshold": 0,
+        "passed": false
+      },
+      "scores": [
+        {
+          "seed": 11,
+          "validation_nmse": 0.05586231397037896,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 23,
+          "validation_nmse": 0.13131851747856577,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 37,
+          "validation_nmse": 0.06142212544620458,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 41,
+          "validation_nmse": 0.08081382567322823,
+          "best_alpha": 1.0
+        },
+        {
+          "seed": 53,
+          "validation_nmse": 0.0658142425031697,
+          "best_alpha": 1.0
+        },
+        {
+          "seed": 67,
+          "validation_nmse": 0.065668724233644,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 71,
+          "validation_nmse": 0.060547496525912764,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "seed": 97,
+          "validation_nmse": 0.07104501235369728,
+          "best_alpha": 10.0
+        },
+        {
+          "seed": 109,
+          "validation_nmse": 0.07208938180796907,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 113,
+          "validation_nmse": 0.06120417729376599,
+          "best_alpha": 1e-10
+        }
+      ],
+      "selected_channel_labels": [
+        "pair:0,9",
+        "pair:1,10",
+        "self:9",
+        "self:0",
+        "pair:2,11",
+        "self:10",
+        "self:1",
+        "pair:3,12",
+        "self:11",
+        "pair:4,13",
+        "lo:10",
+        "self:2",
+        "self:12",
+        "lo:11",
+        "pair:10,19",
+        "pair:5,14",
+        "lo:12",
+        "pair:6,15",
+        "self:13",
+        "pair:7,16"
+      ],
+      "passed": false
+    },
+    {
+      "profile": "nominal",
+      "channels": 20,
+      "parallel_ports": 20,
+      "time_multiplex_steps": 1,
+      "feasibility": {
+        "parallel_ports": 20,
+        "time_multiplex_steps": 1,
+        "symbol_rate_hz": 10000000000.0,
+        "slot_rate_hz": 10000000000.0,
+        "required_detector_bandwidth_hz": 5000000000.0,
+        "max_delay_length_cm": 14.240141755,
+        "checks": {
+          "delay_length": true,
+          "detector_bandwidth": true,
+          "switch_rate": true
+        },
+        "passed": true
+      },
+      "summary": {
+        "median_validation_nmse": 0.06605182923927198,
+        "min_validation_nmse": 0.059193626215083624,
+        "max_validation_nmse": 0.13069134869698917,
+        "seeds_at_or_below_robust_threshold": 0,
+        "passed": false
+      },
+      "scores": [
+        {
+          "seed": 11,
+          "validation_nmse": 0.059193626215083624,
+          "best_alpha": 1.0
+        },
+        {
+          "seed": 23,
+          "validation_nmse": 0.13069134869698917,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 37,
+          "validation_nmse": 0.06496029485602074,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 41,
+          "validation_nmse": 0.08156574594704892,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "seed": 53,
+          "validation_nmse": 0.06714336362252322,
+          "best_alpha": 10.0
+        },
+        {
+          "seed": 67,
+          "validation_nmse": 0.06362836539585204,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "seed": 71,
+          "validation_nmse": 0.06333734072442253,
+          "best_alpha": 10.0
+        },
+        {
+          "seed": 97,
+          "validation_nmse": 0.07085240973930147,
+          "best_alpha": 10.0
+        },
+        {
+          "seed": 109,
+          "validation_nmse": 0.07138973795097522,
+          "best_alpha": 10.0
+        },
+        {
+          "seed": 113,
+          "validation_nmse": 0.06221372345909442,
+          "best_alpha": 3.1622776601683795
+        }
+      ],
+      "selected_channel_labels": [
+        "pair:0,9",
+        "pair:1,10",
+        "self:9",
+        "self:0",
+        "pair:2,11",
+        "self:10",
+        "self:1",
+        "pair:3,12",
+        "self:11",
+        "pair:4,13",
+        "lo:10",
+        "self:2",
+        "self:12",
+        "lo:11",
+        "pair:10,19",
+        "pair:5,14",
+        "lo:12",
+        "pair:6,15",
+        "self:13",
+        "pair:7,16"
+      ],
+      "passed": false
+    },
+    {
+      "profile": "nominal",
+      "channels": 30,
+      "parallel_ports": 1,
+      "time_multiplex_steps": 30,
+      "feasibility": {
+        "parallel_ports": 1,
+        "time_multiplex_steps": 30,
+        "symbol_rate_hz": 10000000000.0,
+        "slot_rate_hz": 300000000000.0,
+        "required_detector_bandwidth_hz": 150000000000.0,
+        "max_delay_length_cm": 14.240141755,
+        "checks": {
+          "delay_length": true,
+          "detector_bandwidth": false,
+          "switch_rate": false
+        },
+        "passed": false
+      },
+      "summary": {
+        "median_validation_nmse": 0.07722730270398459,
+        "min_validation_nmse": 0.0699405174608889,
+        "max_validation_nmse": 0.13509666493861436,
+        "seeds_at_or_below_robust_threshold": 0,
+        "passed": false
+      },
+      "scores": [
+        {
+          "seed": 11,
+          "validation_nmse": 0.0699405174608889,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 23,
+          "validation_nmse": 0.13509666493861436,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 37,
+          "validation_nmse": 0.07283704036489166,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 41,
+          "validation_nmse": 0.08333298725557327,
+          "best_alpha": 1.0
+        },
+        {
+          "seed": 53,
+          "validation_nmse": 0.07054299458797139,
+          "best_alpha": 1.0
+        },
+        {
+          "seed": 67,
+          "validation_nmse": 0.08071299742629139,
+          "best_alpha": 1.0
+        },
+        {
+          "seed": 71,
+          "validation_nmse": 0.07149610335441016,
+          "best_alpha": 10.0
+        },
+        {
+          "seed": 97,
+          "validation_nmse": 0.07374160798167781,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "seed": 109,
+          "validation_nmse": 0.08422683334935423,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 113,
+          "validation_nmse": 0.08360332120291683,
+          "best_alpha": 3.1622776601683795
+        }
+      ],
+      "selected_channel_labels": [
+        "pair:0,9",
+        "pair:1,10",
+        "self:9",
+        "self:0",
+        "pair:2,11",
+        "self:10",
+        "self:1",
+        "pair:3,12",
+        "self:11",
+        "pair:4,13",
+        "lo:10",
+        "self:2",
+        "self:12",
+        "lo:11",
+        "pair:10,19",
+        "pair:5,14",
+        "lo:12",
+        "pair:6,15",
+        "self:13",
+        "pair:7,16",
+        "pair:8,17",
+        "pair:9,18",
+        "self:14",
+        "self:3",
+        "lo:13",
+        "self:15",
+        "self:17",
+        "self:16",
+        "lo:14",
+        "self:18"
+      ],
+      "passed": false
+    },
+    {
+      "profile": "nominal",
+      "channels": 30,
+      "parallel_ports": 2,
+      "time_multiplex_steps": 15,
+      "feasibility": {
+        "parallel_ports": 2,
+        "time_multiplex_steps": 15,
+        "symbol_rate_hz": 10000000000.0,
+        "slot_rate_hz": 150000000000.0,
+        "required_detector_bandwidth_hz": 75000000000.0,
+        "max_delay_length_cm": 14.240141755,
+        "checks": {
+          "delay_length": true,
+          "detector_bandwidth": false,
+          "switch_rate": false
+        },
+        "passed": false
+      },
+      "summary": {
+        "median_validation_nmse": 0.06573909417443419,
+        "min_validation_nmse": 0.05844315869610436,
+        "max_validation_nmse": 0.1236855388045878,
+        "seeds_at_or_below_robust_threshold": 0,
+        "passed": false
+      },
+      "scores": [
+        {
+          "seed": 11,
+          "validation_nmse": 0.05844315869610436,
+          "best_alpha": 1.0
+        },
+        {
+          "seed": 23,
+          "validation_nmse": 0.1236855388045878,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 37,
+          "validation_nmse": 0.062351010145335214,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 41,
+          "validation_nmse": 0.07251878599766705,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "seed": 53,
+          "validation_nmse": 0.059130889131273935,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 67,
+          "validation_nmse": 0.06861971500583404,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 71,
+          "validation_nmse": 0.060535019864285375,
+          "best_alpha": 10.0
+        },
+        {
+          "seed": 97,
+          "validation_nmse": 0.06362123288206656,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "seed": 109,
+          "validation_nmse": 0.07170221443342623,
+          "best_alpha": 10.0
+        },
+        {
+          "seed": 113,
+          "validation_nmse": 0.0678569554668018,
+          "best_alpha": 10.0
+        }
+      ],
+      "selected_channel_labels": [
+        "pair:0,9",
+        "pair:1,10",
+        "self:9",
+        "self:0",
+        "pair:2,11",
+        "self:10",
+        "self:1",
+        "pair:3,12",
+        "self:11",
+        "pair:4,13",
+        "lo:10",
+        "self:2",
+        "self:12",
+        "lo:11",
+        "pair:10,19",
+        "pair:5,14",
+        "lo:12",
+        "pair:6,15",
+        "self:13",
+        "pair:7,16",
+        "pair:8,17",
+        "pair:9,18",
+        "self:14",
+        "self:3",
+        "lo:13",
+        "self:15",
+        "self:17",
+        "self:16",
+        "lo:14",
+        "self:18"
+      ],
+      "passed": false
+    },
+    {
+      "profile": "nominal",
+      "channels": 30,
+      "parallel_ports": 3,
+      "time_multiplex_steps": 10,
+      "feasibility": {
+        "parallel_ports": 3,
+        "time_multiplex_steps": 10,
+        "symbol_rate_hz": 10000000000.0,
+        "slot_rate_hz": 100000000000.0,
+        "required_detector_bandwidth_hz": 50000000000.0,
+        "max_delay_length_cm": 14.240141755,
+        "checks": {
+          "delay_length": true,
+          "detector_bandwidth": true,
+          "switch_rate": true
+        },
+        "passed": true
+      },
+      "summary": {
+        "median_validation_nmse": 0.05366842422798196,
+        "min_validation_nmse": 0.049306098629777854,
+        "max_validation_nmse": 0.11072657344287179,
+        "seeds_at_or_below_robust_threshold": 1,
+        "passed": false
+      },
+      "scores": [
+        {
+          "seed": 11,
+          "validation_nmse": 0.05189127650398407,
+          "best_alpha": 10.0
+        },
+        {
+          "seed": 23,
+          "validation_nmse": 0.11072657344287179,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 37,
+          "validation_nmse": 0.0522017216869036,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 41,
+          "validation_nmse": 0.0646734321057906,
+          "best_alpha": 1.0
+        },
+        {
+          "seed": 53,
+          "validation_nmse": 0.050091575176268624,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "seed": 67,
+          "validation_nmse": 0.05636241484335153,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "seed": 71,
+          "validation_nmse": 0.049306098629777854,
+          "best_alpha": 10.0
+        },
+        {
+          "seed": 97,
+          "validation_nmse": 0.053571733026142807,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "seed": 109,
+          "validation_nmse": 0.06025799864776512,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "seed": 113,
+          "validation_nmse": 0.05376511542982111,
+          "best_alpha": 1.0
+        }
+      ],
+      "selected_channel_labels": [
+        "pair:0,9",
+        "pair:1,10",
+        "self:9",
+        "self:0",
+        "pair:2,11",
+        "self:10",
+        "self:1",
+        "pair:3,12",
+        "self:11",
+        "pair:4,13",
+        "lo:10",
+        "self:2",
+        "self:12",
+        "lo:11",
+        "pair:10,19",
+        "pair:5,14",
+        "lo:12",
+        "pair:6,15",
+        "self:13",
+        "pair:7,16",
+        "pair:8,17",
+        "pair:9,18",
+        "self:14",
+        "self:3",
+        "lo:13",
+        "self:15",
+        "self:17",
+        "self:16",
+        "lo:14",
+        "self:18"
+      ],
+      "passed": false
+    },
+    {
+      "profile": "nominal",
+      "channels": 30,
+      "parallel_ports": 4,
+      "time_multiplex_steps": 8,
+      "feasibility": {
+        "parallel_ports": 4,
+        "time_multiplex_steps": 8,
+        "symbol_rate_hz": 10000000000.0,
+        "slot_rate_hz": 80000000000.0,
+        "required_detector_bandwidth_hz": 40000000000.0,
+        "max_delay_length_cm": 14.240141755,
+        "checks": {
+          "delay_length": true,
+          "detector_bandwidth": true,
+          "switch_rate": true
+        },
+        "passed": true
+      },
+      "summary": {
+        "median_validation_nmse": 0.05293289313833491,
+        "min_validation_nmse": 0.047692876822695594,
+        "max_validation_nmse": 0.11463463935014473,
+        "seeds_at_or_below_robust_threshold": 2,
+        "passed": false
+      },
+      "scores": [
+        {
+          "seed": 11,
+          "validation_nmse": 0.049742972100508764,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "seed": 23,
+          "validation_nmse": 0.11463463935014473,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 37,
+          "validation_nmse": 0.05143227831871201,
+          "best_alpha": 1.0
+        },
+        {
+          "seed": 41,
+          "validation_nmse": 0.06263347422650802,
+          "best_alpha": 0.31622776601683794
+        },
+        {
+          "seed": 53,
+          "validation_nmse": 0.052082327789767575,
+          "best_alpha": 1.0
+        },
+        {
+          "seed": 67,
+          "validation_nmse": 0.05361294451205697,
+          "best_alpha": 0.1
+        },
+        {
+          "seed": 71,
+          "validation_nmse": 0.047692876822695594,
+          "best_alpha": 10.0
+        },
+        {
+          "seed": 97,
+          "validation_nmse": 0.053282006365723646,
+          "best_alpha": 10.0
+        },
+        {
+          "seed": 109,
+          "validation_nmse": 0.05918048955102029,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 113,
+          "validation_nmse": 0.05258377991094618,
+          "best_alpha": 10.0
+        }
+      ],
+      "selected_channel_labels": [
+        "pair:0,9",
+        "pair:1,10",
+        "self:9",
+        "self:0",
+        "pair:2,11",
+        "self:10",
+        "self:1",
+        "pair:3,12",
+        "self:11",
+        "pair:4,13",
+        "lo:10",
+        "self:2",
+        "self:12",
+        "lo:11",
+        "pair:10,19",
+        "pair:5,14",
+        "lo:12",
+        "pair:6,15",
+        "self:13",
+        "pair:7,16",
+        "pair:8,17",
+        "pair:9,18",
+        "self:14",
+        "self:3",
+        "lo:13",
+        "self:15",
+        "self:17",
+        "self:16",
+        "lo:14",
+        "self:18"
+      ],
+      "passed": false
+    },
+    {
+      "profile": "nominal",
+      "channels": 30,
+      "parallel_ports": 5,
+      "time_multiplex_steps": 6,
+      "feasibility": {
+        "parallel_ports": 5,
+        "time_multiplex_steps": 6,
+        "symbol_rate_hz": 10000000000.0,
+        "slot_rate_hz": 60000000000.0,
+        "required_detector_bandwidth_hz": 30000000000.0,
+        "max_delay_length_cm": 14.240141755,
+        "checks": {
+          "delay_length": true,
+          "detector_bandwidth": true,
+          "switch_rate": true
+        },
+        "passed": true
+      },
+      "summary": {
+        "median_validation_nmse": 0.053748362452447546,
+        "min_validation_nmse": 0.0458352040551983,
+        "max_validation_nmse": 0.11713147176507294,
+        "seeds_at_or_below_robust_threshold": 3,
+        "passed": false
+      },
+      "scores": [
+        {
+          "seed": 11,
+          "validation_nmse": 0.048688488341028326,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 23,
+          "validation_nmse": 0.11713147176507294,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 37,
+          "validation_nmse": 0.050374974344078664,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 41,
+          "validation_nmse": 0.061433386162738364,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 53,
+          "validation_nmse": 0.048381768772117244,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 67,
+          "validation_nmse": 0.05645519668000673,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "seed": 71,
+          "validation_nmse": 0.0458352040551983,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "seed": 97,
+          "validation_nmse": 0.05456371833849394,
+          "best_alpha": 10.0
+        },
+        {
+          "seed": 109,
+          "validation_nmse": 0.061201093578432515,
+          "best_alpha": 10.0
+        },
+        {
+          "seed": 113,
+          "validation_nmse": 0.05293300656640115,
+          "best_alpha": 1.0
+        }
+      ],
+      "selected_channel_labels": [
+        "pair:0,9",
+        "pair:1,10",
+        "self:9",
+        "self:0",
+        "pair:2,11",
+        "self:10",
+        "self:1",
+        "pair:3,12",
+        "self:11",
+        "pair:4,13",
+        "lo:10",
+        "self:2",
+        "self:12",
+        "lo:11",
+        "pair:10,19",
+        "pair:5,14",
+        "lo:12",
+        "pair:6,15",
+        "self:13",
+        "pair:7,16",
+        "pair:8,17",
+        "pair:9,18",
+        "self:14",
+        "self:3",
+        "lo:13",
+        "self:15",
+        "self:17",
+        "self:16",
+        "lo:14",
+        "self:18"
+      ],
+      "passed": false
+    },
+    {
+      "profile": "nominal",
+      "channels": 30,
+      "parallel_ports": 10,
+      "time_multiplex_steps": 3,
+      "feasibility": {
+        "parallel_ports": 10,
+        "time_multiplex_steps": 3,
+        "symbol_rate_hz": 10000000000.0,
+        "slot_rate_hz": 30000000000.0,
+        "required_detector_bandwidth_hz": 15000000000.0,
+        "max_delay_length_cm": 14.240141755,
+        "checks": {
+          "delay_length": true,
+          "detector_bandwidth": true,
+          "switch_rate": true
+        },
+        "passed": true
+      },
+      "summary": {
+        "median_validation_nmse": 0.05267735014940217,
+        "min_validation_nmse": 0.047173277623148005,
+        "max_validation_nmse": 0.11361477855208947,
+        "seeds_at_or_below_robust_threshold": 3,
+        "passed": false
+      },
+      "scores": [
+        {
+          "seed": 11,
+          "validation_nmse": 0.049618649977112454,
+          "best_alpha": 0.31622776601683794
+        },
+        {
+          "seed": 23,
+          "validation_nmse": 0.11361477855208947,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 37,
+          "validation_nmse": 0.05060878313704511,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "seed": 41,
+          "validation_nmse": 0.06230294413913389,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "seed": 53,
+          "validation_nmse": 0.05119267465118352,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "seed": 67,
+          "validation_nmse": 0.05579009675207383,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "seed": 71,
+          "validation_nmse": 0.047173277623148005,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "seed": 97,
+          "validation_nmse": 0.05416202564762082,
+          "best_alpha": 10.0
+        },
+        {
+          "seed": 109,
+          "validation_nmse": 0.05889978878503703,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 113,
+          "validation_nmse": 0.04985066884369808,
+          "best_alpha": 1.0
+        }
+      ],
+      "selected_channel_labels": [
+        "pair:0,9",
+        "pair:1,10",
+        "self:9",
+        "self:0",
+        "pair:2,11",
+        "self:10",
+        "self:1",
+        "pair:3,12",
+        "self:11",
+        "pair:4,13",
+        "lo:10",
+        "self:2",
+        "self:12",
+        "lo:11",
+        "pair:10,19",
+        "pair:5,14",
+        "lo:12",
+        "pair:6,15",
+        "self:13",
+        "pair:7,16",
+        "pair:8,17",
+        "pair:9,18",
+        "self:14",
+        "self:3",
+        "lo:13",
+        "self:15",
+        "self:17",
+        "self:16",
+        "lo:14",
+        "self:18"
+      ],
+      "passed": false
+    },
+    {
+      "profile": "nominal",
+      "channels": 30,
+      "parallel_ports": 20,
+      "time_multiplex_steps": 2,
+      "feasibility": {
+        "parallel_ports": 20,
+        "time_multiplex_steps": 2,
+        "symbol_rate_hz": 10000000000.0,
+        "slot_rate_hz": 20000000000.0,
+        "required_detector_bandwidth_hz": 10000000000.0,
+        "max_delay_length_cm": 14.240141755,
+        "checks": {
+          "delay_length": true,
+          "detector_bandwidth": true,
+          "switch_rate": true
+        },
+        "passed": true
+      },
+      "summary": {
+        "median_validation_nmse": 0.051531582834155695,
+        "min_validation_nmse": 0.04631576477644389,
+        "max_validation_nmse": 0.11719355295676795,
+        "seeds_at_or_below_robust_threshold": 2,
+        "passed": false
+      },
+      "scores": [
+        {
+          "seed": 11,
+          "validation_nmse": 0.04769137535135078,
+          "best_alpha": 1.0
+        },
+        {
+          "seed": 23,
+          "validation_nmse": 0.11719355295676795,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 37,
+          "validation_nmse": 0.050306404187631146,
+          "best_alpha": 10.0
+        },
+        {
+          "seed": 41,
+          "validation_nmse": 0.06210720010839783,
+          "best_alpha": 0.31622776601683794
+        },
+        {
+          "seed": 53,
+          "validation_nmse": 0.05034243651603292,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "seed": 67,
+          "validation_nmse": 0.05169806081881265,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 71,
+          "validation_nmse": 0.04631576477644389,
+          "best_alpha": 1.0
+        },
+        {
+          "seed": 97,
+          "validation_nmse": 0.051365104849498744,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "seed": 109,
+          "validation_nmse": 0.05869144048254633,
+          "best_alpha": 1.0
+        },
+        {
+          "seed": 113,
+          "validation_nmse": 0.05362419852526315,
+          "best_alpha": 3.1622776601683795
+        }
+      ],
+      "selected_channel_labels": [
+        "pair:0,9",
+        "pair:1,10",
+        "self:9",
+        "self:0",
+        "pair:2,11",
+        "self:10",
+        "self:1",
+        "pair:3,12",
+        "self:11",
+        "pair:4,13",
+        "lo:10",
+        "self:2",
+        "self:12",
+        "lo:11",
+        "pair:10,19",
+        "pair:5,14",
+        "lo:12",
+        "pair:6,15",
+        "self:13",
+        "pair:7,16",
+        "pair:8,17",
+        "pair:9,18",
+        "self:14",
+        "self:3",
+        "lo:13",
+        "self:15",
+        "self:17",
+        "self:16",
+        "lo:14",
+        "self:18"
+      ],
+      "passed": false
+    },
+    {
+      "profile": "nominal",
+      "channels": 30,
+      "parallel_ports": 30,
+      "time_multiplex_steps": 1,
+      "feasibility": {
+        "parallel_ports": 30,
+        "time_multiplex_steps": 1,
+        "symbol_rate_hz": 10000000000.0,
+        "slot_rate_hz": 10000000000.0,
+        "required_detector_bandwidth_hz": 5000000000.0,
+        "max_delay_length_cm": 14.240141755,
+        "checks": {
+          "delay_length": true,
+          "detector_bandwidth": true,
+          "switch_rate": true
+        },
+        "passed": true
+      },
+      "summary": {
+        "median_validation_nmse": 0.05170351242039002,
+        "min_validation_nmse": 0.04720962328606693,
+        "max_validation_nmse": 0.1142000002917194,
+        "seeds_at_or_below_robust_threshold": 3,
+        "passed": false
+      },
+      "scores": [
+        {
+          "seed": 11,
+          "validation_nmse": 0.04800616832706704,
+          "best_alpha": 1.0
+        },
+        {
+          "seed": 23,
+          "validation_nmse": 0.1142000002917194,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 37,
+          "validation_nmse": 0.05028322125462432,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "seed": 41,
+          "validation_nmse": 0.06374691846188739,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "seed": 53,
+          "validation_nmse": 0.04830887738810466,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 67,
+          "validation_nmse": 0.05147203394527126,
+          "best_alpha": 0.1
+        },
+        {
+          "seed": 71,
+          "validation_nmse": 0.04720962328606693,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "seed": 97,
+          "validation_nmse": 0.053936793088793386,
+          "best_alpha": 10.0
+        },
+        {
+          "seed": 109,
+          "validation_nmse": 0.055529989950614006,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 113,
+          "validation_nmse": 0.05193499089550879,
+          "best_alpha": 3.1622776601683795
+        }
+      ],
+      "selected_channel_labels": [
+        "pair:0,9",
+        "pair:1,10",
+        "self:9",
+        "self:0",
+        "pair:2,11",
+        "self:10",
+        "self:1",
+        "pair:3,12",
+        "self:11",
+        "pair:4,13",
+        "lo:10",
+        "self:2",
+        "self:12",
+        "lo:11",
+        "pair:10,19",
+        "pair:5,14",
+        "lo:12",
+        "pair:6,15",
+        "self:13",
+        "pair:7,16",
+        "pair:8,17",
+        "pair:9,18",
+        "self:14",
+        "self:3",
+        "lo:13",
+        "self:15",
+        "self:17",
+        "self:16",
+        "lo:14",
+        "self:18"
+      ],
+      "passed": false
+    },
+    {
+      "profile": "stress",
+      "channels": 20,
+      "parallel_ports": 1,
+      "time_multiplex_steps": 20,
+      "feasibility": {
+        "parallel_ports": 1,
+        "time_multiplex_steps": 20,
+        "symbol_rate_hz": 10000000000.0,
+        "slot_rate_hz": 200000000000.0,
+        "required_detector_bandwidth_hz": 100000000000.0,
+        "max_delay_length_cm": 14.240141755,
+        "checks": {
+          "delay_length": true,
+          "detector_bandwidth": false,
+          "switch_rate": false
+        },
+        "passed": false
+      },
+      "summary": {
+        "median_validation_nmse": 0.15544336499700304,
+        "min_validation_nmse": 0.1424284649395333,
+        "max_validation_nmse": 0.2082290484037175,
+        "seeds_at_or_below_robust_threshold": 0,
+        "passed": false
+      },
+      "scores": [
+        {
+          "seed": 11,
+          "validation_nmse": 0.14859235298556497,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "seed": 23,
+          "validation_nmse": 0.2082290484037175,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 37,
+          "validation_nmse": 0.14970377250351283,
+          "best_alpha": 31.622776601683793
+        },
+        {
+          "seed": 41,
+          "validation_nmse": 0.16267781533844924,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 53,
+          "validation_nmse": 0.14701617314270468,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 67,
+          "validation_nmse": 0.15245266548553338,
+          "best_alpha": 31.622776601683793
+        },
+        {
+          "seed": 71,
+          "validation_nmse": 0.1424284649395333,
+          "best_alpha": 10.0
+        },
+        {
+          "seed": 97,
+          "validation_nmse": 0.1584340645084727,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 109,
+          "validation_nmse": 0.1650322702062683,
+          "best_alpha": 31.622776601683793
+        },
+        {
+          "seed": 113,
+          "validation_nmse": 0.16776396983133632,
+          "best_alpha": 3.1622776601683795
+        }
+      ],
+      "selected_channel_labels": [
+        "pair:0,9",
+        "pair:1,10",
+        "self:9",
+        "self:0",
+        "pair:2,11",
+        "self:10",
+        "self:1",
+        "pair:3,12",
+        "self:11",
+        "pair:4,13",
+        "lo:10",
+        "self:2",
+        "self:12",
+        "lo:11",
+        "pair:10,19",
+        "pair:5,14",
+        "lo:12",
+        "pair:6,15",
+        "self:13",
+        "pair:7,16"
+      ],
+      "passed": false
+    },
+    {
+      "profile": "stress",
+      "channels": 20,
+      "parallel_ports": 2,
+      "time_multiplex_steps": 10,
+      "feasibility": {
+        "parallel_ports": 2,
+        "time_multiplex_steps": 10,
+        "symbol_rate_hz": 10000000000.0,
+        "slot_rate_hz": 100000000000.0,
+        "required_detector_bandwidth_hz": 50000000000.0,
+        "max_delay_length_cm": 14.240141755,
+        "checks": {
+          "delay_length": true,
+          "detector_bandwidth": true,
+          "switch_rate": true
+        },
+        "passed": true
+      },
+      "summary": {
+        "median_validation_nmse": 0.14108245824495547,
+        "min_validation_nmse": 0.1300029852547166,
+        "max_validation_nmse": 0.20777803406349957,
+        "seeds_at_or_below_robust_threshold": 0,
+        "passed": false
+      },
+      "scores": [
+        {
+          "seed": 11,
+          "validation_nmse": 0.13218395216205153,
+          "best_alpha": 10.0
+        },
+        {
+          "seed": 23,
+          "validation_nmse": 0.20777803406349957,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 37,
+          "validation_nmse": 0.1300029852547166,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 41,
+          "validation_nmse": 0.15642224231730847,
+          "best_alpha": 10.0
+        },
+        {
+          "seed": 53,
+          "validation_nmse": 0.13052277152343575,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 67,
+          "validation_nmse": 0.14288332120521663,
+          "best_alpha": 10.0
+        },
+        {
+          "seed": 71,
+          "validation_nmse": 0.13010905119025368,
+          "best_alpha": 10.0
+        },
+        {
+          "seed": 97,
+          "validation_nmse": 0.13928159528469428,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 109,
+          "validation_nmse": 0.15028726124513045,
+          "best_alpha": 31.622776601683793
+        },
+        {
+          "seed": 113,
+          "validation_nmse": 0.14793268548493538,
+          "best_alpha": 3.1622776601683795
+        }
+      ],
+      "selected_channel_labels": [
+        "pair:0,9",
+        "pair:1,10",
+        "self:9",
+        "self:0",
+        "pair:2,11",
+        "self:10",
+        "self:1",
+        "pair:3,12",
+        "self:11",
+        "pair:4,13",
+        "lo:10",
+        "self:2",
+        "self:12",
+        "lo:11",
+        "pair:10,19",
+        "pair:5,14",
+        "lo:12",
+        "pair:6,15",
+        "self:13",
+        "pair:7,16"
+      ],
+      "passed": false
+    },
+    {
+      "profile": "stress",
+      "channels": 20,
+      "parallel_ports": 3,
+      "time_multiplex_steps": 7,
+      "feasibility": {
+        "parallel_ports": 3,
+        "time_multiplex_steps": 7,
+        "symbol_rate_hz": 10000000000.0,
+        "slot_rate_hz": 70000000000.0,
+        "required_detector_bandwidth_hz": 35000000000.0,
+        "max_delay_length_cm": 14.240141755,
+        "checks": {
+          "delay_length": true,
+          "detector_bandwidth": true,
+          "switch_rate": true
+        },
+        "passed": true
+      },
+      "summary": {
+        "median_validation_nmse": 0.13959909887150135,
+        "min_validation_nmse": 0.12534190791321687,
+        "max_validation_nmse": 0.20780434336719356,
+        "seeds_at_or_below_robust_threshold": 0,
+        "passed": false
+      },
+      "scores": [
+        {
+          "seed": 11,
+          "validation_nmse": 0.12534190791321687,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 23,
+          "validation_nmse": 0.20780434336719356,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 37,
+          "validation_nmse": 0.1351103490959158,
+          "best_alpha": 10.0
+        },
+        {
+          "seed": 41,
+          "validation_nmse": 0.15198011757175303,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 53,
+          "validation_nmse": 0.1313829546269644,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 67,
+          "validation_nmse": 0.14177511411698088,
+          "best_alpha": 31.622776601683793
+        },
+        {
+          "seed": 71,
+          "validation_nmse": 0.12854626930833193,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 97,
+          "validation_nmse": 0.13742308362602182,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 109,
+          "validation_nmse": 0.1420165398671406,
+          "best_alpha": 31.622776601683793
+        },
+        {
+          "seed": 113,
+          "validation_nmse": 0.14529836546739555,
+          "best_alpha": 10.0
+        }
+      ],
+      "selected_channel_labels": [
+        "pair:0,9",
+        "pair:1,10",
+        "self:9",
+        "self:0",
+        "pair:2,11",
+        "self:10",
+        "self:1",
+        "pair:3,12",
+        "self:11",
+        "pair:4,13",
+        "lo:10",
+        "self:2",
+        "self:12",
+        "lo:11",
+        "pair:10,19",
+        "pair:5,14",
+        "lo:12",
+        "pair:6,15",
+        "self:13",
+        "pair:7,16"
+      ],
+      "passed": false
+    },
+    {
+      "profile": "stress",
+      "channels": 20,
+      "parallel_ports": 4,
+      "time_multiplex_steps": 5,
+      "feasibility": {
+        "parallel_ports": 4,
+        "time_multiplex_steps": 5,
+        "symbol_rate_hz": 10000000000.0,
+        "slot_rate_hz": 50000000000.0,
+        "required_detector_bandwidth_hz": 25000000000.0,
+        "max_delay_length_cm": 14.240141755,
+        "checks": {
+          "delay_length": true,
+          "detector_bandwidth": true,
+          "switch_rate": true
+        },
+        "passed": true
+      },
+      "summary": {
+        "median_validation_nmse": 0.13833759261706524,
+        "min_validation_nmse": 0.12558749878889147,
+        "max_validation_nmse": 0.20890544924273918,
+        "seeds_at_or_below_robust_threshold": 0,
+        "passed": false
+      },
+      "scores": [
+        {
+          "seed": 11,
+          "validation_nmse": 0.12814317662002686,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "seed": 23,
+          "validation_nmse": 0.20890544924273918,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 37,
+          "validation_nmse": 0.13217098762440302,
+          "best_alpha": 0.1
+        },
+        {
+          "seed": 41,
+          "validation_nmse": 0.15007229848054718,
+          "best_alpha": 10.0
+        },
+        {
+          "seed": 53,
+          "validation_nmse": 0.12558749878889147,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 67,
+          "validation_nmse": 0.1374799926616704,
+          "best_alpha": 10.0
+        },
+        {
+          "seed": 71,
+          "validation_nmse": 0.12975778488301484,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "seed": 97,
+          "validation_nmse": 0.13919519257246007,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 109,
+          "validation_nmse": 0.14156721240093278,
+          "best_alpha": 10.0
+        },
+        {
+          "seed": 113,
+          "validation_nmse": 0.14806998259307924,
+          "best_alpha": 3.1622776601683795
+        }
+      ],
+      "selected_channel_labels": [
+        "pair:0,9",
+        "pair:1,10",
+        "self:9",
+        "self:0",
+        "pair:2,11",
+        "self:10",
+        "self:1",
+        "pair:3,12",
+        "self:11",
+        "pair:4,13",
+        "lo:10",
+        "self:2",
+        "self:12",
+        "lo:11",
+        "pair:10,19",
+        "pair:5,14",
+        "lo:12",
+        "pair:6,15",
+        "self:13",
+        "pair:7,16"
+      ],
+      "passed": false
+    },
+    {
+      "profile": "stress",
+      "channels": 20,
+      "parallel_ports": 5,
+      "time_multiplex_steps": 4,
+      "feasibility": {
+        "parallel_ports": 5,
+        "time_multiplex_steps": 4,
+        "symbol_rate_hz": 10000000000.0,
+        "slot_rate_hz": 40000000000.0,
+        "required_detector_bandwidth_hz": 20000000000.0,
+        "max_delay_length_cm": 14.240141755,
+        "checks": {
+          "delay_length": true,
+          "detector_bandwidth": true,
+          "switch_rate": true
+        },
+        "passed": true
+      },
+      "summary": {
+        "median_validation_nmse": 0.13694922210117003,
+        "min_validation_nmse": 0.1280504639699935,
+        "max_validation_nmse": 0.20016726103689855,
+        "seeds_at_or_below_robust_threshold": 0,
+        "passed": false
+      },
+      "scores": [
+        {
+          "seed": 11,
+          "validation_nmse": 0.12996727817531303,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "seed": 23,
+          "validation_nmse": 0.20016726103689855,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 37,
+          "validation_nmse": 0.1280504639699935,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 41,
+          "validation_nmse": 0.14948073689630778,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 53,
+          "validation_nmse": 0.13137828058908968,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 67,
+          "validation_nmse": 0.1401201597235933,
+          "best_alpha": 10.0
+        },
+        {
+          "seed": 71,
+          "validation_nmse": 0.1298144884002192,
+          "best_alpha": 31.622776601683793
+        },
+        {
+          "seed": 97,
+          "validation_nmse": 0.13377828447874676,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 109,
+          "validation_nmse": 0.14277785618255784,
+          "best_alpha": 31.622776601683793
+        },
+        {
+          "seed": 113,
+          "validation_nmse": 0.1461600369728628,
+          "best_alpha": 1e-10
+        }
+      ],
+      "selected_channel_labels": [
+        "pair:0,9",
+        "pair:1,10",
+        "self:9",
+        "self:0",
+        "pair:2,11",
+        "self:10",
+        "self:1",
+        "pair:3,12",
+        "self:11",
+        "pair:4,13",
+        "lo:10",
+        "self:2",
+        "self:12",
+        "lo:11",
+        "pair:10,19",
+        "pair:5,14",
+        "lo:12",
+        "pair:6,15",
+        "self:13",
+        "pair:7,16"
+      ],
+      "passed": false
+    },
+    {
+      "profile": "stress",
+      "channels": 20,
+      "parallel_ports": 10,
+      "time_multiplex_steps": 2,
+      "feasibility": {
+        "parallel_ports": 10,
+        "time_multiplex_steps": 2,
+        "symbol_rate_hz": 10000000000.0,
+        "slot_rate_hz": 20000000000.0,
+        "required_detector_bandwidth_hz": 10000000000.0,
+        "max_delay_length_cm": 14.240141755,
+        "checks": {
+          "delay_length": true,
+          "detector_bandwidth": true,
+          "switch_rate": true
+        },
+        "passed": true
+      },
+      "summary": {
+        "median_validation_nmse": 0.1383075146533238,
+        "min_validation_nmse": 0.12074413923783398,
+        "max_validation_nmse": 0.20219729647319312,
+        "seeds_at_or_below_robust_threshold": 0,
+        "passed": false
+      },
+      "scores": [
+        {
+          "seed": 11,
+          "validation_nmse": 0.12074413923783398,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 23,
+          "validation_nmse": 0.20219729647319312,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 37,
+          "validation_nmse": 0.12657886325836318,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 41,
+          "validation_nmse": 0.14966336443767578,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 53,
+          "validation_nmse": 0.1306064383501818,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "seed": 67,
+          "validation_nmse": 0.13826616426577878,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 71,
+          "validation_nmse": 0.12741678494461223,
+          "best_alpha": 10.0
+        },
+        {
+          "seed": 97,
+          "validation_nmse": 0.13834886504086885,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 109,
+          "validation_nmse": 0.14529806669192852,
+          "best_alpha": 31.622776601683793
+        },
+        {
+          "seed": 113,
+          "validation_nmse": 0.14357706210759416,
+          "best_alpha": 1.0
+        }
+      ],
+      "selected_channel_labels": [
+        "pair:0,9",
+        "pair:1,10",
+        "self:9",
+        "self:0",
+        "pair:2,11",
+        "self:10",
+        "self:1",
+        "pair:3,12",
+        "self:11",
+        "pair:4,13",
+        "lo:10",
+        "self:2",
+        "self:12",
+        "lo:11",
+        "pair:10,19",
+        "pair:5,14",
+        "lo:12",
+        "pair:6,15",
+        "self:13",
+        "pair:7,16"
+      ],
+      "passed": false
+    },
+    {
+      "profile": "stress",
+      "channels": 20,
+      "parallel_ports": 20,
+      "time_multiplex_steps": 1,
+      "feasibility": {
+        "parallel_ports": 20,
+        "time_multiplex_steps": 1,
+        "symbol_rate_hz": 10000000000.0,
+        "slot_rate_hz": 10000000000.0,
+        "required_detector_bandwidth_hz": 5000000000.0,
+        "max_delay_length_cm": 14.240141755,
+        "checks": {
+          "delay_length": true,
+          "detector_bandwidth": true,
+          "switch_rate": true
+        },
+        "passed": true
+      },
+      "summary": {
+        "median_validation_nmse": 0.13674363762627295,
+        "min_validation_nmse": 0.12861808817409484,
+        "max_validation_nmse": 0.20456711276143727,
+        "seeds_at_or_below_robust_threshold": 0,
+        "passed": false
+      },
+      "scores": [
+        {
+          "seed": 11,
+          "validation_nmse": 0.12861808817409484,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 23,
+          "validation_nmse": 0.20456711276143727,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 37,
+          "validation_nmse": 0.13290291262739198,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 41,
+          "validation_nmse": 0.1515617637120827,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 53,
+          "validation_nmse": 0.1325622371202184,
+          "best_alpha": 10.0
+        },
+        {
+          "seed": 67,
+          "validation_nmse": 0.13498669553206458,
+          "best_alpha": 10.0
+        },
+        {
+          "seed": 71,
+          "validation_nmse": 0.12971477262606115,
+          "best_alpha": 31.622776601683793
+        },
+        {
+          "seed": 97,
+          "validation_nmse": 0.1385005797204813,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 109,
+          "validation_nmse": 0.1454135901066592,
+          "best_alpha": 31.622776601683793
+        },
+        {
+          "seed": 113,
+          "validation_nmse": 0.1461595124433595,
+          "best_alpha": 10.0
+        }
+      ],
+      "selected_channel_labels": [
+        "pair:0,9",
+        "pair:1,10",
+        "self:9",
+        "self:0",
+        "pair:2,11",
+        "self:10",
+        "self:1",
+        "pair:3,12",
+        "self:11",
+        "pair:4,13",
+        "lo:10",
+        "self:2",
+        "self:12",
+        "lo:11",
+        "pair:10,19",
+        "pair:5,14",
+        "lo:12",
+        "pair:6,15",
+        "self:13",
+        "pair:7,16"
+      ],
+      "passed": false
+    },
+    {
+      "profile": "stress",
+      "channels": 30,
+      "parallel_ports": 1,
+      "time_multiplex_steps": 30,
+      "feasibility": {
+        "parallel_ports": 1,
+        "time_multiplex_steps": 30,
+        "symbol_rate_hz": 10000000000.0,
+        "slot_rate_hz": 300000000000.0,
+        "required_detector_bandwidth_hz": 150000000000.0,
+        "max_delay_length_cm": 14.240141755,
+        "checks": {
+          "delay_length": true,
+          "detector_bandwidth": false,
+          "switch_rate": false
+        },
+        "passed": false
+      },
+      "summary": {
+        "median_validation_nmse": 0.15841937254001254,
+        "min_validation_nmse": 0.1449029840770993,
+        "max_validation_nmse": 0.21234569132197573,
+        "seeds_at_or_below_robust_threshold": 0,
+        "passed": false
+      },
+      "scores": [
+        {
+          "seed": 11,
+          "validation_nmse": 0.1449029840770993,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 23,
+          "validation_nmse": 0.21234569132197573,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 37,
+          "validation_nmse": 0.154661396981491,
+          "best_alpha": 10.0
+        },
+        {
+          "seed": 41,
+          "validation_nmse": 0.16217734809853407,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 53,
+          "validation_nmse": 0.14550449554177106,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 67,
+          "validation_nmse": 0.16333622992724842,
+          "best_alpha": 10.0
+        },
+        {
+          "seed": 71,
+          "validation_nmse": 0.15040004061025372,
+          "best_alpha": 10.0
+        },
+        {
+          "seed": 97,
+          "validation_nmse": 0.1530929518796851,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 109,
+          "validation_nmse": 0.16758212842279535,
+          "best_alpha": 31.622776601683793
+        },
+        {
+          "seed": 113,
+          "validation_nmse": 0.1900101137437719,
+          "best_alpha": 1e-10
+        }
+      ],
+      "selected_channel_labels": [
+        "pair:0,9",
+        "pair:1,10",
+        "self:9",
+        "self:0",
+        "pair:2,11",
+        "self:10",
+        "self:1",
+        "pair:3,12",
+        "self:11",
+        "pair:4,13",
+        "lo:10",
+        "self:2",
+        "self:12",
+        "lo:11",
+        "pair:10,19",
+        "pair:5,14",
+        "lo:12",
+        "pair:6,15",
+        "self:13",
+        "pair:7,16",
+        "pair:8,17",
+        "pair:9,18",
+        "self:14",
+        "self:3",
+        "lo:13",
+        "self:15",
+        "self:17",
+        "self:16",
+        "lo:14",
+        "self:18"
+      ],
+      "passed": false
+    },
+    {
+      "profile": "stress",
+      "channels": 30,
+      "parallel_ports": 2,
+      "time_multiplex_steps": 15,
+      "feasibility": {
+        "parallel_ports": 2,
+        "time_multiplex_steps": 15,
+        "symbol_rate_hz": 10000000000.0,
+        "slot_rate_hz": 150000000000.0,
+        "required_detector_bandwidth_hz": 75000000000.0,
+        "max_delay_length_cm": 14.240141755,
+        "checks": {
+          "delay_length": true,
+          "detector_bandwidth": false,
+          "switch_rate": false
+        },
+        "passed": false
+      },
+      "summary": {
+        "median_validation_nmse": 0.1379497131877355,
+        "min_validation_nmse": 0.12455996810923077,
+        "max_validation_nmse": 0.19955264226989078,
+        "seeds_at_or_below_robust_threshold": 0,
+        "passed": false
+      },
+      "scores": [
+        {
+          "seed": 11,
+          "validation_nmse": 0.13536341371413696,
+          "best_alpha": 10.0
+        },
+        {
+          "seed": 23,
+          "validation_nmse": 0.19955264226989078,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 37,
+          "validation_nmse": 0.13012661404781292,
+          "best_alpha": 10.0
+        },
+        {
+          "seed": 41,
+          "validation_nmse": 0.14053601266133403,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 53,
+          "validation_nmse": 0.12455996810923077,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 67,
+          "validation_nmse": 0.1466505261906382,
+          "best_alpha": 10.0
+        },
+        {
+          "seed": 71,
+          "validation_nmse": 0.12569026023259675,
+          "best_alpha": 10.0
+        },
+        {
+          "seed": 97,
+          "validation_nmse": 0.12722829045109416,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 109,
+          "validation_nmse": 0.14675657950239532,
+          "best_alpha": 100.0
+        },
+        {
+          "seed": 113,
+          "validation_nmse": 0.15029156215270156,
+          "best_alpha": 31.622776601683793
+        }
+      ],
+      "selected_channel_labels": [
+        "pair:0,9",
+        "pair:1,10",
+        "self:9",
+        "self:0",
+        "pair:2,11",
+        "self:10",
+        "self:1",
+        "pair:3,12",
+        "self:11",
+        "pair:4,13",
+        "lo:10",
+        "self:2",
+        "self:12",
+        "lo:11",
+        "pair:10,19",
+        "pair:5,14",
+        "lo:12",
+        "pair:6,15",
+        "self:13",
+        "pair:7,16",
+        "pair:8,17",
+        "pair:9,18",
+        "self:14",
+        "self:3",
+        "lo:13",
+        "self:15",
+        "self:17",
+        "self:16",
+        "lo:14",
+        "self:18"
+      ],
+      "passed": false
+    },
+    {
+      "profile": "stress",
+      "channels": 30,
+      "parallel_ports": 3,
+      "time_multiplex_steps": 10,
+      "feasibility": {
+        "parallel_ports": 3,
+        "time_multiplex_steps": 10,
+        "symbol_rate_hz": 10000000000.0,
+        "slot_rate_hz": 100000000000.0,
+        "required_detector_bandwidth_hz": 50000000000.0,
+        "max_delay_length_cm": 14.240141755,
+        "checks": {
+          "delay_length": true,
+          "detector_bandwidth": true,
+          "switch_rate": true
+        },
+        "passed": true
+      },
+      "summary": {
+        "median_validation_nmse": 0.1259760272593345,
+        "min_validation_nmse": 0.11016248288103624,
+        "max_validation_nmse": 0.18357316472776192,
+        "seeds_at_or_below_robust_threshold": 0,
+        "passed": false
+      },
+      "scores": [
+        {
+          "seed": 11,
+          "validation_nmse": 0.11937793763599679,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 23,
+          "validation_nmse": 0.18357316472776192,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 37,
+          "validation_nmse": 0.12361714962286516,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "seed": 41,
+          "validation_nmse": 0.13798352670263192,
+          "best_alpha": 10.0
+        },
+        {
+          "seed": 53,
+          "validation_nmse": 0.11016248288103624,
+          "best_alpha": 10.0
+        },
+        {
+          "seed": 67,
+          "validation_nmse": 0.12833490489580382,
+          "best_alpha": 10.0
+        },
+        {
+          "seed": 71,
+          "validation_nmse": 0.11311168067683167,
+          "best_alpha": 10.0
+        },
+        {
+          "seed": 97,
+          "validation_nmse": 0.1167018370576043,
+          "best_alpha": 10.0
+        },
+        {
+          "seed": 109,
+          "validation_nmse": 0.1361176904039462,
+          "best_alpha": 10.0
+        },
+        {
+          "seed": 113,
+          "validation_nmse": 0.14179365438166616,
+          "best_alpha": 10.0
+        }
+      ],
+      "selected_channel_labels": [
+        "pair:0,9",
+        "pair:1,10",
+        "self:9",
+        "self:0",
+        "pair:2,11",
+        "self:10",
+        "self:1",
+        "pair:3,12",
+        "self:11",
+        "pair:4,13",
+        "lo:10",
+        "self:2",
+        "self:12",
+        "lo:11",
+        "pair:10,19",
+        "pair:5,14",
+        "lo:12",
+        "pair:6,15",
+        "self:13",
+        "pair:7,16",
+        "pair:8,17",
+        "pair:9,18",
+        "self:14",
+        "self:3",
+        "lo:13",
+        "self:15",
+        "self:17",
+        "self:16",
+        "lo:14",
+        "self:18"
+      ],
+      "passed": false
+    },
+    {
+      "profile": "stress",
+      "channels": 30,
+      "parallel_ports": 4,
+      "time_multiplex_steps": 8,
+      "feasibility": {
+        "parallel_ports": 4,
+        "time_multiplex_steps": 8,
+        "symbol_rate_hz": 10000000000.0,
+        "slot_rate_hz": 80000000000.0,
+        "required_detector_bandwidth_hz": 40000000000.0,
+        "max_delay_length_cm": 14.240141755,
+        "checks": {
+          "delay_length": true,
+          "detector_bandwidth": true,
+          "switch_rate": true
+        },
+        "passed": true
+      },
+      "summary": {
+        "median_validation_nmse": 0.1220703518389612,
+        "min_validation_nmse": 0.11114454944473515,
+        "max_validation_nmse": 0.18695129300472443,
+        "seeds_at_or_below_robust_threshold": 0,
+        "passed": false
+      },
+      "scores": [
+        {
+          "seed": 11,
+          "validation_nmse": 0.11841336758502348,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 23,
+          "validation_nmse": 0.18695129300472443,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 37,
+          "validation_nmse": 0.12099860504992323,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 41,
+          "validation_nmse": 0.1312055576692879,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 53,
+          "validation_nmse": 0.11441492434643136,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 67,
+          "validation_nmse": 0.12314209862799916,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 71,
+          "validation_nmse": 0.11114454944473515,
+          "best_alpha": 10.0
+        },
+        {
+          "seed": 97,
+          "validation_nmse": 0.11581063374272009,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 109,
+          "validation_nmse": 0.13140772876976833,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 113,
+          "validation_nmse": 0.13377290336739442,
+          "best_alpha": 3.1622776601683795
+        }
+      ],
+      "selected_channel_labels": [
+        "pair:0,9",
+        "pair:1,10",
+        "self:9",
+        "self:0",
+        "pair:2,11",
+        "self:10",
+        "self:1",
+        "pair:3,12",
+        "self:11",
+        "pair:4,13",
+        "lo:10",
+        "self:2",
+        "self:12",
+        "lo:11",
+        "pair:10,19",
+        "pair:5,14",
+        "lo:12",
+        "pair:6,15",
+        "self:13",
+        "pair:7,16",
+        "pair:8,17",
+        "pair:9,18",
+        "self:14",
+        "self:3",
+        "lo:13",
+        "self:15",
+        "self:17",
+        "self:16",
+        "lo:14",
+        "self:18"
+      ],
+      "passed": false
+    },
+    {
+      "profile": "stress",
+      "channels": 30,
+      "parallel_ports": 5,
+      "time_multiplex_steps": 6,
+      "feasibility": {
+        "parallel_ports": 5,
+        "time_multiplex_steps": 6,
+        "symbol_rate_hz": 10000000000.0,
+        "slot_rate_hz": 60000000000.0,
+        "required_detector_bandwidth_hz": 30000000000.0,
+        "max_delay_length_cm": 14.240141755,
+        "checks": {
+          "delay_length": true,
+          "detector_bandwidth": true,
+          "switch_rate": true
+        },
+        "passed": true
+      },
+      "summary": {
+        "median_validation_nmse": 0.12221165055760716,
+        "min_validation_nmse": 0.10751536444614526,
+        "max_validation_nmse": 0.19510252014357288,
+        "seeds_at_or_below_robust_threshold": 0,
+        "passed": false
+      },
+      "scores": [
+        {
+          "seed": 11,
+          "validation_nmse": 0.11388564023306114,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 23,
+          "validation_nmse": 0.19510252014357288,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 37,
+          "validation_nmse": 0.11756101156717985,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 41,
+          "validation_nmse": 0.12606129792942758,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 53,
+          "validation_nmse": 0.1083430027206858,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 67,
+          "validation_nmse": 0.1262018567978824,
+          "best_alpha": 10.0
+        },
+        {
+          "seed": 71,
+          "validation_nmse": 0.10751536444614526,
+          "best_alpha": 10.0
+        },
+        {
+          "seed": 97,
+          "validation_nmse": 0.11836200318578674,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 109,
+          "validation_nmse": 0.1343575213915781,
+          "best_alpha": 31.622776601683793
+        },
+        {
+          "seed": 113,
+          "validation_nmse": 0.13153246478808409,
+          "best_alpha": 1e-10
+        }
+      ],
+      "selected_channel_labels": [
+        "pair:0,9",
+        "pair:1,10",
+        "self:9",
+        "self:0",
+        "pair:2,11",
+        "self:10",
+        "self:1",
+        "pair:3,12",
+        "self:11",
+        "pair:4,13",
+        "lo:10",
+        "self:2",
+        "self:12",
+        "lo:11",
+        "pair:10,19",
+        "pair:5,14",
+        "lo:12",
+        "pair:6,15",
+        "self:13",
+        "pair:7,16",
+        "pair:8,17",
+        "pair:9,18",
+        "self:14",
+        "self:3",
+        "lo:13",
+        "self:15",
+        "self:17",
+        "self:16",
+        "lo:14",
+        "self:18"
+      ],
+      "passed": false
+    },
+    {
+      "profile": "stress",
+      "channels": 30,
+      "parallel_ports": 10,
+      "time_multiplex_steps": 3,
+      "feasibility": {
+        "parallel_ports": 10,
+        "time_multiplex_steps": 3,
+        "symbol_rate_hz": 10000000000.0,
+        "slot_rate_hz": 30000000000.0,
+        "required_detector_bandwidth_hz": 15000000000.0,
+        "max_delay_length_cm": 14.240141755,
+        "checks": {
+          "delay_length": true,
+          "detector_bandwidth": true,
+          "switch_rate": true
+        },
+        "passed": true
+      },
+      "summary": {
+        "median_validation_nmse": 0.12127647151721394,
+        "min_validation_nmse": 0.11010387637053734,
+        "max_validation_nmse": 0.182635770718072,
+        "seeds_at_or_below_robust_threshold": 0,
+        "passed": false
+      },
+      "scores": [
+        {
+          "seed": 11,
+          "validation_nmse": 0.11644856689378809,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 23,
+          "validation_nmse": 0.182635770718072,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 37,
+          "validation_nmse": 0.11310811195575597,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "seed": 41,
+          "validation_nmse": 0.1282075839879949,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "seed": 53,
+          "validation_nmse": 0.11132444362061611,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 67,
+          "validation_nmse": 0.12308803072716996,
+          "best_alpha": 10.0
+        },
+        {
+          "seed": 71,
+          "validation_nmse": 0.11010387637053734,
+          "best_alpha": 10.0
+        },
+        {
+          "seed": 97,
+          "validation_nmse": 0.11946491230725792,
+          "best_alpha": 10.0
+        },
+        {
+          "seed": 109,
+          "validation_nmse": 0.13517723396112596,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 113,
+          "validation_nmse": 0.12908492148272385,
+          "best_alpha": 3.1622776601683795
+        }
+      ],
+      "selected_channel_labels": [
+        "pair:0,9",
+        "pair:1,10",
+        "self:9",
+        "self:0",
+        "pair:2,11",
+        "self:10",
+        "self:1",
+        "pair:3,12",
+        "self:11",
+        "pair:4,13",
+        "lo:10",
+        "self:2",
+        "self:12",
+        "lo:11",
+        "pair:10,19",
+        "pair:5,14",
+        "lo:12",
+        "pair:6,15",
+        "self:13",
+        "pair:7,16",
+        "pair:8,17",
+        "pair:9,18",
+        "self:14",
+        "self:3",
+        "lo:13",
+        "self:15",
+        "self:17",
+        "self:16",
+        "lo:14",
+        "self:18"
+      ],
+      "passed": false
+    },
+    {
+      "profile": "stress",
+      "channels": 30,
+      "parallel_ports": 20,
+      "time_multiplex_steps": 2,
+      "feasibility": {
+        "parallel_ports": 20,
+        "time_multiplex_steps": 2,
+        "symbol_rate_hz": 10000000000.0,
+        "slot_rate_hz": 20000000000.0,
+        "required_detector_bandwidth_hz": 10000000000.0,
+        "max_delay_length_cm": 14.240141755,
+        "checks": {
+          "delay_length": true,
+          "detector_bandwidth": true,
+          "switch_rate": true
+        },
+        "passed": true
+      },
+      "summary": {
+        "median_validation_nmse": 0.1173854643150811,
+        "min_validation_nmse": 0.10575850894173139,
+        "max_validation_nmse": 0.19311221933238493,
+        "seeds_at_or_below_robust_threshold": 0,
+        "passed": false
+      },
+      "scores": [
+        {
+          "seed": 11,
+          "validation_nmse": 0.1110505344618605,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 23,
+          "validation_nmse": 0.19311221933238493,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 37,
+          "validation_nmse": 0.11115314487145232,
+          "best_alpha": 31.622776601683793
+        },
+        {
+          "seed": 41,
+          "validation_nmse": 0.13277428760584012,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 53,
+          "validation_nmse": 0.10966273898551919,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 67,
+          "validation_nmse": 0.12241661048141454,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "seed": 71,
+          "validation_nmse": 0.10575850894173139,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 97,
+          "validation_nmse": 0.11235431814874765,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 109,
+          "validation_nmse": 0.1274070691117983,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "seed": 113,
+          "validation_nmse": 0.13635859309517284,
+          "best_alpha": 10.0
+        }
+      ],
+      "selected_channel_labels": [
+        "pair:0,9",
+        "pair:1,10",
+        "self:9",
+        "self:0",
+        "pair:2,11",
+        "self:10",
+        "self:1",
+        "pair:3,12",
+        "self:11",
+        "pair:4,13",
+        "lo:10",
+        "self:2",
+        "self:12",
+        "lo:11",
+        "pair:10,19",
+        "pair:5,14",
+        "lo:12",
+        "pair:6,15",
+        "self:13",
+        "pair:7,16",
+        "pair:8,17",
+        "pair:9,18",
+        "self:14",
+        "self:3",
+        "lo:13",
+        "self:15",
+        "self:17",
+        "self:16",
+        "lo:14",
+        "self:18"
+      ],
+      "passed": false
+    },
+    {
+      "profile": "stress",
+      "channels": 30,
+      "parallel_ports": 30,
+      "time_multiplex_steps": 1,
+      "feasibility": {
+        "parallel_ports": 30,
+        "time_multiplex_steps": 1,
+        "symbol_rate_hz": 10000000000.0,
+        "slot_rate_hz": 10000000000.0,
+        "required_detector_bandwidth_hz": 5000000000.0,
+        "max_delay_length_cm": 14.240141755,
+        "checks": {
+          "delay_length": true,
+          "detector_bandwidth": true,
+          "switch_rate": true
+        },
+        "passed": true
+      },
+      "summary": {
+        "median_validation_nmse": 0.11870140485707925,
+        "min_validation_nmse": 0.10904870730767564,
+        "max_validation_nmse": 0.1870171363993814,
+        "seeds_at_or_below_robust_threshold": 0,
+        "passed": false
+      },
+      "scores": [
+        {
+          "seed": 11,
+          "validation_nmse": 0.11633416676741452,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 23,
+          "validation_nmse": 0.1870171363993814,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 37,
+          "validation_nmse": 0.11545416716437226,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "seed": 41,
+          "validation_nmse": 0.13356573937554142,
+          "best_alpha": 10.0
+        },
+        {
+          "seed": 53,
+          "validation_nmse": 0.11391980896621022,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 67,
+          "validation_nmse": 0.12087686962066173,
+          "best_alpha": 10.0
+        },
+        {
+          "seed": 71,
+          "validation_nmse": 0.10904870730767564,
+          "best_alpha": 10.0
+        },
+        {
+          "seed": 97,
+          "validation_nmse": 0.11652594009349679,
+          "best_alpha": 10.0
+        },
+        {
+          "seed": 109,
+          "validation_nmse": 0.1307580534340172,
+          "best_alpha": 1e-10
+        },
+        {
+          "seed": 113,
+          "validation_nmse": 0.13316086273429237,
+          "best_alpha": 1e-10
+        }
+      ],
+      "selected_channel_labels": [
+        "pair:0,9",
+        "pair:1,10",
+        "self:9",
+        "self:0",
+        "pair:2,11",
+        "self:10",
+        "self:1",
+        "pair:3,12",
+        "self:11",
+        "pair:4,13",
+        "lo:10",
+        "self:2",
+        "self:12",
+        "lo:11",
+        "pair:10,19",
+        "pair:5,14",
+        "lo:12",
+        "pair:6,15",
+        "self:13",
+        "pair:7,16",
+        "pair:8,17",
+        "pair:9,18",
+        "self:14",
+        "self:3",
+        "lo:13",
+        "self:15",
+        "self:17",
+        "self:16",
+        "lo:14",
+        "self:18"
+      ],
+      "passed": false
+    }
+  ],
+  "selected_candidate": null,
+  "p3_gate_passed": false
+}

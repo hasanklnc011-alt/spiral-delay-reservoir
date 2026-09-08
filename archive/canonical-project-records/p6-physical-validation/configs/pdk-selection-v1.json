@@ -1,0 +1,55 @@
+{
+  "name": "p6-pdk-selection-gate-v1",
+  "date": "2026-09-04",
+  "p5_blind_rerun": false,
+  "current_cross_section": {
+    "width_um": 0.343,
+    "height_um": 0.18,
+    "height_tolerance_um": 0.005
+  },
+  "status": "SELECTED_CUSTOM_PROCESS",
+  "decision": {
+    "selected_path": "retain_343x180_and_require_custom_process_evidence",
+    "selected_by": "user",
+    "selected_on": "2026-09-04",
+    "reopen_g1_to_g3": false,
+    "ready_pdk_migration_selected": false
+  },
+  "public_evidence_sufficient_for_g4_acceptance": false,
+  "candidates": {
+    "imec_isipp50g": {
+      "public_si_thickness_um": 0.22,
+      "has_validated_pdk": true,
+      "public_pd_responsivity_a_per_w": 1.0,
+      "result": "REOPEN_G1_IF_SELECTED"
+    },
+    "aim_active_low_loss": {
+      "public_si_thickness_um": null,
+      "has_ge_photodetector": true,
+      "licensed_quantitative_data_required": true,
+      "result": "REQUEST_PDK_DATA"
+    },
+    "tower_ph18": {
+      "public_si_thickness_um": 0.22,
+      "has_photodetectors_and_modulators": true,
+      "result": "REOPEN_G1_IF_SELECTED"
+    }
+  },
+  "allowed_paths": [
+    "select_active_pdk_and_reopen_g1_to_g4",
+    "retain_343x180_and_require_custom_process_evidence"
+  ],
+  "custom_process": {
+    "status": "PRE_FABRICATION_DESIGN_ENVELOPE",
+    "required_evidence": [
+      "fabricated_layer_stack_and_process_corners",
+      "waveguide_cutback_and_bend_test_structures",
+      "splitter_and_combiner_complex_s_parameters",
+      "fast_switch_rf_and_optical_s_parameters",
+      "photodiode_tia_linearity_noise_and_saturation",
+      "heater_p_pi_l_time_constant_and_crosstalk_matrix"
+    ]
+  },
+  "g4_physical_accepted": false,
+  "g5_composition_complete": false
+}

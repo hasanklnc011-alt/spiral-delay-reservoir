@@ -1,0 +1,35 @@
+{
+  "name": "p6-inverse-design-id1-splitter-v1",
+  "device": "splitter",
+  "source_sha256": "31abd9ecf005dd7c833efe0a475514e76e5a54853dd24f7161fad8137e53c9ca",
+  "simulation_source_sha256": "60ac817a16ad1dc16cc21dd8f7cdb3bf1d79134a5453327032f0d2296b1e55aa",
+  "config_sha256": "03fa0aa7aa487f88800b96461e90a51b45d752ddaf3d3a253cd0e46ee9444257",
+  "estimate_record_sha256": "a5cc425bb9bd337ccd432dc1d4f4d97edc37bce3a267a5759d9911e99136cbdcb",
+  "p5_blind_rerun": false,
+  "planned_steps": 3,
+  "completed_steps": 3,
+  "learning_rate": 0.3,
+  "allocation_fc": 0.5,
+  "estimated_cost_fc": 0.4304141772180796,
+  "objective_history": [
+    -0.905889295616595,
+    -0.43616278214276716,
+    -0.05967197349135134
+  ],
+  "post_process_history": [
+    0.09411070438340378,
+    0.5638372178572286,
+    0.7411072339192928
+  ],
+  "penalty_history": [
+    0.9999999999999988,
+    0.9999999999999958,
+    0.8007792074106441
+  ],
+  "final_parameter_shape": [150, 100, 1],
+  "final_parameter_min": 0.0,
+  "final_parameter_max": 1.0,
+  "cache_file": "runs/inverse-design-id1-splitter-v1.hdf5",
+  "id1_can_accept_device": false,
+  "next_gate": "binary ID2 broadband two-source 3D FDTD estimate"
+}

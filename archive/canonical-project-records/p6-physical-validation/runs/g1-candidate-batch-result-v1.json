@@ -1,0 +1,14 @@
+{
+  "name": "p6-g1-candidate-batch-result-v1",
+  "tidy3d_version": "2.12.0",
+  "source_sha256": "a2a1512c42778d6645ebdeb83024b72f8b975adbdce95f6b3427e6005ccacbb7",
+  "actual_total_flexcredits": 0.017009191111111113,
+  "user_solve_approval": true,
+  "results": [
+    {"name": "w300_h220", "width_um": 0.3, "height_um": 0.22, "task_id": "mo-7ee8f030-e6ec-4360-947e-f0e1573a7b0b", "task_status": "success", "result_file": "g1-candidate-w300_h220-result-v1.hdf5", "result_sha256": "271de2527f3bbc5d3352cc58083de7cce1a7fa0d80fa4d47bfef023a42c17fe6", "actual_flexcredits": 0.00425283911111111, "n_eff": 1.840711571782818, "n_group": 4.059344668567291, "te_fraction": 0.9412181899819951, "guided_te_like_mode_count": 1, "relative_group_index_error": 0.014836167141822676, "candidate_passed": true},
+    {"name": "w320_h200", "width_um": 0.32, "height_um": 0.2, "task_id": "mo-93edd8d6-1840-446f-a86a-328b08d3b7ed", "task_status": "success", "result_file": "g1-candidate-w320_h200-result-v1.hdf5", "result_sha256": "814536c0df35ca0d05bd7dcc7514e210b3d65117fd1c3db79732df4e8c4d9bb2", "actual_flexcredits": 0.004249997111111112, "n_eff": 1.8611672166413755, "n_group": 4.061970101280817, "te_fraction": 0.9427233382049929, "guided_te_like_mode_count": 1, "relative_group_index_error": 0.015492525320204287, "candidate_passed": true},
+    {"name": "w330_h180", "width_um": 0.33, "height_um": 0.18, "task_id": "mo-006b37e6-877f-490a-a470-b0a63393cf44", "task_status": "success", "result_file": "g1-candidate-w330_h180-result-v1.hdf5", "result_sha256": "f4c1cc8eabaf81d808313fb5296f82dc2309a9bacc0fc4b6c7c12cdff7e92e56", "actual_flexcredits": 0.004249997111111112, "n_eff": 1.8229917342037243, "n_group": 3.899197697369858, "te_fraction": 0.9436614782261946, "guided_te_like_mode_count": 1, "relative_group_index_error": 0.02520057565753553, "candidate_passed": false},
+    {"name": "w350_h180", "width_um": 0.35, "height_um": 0.18, "task_id": "mo-e4b62b1e-fcfa-4a66-afee-f9e971b5b094", "task_status": "success", "result_file": "g1-candidate-w350_h180-result-v1.hdf5", "result_sha256": "a99985304aee29a35cea3261ac05369644ea9773d9cc6520892862e4064ff9ad", "actual_flexcredits": 0.004256357777777778, "n_eff": 1.8963324930264531, "n_group": 4.04948553473583, "te_fraction": 0.9472986054512652, "guided_te_like_mode_count": 1, "relative_group_index_error": 0.012371383683957404, "candidate_passed": true}
+  ],
+  "passing_candidates": ["w300_h220", "w320_h200", "w350_h180"]
+}

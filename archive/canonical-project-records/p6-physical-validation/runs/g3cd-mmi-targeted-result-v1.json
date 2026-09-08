@@ -1,0 +1,12 @@
+{
+  "name": "p6-g3cd-mmi-targeted-result-v1",
+  "source_sha256": "edf9a39c913af1918dcbdbbea0f3f8ad18ccc20ff703fa473637c86e0553fe84",
+  "results": [
+    {"length_um": 8.8, "task_id": "fdve-eb6e6ffc-a93d-4c16-89d4-9864b9b4df77", "task_status": "success", "result_file": "g3cd-mmi-l8p8_m15-result-v1.hdf5", "result_sha256": "efc987e5e825d50c270f54d1b39fd58f68c703b39239d8ed5a66a1bf4709d460", "actual_flexcredits": 0.04944336036018586, "metrics": {"center_upper_power": 0.36477854915213254, "center_lower_power": 0.3647785386505572, "center_total_output_power": 0.7295570878026898, "center_excess_loss_db": 1.3694071892111954, "center_imbalance_db": 1.2502863189381578e-07, "center_phase_mismatch_deg": 1.1327489591642039e-05, "center_reflection_db": -12.71088021444898, "worst_reflection_db": -11.543849842213286, "max_abs_energy_residual": 0.45087961714084634}, "passed": false},
+    {"length_um": 9.2, "task_id": "fdve-bec250f6-d6a9-45b0-9afa-041dd1e7af2b", "task_status": "success", "result_file": "g3cd-mmi-l9p2_m15-result-v1.hdf5", "result_sha256": "6757199c8dc6b747b9c3a8bbb5f44f687b1c9774cd96d943885589c800850ccd", "actual_flexcredits": 0.051404700227283676, "metrics": {"center_upper_power": 0.43147106828595294, "center_lower_power": 0.43147075183784694, "center_total_output_power": 0.8629418201237999, "center_excess_loss_db": 0.6401848360221173, "center_imbalance_db": 3.185189616125017e-06, "center_phase_mismatch_deg": 2.2329705053285146e-05, "center_reflection_db": -12.65666517171608, "worst_reflection_db": -12.046486936931235, "max_abs_energy_residual": 0.18083119160761316}, "passed": false},
+    {"length_um": 9.6, "task_id": "fdve-dbb1dbfc-f90a-470b-bb95-dd92d42dfff3", "task_status": "success", "result_file": "g3cd-mmi-l9p6_m15-result-v1.hdf5", "result_sha256": "3ca16f235ca7412308d1f11acd943c683cd236062490f04cf2eb483d675f4998", "actual_flexcredits": 0.0533685270908488, "metrics": {"center_upper_power": 0.4343909201730468, "center_lower_power": 0.43439064523370324, "center_total_output_power": 0.8687815654067501, "center_excess_loss_db": 0.6108940291068831, "center_imbalance_db": 2.7487839185090047e-06, "center_phase_mismatch_deg": 5.3118329547178905e-08, "center_reflection_db": -13.675868666819879, "worst_reflection_db": -12.392701849530493, "max_abs_energy_residual": 0.228535227411522}, "passed": false}
+  ],
+  "selected_length_um": null,
+  "suite_passed": false,
+  "actual_total_flexcredits": 0.15421658767831833
+}

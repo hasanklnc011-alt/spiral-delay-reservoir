@@ -1,0 +1,63 @@
+{
+  "name": "p6-inverse-design-id2-binary-fdtd-v1",
+  "source_sha256": "218936b3adf2daa875cda23c0de2404afc6a468ad064bad09e92fcddefac90c2",
+  "estimate_record_sha256": "9d202c498df235cadfa816d2af611beae0f3ec8b5d10b6a87f91682dc1c95ba5",
+  "config_sha256": "03fa0aa7aa487f88800b96461e90a51b45d752ddaf3d3a253cd0e46ee9444257",
+  "p5_blind_rerun": false,
+  "wavelengths_um": [1.53, 1.55, 1.575],
+  "estimated_total_flexcredits": 0.16920073193882762,
+  "devices": {
+    "splitter": {
+      "binary_seed_sha256": "b5e8539ba3a1f8d8c1759709fe865e343c311edeed5db1ee7d6b98e1ed78307a",
+      "data_file": "runs/inverse-design-id2-splitter-0-v1.hdf5",
+      "metrics": {
+        "output_power_0": [0.27490824727987534, 0.26235387784076936, 0.2224323760526289],
+        "output_power_1": [0.25376251991822585, 0.2645309134597116, 0.22488137445420162],
+        "excess_loss_db": [2.7681470320478265, 2.7828433729664743, 3.4938775133002062],
+        "imbalance_db": [0.3476029062498105, 0.03588943740454198, 0.047554859103573044],
+        "reflection_db": [-16.22133652672395, -17.478529650507042, -20.63247070243349],
+        "relative_output_phase_deg": [-7.435205551508492, -7.722425642735234, -9.664402014346496],
+        "worst_excess_loss_db": 3.4938775133002062,
+        "worst_imbalance_db": 0.3476029062498105,
+        "worst_reflection_db": -16.22133652672395,
+        "id2_metric_pass": false
+      }
+    },
+    "combiner": {
+      "binary_seed_sha256": "b2e0ea633765921c76d2607427281bee9f671cfcd6b85374f2c84be3820151d5",
+      "data_files": [
+        "runs/inverse-design-id2-combiner-0-v1.hdf5",
+        "runs/inverse-design-id2-combiner-1-v1.hdf5"
+      ],
+      "metrics": {
+        "excess_loss_db_by_source": [
+          [5.465826570288915, 5.378242906677169, 4.848951441533079],
+          [5.465820933566851, 5.378238478013588, 4.84895754011297]
+        ],
+        "imbalance_db_by_source": [
+          [5.15973730077013, 4.077946430857603, 3.6670336005029016],
+          [5.159731215382585, 4.077943288642931, 3.667032141356378]
+        ],
+        "quadrature_error_deg_by_source": [
+          [3.5924250064696253, 8.003044971661382, 15.623370220571474],
+          [3.5923065582878166, 8.003151468623827, 15.623438001019338]
+        ],
+        "reflection_db_by_source": [
+          [-15.420926984193935, -23.30225683845384, -18.99483017658334],
+          [-15.420940348915234, -23.302273907011028, -18.994808353300787]
+        ],
+        "max_singular_value_by_wavelength": [0.5469251361014859, 0.5710815516542995, 0.638970803685408],
+        "worst_excess_loss_db": 5.465826570288915,
+        "worst_imbalance_db": 5.15973730077013,
+        "worst_quadrature_error_deg": 15.623438001019338,
+        "worst_reflection_db": -15.420926984193935,
+        "max_singular_value": 0.638970803685408,
+        "id2_metric_pass": false
+      }
+    }
+  },
+  "id2_all_metric_pass": false,
+  "devices_accepted": false,
+  "acceptance_blocker": "ID2 metrics failed; ID3 convergence/corners not authorized, and CP0 remains open",
+  "disposition": "FAIL_REDESIGN"
+}

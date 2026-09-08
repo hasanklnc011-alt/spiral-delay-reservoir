@@ -1,0 +1,115 @@
+{
+  "name": "p6-physical-validation-baseline-v1",
+  "claim_level": "component-model and selected-EM plan; not physical acceptance",
+  "blind_policy": {
+    "rerun_allowed": false,
+    "tuning_from_blind_allowed": false,
+    "blind_result_path": "p5-publication/runs/blind-v2.json",
+    "blind_result_sha256": "b263292fd0226c10cc3b0096350176cb14771e258f2eacd89c2952ace9219028",
+    "candidate_lock_path": "p5-publication/candidate-lock-v2.json",
+    "candidate_lock_sha256": "664904b350efaa84a65e5f57a5119042f196753ccd4e7e6d11e851395e5c247d",
+    "candidate_config_path": "p5-publication/configs/candidate-v2.json",
+    "candidate_config_file_sha256": "57bc46f997d90fc989efd1da63d9f006022e0eab2da9908a59c67be5d33473fa",
+    "candidate_config_canonical_sha256": "c7c36b289bf1bdc0689f45b280f807ceaed3c470690cfe36cfd21be023baaa3c",
+    "protocol_path": "configs/p0_narma10_protocol_v2.json",
+    "protocol_file_sha256": "d7a729433aa46d6815c75d0c7867f3c8c36bad8a66f858ee3c3fd00544ac7a1f",
+    "protocol_internal_sha256": "e6cbd95e7aa6b5b3aae9f73172099e4c591db334b2a7f0497768f999c70073f8",
+    "p4_confirmation_path": "p4-optimization/runs/confirmation-v1.json",
+    "p4_confirmation_sha256": "44fa69e447ac10b1fd6564185eb30db7c9f8759b9b7758025d7c4a4a9a719a17"
+  },
+  "architecture": {
+    "symbol_rate_hz": 10000000000.0,
+    "n_lags": 20,
+    "delay_length_cm_locked": 14.240141755,
+    "group_index_target": 4.0,
+    "group_index_tolerance_fraction": 0.02,
+    "channel_count": 30,
+    "parallel_pd_count": 10,
+    "time_multiplex_slots": 3,
+    "receiver_bandwidth_min_hz": 15000000000.0,
+    "detector_bandwidth_p5_model_hz": 50000000000.0,
+    "channel_labels": [
+      "pair:0,9", "pair:1,10", "self:9", "self:0", "pair:2,11",
+      "self:10", "self:1", "pair:3,12", "self:11", "pair:4,13",
+      "lo:10", "self:2", "self:12", "lo:11", "pair:10,19",
+      "pair:5,14", "lo:12", "pair:6,15", "self:13", "pair:7,16",
+      "pair:8,17", "pair:9,18", "self:14", "self:3", "lo:13",
+      "self:15", "self:17", "self:16", "lo:14", "self:18"
+    ]
+  },
+  "platform_gate": {
+    "status": "OPEN",
+    "wavelength_um": 1.55,
+    "platform": "PROVISIONAL_HIGH_INDEX_STRIP_NOT_THE_LEGACY_SIN_STACK",
+    "cross_section_seed": {
+      "core_material": "silicon",
+      "cladding_material": "silica",
+      "width_um": 0.45,
+      "height_um": 0.22,
+      "evidence_status": "MODE_SOLVE_REQUIRED"
+    },
+    "required_group_index": 4.0,
+    "legacy_reference_only": {
+      "platform": "SiN-on-SiO2/air",
+      "width_um": 0.8,
+      "height_um": 0.4,
+      "group_index": 2.1073185917217856,
+      "source_sha256": "65e2139a7e360e37271d69369e5fdf1d47c2de353a3efc564a392a671a7aea2c"
+    }
+  },
+  "layout_envelope": {
+    "status": "ESTIMATE_ONLY",
+    "topology": "interleaved_double_archimedean_spiral",
+    "delay_network": "single_serial_progressive_tap_bus",
+    "topology_selection_status": "PROVISIONAL_PHYSICS_FIRST",
+    "lane_pitch_um": 5.0,
+    "minimum_bend_radius_um": 20.0,
+    "keepout_margin_um": 100.0,
+    "bend_loss_db_per_90deg_assumption": 0.002
+  },
+  "loss_envelope": {
+    "propagation_loss_db_per_cm_assumption": 0.8,
+    "propagation_plus_bend_limit_db_per_cm": 1.0,
+    "switch_insertion_loss_limit_db": 3.0,
+    "combiner_excess_insertion_loss_target_db": 0.5,
+    "combiner_excess_insertion_loss_hard_limit_db": 1.5,
+    "p3_combiner_loss_stress_reference_db": 1.5,
+    "splitter_excess_loss_limit_db_per_stage": 0.2,
+    "progressive_tap_through_excess_loss_db_per_cell_assumption": 0.05,
+    "signal_tap_count": 20,
+    "lo_fanout_count": 10,
+    "source_distribution_status": "OPEN"
+  },
+  "optical_power": {
+    "signal_scale_mw_at_u_equal_1": 5.0,
+    "input_field_max": 0.5,
+    "lo_power_mw_per_lo_arm": 5.0,
+    "p4_conservative_simultaneous_budget_mw": 100.0,
+    "single_laser_launch_mapping_status": "OPEN"
+  },
+  "phase_and_receiver": {
+    "static_phase_error_limit_deg": 5.0,
+    "dynamic_phase_jitter_limit_deg_rms": 2.0,
+    "lo_amplitude_drift_limit_fraction": 0.01,
+    "thermal_trim_count": 30,
+    "thermal_trim_role": "static_only",
+    "thermal_control_bandwidth_hz_assumption": 10000.0,
+    "slot_routing_technology": "UNRESOLVED_FAST_EO_OR_SWITCH",
+    "combiner_passive_s_matrix_status": "OPEN",
+    "laser_linewidth_status": "OPEN",
+    "pd_responsivity_min_a_per_w": 0.8,
+    "pd_bandwidth_min_hz": 15000000000.0,
+    "pd_bandwidth_p5_compatibility_hz": 50000000000.0,
+    "pd_input_noise_max_a_per_sqrt_hz": 2e-11,
+    "pd_saturation_status": "OPEN"
+  },
+  "thermal_envelope": {
+    "phase_shifter_p_pi_mw_assumption": 20.0,
+    "mean_abs_phase_fraction_of_pi": 0.5,
+    "thermal_crosstalk_margin_fraction": 0.25,
+    "global_stabilization_power_mw_assumption": 20.0,
+    "heater_power_limit_mw": 800.0,
+    "control_electronics_included": false,
+    "status": "ASSUMPTION_ONLY"
+  }
+}

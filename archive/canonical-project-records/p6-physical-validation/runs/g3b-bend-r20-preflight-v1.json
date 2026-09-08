@@ -1,0 +1,26 @@
+{
+  "name": "p6-g3b-bend-preflight-v1",
+  "tidy3d_version": "2.12.0",
+  "source_sha256": "94ef14ef064ca5c7d4b0132faa296062fd5f4a7f74963b51b1927e2b142b6704",
+  "g1_config_sha256": "5736208c8a85ee26695439feeeb6fb069fbc1cb93d085cb2ae4e7502660efa1a",
+  "material_policy": "lossless scattering reference; fabricated propagation loss external",
+  "radius_screen_um": [10.0, 20.0, 30.0, 50.0],
+  "selected_nominal_radius_um": 20.0,
+  "adjacent_turn": {
+    "pitch_um": 5.0,
+    "waveguide_width_um": 0.343,
+    "edge_gap_um": 4.657,
+    "screened_pitch_candidates_um": [3.0, 4.0, 5.0, 6.0]
+  },
+  "cloud_called": false,
+  "cases": [
+    {
+      "radius_um": 20.0,
+      "mesh": 15.0,
+      "simulation_cells": 49608060,
+      "computational_grid_points": 26522496,
+      "serialized_sha256": "97d73c2242c2b2931f9409b340b6322678dd3d4d963d9a92394fa0d70f6d85cb"
+    }
+  ],
+  "passed": true
+}

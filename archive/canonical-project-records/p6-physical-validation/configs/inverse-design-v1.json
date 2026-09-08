@@ -1,0 +1,80 @@
+{
+  "name": "p6-custom-process-inverse-design-protocol-v1",
+  "tidy3d_version": "2.12.0",
+  "p5_blind_rerun": false,
+  "cross_section": {
+    "width_um": 0.343,
+    "height_um": 0.18,
+    "core": "silicon",
+    "cladding": "silica"
+  },
+  "fabrication_constraints": {
+    "status": "PROVISIONAL_UNTIL_CP0",
+    "pixel_size_um": 0.04,
+    "minimum_feature_um": 0.2,
+    "filter_radius_um": 0.4,
+    "erosion_dilation_length_scale_um": 0.2,
+    "minimum_gap_um": 0.2,
+    "binary_export_required": true
+  },
+  "wavelengths_um": [1.53, 1.55, 1.575],
+  "devices": {
+    "g3c_splitter": {
+      "design_region_um": [6.0, 4.0, 0.18],
+      "independent_sources": 1,
+      "ports": 3,
+      "targets": {
+        "output_power_each": 0.5,
+        "imbalance_db_max": 0.5,
+        "excess_loss_db_max": 0.2,
+        "reflection_db_max": -30.0,
+        "relative_output_phase_deg": 0.0
+      },
+      "cannot_directly_accept": true
+    },
+    "g3d_combiner": {
+      "design_region_um": [8.0, 5.0, 0.18],
+      "independent_sources": 2,
+      "ports": 4,
+      "targets": {
+        "imbalance_db_max": 0.5,
+        "excess_loss_db_target": 0.5,
+        "excess_loss_db_hard_max": 1.5,
+        "quadrature_error_deg_max": 5.0,
+        "reflection_db_max": -30.0,
+        "passivity_max_singular_value": 1.000001
+      },
+      "cannot_directly_accept": true
+    }
+  },
+  "stages": [
+    {
+      "id": "ID0",
+      "purpose": "local serialization, ports, symmetry, objective and fabrication transforms",
+      "cloud_allowed": false
+    },
+    {
+      "id": "ID1",
+      "purpose": "low-cost effective-index or coarse 3D topology seed",
+      "cost_estimate_required": true,
+      "solve_requires_user_approval": true,
+      "total_cost_limit_fc": 1.5
+    },
+    {
+      "id": "ID2",
+      "purpose": "binary selected geometry, two-source broadband 3D FDTD",
+      "cost_estimate_required": true,
+      "solve_requires_user_approval": true,
+      "total_cost_limit_fc": 3.0
+    },
+    {
+      "id": "ID3",
+      "purpose": "m20/m25 convergence and width/height fabrication corners",
+      "cost_estimate_required": true,
+      "solve_requires_user_approval": true,
+      "total_cost_limit_fc": 10.0
+    }
+  ],
+  "acceptance_rule": "ID0/ID1 never accept a device; only binary ID2 plus ID3 convergence/corners can change G3-C or G3-D",
+  "status": "ID0_PREFLIGHT_PASSED"
+}

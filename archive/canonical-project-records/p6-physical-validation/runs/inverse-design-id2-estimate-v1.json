@@ -1,0 +1,45 @@
+{
+  "name": "p6-inverse-design-id2-estimate-v1",
+  "source_sha256": "2cc755036e33790119ec64c5c5bd8c692ef2dcafcea420829890bca589101c46",
+  "preflight_source_sha256": "61a12ab89dcd3c8063bcc28bcc736c9b2cb887e511b3af9b48bdfc21e7cfcc95",
+  "preflight_record_sha256": "d3bb148c749a0cd27c614d114819388a2663a90d7f119e8782993b12b5b40c58",
+  "config_sha256": "03fa0aa7aa487f88800b96461e90a51b45d752ddaf3d3a253cd0e46ee9444257",
+  "p5_blind_rerun": false,
+  "tasks": [
+    {
+      "device": "splitter",
+      "simulation_key": "splitter",
+      "task_name": "p6_inverse_design_id2_splitter_splitter_v1",
+      "task_id": "fdve-c4ff059c-1bab-423e-b76c-f625d609164b",
+      "task_status": "draft",
+      "serialized_simulation_sha256": "e63fadb2a2d19186fb36473608fe4bd58ad99463f24c1698f21d23a3ea3bdc14",
+      "estimated_flexcredits": 0.047823797468675516,
+      "solve_started": false
+    },
+    {
+      "device": "combiner",
+      "simulation_key": "p6_g3d_inverse_design_v1_0",
+      "task_name": "p6_inverse_design_id2_combiner_p6_g3d_inverse_design_v1_0_v1",
+      "task_id": "fdve-088015c5-b89a-4d4a-805d-bb6689ac31a1",
+      "task_status": "draft",
+      "serialized_simulation_sha256": "9d9156a7e9a155e94f4e43588653e5746e46c1dd262e3b40a725260491588036",
+      "estimated_flexcredits": 0.060688467235076045,
+      "solve_started": false
+    },
+    {
+      "device": "combiner",
+      "simulation_key": "p6_g3d_inverse_design_v1_1",
+      "task_name": "p6_inverse_design_id2_combiner_p6_g3d_inverse_design_v1_1_v1",
+      "task_id": "fdve-b28fc050-f711-4e8b-9e93-0c6d42d15405",
+      "task_status": "draft",
+      "serialized_simulation_sha256": "3ec781def80225cf9d05c98e49bb992cf69d4db4be33ac02ed0351b8c080cef5",
+      "estimated_flexcredits": 0.060688467235076045,
+      "solve_started": false
+    }
+  ],
+  "estimated_total_flexcredits": 0.16920073193882762,
+  "id2_limit_flexcredits": 3.0,
+  "within_limit": true,
+  "solve_started": false,
+  "execution_allowed": true
+}

@@ -1,0 +1,15 @@
+{
+  "name": "p6-g3c-slot-y-result-v1",
+  "source_sha256": "0a2c0b9a83157400ae77b0e851d90074d61f1c958820fc2115d37ec1138c29d4",
+  "geometry": {"input_taper_um": 10.0, "slot_open_um": 40.0, "output_center_um": 1.0},
+  "task_id": "fdve-fb0d60b5-e55c-41d4-ab74-ff1833cda8fa",
+  "task_status": "success",
+  "result_file": "g3c-slot-y_m15-result-v1.hdf5",
+  "result_sha256": "ebedb837fb99045b3ad5be20c21f5132d3a2935c83114ca01528659ec20bb41d",
+  "actual_flexcredits": 0.25826718821745637,
+  "metrics": {"center_upper_power": 2.887344447360042e-06, "center_lower_power": 0.8864713592504809, "center_total_output_power": 0.8864742465949282, "center_excess_loss_db": 0.5233387678520153, "center_imbalance_db": 54.871661122946485, "center_phase_mismatch_deg": 179.06991391259498, "center_reflection_db": -13.381647286593001, "worst_reflection_db": -12.670463904422078, "max_abs_energy_residual": 0.07579837035384618},
+  "pilot_passed": false,
+  "evidence_valid": false,
+  "invalid_reason": "upper slot boundary omitted division by two, so the silica override removed the upper silicon rail; symmetry invariant failed",
+  "physical_candidate_evaluated": false
+}

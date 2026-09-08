@@ -1,0 +1,33 @@
+{
+  "name": "p6-g3d-mmi-estimate-v1",
+  "source_sha256": "236038d1a31cf73181502bfbe13451be281836edb60956264c83a2a7b043e87f",
+  "tasks": [
+    {
+      "source_port": "upper",
+      "task_name": "p6_g3d_mmi_upper_m15",
+      "task_id": "fdve-2ef5fc59-0bfd-4446-a55c-68b78d2b8144",
+      "task_status": "draft",
+      "serialized_simulation_sha256": "42e9f2ce6f762c86acbf6d542909a7694d6f8e0dd302fe67a1f2a0e9fd43cafa",
+      "simulation_cells": 5569584,
+      "computational_grid_points": 3013626,
+      "estimated_flexcredits": 0.07637307047849157,
+      "solve_started": false,
+      "within_per_source_limit": true
+    },
+    {
+      "source_port": "lower",
+      "task_name": "p6_g3d_mmi_lower_m15",
+      "task_id": "fdve-8c425191-2ae6-4972-a113-e8d765f3785b",
+      "task_status": "draft",
+      "serialized_simulation_sha256": "3a79a697fa596696847e501a0d35400061565f79b1f7de4b4995f25ff85239a8",
+      "simulation_cells": 5569584,
+      "computational_grid_points": 3013626,
+      "estimated_flexcredits": 0.07637307047849157,
+      "solve_started": false,
+      "within_per_source_limit": true
+    }
+  ],
+  "estimated_total_flexcredits": 0.15274614095698313,
+  "within_limits": true,
+  "solve_started": false
+}

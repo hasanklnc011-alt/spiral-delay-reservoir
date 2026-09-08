@@ -1,0 +1,39 @@
+{
+  "name": "p6-g3d-reused-coupler-diagnostic-v1",
+  "source_sha256": "40c39405f6eb6538457aeb3d7eb556ebbd46ee30ffd4c5c6bb195df5e9ee1d41",
+  "input_record_sha256": "aaa03f29e66b8ae382fdec92a554030ccdf62997d8045ce8c8cebbfccecc87c3",
+  "input_result_sha256": "5ff16699304b797a3a34a10f288a9d0f7952e08d187180cd87075e7b29bc4242",
+  "p5_blind_rerun": false,
+  "cloud_called": false,
+  "evidence_class": "DIAGNOSTIC_ONLY_SYMMETRY_INFERRED_SECOND_EXCITATION",
+  "forward_s_matrix_complex_ri": [
+    [[0.21418281083233465, -0.302760347262993], [-0.6911653744268564, -0.6005606695975676]],
+    [[-0.6911653744268564, -0.6005606695975676], [0.21418281083233465, -0.302760347262993]]
+  ],
+  "reflection_s_matrix_complex_ri": [
+    [[-0.1648417721424176, -0.12288233311051101], [0.07692295109062607, -0.1322356141369765]],
+    [[0.07692295109062607, -0.1322356141369765], [-0.1648417721424176, -0.12288233311051101]]
+  ],
+  "forward_singular_values": [1.0215190773917044, 0.9530689211881204],
+  "largest_total_power_operator_eigenvalue": 1.116316111578108,
+  "center_relative_phase_deg": 84.28915668228326,
+  "quadrature_error_deg": 5.710843317716751,
+  "coherent_equal_input_transfer": {
+    "0": {"output_power": [1.043501225475199, 1.043501225475199], "total_output_power": 2.087002450950398, "total_reflected_power": 0.14562977220581752, "input_power": 2.0},
+    "90": {"output_power": [1.6516952791397186, 0.30014631487016785], "total_output_power": 1.9518415940098865, "total_reflected_power": 0.13135255136881896, "input_power": 2.0},
+    "180": {"output_power": [0.9083403685346871, 0.9083403685346869], "total_output_power": 1.8166807370693745, "total_reflected_power": 0.1170753305318205, "input_power": 2.0},
+    "270": {"output_power": [0.30014631487016774, 1.6516952791397186], "total_output_power": 1.9518415940098857, "total_reflected_power": 0.131352551368819, "input_power": 2.0}
+  },
+  "gates": {
+    "hard_excess_insertion_db_le_1p5": true,
+    "imbalance_db_le_0p5": false,
+    "quadrature_error_deg_le_5": false,
+    "passive_power_operator_le_1p01": false,
+    "field_decay_le_1e_7": false,
+    "independent_two_port_excitations": false,
+    "mesh_convergence_available": false
+  },
+  "diagnostic_passed": false,
+  "g3d_accepted": false,
+  "next_required_evidence": "two independent port excitations on a redesigned/foundry-qualified 2x2 cell, followed by m20/m25 complex-S convergence"
+}

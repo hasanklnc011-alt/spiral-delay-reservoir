@@ -1,0 +1,56 @@
+{
+  "name": "p6-custom-process-validation-contract-v1",
+  "date": "2026-09-04",
+  "selected_by_user": true,
+  "p5_blind_rerun": false,
+  "cross_section": {
+    "core": "silicon",
+    "cladding": "silica",
+    "width_um": 0.343,
+    "width_corner_um": 0.01,
+    "height_um": 0.18,
+    "height_corner_um": 0.005
+  },
+  "ready_pdk_migration": false,
+  "claim_level": "custom-process pre-fabrication design envelope",
+  "test_vehicle": {
+    "straight_cutback_lengths_cm": [0.5, 1.0, 2.0, 4.0],
+    "full_spiral_length_cm": 14.240061041238805,
+    "bend_radius_um": 10.0,
+    "adjacent_turn_pitch_um": 5.0,
+    "complex_s_parameter_required": true,
+    "pd_tia_must_be_measured_together": true,
+    "thermal_matrix_size": [30, 30]
+  },
+  "acceptance": {
+    "propagation_loss_upper_ci_db_per_cm_max": 0.9026,
+    "propagation_plus_bend_db_per_cm_max": 1.0,
+    "splitter_excess_db_per_stage_max": 0.2,
+    "combiner_excess_db_target": 0.5,
+    "combiner_excess_db_hard_max": 1.5,
+    "combiner_imbalance_db_max": 0.5,
+    "combiner_quadrature_error_deg_max": 5.0,
+    "reflection_db_max": -30.0,
+    "fast_switch_rate_hz_min": 30000000000.0,
+    "fast_switch_insertion_loss_db_max": 3.0,
+    "fast_switch_extinction_db_min": 20.0,
+    "pd_tia_bandwidth_hz_min": 50000000000.0,
+    "pd_responsivity_a_per_w_min": 0.8,
+    "pd_input_noise_a_per_sqrt_hz_max": 2e-11,
+    "pd_tia_linear_peak_current_a_min": 0.0045,
+    "static_phase_error_deg_max": 5.0,
+    "dynamic_phase_jitter_deg_rms_max": 2.0,
+    "heater_total_power_mw_max": 800.0
+  },
+  "required_external_evidence": [
+    "foundry_process_manifest_and_drc",
+    "fabricated_passive_cutback_and_complex_s_parameters",
+    "30ghz_switch_rf_optical_measurement",
+    "50ghz_pd_tia_measurement",
+    "30x30_thermal_crosstalk_and_power_measurement"
+  ],
+  "current_status": "PRE_FABRICATION_OPEN",
+  "g4_physical_accepted": false,
+  "g5_composition_complete": false,
+  "p6_accepted": false
+}

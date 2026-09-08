@@ -1,0 +1,16 @@
+{
+  "name":"p6-g3b-bent-mode-screen-v1",
+  "tidy3d_version":"2.12.0",
+  "source_sha256":"1ebba9b32ddaa6296c2af7b4f0c7cf00a169f5dbc736ccecf4b251fc75d1b2c3",
+  "g1_config_sha256":"5736208c8a85ee26695439feeeb6fb069fbc1cb93d085cb2ae4e7502660efa1a",
+  "wavelengths_um":[1.52,1.525,1.53,1.535,1.54,1.545,1.55,1.555,1.56,1.565,1.57,1.575,1.58],
+  "cloud_called":false,
+  "claim_level":"local bent-eigenmode radiation-loss upper-bound screen; imaginary-neff numerical floor and FDTD reflection remain separate",
+  "cases":[
+    {"radius_um":10.0,"center_bend_loss_db_per_90deg":0.00012829588848727754,"worst_bend_loss_db_per_90deg":0.0010758000669820265},
+    {"radius_um":20.0,"center_bend_loss_db_per_90deg":0.001092340777782169,"worst_bend_loss_db_per_90deg":0.0011061849831938237},
+    {"radius_um":30.0,"center_bend_loss_db_per_90deg":0.001799872507592638,"worst_bend_loss_db_per_90deg":0.0018674501840240023},
+    {"radius_um":50.0,"center_bend_loss_db_per_90deg":0.003141070126593073,"worst_bend_loss_db_per_90deg":0.0033184204153292327}
+  ],
+  "interpretation":"all candidates are below 0.0034 dB/90deg; monotonic trend is dominated by the local imaginary-neff numerical floor, so this only excludes material bend radiation as the R20 reflection failure source"
+}

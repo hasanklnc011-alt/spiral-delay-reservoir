@@ -1,0 +1,55 @@
+{
+  "name": "p6-inverse-design-id1-estimate-v1",
+  "source_sha256": "4daf03735ad27c48285bc2a584ffc6f9c99b27c4df6ecaace02b3f2025bb1e47",
+  "simulation_source_sha256": "60ac817a16ad1dc16cc21dd8f7cdb3bf1d79134a5453327032f0d2296b1e55aa",
+  "preflight_record_sha256": "13da1091aa9d58ef69da9f3050db054c1d97cf977df7bebbf0c54a017fbf3156",
+  "config_sha256": "03fa0aa7aa487f88800b96461e90a51b45d752ddaf3d3a253cd0e46ee9444257",
+  "p5_blind_rerun": false,
+  "tasks": [
+    {
+      "label": "g3c_splitter",
+      "task_name": "p6_inverse_design_id1_estimate_g3c_splitter_v1",
+      "task_id": "fdve-46218e5d-dd0f-4a95-b096-4caf75f39826",
+      "task_status": "draft",
+      "serialized_simulation_sha256": "ff0ad757c3a7545cbcf3598de668eb04ca8b6a4ae227db230739210f826d26e1",
+      "estimated_forward_flexcredits": 0.047823797468675516,
+      "solve_started": false
+    },
+    {
+      "label": "g3d_0",
+      "task_name": "p6_inverse_design_id1_estimate_g3d_0_v1",
+      "task_id": "fdve-349e4eef-8172-4c92-95be-ccb770a9ff4c",
+      "task_status": "draft",
+      "serialized_simulation_sha256": "1165464bff0dbfcc1274e6a4cc8232bd5362e7f76c87b4ad79bfffcd61e42b9f",
+      "estimated_forward_flexcredits": 0.060688467235076045,
+      "solve_started": false
+    },
+    {
+      "label": "g3d_1",
+      "task_name": "p6_inverse_design_id1_estimate_g3d_1_v1",
+      "task_id": "fdve-8c5d25dc-69e9-4395-a4eb-6656125977ac",
+      "task_status": "draft",
+      "serialized_simulation_sha256": "422ee70ac0871b3d3c9cdf0a24520b297487a9e362b822fecf691946e6e5b86d",
+      "estimated_forward_flexcredits": 0.060688467235076045,
+      "solve_started": false
+    }
+  ],
+  "planning_model": "2x forward-cost per optimization step (forward plus adjoint upper bound)",
+  "estimated_iteration_flexcredits": {
+    "g3c_splitter": 0.09564759493735103,
+    "g3d_combiner": 0.24275386894030418
+  },
+  "estimated_initial_forward_total_flexcredits": 0.16920073193882762,
+  "id1_total_limit_flexcredits": 1.5,
+  "provisional_allocation_flexcredits": {
+    "g3c_splitter": 0.5,
+    "g3d_combiner": 1.0
+  },
+  "max_whole_steps_within_allocation": {
+    "g3c_splitter": 5,
+    "g3d_combiner": 4
+  },
+  "solve_started": false,
+  "within_total_limit": true,
+  "optimization_allowed": true
+}

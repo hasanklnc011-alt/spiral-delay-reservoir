@@ -1,0 +1,21 @@
+{
+  "name": "p6-g3cd-mmi-parity-mode-screen-v1",
+  "tidy3d_version": "2.12.0",
+  "source_sha256": "23ea31b4a4635d07a5fe1ae943115158f62189724eb9570cf5a14778a9af32ff",
+  "g1_config_sha256": "5736208c8a85ee26695439feeeb6fb069fbc1cb93d085cb2ae4e7502660efa1a",
+  "cloud_called": false,
+  "material_policy": "lossless scattering screen; fabricated propagation remains external",
+  "wavelength_um": 1.55,
+  "mesh_convergence": [
+    {"mmi_width_um": 1.5, "relative_fundamental_branch_beat_mesh_delta": 0.003385735245272265},
+    {"mmi_width_um": 1.75, "relative_fundamental_branch_beat_mesh_delta": 0.00556505964309333},
+    {"mmi_width_um": 2.0, "relative_fundamental_branch_beat_mesh_delta": 0.002358220643384114},
+    {"mmi_width_um": 2.25, "relative_fundamental_branch_beat_mesh_delta": 0.004227905804485691},
+    {"mmi_width_um": 2.5, "relative_fundamental_branch_beat_mesh_delta": 0.027002644551385426}
+  ],
+  "selected_width_um": 2.0,
+  "selected_fundamental_branch_2pi_beat_length_um": 18.40557318748455,
+  "targeted_length_fractions_um": {"three_eighths": 6.902089945306706, "one_half": 9.202786593742275, "five_eighths": 11.503483242177843},
+  "screen_passed": true,
+  "claim_limit": "length seeds only; splitter/combiner S-matrix still requires EME/FDTD"
+}

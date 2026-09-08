@@ -1,0 +1,19 @@
+{
+  "name": "p6-g3d-mmi-eme-preflight-v1",
+  "tidy3d_version": "2.12.0",
+  "source_sha256": "392e5128bb30e7d5bd02a1ac9d41e0b5c5359e29d2386f0b2c7745fb539010c1",
+  "fdtd_builder_sha256": "236038d1a31cf73181502bfbe13451be281836edb60956264c83a2a7b043e87f",
+  "cloud_called": false,
+  "p5_blind_rerun": false,
+  "reference_length_um": 2.5725000000000002,
+  "length_sweep_um": {"start": 2.0, "stop": 14.0, "step": 0.25},
+  "length_sweep_points": 49,
+  "eme_cells": 19,
+  "mmi_cell_index": 9,
+  "port_modes": 4,
+  "device_modes": 16,
+  "serialized_simulation_sha256": "664692c17df3ec0e1b486e622c1815c58eb6d605043881bef7d33cb74a213b74",
+  "cloud_status": "NOT_SUBMITTED",
+  "preflight_passed": true,
+  "claim_limit": "center-wavelength length seed only; selected geometry requires broadband two-source FDTD"
+}

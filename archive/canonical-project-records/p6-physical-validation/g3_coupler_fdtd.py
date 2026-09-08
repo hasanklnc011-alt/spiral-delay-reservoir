@@ -1,0 +1,30 @@
+"""Selected 3D FDTD cell for a 50:50 directional coupler with symmetric S-bends."""
+from __future__ import annotations
+import argparse,hashlib,json,math
+from pathlib import Path
+from typing import Any
+import numpy as np
+import tidy3d as td
+from tidy3d import web
+from shapely.geometry import LineString
+from g3_straight_preflight import G1_CONFIG,HERE
+from g3_straight_preflight_v2 import lossless_materials
+from g3_straight_cloud import PER_SOURCE_LIMIT_FC,TOTAL_LIMIT_FC
+RUNS=HERE/"runs";ESTIMATE_RECORD=RUNS/"g3c-coupler-fdtd-estimate-v1.json";COUPLING_LENGTH=2.7002240628844443
+def polygon(points,width,height):
+    poly=LineString(points).buffer(width/2,cap_style=2,join_style=2,resolution=16);return td.PolySlab(vertices=list(poly.exterior.coords)[:-1],slab_bounds=(-height/2,height/2),axis=2)
+def build(mesh:float=15.0,interaction_length:float=COUPLING_LENGTH,far:float=2.0,transition:float=10.0,port_span:float=1.2,run_time_s:float=2e-12)->td.Simulation:
+    a=json.loads(G1_CONFIG.read_text(encoding="utf-8"));w,h=float(a["width_um"]),float(a["height_um"]);gap=.2;near=w+gap;lead=3.0;x0=-interaction_length/2-transition;x1=-interaction_length/2;x2=interaction_length/2;x3=interaction_length/2+transition;xs=np.linspace(x0,x1,151);smooth=.5-.5*np.cos(np.pi*(xs-x0)/transition);yt=far/2+(near/2-far/2)*smooth;top=list(zip(xs,yt))+[(x2,near/2)];xs2=np.linspace(x2,x3,151);smooth2=.5-.5*np.cos(np.pi*(xs2-x2)/transition);yt2=near/2+(far/2-near/2)*smooth2;top+=list(zip(xs2[1:],yt2[1:]));top=[(x0-lead,far/2)]+top+[(x3+lead,far/2)];bottom=[(x,-y) for x,y in top];si,sio2,_=lossless_materials();structures=(td.Structure(geometry=polygon(top,w,h),medium=si,name="top_guide"),td.Structure(geometry=polygon(bottom,w,h),medium=si,name="bottom_guide"));wls=np.linspace(1.52,1.58,13);freqs=td.C_0/wls;f0=td.C_0/1.55;fw=1.5*(max(freqs)-min(freqs));mode=td.ModeSpec(num_modes=2,target_neff=1.87,sort_spec=td.ModeSortSpec(filter_key="TE_fraction",filter_reference=.8,filter_order="over",keep_modes=1));source_x=x0-lead+1;port_in=x0-lead+1.75;port_out=x3+lead-1.0;ps=(0,port_span,1.2);source=td.ModeSource(center=(source_x,far/2,0),size=ps,source_time=td.GaussianPulse(freq0=f0,fwidth=fw),direction="+",mode_spec=mode,mode_index=0,name="top_source");mons=tuple(td.ModeMonitor(center=(x,y,0),size=ps,freqs=freqs,mode_spec=mode,name=n) for n,x,y in (("input_top",port_in,far/2),("input_bottom",port_in,-far/2),("output_top",port_out,far/2),("output_bottom",port_out,-far/2)));size_x=(x3+lead+2)-(x0-lead-2);return td.Simulation(center=(0,0,0),size=(size_x,2*far+3,2),medium=sio2,structures=structures,sources=(source,),monitors=mons,boundary_spec=td.BoundarySpec.all_sides(boundary=td.PML()),grid_spec=td.GridSpec.auto(wavelength=1.55,min_steps_per_wvl=mesh),run_time=run_time_s,shutoff=1e-7,subpixel=True,symmetry=(0,0,1))
+def metrics(data):
+    inc=np.asarray(data["input_top"].amps.sel(direction="+",mode_index=0));r1=np.asarray(data["input_top"].amps.sel(direction="-",mode_index=0))/inc;r2=np.asarray(data["input_bottom"].amps.sel(direction="-",mode_index=0))/inc;bar=np.asarray(data["output_top"].amps.sel(direction="+",mode_index=0))/inc;cross=np.asarray(data["output_bottom"].amps.sel(direction="+",mode_index=0))/inc;pbar=np.abs(bar)**2;pcross=np.abs(cross)**2;psum=pbar+pcross;res=1-psum-np.abs(r1)**2-np.abs(r2)**2;i=6;return {"center_bar_power":float(pbar[i]),"center_cross_power":float(pcross[i]),"center_total_output_power":float(psum[i]),"center_excess_loss_db":float(-10*np.log10(psum[i])),"center_imbalance_db":float(abs(10*np.log10(pbar[i]/pcross[i]))),"center_relative_phase_deg":float(np.angle(bar[i]/cross[i],deg=True)),"worst_reflection_db":float(np.max(20*np.log10(np.maximum(np.sqrt(np.abs(r1)**2+np.abs(r2)**2),1e-15)))),"max_abs_energy_residual":float(np.max(np.abs(res)))}
+def estimate(*,approved:bool):
+    if not approved:raise PermissionError("User credit approval required")
+    s=build();d=hashlib.sha256(s.model_dump_json().encode()).hexdigest();n="p6_g3c_coupler_50_50_m15";j=web.Job(simulation=s,task_name=n,folder_name="P6 Physical Validation",verbose=False);j.upload();c=float(j.estimate_cost(verbose=False));return {"name":"p6-g3c-coupler-fdtd-estimate-v1","source_sha256":hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),"task_name":n,"task_id":str(j.task_id),"task_status":str(j.get_info().status),"serialized_simulation_sha256":d,"simulation_cells":int(s.num_cells),"computational_grid_points":int(s.num_computational_grid_points),"estimated_flexcredits":c,"solve_started":False,"within_limits":c<PER_SOURCE_LIMIT_FC and c<TOTAL_LIMIT_FC}
+def execute(*,approved:bool):
+    if not approved:raise PermissionError("User solve approval required")
+    x=json.loads(ESTIMATE_RECORD.read_text(encoding="utf-8"));s=build();d=hashlib.sha256(s.model_dump_json().encode()).hexdigest()
+    if not x["within_limits"] or x["solve_started"] or d!=x["serialized_simulation_sha256"]:raise RuntimeError("locked mismatch")
+    p=RUNS/"g3c-coupler-50_50_m15-result-v1.hdf5";j=web.Job(simulation=s,task_name=x["task_name"],folder_name="P6 Physical Validation",task_id_cached=x["task_id"],verbose=False);m=metrics(j.run(path=p));passed=m["center_excess_loss_db"]<=.2 and m["center_imbalance_db"]<=.5 and m["worst_reflection_db"]<-30 and m["max_abs_energy_residual"]<.01;return {"name":"p6-g3c-coupler-fdtd-result-v1","source_sha256":hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),"task_id":x["task_id"],"task_status":str(j.get_info().status),"result_file":p.name,"result_sha256":hashlib.sha256(p.read_bytes()).hexdigest(),"actual_flexcredits":float(j.real_cost(verbose=False) or 0),"metrics":m,"pilot_passed":passed}
+def main():
+    p=argparse.ArgumentParser();g=p.add_mutually_exclusive_group(required=True);g.add_argument("--upload-estimate",action="store_true");g.add_argument("--execute",action="store_true");p.add_argument("--user-credit-approval",action="store_true");p.add_argument("--user-solve-approval",action="store_true");a=p.parse_args();print(json.dumps(estimate(approved=a.user_credit_approval) if a.upload_estimate else execute(approved=a.user_solve_approval),indent=2))
+if __name__=="__main__":main()

@@ -1,0 +1,18 @@
+{
+  "name": "p6-g1-selected-validation-estimate-v1",
+  "source_sha256": "820aef9e24a521cb28f12b5cdd36f26250a745b9c2a76556d4f7c2f801c875b0",
+  "selected_config_sha256": "fb0921e24297ba703ebbf5b3a959803599e97664b932ae4dce4890374797d6ea",
+  "jobs": [
+    {"name":"nominal_m15","width_um":0.343,"height_um":0.18,"mesh":15.0,"task_name":"p6_g1_selected_nominal_m15","task_id":"mo-3c92a6ec-1dfe-448d-b632-45f9dde58be6","task_status":"draft","serialized_mode_solver_sha256":"a9c1c2c3f2430af06c990b50e850d799d8e06c900384e2411ad8f1c22de3e784","estimated_flexcredits":0.008864756444444444,"solve_started":false},
+    {"name":"nominal_m20","width_um":0.343,"height_um":0.18,"mesh":20.0,"task_name":"p6_g1_selected_nominal_m20","task_id":"mo-09494bf8-ffa4-4c19-9998-19cf5c459bc5","task_status":"draft","serialized_mode_solver_sha256":"4aed6ee3a04b8e75c4b39daffe562e7a6edbb46681ab75416f86e4188ba86725","estimated_flexcredits":0.010464797777777778,"solve_started":false},
+    {"name":"nominal_m25","width_um":0.343,"height_um":0.18,"mesh":25.0,"task_name":"p6_g1_selected_nominal_m25","task_id":"mo-b218371b-02a7-4132-ac0f-01c45e68a354","task_status":"draft","serialized_mode_solver_sha256":"412806327d95f25eb61b3cb80cff3e4897b2888218f0033453e6a99fbb5d5b3a","estimated_flexcredits":0.012692673777777778,"solve_started":false},
+    {"name":"width_low","width_um":0.333,"height_um":0.18,"mesh":20.0,"task_name":"p6_g1_selected_width_low","task_id":"mo-3f6875da-ed75-4896-b9c7-acd3979d7852","task_status":"draft","serialized_mode_solver_sha256":"73c1c090132c4694f5f0a994f9c378403111b97411ecccf4022672083008dcd8","estimated_flexcredits":0.010409745111111111,"solve_started":false},
+    {"name":"width_high","width_um":0.353,"height_um":0.18,"mesh":20.0,"task_name":"p6_g1_selected_width_high","task_id":"mo-1d85c0a9-9ecc-45eb-9484-bba942d4dec1","task_status":"draft","serialized_mode_solver_sha256":"28f4a88c7225e745841718b15300ba36416bf52505d4cf15c0789b2190fbe887","estimated_flexcredits":0.010464797777777778,"solve_started":false},
+    {"name":"height_low","width_um":0.343,"height_um":0.17,"mesh":20.0,"task_name":"p6_g1_selected_height_low","task_id":"mo-81f93197-8370-4f79-9018-306c6bd73834","task_status":"draft","serialized_mode_solver_sha256":"379a7bbd10d3106d6b804f308f7e07e3b8cb2590058b3739c792a841f0f07e1d","estimated_flexcredits":0.010382804444444444,"solve_started":false},
+    {"name":"height_high","width_um":0.343,"height_um":0.19,"mesh":20.0,"task_name":"p6_g1_selected_height_high","task_id":"mo-b1ec5de9-ae07-4c63-9e74-24e03ccf19a1","task_status":"draft","serialized_mode_solver_sha256":"359c4d9c3ed27f0364e8cbe5885ece0ca9b74020a921cb28efa4233a19c615f1","estimated_flexcredits":0.010464797777777778,"solve_started":false}
+  ],
+  "estimated_total_flexcredits": 0.07374437311111111,
+  "pilot_total_limit_flexcredits": 0.5,
+  "within_pilot_limit": true,
+  "user_credit_approval": true
+}

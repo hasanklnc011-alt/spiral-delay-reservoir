@@ -1,0 +1,10 @@
+{
+  "name":"p6-g1-thickness-refinement-result-v1",
+  "source_sha256":"70ad3087faf51d75fb74befd1416cba6b6ea0612023b10c688730030adc3175b",
+  "results":[
+    {"name":"height_175nm","width_um":0.343,"height_um":0.175,"mesh":20.0,"task_id":"mo-f9945d2b-54d0-4733-a438-7c4662bb5973","task_status":"success","result_file":"g1-selected-height_175nm-result-v1.hdf5","result_sha256":"10a1f940be2079152ef015f0134dc729250a779bc5b36a4a1510f5e82c31d98a","actual_flexcredits":0.010382804444444444,"n_group":3.938092912735419,"te_fraction":0.9449450417650636,"guided_te_like_mode_count":1,"symbols_at_10_gbd":18.70594133549324,"case_passed":true},
+    {"name":"height_185nm","width_um":0.343,"height_um":0.185,"mesh":20.0,"task_id":"mo-352f1b01-67d0-4709-987e-f51837631026","task_status":"success","result_file":"g1-selected-height_185nm-result-v1.hdf5","result_sha256":"c6a13baab93a3931db725151ab1c6aeef4f57b971b7ee683b9b393b76af6f503","actual_flexcredits":0.010464797777777778,"n_group":4.066851579720662,"te_fraction":0.9461334111949766,"guided_te_like_mode_count":1,"symbols_at_10_gbd":19.317545003673143,"case_passed":true}
+  ],
+  "thickness_plus_minus_5nm_passed":true,
+  "actual_total_flexcredits":0.02084760222222222
+}

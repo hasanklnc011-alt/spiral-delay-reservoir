@@ -1,0 +1,35 @@
+{
+  "name": "p6-inverse-design-id1-combiner-v1",
+  "device": "combiner",
+  "source_sha256": "8444df3c43a5877becbdd4ffc83a5860a48d25339897adebea3b284b8723f542",
+  "simulation_source_sha256": "60ac817a16ad1dc16cc21dd8f7cdb3bf1d79134a5453327032f0d2296b1e55aa",
+  "config_sha256": "03fa0aa7aa487f88800b96461e90a51b45d752ddaf3d3a253cd0e46ee9444257",
+  "estimate_record_sha256": "a5cc425bb9bd337ccd432dc1d4f4d97edc37bce3a267a5759d9911e99136cbdcb",
+  "p5_blind_rerun": false,
+  "planned_steps": 3,
+  "completed_steps": 3,
+  "learning_rate": 0.3,
+  "allocation_fc": 1.0,
+  "estimated_cost_fc": 0.8496385412910646,
+  "objective_history": [
+    -0.811435166064548,
+    -0.9763013823283666,
+    -0.2877027499546298
+  ],
+  "post_process_history": [
+    0.1885648339354497,
+    0.02369861767162209,
+    0.38878569201945484
+  ],
+  "penalty_history": [
+    0.9999999999999977,
+    0.9999999999999887,
+    0.6764884419740846
+  ],
+  "final_parameter_shape": [200, 125, 1],
+  "final_parameter_min": 0.0,
+  "final_parameter_max": 1.0,
+  "cache_file": "runs/inverse-design-id1-combiner-v1.hdf5",
+  "id1_can_accept_device": false,
+  "next_gate": "binary ID2 broadband two-source 3D FDTD estimate"
+}

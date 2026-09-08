@@ -1,0 +1,11 @@
+{
+  "name":"p6-g3a-straight-result-v1",
+  "source_sha256":"a8ee65c191ed27853efb99bbfbaf418b02ecb0db07fa0d61d23171f19454b1b0",
+  "results":[
+    {"name":"length4_m15","task_id":"fdve-fec70411-08ae-4339-a829-a90d99fe1213","task_status":"success","result_file":"g3a-straight-length4_m15-result-v1.hdf5","result_sha256":"b28df6bdd6d60affdb45470b1a83aa0e08bc8288fd9cde55e6023ed500da16a4","actual_flexcredits":0.025,"max_abs_energy_residual":0.00561963756046735,"worst_reflection_db":-63.85444660356554,"transmission_db_at_1550nm":-0.02186225837819044,"pilot_case_passed":true},
+    {"name":"length8_m15","task_id":"fdve-f4978537-953d-45a3-b5f4-06eacbf3ab28","task_status":"success","result_file":"g3a-straight-length8_m15-result-v1.hdf5","result_sha256":"b70cc4364ec15d4b03b8a4c2ea0acf247362fbbdd35edae6091525b7a205ff12","actual_flexcredits":0.025,"max_abs_energy_residual":0.010750918359492156,"worst_reflection_db":-64.20220147439733,"transmission_db_at_1550nm":-0.04438694783239887,"pilot_case_passed":false}
+  ],
+  "pilot_passed":false,
+  "actual_total_flexcredits":0.05,
+  "next_action":"run mesh 20 and 25 convergence; do not interpret numerical attenuation as fabricated propagation loss"
+}

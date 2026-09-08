@@ -1,0 +1,80 @@
+{
+  "protocol_version": 2,
+  "protocol_id": "narma10-nmse-under-0.05-v2",
+  "status": "frozen",
+  "frozen_date": "2026-09-03",
+  "task": {
+    "name": "NARMA-10",
+    "order": 10,
+    "input_distribution": "numpy.default_rng(seed).uniform(0.0, 0.5)",
+    "alignment": "features[t] -> target[t+1]",
+    "metric": "NMSE = mean((target-prediction)^2) / var(target)"
+  },
+  "development": {
+    "usage": "train-and-validation-only; no test slice exists",
+    "seeds": [11, 23, 37, 41, 53, 67, 71, 97, 109, 113],
+    "split": {"washout": 1000, "train": 6000, "validation": 2000, "test": 0},
+    "gate": {"aggregate": "median_validation_nmse", "operator": "<=", "threshold": 0.04},
+    "dataset_sha256": {
+      "11": "463fc0010249fb9168098209442e597ea0d802b5fa4cc5a998f837e9a59cbb12",
+      "23": "418fa9be73c22922dffe8b7ab6429d4c189ddf0effe62cc405223b15bbc67c61",
+      "37": "45841bf3cad5bed01c621b73fd307b632e39cb840a8bb48def66f6a1dde69d20",
+      "41": "ac5055546b002c844c61ae660516d0003353b7f356179f90781a8a13c51eb49f",
+      "53": "2d2cdb847aba04c40ef4638c6e0d16a2bda9ecd8724f7185abd6df72e87643a5",
+      "67": "f462749bc5ac61e896d8c197e1d6606c9c940205878156009dc0eae817ecdbdc",
+      "71": "58677d7c8ba75981b7696e611274c35bd999c1fada6803bb84fbe3a6062d1a3f",
+      "97": "46105e6ff8496b59b990351718416da3183180e1c21ba71138e5ec0833c88093",
+      "109": "15bfc3b0ab7b4bb590ad08ef2bbb8d95d0d8e22e7ba2252426a641e37a2eb039",
+      "113": "d54a8fc59f84e1b4f4f164bb3037602a2b47a7d9112bf01e276cecf0508da63b"
+    }
+  },
+  "publication_blind": {
+    "usage": "one final evaluation after candidate lock; never for selection or tuning",
+    "seeds": [179, 181, 191, 193, 197, 199, 211, 223, 227, 229],
+    "split": {"washout": 1000, "train": 6000, "validation": 2000, "test": 3000},
+    "success_gates": {
+      "median_test_nmse": {"operator": "<", "threshold": 0.05},
+      "seed_count_below_0_05": {"operator": ">=", "threshold": 8},
+      "relative_gain_vs_each_superiority_control": {"operator": ">=", "threshold": 0.10},
+      "paired_bootstrap_difference_ci95_upper": {"operator": "<", "threshold": 0.0},
+      "required_superiority_controls": ["delayed_input", "no_photonic_core"],
+      "reported_upper_bounds": ["same_delay_digital"]
+    },
+    "authorization": {
+      "candidate_lock_required": true,
+      "lock_fields": ["status", "protocol_sha256", "candidate_config_sha256", "source_sha256", "locked_utc"],
+      "rerun_policy": "a failed blind evaluation ends this protocol version; changes require v3 and a new blind suite"
+    },
+    "dataset_sha256": {
+      "179": "0013147ebca5ebe7ce66034a5722bfdb08aabdb5ae184af92734c6f772a3652c",
+      "181": "94b3ebe4374b7261228435a1796d45ffaca9ff293f59e2d20cb8c8b8e7847f9d",
+      "191": "5d07ba31a0cc3a537398e39cd2ccfa7abc43d32feb6c6f6de1bb0ab3e21a8879",
+      "193": "9d4ca9d0662211e83aafc2bea07c86f3411bee8b606870a6b9fdee0f5418c559",
+      "197": "40958368941f288fd41484944c1191e134aca9a1eb0b202d3d63bec7a2523335",
+      "199": "9189409683298731425ebac9dc297f3b5af33a9b6385b1fbe2469ac3d8d9ca60",
+      "211": "46df52952d8b65ca374ef263c9fd8c8352c34a0de4657134aa0c6dec83fb4528",
+      "223": "4c02729b069811acf8484a8afc2521720e014bff3fd3ccf93c601692d380c6ab",
+      "227": "f9309eda0cae3bbddf184b9225b871d9e59add696f8a1c176b2ecf1508ab7c88",
+      "229": "e505ceb49aca76aa42928a0dc1c61ee5ee38999c9948576fb0d0fe4c70297819"
+    }
+  },
+  "supersedes": {
+    "protocol_id": "narma10-nmse-under-0.05-v1",
+    "status": "retired-before-blind-evaluation",
+    "reason": "same-delay lossless digital twin is a mathematical upper bound and cannot be a required 10-percent superiority target for its noisy physical implementation",
+    "v1_blind_test_evaluations": 0
+  },
+  "rejected_datasets": [
+    {
+      "seed": 83,
+      "split": {"washout": 1000, "train": 6000, "validation": 2000, "test": 3000},
+      "reason": "recursive NARMA-10 target overflows near sample 9860; clipping is forbidden"
+    }
+  ],
+  "stop_conditions": [
+    "stop a dataset immediately if any input, target, feature, prediction, or metric is non-finite",
+    "do not open the blind suite before a candidate lock validates",
+    "do not tune after the first blind evaluation under this protocol version"
+  ],
+  "protocol_sha256": "e6cbd95e7aa6b5b3aae9f73172099e4c591db334b2a7f0497768f999c70073f8"
+}

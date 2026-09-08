@@ -1,0 +1,23 @@
+{
+  "name": "p6-g1-upload-estimate-v1",
+  "claim_level": "uploaded draft and cost estimate only; solver not started",
+  "task_name": "p6_g1_cross_section_mode_nominal_mesh20",
+  "folder_name_requested": "P6 Physical Validation",
+  "task_id": "mo-e4a92867-2a30-4d8a-8e4b-8c53de716263",
+  "task_status": "draft",
+  "tidy3d_version": "2.12.0",
+  "cloud_gate_source_sha256": "0be273f9924c69831c9cdfb44e58c28b9c9c31c8c13c126a5f24149d28d17848",
+  "config_sha256": "f93c5def4d9ba3ec0889c67dd0e2e22cf6a56b80fb9926e0b6abcbfc05253b9d",
+  "serialized_mode_solver_sha256": "ad90bfc682eb8f6954652531ae0ec8fe067ede35f263fb8c8db215ed32321a13",
+  "estimated_flexcredits": 0.010715463111111111,
+  "pilot_flexcredit_limit": 0.5,
+  "within_pilot_limit": true,
+  "uploaded": true,
+  "solve_started": false,
+  "user_credit_approval_for_upload_estimate": true,
+  "notes": [
+    "The first client process hit a Windows cp1254 progress-rendering error after the draft task was created.",
+    "The existing task id was resumed without creating a duplicate, and the estimate was obtained in quiet mode.",
+    "Task remained in draft state; no FlexCredit-consuming solve was started."
+  ]
+}

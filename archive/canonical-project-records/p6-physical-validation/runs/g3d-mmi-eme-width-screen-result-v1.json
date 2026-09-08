@@ -1,0 +1,128 @@
+{
+  "name": "p6-g3d-mmi-eme-width-screen-result-v1",
+  "source_sha256": "81aeaf9d37430d13356fada2f5498b34ece9ddfd3cfc1affe9183e9d170fbc18",
+  "estimate_sha256": "bb0d36c1a18526e2a8ef465550d743d388ecaa85aa5c2b9a421b977d7657a282",
+  "p5_blind_rerun": false,
+  "tasks": [
+    {
+      "mmi_width_um": 1.2,
+      "task_id": "eme-62119270-5daf-48ae-b758-4da789d9e1c4",
+      "task_status": "success",
+      "result_file": "g3d-mmi-eme-width-1p2-result-v1.hdf5",
+      "result_sha256": "b9b7aa280a19e40bbf8dd97197f5ebac1d377acb9ced5ad8a9466ad239938d0c",
+      "actual_flexcredits": 0.24950594231111117
+    },
+    {
+      "mmi_width_um": 1.4,
+      "task_id": "eme-18ebcf1e-e49d-4e45-b1be-76bda079b68d",
+      "task_status": "success",
+      "result_file": "g3d-mmi-eme-width-1p4-result-v1.hdf5",
+      "result_sha256": "ff8a994b30e5d7e7dd066251ef56b170a28e674019f0cae246ef164800c4a45f",
+      "actual_flexcredits": 0.24986688720000005
+    }
+  ],
+  "actual_total_flexcredits": 0.4993728295111112,
+  "width_analyses": [
+    {
+      "mmi_width_um": 1.2,
+      "selected_length_um": 14.0,
+      "selected_metrics": {
+        "mmi_width_um": 1.2,
+        "length_um": 14.0,
+        "inputs": [
+          {
+            "source_port": "upper",
+            "output_powers": [0.1737634835521727, 0.15124695175420716],
+            "excess_insertion_loss_db": 4.881026946419834,
+            "imbalance_db": 0.6027188398704352,
+            "quadrature_error_deg": 35.48237144765082,
+            "reflection_db": -12.094841275510948
+          },
+          {
+            "source_port": "lower",
+            "output_powers": [0.1512469490599242, 0.17376348123233368],
+            "excess_insertion_loss_db": 4.8810270134209315,
+            "imbalance_db": 0.6027188592540603,
+            "quadrature_error_deg": 35.48236660043017,
+            "reflection_db": -12.094841476480143
+          }
+        ],
+        "worst_excess_insertion_loss_db": 4.8810270134209315,
+        "worst_imbalance_db": 0.6027188592540603,
+        "worst_quadrature_error_deg": 35.48237144765082,
+        "worst_reflection_db": -12.094841275510948,
+        "full_s_max_singular_value": 0.8257758939346675,
+        "selection_score": 16.854481907329053
+      },
+      "sweep_sha256": "1ee26307247a743779765fd954e7d4354b32e217cbe22029b31522bb9f1c82fb",
+      "sweep_points": 85,
+      "screen_passed": false
+    },
+    {
+      "mmi_width_um": 1.4,
+      "selected_length_um": 23.75,
+      "selected_metrics": {
+        "mmi_width_um": 1.4,
+        "length_um": 23.75,
+        "inputs": [
+          {
+            "source_port": "upper",
+            "output_powers": [0.18970685167243387, 0.15941353988987694],
+            "excess_insertion_loss_db": 4.570247840006215,
+            "imbalance_db": 0.7555781095126423,
+            "quadrature_error_deg": 17.894981831526948,
+            "reflection_db": -10.305870090809568
+          },
+          {
+            "source_port": "lower",
+            "output_powers": [0.15941353458722154, 0.18970685372444082],
+            "excess_insertion_loss_db": 4.5702478804432305,
+            "imbalance_db": 0.7555783009507161,
+            "quadrature_error_deg": 17.894982500313915,
+            "reflection_db": -10.305869980710533
+          }
+        ],
+        "worst_excess_insertion_loss_db": 4.5702478804432305,
+        "worst_imbalance_db": 0.7555783009507161,
+        "worst_quadrature_error_deg": 17.894982500313915,
+        "worst_reflection_db": -10.305869980710533,
+        "full_s_max_singular_value": 0.77818032003659,
+        "selection_score": 13.200061864779622
+      },
+      "sweep_sha256": "064873349ac98d1663f9f0831d7e2242cde1820c1e46a179c445326a2ab8c894",
+      "sweep_points": 85,
+      "screen_passed": false
+    }
+  ],
+  "selected_candidate": {
+    "mmi_width_um": 1.4,
+    "length_um": 23.75,
+    "inputs": [
+      {
+        "source_port": "upper",
+        "output_powers": [0.18970685167243387, 0.15941353988987694],
+        "excess_insertion_loss_db": 4.570247840006215,
+        "imbalance_db": 0.7555781095126423,
+        "quadrature_error_deg": 17.894981831526948,
+        "reflection_db": -10.305870090809568
+      },
+      {
+        "source_port": "lower",
+        "output_powers": [0.15941353458722154, 0.18970685372444082],
+        "excess_insertion_loss_db": 4.5702478804432305,
+        "imbalance_db": 0.7555783009507161,
+        "quadrature_error_deg": 17.894982500313915,
+        "reflection_db": -10.305869980710533
+      }
+    ],
+    "worst_excess_insertion_loss_db": 4.5702478804432305,
+    "worst_imbalance_db": 0.7555783009507161,
+    "worst_quadrature_error_deg": 17.894982500313915,
+    "worst_reflection_db": -10.305869980710533,
+    "full_s_max_singular_value": 0.77818032003659,
+    "selection_score": 13.200061864779622
+  },
+  "screen_passed": false,
+  "g3d_accepted": false,
+  "claim_limit": "EME center-wavelength seed only; selected candidate requires broadband two-source FDTD"
+}

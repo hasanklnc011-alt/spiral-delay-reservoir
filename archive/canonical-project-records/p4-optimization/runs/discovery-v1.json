@@ -1,0 +1,3216 @@
+{
+  "claim_level": "P4 development-only hardware-robust optimization; blind test remains sealed",
+  "development_only": true,
+  "test_evaluations": 0,
+  "p0_protocol_sha256": "2a66934d024178a15cacfccd282a3c27ca4d96a357b0820f3fcae59360ebc95a",
+  "source_sha256": "60da2ea4a743dc96854d70ea2c7b85bb7bd31fcdd97cb919402a2336a556fb6a",
+  "config_sha256": "19fbae82401df0672c30a7fe034abed8a3aae2755ef827cc2310fab46b23306e",
+  "hardware_seeds": [
+    101
+  ],
+  "candidates": [
+    {
+      "channels": 30,
+      "parallel_ports": 10,
+      "time_multiplex_steps": 3,
+      "signal_power_mw_per_port": 1.0,
+      "lo_power_mw_per_port": 1.0,
+      "receiver_noise_bandwidth_factor": 1.0,
+      "hardware_realizations": 1,
+      "feasibility": {
+        "parallel_ports": 10,
+        "time_multiplex_steps": 3,
+        "symbol_rate_hz": 10000000000.0,
+        "slot_rate_hz": 30000000000.0,
+        "required_detector_bandwidth_hz": 15000000000.0,
+        "max_delay_length_cm": 14.240141755,
+        "checks": {
+          "delay_length": true,
+          "detector_bandwidth": true,
+          "switch_rate": true,
+          "total_optical_power": true
+        },
+        "passed": true,
+        "estimated_total_optical_power_mw": 20.0
+      },
+      "summary": {
+        "median_validation_nmse": 0.08046673977204764,
+        "p90_validation_nmse": 0.09418229274503499,
+        "max_validation_nmse": 0.14384438508728858,
+        "fraction_runs_at_or_below_0_05": 0.0,
+        "data_seed_medians": {
+          "11": 0.06928921728444347,
+          "23": 0.14384438508728858,
+          "37": 0.07695245476216535,
+          "41": 0.08866428248478461,
+          "53": 0.07572673193124185,
+          "67": 0.08052978911563971,
+          "71": 0.07646546467283175,
+          "97": 0.0809583998236528,
+          "109": 0.08730731072272485,
+          "113": 0.08040369042845558
+        },
+        "data_seeds_at_or_below_0_05": 0,
+        "passed": false
+      },
+      "scores": [
+        {
+          "data_seed": 11,
+          "hardware_seed": 101,
+          "validation_nmse": 0.06928921728444347,
+          "best_alpha": 1e-10
+        },
+        {
+          "data_seed": 23,
+          "hardware_seed": 101,
+          "validation_nmse": 0.14384438508728858,
+          "best_alpha": 1e-10
+        },
+        {
+          "data_seed": 37,
+          "hardware_seed": 101,
+          "validation_nmse": 0.07695245476216535,
+          "best_alpha": 1e-10
+        },
+        {
+          "data_seed": 41,
+          "hardware_seed": 101,
+          "validation_nmse": 0.08866428248478461,
+          "best_alpha": 1e-10
+        },
+        {
+          "data_seed": 53,
+          "hardware_seed": 101,
+          "validation_nmse": 0.07572673193124185,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "data_seed": 67,
+          "hardware_seed": 101,
+          "validation_nmse": 0.08052978911563971,
+          "best_alpha": 1e-10
+        },
+        {
+          "data_seed": 71,
+          "hardware_seed": 101,
+          "validation_nmse": 0.07646546467283175,
+          "best_alpha": 10.0
+        },
+        {
+          "data_seed": 97,
+          "hardware_seed": 101,
+          "validation_nmse": 0.0809583998236528,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "data_seed": 109,
+          "hardware_seed": 101,
+          "validation_nmse": 0.08730731072272485,
+          "best_alpha": 1e-10
+        },
+        {
+          "data_seed": 113,
+          "hardware_seed": 101,
+          "validation_nmse": 0.08040369042845558,
+          "best_alpha": 3.1622776601683795
+        }
+      ],
+      "selected_channel_labels": [
+        "pair:0,9",
+        "pair:1,10",
+        "self:9",
+        "self:0",
+        "pair:2,11",
+        "self:10",
+        "self:1",
+        "pair:3,12",
+        "self:11",
+        "pair:4,13",
+        "lo:10",
+        "self:2",
+        "self:12",
+        "lo:11",
+        "pair:10,19",
+        "pair:5,14",
+        "lo:12",
+        "pair:6,15",
+        "self:13",
+        "pair:7,16",
+        "pair:8,17",
+        "pair:9,18",
+        "self:14",
+        "self:3",
+        "lo:13",
+        "self:15",
+        "self:17",
+        "self:16",
+        "lo:14",
+        "self:18"
+      ],
+      "passed": false
+    },
+    {
+      "channels": 30,
+      "parallel_ports": 10,
+      "time_multiplex_steps": 3,
+      "signal_power_mw_per_port": 2.0,
+      "lo_power_mw_per_port": 2.0,
+      "receiver_noise_bandwidth_factor": 1.0,
+      "hardware_realizations": 1,
+      "feasibility": {
+        "parallel_ports": 10,
+        "time_multiplex_steps": 3,
+        "symbol_rate_hz": 10000000000.0,
+        "slot_rate_hz": 30000000000.0,
+        "required_detector_bandwidth_hz": 15000000000.0,
+        "max_delay_length_cm": 14.240141755,
+        "checks": {
+          "delay_length": true,
+          "detector_bandwidth": true,
+          "switch_rate": true,
+          "total_optical_power": true
+        },
+        "passed": true,
+        "estimated_total_optical_power_mw": 40.0
+      },
+      "summary": {
+        "median_validation_nmse": 0.05025548779647257,
+        "p90_validation_nmse": 0.06602022484788246,
+        "max_validation_nmse": 0.11293771347662049,
+        "fraction_runs_at_or_below_0_05": 0.5,
+        "data_seed_medians": {
+          "11": 0.043549360401172986,
+          "23": 0.11293771347662049,
+          "37": 0.04984979610499231,
+          "41": 0.060807170555800476,
+          "53": 0.04994462697233143,
+          "67": 0.05056634862061372,
+          "71": 0.049380361584243235,
+          "97": 0.05403338971059555,
+          "109": 0.056661897818180526,
+          "113": 0.04814128846506126
+        },
+        "data_seeds_at_or_below_0_05": 5,
+        "passed": false
+      },
+      "scores": [
+        {
+          "data_seed": 11,
+          "hardware_seed": 101,
+          "validation_nmse": 0.043549360401172986,
+          "best_alpha": 1.0
+        },
+        {
+          "data_seed": 23,
+          "hardware_seed": 101,
+          "validation_nmse": 0.11293771347662049,
+          "best_alpha": 1e-10
+        },
+        {
+          "data_seed": 37,
+          "hardware_seed": 101,
+          "validation_nmse": 0.04984979610499231,
+          "best_alpha": 1e-10
+        },
+        {
+          "data_seed": 41,
+          "hardware_seed": 101,
+          "validation_nmse": 0.060807170555800476,
+          "best_alpha": 0.1
+        },
+        {
+          "data_seed": 53,
+          "hardware_seed": 101,
+          "validation_nmse": 0.04994462697233143,
+          "best_alpha": 1.0
+        },
+        {
+          "data_seed": 67,
+          "hardware_seed": 101,
+          "validation_nmse": 0.05056634862061372,
+          "best_alpha": 1e-10
+        },
+        {
+          "data_seed": 71,
+          "hardware_seed": 101,
+          "validation_nmse": 0.049380361584243235,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "data_seed": 97,
+          "hardware_seed": 101,
+          "validation_nmse": 0.05403338971059555,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "data_seed": 109,
+          "hardware_seed": 101,
+          "validation_nmse": 0.056661897818180526,
+          "best_alpha": 1e-10
+        },
+        {
+          "data_seed": 113,
+          "hardware_seed": 101,
+          "validation_nmse": 0.04814128846506126,
+          "best_alpha": 3.1622776601683795
+        }
+      ],
+      "selected_channel_labels": [
+        "pair:0,9",
+        "pair:1,10",
+        "self:9",
+        "self:0",
+        "pair:2,11",
+        "self:10",
+        "self:1",
+        "pair:3,12",
+        "self:11",
+        "pair:4,13",
+        "lo:10",
+        "self:2",
+        "self:12",
+        "lo:11",
+        "pair:10,19",
+        "pair:5,14",
+        "lo:12",
+        "pair:6,15",
+        "self:13",
+        "pair:7,16",
+        "pair:8,17",
+        "pair:9,18",
+        "self:14",
+        "self:3",
+        "lo:13",
+        "self:15",
+        "self:17",
+        "self:16",
+        "lo:14",
+        "self:18"
+      ],
+      "passed": false
+    },
+    {
+      "channels": 30,
+      "parallel_ports": 10,
+      "time_multiplex_steps": 3,
+      "signal_power_mw_per_port": 5.0,
+      "lo_power_mw_per_port": 5.0,
+      "receiver_noise_bandwidth_factor": 1.0,
+      "hardware_realizations": 1,
+      "feasibility": {
+        "parallel_ports": 10,
+        "time_multiplex_steps": 3,
+        "symbol_rate_hz": 10000000000.0,
+        "slot_rate_hz": 30000000000.0,
+        "required_detector_bandwidth_hz": 15000000000.0,
+        "max_delay_length_cm": 14.240141755,
+        "checks": {
+          "delay_length": true,
+          "detector_bandwidth": true,
+          "switch_rate": true,
+          "total_optical_power": true
+        },
+        "passed": true,
+        "estimated_total_optical_power_mw": 100.0
+      },
+      "summary": {
+        "median_validation_nmse": 0.03345296040842439,
+        "p90_validation_nmse": 0.049279987494891896,
+        "max_validation_nmse": 0.09387849288535287,
+        "fraction_runs_at_or_below_0_05": 0.9,
+        "data_seed_medians": {
+          "11": 0.02866236505689704,
+          "23": 0.09387849288535287,
+          "37": 0.03311248187899809,
+          "41": 0.04432459800706292,
+          "53": 0.03379343893785069,
+          "67": 0.03270293477805591,
+          "71": 0.032126375375024545,
+          "97": 0.038050541284532786,
+          "109": 0.0384679921348232,
+          "113": 0.02915776767757451
+        },
+        "data_seeds_at_or_below_0_05": 9,
+        "passed": true
+      },
+      "scores": [
+        {
+          "data_seed": 11,
+          "hardware_seed": 101,
+          "validation_nmse": 0.02866236505689704,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "data_seed": 23,
+          "hardware_seed": 101,
+          "validation_nmse": 0.09387849288535287,
+          "best_alpha": 1e-10
+        },
+        {
+          "data_seed": 37,
+          "hardware_seed": 101,
+          "validation_nmse": 0.03311248187899809,
+          "best_alpha": 1e-10
+        },
+        {
+          "data_seed": 41,
+          "hardware_seed": 101,
+          "validation_nmse": 0.04432459800706292,
+          "best_alpha": 1.0
+        },
+        {
+          "data_seed": 53,
+          "hardware_seed": 101,
+          "validation_nmse": 0.03379343893785069,
+          "best_alpha": 1.0
+        },
+        {
+          "data_seed": 67,
+          "hardware_seed": 101,
+          "validation_nmse": 0.03270293477805591,
+          "best_alpha": 1e-10
+        },
+        {
+          "data_seed": 71,
+          "hardware_seed": 101,
+          "validation_nmse": 0.032126375375024545,
+          "best_alpha": 1.0
+        },
+        {
+          "data_seed": 97,
+          "hardware_seed": 101,
+          "validation_nmse": 0.038050541284532786,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "data_seed": 109,
+          "hardware_seed": 101,
+          "validation_nmse": 0.0384679921348232,
+          "best_alpha": 1.0
+        },
+        {
+          "data_seed": 113,
+          "hardware_seed": 101,
+          "validation_nmse": 0.02915776767757451,
+          "best_alpha": 3.1622776601683795
+        }
+      ],
+      "selected_channel_labels": [
+        "pair:0,9",
+        "pair:1,10",
+        "self:9",
+        "self:0",
+        "pair:2,11",
+        "self:10",
+        "self:1",
+        "pair:3,12",
+        "self:11",
+        "pair:4,13",
+        "lo:10",
+        "self:2",
+        "self:12",
+        "lo:11",
+        "pair:10,19",
+        "pair:5,14",
+        "lo:12",
+        "pair:6,15",
+        "self:13",
+        "pair:7,16",
+        "pair:8,17",
+        "pair:9,18",
+        "self:14",
+        "self:3",
+        "lo:13",
+        "self:15",
+        "self:17",
+        "self:16",
+        "lo:14",
+        "self:18"
+      ],
+      "passed": true
+    },
+    {
+      "channels": 30,
+      "parallel_ports": 20,
+      "time_multiplex_steps": 2,
+      "signal_power_mw_per_port": 1.0,
+      "lo_power_mw_per_port": 1.0,
+      "receiver_noise_bandwidth_factor": 1.0,
+      "hardware_realizations": 1,
+      "feasibility": {
+        "parallel_ports": 20,
+        "time_multiplex_steps": 2,
+        "symbol_rate_hz": 10000000000.0,
+        "slot_rate_hz": 20000000000.0,
+        "required_detector_bandwidth_hz": 10000000000.0,
+        "max_delay_length_cm": 14.240141755,
+        "checks": {
+          "delay_length": true,
+          "detector_bandwidth": true,
+          "switch_rate": true,
+          "total_optical_power": true
+        },
+        "passed": true,
+        "estimated_total_optical_power_mw": 40.0
+      },
+      "summary": {
+        "median_validation_nmse": 0.06931727981311206,
+        "p90_validation_nmse": 0.08420041213902847,
+        "max_validation_nmse": 0.13294541659383916,
+        "fraction_runs_at_or_below_0_05": 0.0,
+        "data_seed_medians": {
+          "11": 0.05991178862203181,
+          "23": 0.13294541659383916,
+          "37": 0.0672491141287267,
+          "41": 0.07878430053293842,
+          "53": 0.066705108208526,
+          "67": 0.06987696096831839,
+          "71": 0.06700012860195079,
+          "97": 0.07133357562612647,
+          "109": 0.07634090739949724,
+          "113": 0.06875759865790573
+        },
+        "data_seeds_at_or_below_0_05": 0,
+        "passed": false
+      },
+      "scores": [
+        {
+          "data_seed": 11,
+          "hardware_seed": 101,
+          "validation_nmse": 0.05991178862203181,
+          "best_alpha": 1e-10
+        },
+        {
+          "data_seed": 23,
+          "hardware_seed": 101,
+          "validation_nmse": 0.13294541659383916,
+          "best_alpha": 1e-10
+        },
+        {
+          "data_seed": 37,
+          "hardware_seed": 101,
+          "validation_nmse": 0.0672491141287267,
+          "best_alpha": 1e-10
+        },
+        {
+          "data_seed": 41,
+          "hardware_seed": 101,
+          "validation_nmse": 0.07878430053293842,
+          "best_alpha": 1e-10
+        },
+        {
+          "data_seed": 53,
+          "hardware_seed": 101,
+          "validation_nmse": 0.066705108208526,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "data_seed": 67,
+          "hardware_seed": 101,
+          "validation_nmse": 0.06987696096831839,
+          "best_alpha": 1e-10
+        },
+        {
+          "data_seed": 71,
+          "hardware_seed": 101,
+          "validation_nmse": 0.06700012860195079,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "data_seed": 97,
+          "hardware_seed": 101,
+          "validation_nmse": 0.07133357562612647,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "data_seed": 109,
+          "hardware_seed": 101,
+          "validation_nmse": 0.07634090739949724,
+          "best_alpha": 1e-10
+        },
+        {
+          "data_seed": 113,
+          "hardware_seed": 101,
+          "validation_nmse": 0.06875759865790573,
+          "best_alpha": 3.1622776601683795
+        }
+      ],
+      "selected_channel_labels": [
+        "pair:0,9",
+        "pair:1,10",
+        "self:9",
+        "self:0",
+        "pair:2,11",
+        "self:10",
+        "self:1",
+        "pair:3,12",
+        "self:11",
+        "pair:4,13",
+        "lo:10",
+        "self:2",
+        "self:12",
+        "lo:11",
+        "pair:10,19",
+        "pair:5,14",
+        "lo:12",
+        "pair:6,15",
+        "self:13",
+        "pair:7,16",
+        "pair:8,17",
+        "pair:9,18",
+        "self:14",
+        "self:3",
+        "lo:13",
+        "self:15",
+        "self:17",
+        "self:16",
+        "lo:14",
+        "self:18"
+      ],
+      "passed": false
+    },
+    {
+      "channels": 30,
+      "parallel_ports": 20,
+      "time_multiplex_steps": 2,
+      "signal_power_mw_per_port": 2.0,
+      "lo_power_mw_per_port": 2.0,
+      "receiver_noise_bandwidth_factor": 1.0,
+      "hardware_realizations": 1,
+      "feasibility": {
+        "parallel_ports": 20,
+        "time_multiplex_steps": 2,
+        "symbol_rate_hz": 10000000000.0,
+        "slot_rate_hz": 20000000000.0,
+        "required_detector_bandwidth_hz": 10000000000.0,
+        "max_delay_length_cm": 14.240141755,
+        "checks": {
+          "delay_length": true,
+          "detector_bandwidth": true,
+          "switch_rate": true,
+          "total_optical_power": true
+        },
+        "passed": true,
+        "estimated_total_optical_power_mw": 80.0
+      },
+      "summary": {
+        "median_validation_nmse": 0.04465884492443012,
+        "p90_validation_nmse": 0.06044496106701597,
+        "max_validation_nmse": 0.10672359103198063,
+        "fraction_runs_at_or_below_0_05": 0.7,
+        "data_seed_medians": {
+          "11": 0.03865946368034765,
+          "23": 0.10672359103198063,
+          "37": 0.044445630626488174,
+          "41": 0.0553028910709088,
+          "53": 0.04468059634424139,
+          "67": 0.044637093504618856,
+          "71": 0.04382274643329331,
+          "97": 0.0487653944058605,
+          "109": 0.05068181107233486,
+          "113": 0.04190524563903072
+        },
+        "data_seeds_at_or_below_0_05": 7,
+        "passed": false
+      },
+      "scores": [
+        {
+          "data_seed": 11,
+          "hardware_seed": 101,
+          "validation_nmse": 0.03865946368034765,
+          "best_alpha": 1.0
+        },
+        {
+          "data_seed": 23,
+          "hardware_seed": 101,
+          "validation_nmse": 0.10672359103198063,
+          "best_alpha": 1e-10
+        },
+        {
+          "data_seed": 37,
+          "hardware_seed": 101,
+          "validation_nmse": 0.044445630626488174,
+          "best_alpha": 1e-10
+        },
+        {
+          "data_seed": 41,
+          "hardware_seed": 101,
+          "validation_nmse": 0.0553028910709088,
+          "best_alpha": 0.1
+        },
+        {
+          "data_seed": 53,
+          "hardware_seed": 101,
+          "validation_nmse": 0.04468059634424139,
+          "best_alpha": 1.0
+        },
+        {
+          "data_seed": 67,
+          "hardware_seed": 101,
+          "validation_nmse": 0.044637093504618856,
+          "best_alpha": 1e-10
+        },
+        {
+          "data_seed": 71,
+          "hardware_seed": 101,
+          "validation_nmse": 0.04382274643329331,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "data_seed": 97,
+          "hardware_seed": 101,
+          "validation_nmse": 0.0487653944058605,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "data_seed": 109,
+          "hardware_seed": 101,
+          "validation_nmse": 0.05068181107233486,
+          "best_alpha": 1e-10
+        },
+        {
+          "data_seed": 113,
+          "hardware_seed": 101,
+          "validation_nmse": 0.04190524563903072,
+          "best_alpha": 3.1622776601683795
+        }
+      ],
+      "selected_channel_labels": [
+        "pair:0,9",
+        "pair:1,10",
+        "self:9",
+        "self:0",
+        "pair:2,11",
+        "self:10",
+        "self:1",
+        "pair:3,12",
+        "self:11",
+        "pair:4,13",
+        "lo:10",
+        "self:2",
+        "self:12",
+        "lo:11",
+        "pair:10,19",
+        "pair:5,14",
+        "lo:12",
+        "pair:6,15",
+        "self:13",
+        "pair:7,16",
+        "pair:8,17",
+        "pair:9,18",
+        "self:14",
+        "self:3",
+        "lo:13",
+        "self:15",
+        "self:17",
+        "self:16",
+        "lo:14",
+        "self:18"
+      ],
+      "passed": false
+    },
+    {
+      "channels": 30,
+      "parallel_ports": 20,
+      "time_multiplex_steps": 2,
+      "signal_power_mw_per_port": 5.0,
+      "lo_power_mw_per_port": 5.0,
+      "receiver_noise_bandwidth_factor": 1.0,
+      "hardware_realizations": 1,
+      "feasibility": {
+        "parallel_ports": 20,
+        "time_multiplex_steps": 2,
+        "symbol_rate_hz": 10000000000.0,
+        "slot_rate_hz": 20000000000.0,
+        "required_detector_bandwidth_hz": 10000000000.0,
+        "max_delay_length_cm": 14.240141755,
+        "checks": {
+          "delay_length": true,
+          "detector_bandwidth": true,
+          "switch_rate": true,
+          "total_optical_power": true
+        },
+        "passed": true,
+        "estimated_total_optical_power_mw": 200.0
+      },
+      "summary": {
+        "median_validation_nmse": 0.03179264047221185,
+        "p90_validation_nmse": 0.0477180685161328,
+        "max_validation_nmse": 0.0919828562898287,
+        "fraction_runs_at_or_below_0_05": 0.9,
+        "data_seed_medians": {
+          "11": 0.02717430037949083,
+          "23": 0.0919828562898287,
+          "37": 0.03140915296577141,
+          "41": 0.04279975876349994,
+          "53": 0.03217612797865229,
+          "67": 0.031000955574425115,
+          "71": 0.0303388076955653,
+          "97": 0.03650984201726773,
+          "109": 0.03663196466660381,
+          "113": 0.027251994135339925
+        },
+        "data_seeds_at_or_below_0_05": 9,
+        "passed": true
+      },
+      "scores": [
+        {
+          "data_seed": 11,
+          "hardware_seed": 101,
+          "validation_nmse": 0.02717430037949083,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "data_seed": 23,
+          "hardware_seed": 101,
+          "validation_nmse": 0.0919828562898287,
+          "best_alpha": 1e-10
+        },
+        {
+          "data_seed": 37,
+          "hardware_seed": 101,
+          "validation_nmse": 0.03140915296577141,
+          "best_alpha": 1e-10
+        },
+        {
+          "data_seed": 41,
+          "hardware_seed": 101,
+          "validation_nmse": 0.04279975876349994,
+          "best_alpha": 1.0
+        },
+        {
+          "data_seed": 53,
+          "hardware_seed": 101,
+          "validation_nmse": 0.03217612797865229,
+          "best_alpha": 1.0
+        },
+        {
+          "data_seed": 67,
+          "hardware_seed": 101,
+          "validation_nmse": 0.031000955574425115,
+          "best_alpha": 1e-10
+        },
+        {
+          "data_seed": 71,
+          "hardware_seed": 101,
+          "validation_nmse": 0.0303388076955653,
+          "best_alpha": 1.0
+        },
+        {
+          "data_seed": 97,
+          "hardware_seed": 101,
+          "validation_nmse": 0.03650984201726773,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "data_seed": 109,
+          "hardware_seed": 101,
+          "validation_nmse": 0.03663196466660381,
+          "best_alpha": 1.0
+        },
+        {
+          "data_seed": 113,
+          "hardware_seed": 101,
+          "validation_nmse": 0.027251994135339925,
+          "best_alpha": 3.1622776601683795
+        }
+      ],
+      "selected_channel_labels": [
+        "pair:0,9",
+        "pair:1,10",
+        "self:9",
+        "self:0",
+        "pair:2,11",
+        "self:10",
+        "self:1",
+        "pair:3,12",
+        "self:11",
+        "pair:4,13",
+        "lo:10",
+        "self:2",
+        "self:12",
+        "lo:11",
+        "pair:10,19",
+        "pair:5,14",
+        "lo:12",
+        "pair:6,15",
+        "self:13",
+        "pair:7,16",
+        "pair:8,17",
+        "pair:9,18",
+        "self:14",
+        "self:3",
+        "lo:13",
+        "self:15",
+        "self:17",
+        "self:16",
+        "lo:14",
+        "self:18"
+      ],
+      "passed": true
+    },
+    {
+      "channels": 30,
+      "parallel_ports": 30,
+      "time_multiplex_steps": 1,
+      "signal_power_mw_per_port": 1.0,
+      "lo_power_mw_per_port": 1.0,
+      "receiver_noise_bandwidth_factor": 1.0,
+      "hardware_realizations": 1,
+      "feasibility": {
+        "parallel_ports": 30,
+        "time_multiplex_steps": 1,
+        "symbol_rate_hz": 10000000000.0,
+        "slot_rate_hz": 10000000000.0,
+        "required_detector_bandwidth_hz": 5000000000.0,
+        "max_delay_length_cm": 14.240141755,
+        "checks": {
+          "delay_length": true,
+          "detector_bandwidth": true,
+          "switch_rate": true,
+          "total_optical_power": true
+        },
+        "passed": true,
+        "estimated_total_optical_power_mw": 60.0
+      },
+      "summary": {
+        "median_validation_nmse": 0.05458448274333197,
+        "p90_validation_nmse": 0.07038789004209432,
+        "max_validation_nmse": 0.11777716632484132,
+        "fraction_runs_at_or_below_0_05": 0.1,
+        "data_seed_medians": {
+          "11": 0.04739546428832947,
+          "23": 0.11777716632484132,
+          "37": 0.05400858439112874,
+          "41": 0.0651224148995669,
+          "53": 0.054010986740733666,
+          "67": 0.05515797874593028,
+          "71": 0.05365542546295286,
+          "97": 0.05817064978026231,
+          "109": 0.06134278796590815,
+          "113": 0.053001549720636525
+        },
+        "data_seeds_at_or_below_0_05": 1,
+        "passed": false
+      },
+      "scores": [
+        {
+          "data_seed": 11,
+          "hardware_seed": 101,
+          "validation_nmse": 0.04739546428832947,
+          "best_alpha": 1.0
+        },
+        {
+          "data_seed": 23,
+          "hardware_seed": 101,
+          "validation_nmse": 0.11777716632484132,
+          "best_alpha": 1e-10
+        },
+        {
+          "data_seed": 37,
+          "hardware_seed": 101,
+          "validation_nmse": 0.05400858439112874,
+          "best_alpha": 1e-10
+        },
+        {
+          "data_seed": 41,
+          "hardware_seed": 101,
+          "validation_nmse": 0.0651224148995669,
+          "best_alpha": 0.1
+        },
+        {
+          "data_seed": 53,
+          "hardware_seed": 101,
+          "validation_nmse": 0.054010986740733666,
+          "best_alpha": 1.0
+        },
+        {
+          "data_seed": 67,
+          "hardware_seed": 101,
+          "validation_nmse": 0.05515797874593028,
+          "best_alpha": 1e-10
+        },
+        {
+          "data_seed": 71,
+          "hardware_seed": 101,
+          "validation_nmse": 0.05365542546295286,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "data_seed": 97,
+          "hardware_seed": 101,
+          "validation_nmse": 0.05817064978026231,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "data_seed": 109,
+          "hardware_seed": 101,
+          "validation_nmse": 0.06134278796590815,
+          "best_alpha": 1e-10
+        },
+        {
+          "data_seed": 113,
+          "hardware_seed": 101,
+          "validation_nmse": 0.053001549720636525,
+          "best_alpha": 3.1622776601683795
+        }
+      ],
+      "selected_channel_labels": [
+        "pair:0,9",
+        "pair:1,10",
+        "self:9",
+        "self:0",
+        "pair:2,11",
+        "self:10",
+        "self:1",
+        "pair:3,12",
+        "self:11",
+        "pair:4,13",
+        "lo:10",
+        "self:2",
+        "self:12",
+        "lo:11",
+        "pair:10,19",
+        "pair:5,14",
+        "lo:12",
+        "pair:6,15",
+        "self:13",
+        "pair:7,16",
+        "pair:8,17",
+        "pair:9,18",
+        "self:14",
+        "self:3",
+        "lo:13",
+        "self:15",
+        "self:17",
+        "self:16",
+        "lo:14",
+        "self:18"
+      ],
+      "passed": false
+    },
+    {
+      "channels": 30,
+      "parallel_ports": 30,
+      "time_multiplex_steps": 1,
+      "signal_power_mw_per_port": 2.0,
+      "lo_power_mw_per_port": 2.0,
+      "receiver_noise_bandwidth_factor": 1.0,
+      "hardware_realizations": 1,
+      "feasibility": {
+        "parallel_ports": 30,
+        "time_multiplex_steps": 1,
+        "symbol_rate_hz": 10000000000.0,
+        "slot_rate_hz": 10000000000.0,
+        "required_detector_bandwidth_hz": 5000000000.0,
+        "max_delay_length_cm": 14.240141755,
+        "checks": {
+          "delay_length": true,
+          "detector_bandwidth": true,
+          "switch_rate": true,
+          "total_optical_power": true
+        },
+        "passed": true,
+        "estimated_total_optical_power_mw": 120.0
+      },
+      "summary": {
+        "median_validation_nmse": 0.03776600979740958,
+        "p90_validation_nmse": 0.05351596719327041,
+        "max_validation_nmse": 0.09886370156922816,
+        "fraction_runs_at_or_below_0_05": 0.9,
+        "data_seed_medians": {
+          "11": 0.03253253560190028,
+          "23": 0.09886370156922816,
+          "37": 0.037532030956867926,
+          "41": 0.048477330040386235,
+          "53": 0.03799998863795123,
+          "67": 0.03723496517029315,
+          "71": 0.03670402071555109,
+          "97": 0.0421766929184712,
+          "109": 0.04319266874786736,
+          "113": 0.03408433770321856
+        },
+        "data_seeds_at_or_below_0_05": 9,
+        "passed": true
+      },
+      "scores": [
+        {
+          "data_seed": 11,
+          "hardware_seed": 101,
+          "validation_nmse": 0.03253253560190028,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "data_seed": 23,
+          "hardware_seed": 101,
+          "validation_nmse": 0.09886370156922816,
+          "best_alpha": 1e-10
+        },
+        {
+          "data_seed": 37,
+          "hardware_seed": 101,
+          "validation_nmse": 0.037532030956867926,
+          "best_alpha": 1e-10
+        },
+        {
+          "data_seed": 41,
+          "hardware_seed": 101,
+          "validation_nmse": 0.048477330040386235,
+          "best_alpha": 1.0
+        },
+        {
+          "data_seed": 53,
+          "hardware_seed": 101,
+          "validation_nmse": 0.03799998863795123,
+          "best_alpha": 1.0
+        },
+        {
+          "data_seed": 67,
+          "hardware_seed": 101,
+          "validation_nmse": 0.03723496517029315,
+          "best_alpha": 1e-10
+        },
+        {
+          "data_seed": 71,
+          "hardware_seed": 101,
+          "validation_nmse": 0.03670402071555109,
+          "best_alpha": 1.0
+        },
+        {
+          "data_seed": 97,
+          "hardware_seed": 101,
+          "validation_nmse": 0.0421766929184712,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "data_seed": 109,
+          "hardware_seed": 101,
+          "validation_nmse": 0.04319266874786736,
+          "best_alpha": 0.1
+        },
+        {
+          "data_seed": 113,
+          "hardware_seed": 101,
+          "validation_nmse": 0.03408433770321856,
+          "best_alpha": 3.1622776601683795
+        }
+      ],
+      "selected_channel_labels": [
+        "pair:0,9",
+        "pair:1,10",
+        "self:9",
+        "self:0",
+        "pair:2,11",
+        "self:10",
+        "self:1",
+        "pair:3,12",
+        "self:11",
+        "pair:4,13",
+        "lo:10",
+        "self:2",
+        "self:12",
+        "lo:11",
+        "pair:10,19",
+        "pair:5,14",
+        "lo:12",
+        "pair:6,15",
+        "self:13",
+        "pair:7,16",
+        "pair:8,17",
+        "pair:9,18",
+        "self:14",
+        "self:3",
+        "lo:13",
+        "self:15",
+        "self:17",
+        "self:16",
+        "lo:14",
+        "self:18"
+      ],
+      "passed": true
+    },
+    {
+      "channels": 30,
+      "parallel_ports": 30,
+      "time_multiplex_steps": 1,
+      "signal_power_mw_per_port": 5.0,
+      "lo_power_mw_per_port": 5.0,
+      "receiver_noise_bandwidth_factor": 1.0,
+      "hardware_realizations": 1,
+      "feasibility": {
+        "parallel_ports": 30,
+        "time_multiplex_steps": 1,
+        "symbol_rate_hz": 10000000000.0,
+        "slot_rate_hz": 10000000000.0,
+        "required_detector_bandwidth_hz": 5000000000.0,
+        "max_delay_length_cm": 14.240141755,
+        "checks": {
+          "delay_length": true,
+          "detector_bandwidth": true,
+          "switch_rate": true,
+          "total_optical_power": false
+        },
+        "passed": false,
+        "estimated_total_optical_power_mw": 300.0
+      },
+      "summary": {
+        "median_validation_nmse": 0.02998628759765059,
+        "p90_validation_nmse": 0.04607640985115584,
+        "max_validation_nmse": 0.08990918568954467,
+        "fraction_runs_at_or_below_0_05": 0.9,
+        "data_seed_medians": {
+          "11": 0.025535667649240153,
+          "23": 0.08990918568954467,
+          "37": 0.029560835971555486,
+          "41": 0.04120610142466821,
+          "53": 0.03041173922374569,
+          "67": 0.029229849842463497,
+          "71": 0.028351094319950993,
+          "97": 0.0348729835065719,
+          "109": 0.03459624486601415,
+          "113": 0.02516314377040765
+        },
+        "data_seeds_at_or_below_0_05": 9,
+        "passed": true
+      },
+      "scores": [
+        {
+          "data_seed": 11,
+          "hardware_seed": 101,
+          "validation_nmse": 0.025535667649240153,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "data_seed": 23,
+          "hardware_seed": 101,
+          "validation_nmse": 0.08990918568954467,
+          "best_alpha": 1e-10
+        },
+        {
+          "data_seed": 37,
+          "hardware_seed": 101,
+          "validation_nmse": 0.029560835971555486,
+          "best_alpha": 1e-10
+        },
+        {
+          "data_seed": 41,
+          "hardware_seed": 101,
+          "validation_nmse": 0.04120610142466821,
+          "best_alpha": 1.0
+        },
+        {
+          "data_seed": 53,
+          "hardware_seed": 101,
+          "validation_nmse": 0.03041173922374569,
+          "best_alpha": 1.0
+        },
+        {
+          "data_seed": 67,
+          "hardware_seed": 101,
+          "validation_nmse": 0.029229849842463497,
+          "best_alpha": 1e-10
+        },
+        {
+          "data_seed": 71,
+          "hardware_seed": 101,
+          "validation_nmse": 0.028351094319950993,
+          "best_alpha": 1.0
+        },
+        {
+          "data_seed": 97,
+          "hardware_seed": 101,
+          "validation_nmse": 0.0348729835065719,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "data_seed": 109,
+          "hardware_seed": 101,
+          "validation_nmse": 0.03459624486601415,
+          "best_alpha": 1.0
+        },
+        {
+          "data_seed": 113,
+          "hardware_seed": 101,
+          "validation_nmse": 0.02516314377040765,
+          "best_alpha": 3.1622776601683795
+        }
+      ],
+      "selected_channel_labels": [
+        "pair:0,9",
+        "pair:1,10",
+        "self:9",
+        "self:0",
+        "pair:2,11",
+        "self:10",
+        "self:1",
+        "pair:3,12",
+        "self:11",
+        "pair:4,13",
+        "lo:10",
+        "self:2",
+        "self:12",
+        "lo:11",
+        "pair:10,19",
+        "pair:5,14",
+        "lo:12",
+        "pair:6,15",
+        "self:13",
+        "pair:7,16",
+        "pair:8,17",
+        "pair:9,18",
+        "self:14",
+        "self:3",
+        "lo:13",
+        "self:15",
+        "self:17",
+        "self:16",
+        "lo:14",
+        "self:18"
+      ],
+      "passed": false
+    },
+    {
+      "channels": 40,
+      "parallel_ports": 10,
+      "time_multiplex_steps": 4,
+      "signal_power_mw_per_port": 1.0,
+      "lo_power_mw_per_port": 1.0,
+      "receiver_noise_bandwidth_factor": 1.0,
+      "hardware_realizations": 1,
+      "feasibility": {
+        "parallel_ports": 10,
+        "time_multiplex_steps": 4,
+        "symbol_rate_hz": 10000000000.0,
+        "slot_rate_hz": 40000000000.0,
+        "required_detector_bandwidth_hz": 20000000000.0,
+        "max_delay_length_cm": 14.240141755,
+        "checks": {
+          "delay_length": true,
+          "detector_bandwidth": true,
+          "switch_rate": true,
+          "total_optical_power": true
+        },
+        "passed": true,
+        "estimated_total_optical_power_mw": 20.0
+      },
+      "summary": {
+        "median_validation_nmse": 0.08057789490775208,
+        "p90_validation_nmse": 0.09636329368215435,
+        "max_validation_nmse": 0.1391682835966791,
+        "fraction_runs_at_or_below_0_05": 0.0,
+        "data_seed_medians": {
+          "11": 0.07645800101777916,
+          "23": 0.1391682835966791,
+          "37": 0.07559575543278363,
+          "41": 0.09160718369165162,
+          "53": 0.0767403262451976,
+          "67": 0.08099179420988137,
+          "71": 0.07539214599301802,
+          "97": 0.0801639956056228,
+          "109": 0.08764531722404527,
+          "113": 0.0886805407660533
+        },
+        "data_seeds_at_or_below_0_05": 0,
+        "passed": false
+      },
+      "scores": [
+        {
+          "data_seed": 11,
+          "hardware_seed": 101,
+          "validation_nmse": 0.07645800101777916,
+          "best_alpha": 0.01
+        },
+        {
+          "data_seed": 23,
+          "hardware_seed": 101,
+          "validation_nmse": 0.1391682835966791,
+          "best_alpha": 1e-10
+        },
+        {
+          "data_seed": 37,
+          "hardware_seed": 101,
+          "validation_nmse": 0.07559575543278363,
+          "best_alpha": 1e-10
+        },
+        {
+          "data_seed": 41,
+          "hardware_seed": 101,
+          "validation_nmse": 0.09160718369165162,
+          "best_alpha": 1e-10
+        },
+        {
+          "data_seed": 53,
+          "hardware_seed": 101,
+          "validation_nmse": 0.0767403262451976,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "data_seed": 67,
+          "hardware_seed": 101,
+          "validation_nmse": 0.08099179420988137,
+          "best_alpha": 10.0
+        },
+        {
+          "data_seed": 71,
+          "hardware_seed": 101,
+          "validation_nmse": 0.07539214599301802,
+          "best_alpha": 10.0
+        },
+        {
+          "data_seed": 97,
+          "hardware_seed": 101,
+          "validation_nmse": 0.0801639956056228,
+          "best_alpha": 10.0
+        },
+        {
+          "data_seed": 109,
+          "hardware_seed": 101,
+          "validation_nmse": 0.08764531722404527,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "data_seed": 113,
+          "hardware_seed": 101,
+          "validation_nmse": 0.0886805407660533,
+          "best_alpha": 10.0
+        }
+      ],
+      "selected_channel_labels": [
+        "pair:0,9",
+        "pair:1,10",
+        "self:9",
+        "self:0",
+        "pair:2,11",
+        "self:10",
+        "self:1",
+        "pair:3,12",
+        "self:11",
+        "pair:4,13",
+        "lo:10",
+        "self:2",
+        "self:12",
+        "lo:11",
+        "pair:10,19",
+        "pair:5,14",
+        "lo:12",
+        "pair:6,15",
+        "self:13",
+        "pair:7,16",
+        "pair:8,17",
+        "pair:9,18",
+        "self:14",
+        "self:3",
+        "lo:13",
+        "self:15",
+        "self:17",
+        "self:16",
+        "lo:14",
+        "self:18",
+        "self:19",
+        "lo:18",
+        "lo:19",
+        "lo:17",
+        "lo:16",
+        "lo:15",
+        "lo:2",
+        "self:4",
+        "lo:3",
+        "lo:4"
+      ],
+      "passed": false
+    },
+    {
+      "channels": 40,
+      "parallel_ports": 10,
+      "time_multiplex_steps": 4,
+      "signal_power_mw_per_port": 2.0,
+      "lo_power_mw_per_port": 2.0,
+      "receiver_noise_bandwidth_factor": 1.0,
+      "hardware_realizations": 1,
+      "feasibility": {
+        "parallel_ports": 10,
+        "time_multiplex_steps": 4,
+        "symbol_rate_hz": 10000000000.0,
+        "slot_rate_hz": 40000000000.0,
+        "required_detector_bandwidth_hz": 20000000000.0,
+        "max_delay_length_cm": 14.240141755,
+        "checks": {
+          "delay_length": true,
+          "detector_bandwidth": true,
+          "switch_rate": true,
+          "total_optical_power": true
+        },
+        "passed": true,
+        "estimated_total_optical_power_mw": 40.0
+      },
+      "summary": {
+        "median_validation_nmse": 0.05100751096933044,
+        "p90_validation_nmse": 0.06719779560056828,
+        "max_validation_nmse": 0.10949735905113475,
+        "fraction_runs_at_or_below_0_05": 0.4,
+        "data_seed_medians": {
+          "11": 0.04572548099628214,
+          "23": 0.10949735905113475,
+          "37": 0.04717282469941743,
+          "41": 0.062497844106060914,
+          "53": 0.04939262361921308,
+          "67": 0.05074699283313568,
+          "71": 0.0488552118597464,
+          "97": 0.05371218438876147,
+          "109": 0.05670339367699718,
+          "113": 0.05126802910552519
+        },
+        "data_seeds_at_or_below_0_05": 4,
+        "passed": false
+      },
+      "scores": [
+        {
+          "data_seed": 11,
+          "hardware_seed": 101,
+          "validation_nmse": 0.04572548099628214,
+          "best_alpha": 1e-10
+        },
+        {
+          "data_seed": 23,
+          "hardware_seed": 101,
+          "validation_nmse": 0.10949735905113475,
+          "best_alpha": 1e-10
+        },
+        {
+          "data_seed": 37,
+          "hardware_seed": 101,
+          "validation_nmse": 0.04717282469941743,
+          "best_alpha": 1e-10
+        },
+        {
+          "data_seed": 41,
+          "hardware_seed": 101,
+          "validation_nmse": 0.062497844106060914,
+          "best_alpha": 1e-10
+        },
+        {
+          "data_seed": 53,
+          "hardware_seed": 101,
+          "validation_nmse": 0.04939262361921308,
+          "best_alpha": 1.0
+        },
+        {
+          "data_seed": 67,
+          "hardware_seed": 101,
+          "validation_nmse": 0.05074699283313568,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "data_seed": 71,
+          "hardware_seed": 101,
+          "validation_nmse": 0.0488552118597464,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "data_seed": 97,
+          "hardware_seed": 101,
+          "validation_nmse": 0.05371218438876147,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "data_seed": 109,
+          "hardware_seed": 101,
+          "validation_nmse": 0.05670339367699718,
+          "best_alpha": 1.0
+        },
+        {
+          "data_seed": 113,
+          "hardware_seed": 101,
+          "validation_nmse": 0.05126802910552519,
+          "best_alpha": 3.1622776601683795
+        }
+      ],
+      "selected_channel_labels": [
+        "pair:0,9",
+        "pair:1,10",
+        "self:9",
+        "self:0",
+        "pair:2,11",
+        "self:10",
+        "self:1",
+        "pair:3,12",
+        "self:11",
+        "pair:4,13",
+        "lo:10",
+        "self:2",
+        "self:12",
+        "lo:11",
+        "pair:10,19",
+        "pair:5,14",
+        "lo:12",
+        "pair:6,15",
+        "self:13",
+        "pair:7,16",
+        "pair:8,17",
+        "pair:9,18",
+        "self:14",
+        "self:3",
+        "lo:13",
+        "self:15",
+        "self:17",
+        "self:16",
+        "lo:14",
+        "self:18",
+        "self:19",
+        "lo:18",
+        "lo:19",
+        "lo:17",
+        "lo:16",
+        "lo:15",
+        "lo:2",
+        "self:4",
+        "lo:3",
+        "lo:4"
+      ],
+      "passed": false
+    },
+    {
+      "channels": 40,
+      "parallel_ports": 10,
+      "time_multiplex_steps": 4,
+      "signal_power_mw_per_port": 5.0,
+      "lo_power_mw_per_port": 5.0,
+      "receiver_noise_bandwidth_factor": 1.0,
+      "hardware_realizations": 1,
+      "feasibility": {
+        "parallel_ports": 10,
+        "time_multiplex_steps": 4,
+        "symbol_rate_hz": 10000000000.0,
+        "slot_rate_hz": 40000000000.0,
+        "required_detector_bandwidth_hz": 20000000000.0,
+        "max_delay_length_cm": 14.240141755,
+        "checks": {
+          "delay_length": true,
+          "detector_bandwidth": true,
+          "switch_rate": true,
+          "total_optical_power": true
+        },
+        "passed": true,
+        "estimated_total_optical_power_mw": 100.0
+      },
+      "summary": {
+        "median_validation_nmse": 0.03351396292237583,
+        "p90_validation_nmse": 0.05015152169281812,
+        "max_validation_nmse": 0.09201137909458701,
+        "fraction_runs_at_or_below_0_05": 0.9,
+        "data_seed_medians": {
+          "11": 0.028361492995391185,
+          "23": 0.09201137909458701,
+          "37": 0.03149114730774007,
+          "41": 0.04550042642595493,
+          "53": 0.03339505811708662,
+          "67": 0.033632867727665036,
+          "71": 0.03265173914816223,
+          "97": 0.03835595642227906,
+          "109": 0.03838963772396943,
+          "113": 0.028824633303506715
+        },
+        "data_seeds_at_or_below_0_05": 9,
+        "passed": true
+      },
+      "scores": [
+        {
+          "data_seed": 11,
+          "hardware_seed": 101,
+          "validation_nmse": 0.028361492995391185,
+          "best_alpha": 1.0
+        },
+        {
+          "data_seed": 23,
+          "hardware_seed": 101,
+          "validation_nmse": 0.09201137909458701,
+          "best_alpha": 1e-10
+        },
+        {
+          "data_seed": 37,
+          "hardware_seed": 101,
+          "validation_nmse": 0.03149114730774007,
+          "best_alpha": 1e-10
+        },
+        {
+          "data_seed": 41,
+          "hardware_seed": 101,
+          "validation_nmse": 0.04550042642595493,
+          "best_alpha": 1.0
+        },
+        {
+          "data_seed": 53,
+          "hardware_seed": 101,
+          "validation_nmse": 0.03339505811708662,
+          "best_alpha": 1.0
+        },
+        {
+          "data_seed": 67,
+          "hardware_seed": 101,
+          "validation_nmse": 0.033632867727665036,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "data_seed": 71,
+          "hardware_seed": 101,
+          "validation_nmse": 0.03265173914816223,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "data_seed": 97,
+          "hardware_seed": 101,
+          "validation_nmse": 0.03835595642227906,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "data_seed": 109,
+          "hardware_seed": 101,
+          "validation_nmse": 0.03838963772396943,
+          "best_alpha": 1.0
+        },
+        {
+          "data_seed": 113,
+          "hardware_seed": 101,
+          "validation_nmse": 0.028824633303506715,
+          "best_alpha": 1.0
+        }
+      ],
+      "selected_channel_labels": [
+        "pair:0,9",
+        "pair:1,10",
+        "self:9",
+        "self:0",
+        "pair:2,11",
+        "self:10",
+        "self:1",
+        "pair:3,12",
+        "self:11",
+        "pair:4,13",
+        "lo:10",
+        "self:2",
+        "self:12",
+        "lo:11",
+        "pair:10,19",
+        "pair:5,14",
+        "lo:12",
+        "pair:6,15",
+        "self:13",
+        "pair:7,16",
+        "pair:8,17",
+        "pair:9,18",
+        "self:14",
+        "self:3",
+        "lo:13",
+        "self:15",
+        "self:17",
+        "self:16",
+        "lo:14",
+        "self:18",
+        "self:19",
+        "lo:18",
+        "lo:19",
+        "lo:17",
+        "lo:16",
+        "lo:15",
+        "lo:2",
+        "self:4",
+        "lo:3",
+        "lo:4"
+      ],
+      "passed": true
+    },
+    {
+      "channels": 40,
+      "parallel_ports": 20,
+      "time_multiplex_steps": 2,
+      "signal_power_mw_per_port": 1.0,
+      "lo_power_mw_per_port": 1.0,
+      "receiver_noise_bandwidth_factor": 1.0,
+      "hardware_realizations": 1,
+      "feasibility": {
+        "parallel_ports": 20,
+        "time_multiplex_steps": 2,
+        "symbol_rate_hz": 10000000000.0,
+        "slot_rate_hz": 20000000000.0,
+        "required_detector_bandwidth_hz": 10000000000.0,
+        "max_delay_length_cm": 14.240141755,
+        "checks": {
+          "delay_length": true,
+          "detector_bandwidth": true,
+          "switch_rate": true,
+          "total_optical_power": true
+        },
+        "passed": true,
+        "estimated_total_optical_power_mw": 40.0
+      },
+      "summary": {
+        "median_validation_nmse": 0.06388294875934007,
+        "p90_validation_nmse": 0.07919076961535498,
+        "max_validation_nmse": 0.12174487295802304,
+        "fraction_runs_at_or_below_0_05": 0.0,
+        "data_seed_medians": {
+          "11": 0.058388351928777026,
+          "23": 0.12174487295802304,
+          "37": 0.05881248554497043,
+          "41": 0.07446253591061411,
+          "53": 0.06069120909003729,
+          "67": 0.06313918418989767,
+          "71": 0.05981723851585878,
+          "97": 0.06462671332878248,
+          "109": 0.06946852917791317,
+          "113": 0.06702906798628279
+        },
+        "data_seeds_at_or_below_0_05": 0,
+        "passed": false
+      },
+      "scores": [
+        {
+          "data_seed": 11,
+          "hardware_seed": 101,
+          "validation_nmse": 0.058388351928777026,
+          "best_alpha": 1e-10
+        },
+        {
+          "data_seed": 23,
+          "hardware_seed": 101,
+          "validation_nmse": 0.12174487295802304,
+          "best_alpha": 1e-10
+        },
+        {
+          "data_seed": 37,
+          "hardware_seed": 101,
+          "validation_nmse": 0.05881248554497043,
+          "best_alpha": 1e-10
+        },
+        {
+          "data_seed": 41,
+          "hardware_seed": 101,
+          "validation_nmse": 0.07446253591061411,
+          "best_alpha": 1e-10
+        },
+        {
+          "data_seed": 53,
+          "hardware_seed": 101,
+          "validation_nmse": 0.06069120909003729,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "data_seed": 67,
+          "hardware_seed": 101,
+          "validation_nmse": 0.06313918418989767,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "data_seed": 71,
+          "hardware_seed": 101,
+          "validation_nmse": 0.05981723851585878,
+          "best_alpha": 10.0
+        },
+        {
+          "data_seed": 97,
+          "hardware_seed": 101,
+          "validation_nmse": 0.06462671332878248,
+          "best_alpha": 10.0
+        },
+        {
+          "data_seed": 109,
+          "hardware_seed": 101,
+          "validation_nmse": 0.06946852917791317,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "data_seed": 113,
+          "hardware_seed": 101,
+          "validation_nmse": 0.06702906798628279,
+          "best_alpha": 3.1622776601683795
+        }
+      ],
+      "selected_channel_labels": [
+        "pair:0,9",
+        "pair:1,10",
+        "self:9",
+        "self:0",
+        "pair:2,11",
+        "self:10",
+        "self:1",
+        "pair:3,12",
+        "self:11",
+        "pair:4,13",
+        "lo:10",
+        "self:2",
+        "self:12",
+        "lo:11",
+        "pair:10,19",
+        "pair:5,14",
+        "lo:12",
+        "pair:6,15",
+        "self:13",
+        "pair:7,16",
+        "pair:8,17",
+        "pair:9,18",
+        "self:14",
+        "self:3",
+        "lo:13",
+        "self:15",
+        "self:17",
+        "self:16",
+        "lo:14",
+        "self:18",
+        "self:19",
+        "lo:18",
+        "lo:19",
+        "lo:17",
+        "lo:16",
+        "lo:15",
+        "lo:2",
+        "self:4",
+        "lo:3",
+        "lo:4"
+      ],
+      "passed": false
+    },
+    {
+      "channels": 40,
+      "parallel_ports": 20,
+      "time_multiplex_steps": 2,
+      "signal_power_mw_per_port": 2.0,
+      "lo_power_mw_per_port": 2.0,
+      "receiver_noise_bandwidth_factor": 1.0,
+      "hardware_realizations": 1,
+      "feasibility": {
+        "parallel_ports": 20,
+        "time_multiplex_steps": 2,
+        "symbol_rate_hz": 10000000000.0,
+        "slot_rate_hz": 20000000000.0,
+        "required_detector_bandwidth_hz": 10000000000.0,
+        "max_delay_length_cm": 14.240141755,
+        "checks": {
+          "delay_length": true,
+          "detector_bandwidth": true,
+          "switch_rate": true,
+          "total_optical_power": true
+        },
+        "passed": true,
+        "estimated_total_optical_power_mw": 80.0
+      },
+      "summary": {
+        "median_validation_nmse": 0.041458842951426045,
+        "p90_validation_nmse": 0.05842599798191713,
+        "max_validation_nmse": 0.10045966074137062,
+        "fraction_runs_at_or_below_0_05": 0.8,
+        "data_seed_medians": {
+          "11": 0.036594205645692435,
+          "23": 0.10045966074137062,
+          "37": 0.038845506606051114,
+          "41": 0.05375559100864454,
+          "53": 0.041089691773518136,
+          "67": 0.04182799412933396,
+          "71": 0.04058696529390494,
+          "97": 0.04566531026316466,
+          "109": 0.047318543459846776,
+          "113": 0.03959143745562376
+        },
+        "data_seeds_at_or_below_0_05": 8,
+        "passed": false
+      },
+      "scores": [
+        {
+          "data_seed": 11,
+          "hardware_seed": 101,
+          "validation_nmse": 0.036594205645692435,
+          "best_alpha": 0.1
+        },
+        {
+          "data_seed": 23,
+          "hardware_seed": 101,
+          "validation_nmse": 0.10045966074137062,
+          "best_alpha": 1e-10
+        },
+        {
+          "data_seed": 37,
+          "hardware_seed": 101,
+          "validation_nmse": 0.038845506606051114,
+          "best_alpha": 1e-10
+        },
+        {
+          "data_seed": 41,
+          "hardware_seed": 101,
+          "validation_nmse": 0.05375559100864454,
+          "best_alpha": 0.1
+        },
+        {
+          "data_seed": 53,
+          "hardware_seed": 101,
+          "validation_nmse": 0.041089691773518136,
+          "best_alpha": 1.0
+        },
+        {
+          "data_seed": 67,
+          "hardware_seed": 101,
+          "validation_nmse": 0.04182799412933396,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "data_seed": 71,
+          "hardware_seed": 101,
+          "validation_nmse": 0.04058696529390494,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "data_seed": 97,
+          "hardware_seed": 101,
+          "validation_nmse": 0.04566531026316466,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "data_seed": 109,
+          "hardware_seed": 101,
+          "validation_nmse": 0.047318543459846776,
+          "best_alpha": 1.0
+        },
+        {
+          "data_seed": 113,
+          "hardware_seed": 101,
+          "validation_nmse": 0.03959143745562376,
+          "best_alpha": 1.0
+        }
+      ],
+      "selected_channel_labels": [
+        "pair:0,9",
+        "pair:1,10",
+        "self:9",
+        "self:0",
+        "pair:2,11",
+        "self:10",
+        "self:1",
+        "pair:3,12",
+        "self:11",
+        "pair:4,13",
+        "lo:10",
+        "self:2",
+        "self:12",
+        "lo:11",
+        "pair:10,19",
+        "pair:5,14",
+        "lo:12",
+        "pair:6,15",
+        "self:13",
+        "pair:7,16",
+        "pair:8,17",
+        "pair:9,18",
+        "self:14",
+        "self:3",
+        "lo:13",
+        "self:15",
+        "self:17",
+        "self:16",
+        "lo:14",
+        "self:18",
+        "self:19",
+        "lo:18",
+        "lo:19",
+        "lo:17",
+        "lo:16",
+        "lo:15",
+        "lo:2",
+        "self:4",
+        "lo:3",
+        "lo:4"
+      ],
+      "passed": false
+    },
+    {
+      "channels": 40,
+      "parallel_ports": 20,
+      "time_multiplex_steps": 2,
+      "signal_power_mw_per_port": 5.0,
+      "lo_power_mw_per_port": 5.0,
+      "receiver_noise_bandwidth_factor": 1.0,
+      "hardware_realizations": 1,
+      "feasibility": {
+        "parallel_ports": 20,
+        "time_multiplex_steps": 2,
+        "symbol_rate_hz": 10000000000.0,
+        "slot_rate_hz": 20000000000.0,
+        "required_detector_bandwidth_hz": 10000000000.0,
+        "max_delay_length_cm": 14.240141755,
+        "checks": {
+          "delay_length": true,
+          "detector_bandwidth": true,
+          "switch_rate": true,
+          "total_optical_power": true
+        },
+        "passed": true,
+        "estimated_total_optical_power_mw": 200.0
+      },
+      "summary": {
+        "median_validation_nmse": 0.030596456091093894,
+        "p90_validation_nmse": 0.04704167071137741,
+        "max_validation_nmse": 0.08895977362364561,
+        "fraction_runs_at_or_below_0_05": 0.9,
+        "data_seed_medians": {
+          "11": 0.025474989376762052,
+          "23": 0.08895977362364561,
+          "37": 0.028998132421809795,
+          "41": 0.04238410372112541,
+          "53": 0.030607842893674776,
+          "67": 0.03058506928851301,
+          "71": 0.029612641614282027,
+          "97": 0.035843353402101,
+          "109": 0.035051372505554824,
+          "113": 0.02517460525481848
+        },
+        "data_seeds_at_or_below_0_05": 9,
+        "passed": true
+      },
+      "scores": [
+        {
+          "data_seed": 11,
+          "hardware_seed": 101,
+          "validation_nmse": 0.025474989376762052,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "data_seed": 23,
+          "hardware_seed": 101,
+          "validation_nmse": 0.08895977362364561,
+          "best_alpha": 1e-10
+        },
+        {
+          "data_seed": 37,
+          "hardware_seed": 101,
+          "validation_nmse": 0.028998132421809795,
+          "best_alpha": 1e-10
+        },
+        {
+          "data_seed": 41,
+          "hardware_seed": 101,
+          "validation_nmse": 0.04238410372112541,
+          "best_alpha": 1.0
+        },
+        {
+          "data_seed": 53,
+          "hardware_seed": 101,
+          "validation_nmse": 0.030607842893674776,
+          "best_alpha": 1.0
+        },
+        {
+          "data_seed": 67,
+          "hardware_seed": 101,
+          "validation_nmse": 0.03058506928851301,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "data_seed": 71,
+          "hardware_seed": 101,
+          "validation_nmse": 0.029612641614282027,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "data_seed": 97,
+          "hardware_seed": 101,
+          "validation_nmse": 0.035843353402101,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "data_seed": 109,
+          "hardware_seed": 101,
+          "validation_nmse": 0.035051372505554824,
+          "best_alpha": 1.0
+        },
+        {
+          "data_seed": 113,
+          "hardware_seed": 101,
+          "validation_nmse": 0.02517460525481848,
+          "best_alpha": 1.0
+        }
+      ],
+      "selected_channel_labels": [
+        "pair:0,9",
+        "pair:1,10",
+        "self:9",
+        "self:0",
+        "pair:2,11",
+        "self:10",
+        "self:1",
+        "pair:3,12",
+        "self:11",
+        "pair:4,13",
+        "lo:10",
+        "self:2",
+        "self:12",
+        "lo:11",
+        "pair:10,19",
+        "pair:5,14",
+        "lo:12",
+        "pair:6,15",
+        "self:13",
+        "pair:7,16",
+        "pair:8,17",
+        "pair:9,18",
+        "self:14",
+        "self:3",
+        "lo:13",
+        "self:15",
+        "self:17",
+        "self:16",
+        "lo:14",
+        "self:18",
+        "self:19",
+        "lo:18",
+        "lo:19",
+        "lo:17",
+        "lo:16",
+        "lo:15",
+        "lo:2",
+        "self:4",
+        "lo:3",
+        "lo:4"
+      ],
+      "passed": true
+    },
+    {
+      "channels": 40,
+      "parallel_ports": 30,
+      "time_multiplex_steps": 2,
+      "signal_power_mw_per_port": 1.0,
+      "lo_power_mw_per_port": 1.0,
+      "receiver_noise_bandwidth_factor": 1.0,
+      "hardware_realizations": 1,
+      "feasibility": {
+        "parallel_ports": 30,
+        "time_multiplex_steps": 2,
+        "symbol_rate_hz": 10000000000.0,
+        "slot_rate_hz": 20000000000.0,
+        "required_detector_bandwidth_hz": 10000000000.0,
+        "max_delay_length_cm": 14.240141755,
+        "checks": {
+          "delay_length": true,
+          "detector_bandwidth": true,
+          "switch_rate": true,
+          "total_optical_power": true
+        },
+        "passed": true,
+        "estimated_total_optical_power_mw": 60.0
+      },
+      "summary": {
+        "median_validation_nmse": 0.06388295416826546,
+        "p90_validation_nmse": 0.07919077383719197,
+        "max_validation_nmse": 0.12174488074003686,
+        "fraction_runs_at_or_below_0_05": 0.0,
+        "data_seed_medians": {
+          "11": 0.05838835222152507,
+          "23": 0.12174488074003686,
+          "37": 0.058812491486781054,
+          "41": 0.0744625397368759,
+          "53": 0.060691214280009335,
+          "67": 0.06313918997333427,
+          "71": 0.05981724426070015,
+          "97": 0.06462671836319665,
+          "109": 0.0694685371397117,
+          "113": 0.06702906951650756
+        },
+        "data_seeds_at_or_below_0_05": 0,
+        "passed": false
+      },
+      "scores": [
+        {
+          "data_seed": 11,
+          "hardware_seed": 101,
+          "validation_nmse": 0.05838835222152507,
+          "best_alpha": 1e-10
+        },
+        {
+          "data_seed": 23,
+          "hardware_seed": 101,
+          "validation_nmse": 0.12174488074003686,
+          "best_alpha": 1e-10
+        },
+        {
+          "data_seed": 37,
+          "hardware_seed": 101,
+          "validation_nmse": 0.058812491486781054,
+          "best_alpha": 1e-10
+        },
+        {
+          "data_seed": 41,
+          "hardware_seed": 101,
+          "validation_nmse": 0.0744625397368759,
+          "best_alpha": 1e-10
+        },
+        {
+          "data_seed": 53,
+          "hardware_seed": 101,
+          "validation_nmse": 0.060691214280009335,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "data_seed": 67,
+          "hardware_seed": 101,
+          "validation_nmse": 0.06313918997333427,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "data_seed": 71,
+          "hardware_seed": 101,
+          "validation_nmse": 0.05981724426070015,
+          "best_alpha": 10.0
+        },
+        {
+          "data_seed": 97,
+          "hardware_seed": 101,
+          "validation_nmse": 0.06462671836319665,
+          "best_alpha": 10.0
+        },
+        {
+          "data_seed": 109,
+          "hardware_seed": 101,
+          "validation_nmse": 0.0694685371397117,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "data_seed": 113,
+          "hardware_seed": 101,
+          "validation_nmse": 0.06702906951650756,
+          "best_alpha": 3.1622776601683795
+        }
+      ],
+      "selected_channel_labels": [
+        "pair:0,9",
+        "pair:1,10",
+        "self:9",
+        "self:0",
+        "pair:2,11",
+        "self:10",
+        "self:1",
+        "pair:3,12",
+        "self:11",
+        "pair:4,13",
+        "lo:10",
+        "self:2",
+        "self:12",
+        "lo:11",
+        "pair:10,19",
+        "pair:5,14",
+        "lo:12",
+        "pair:6,15",
+        "self:13",
+        "pair:7,16",
+        "pair:8,17",
+        "pair:9,18",
+        "self:14",
+        "self:3",
+        "lo:13",
+        "self:15",
+        "self:17",
+        "self:16",
+        "lo:14",
+        "self:18",
+        "self:19",
+        "lo:18",
+        "lo:19",
+        "lo:17",
+        "lo:16",
+        "lo:15",
+        "lo:2",
+        "self:4",
+        "lo:3",
+        "lo:4"
+      ],
+      "passed": false
+    },
+    {
+      "channels": 40,
+      "parallel_ports": 30,
+      "time_multiplex_steps": 2,
+      "signal_power_mw_per_port": 2.0,
+      "lo_power_mw_per_port": 2.0,
+      "receiver_noise_bandwidth_factor": 1.0,
+      "hardware_realizations": 1,
+      "feasibility": {
+        "parallel_ports": 30,
+        "time_multiplex_steps": 2,
+        "symbol_rate_hz": 10000000000.0,
+        "slot_rate_hz": 20000000000.0,
+        "required_detector_bandwidth_hz": 10000000000.0,
+        "max_delay_length_cm": 14.240141755,
+        "checks": {
+          "delay_length": true,
+          "detector_bandwidth": true,
+          "switch_rate": true,
+          "total_optical_power": true
+        },
+        "passed": true,
+        "estimated_total_optical_power_mw": 120.0
+      },
+      "summary": {
+        "median_validation_nmse": 0.04145885625939749,
+        "p90_validation_nmse": 0.0584260108679758,
+        "max_validation_nmse": 0.10045967916536563,
+        "fraction_runs_at_or_below_0_05": 0.8,
+        "data_seed_medians": {
+          "11": 0.03659421291478675,
+          "23": 0.10045967916536563,
+          "37": 0.03884552077019972,
+          "41": 0.05375560327937695,
+          "53": 0.04108970505407941,
+          "67": 0.04182800746471558,
+          "71": 0.040586981191722084,
+          "97": 0.04566532391390018,
+          "109": 0.04731855975795213,
+          "113": 0.03959144724643636
+        },
+        "data_seeds_at_or_below_0_05": 8,
+        "passed": false
+      },
+      "scores": [
+        {
+          "data_seed": 11,
+          "hardware_seed": 101,
+          "validation_nmse": 0.03659421291478675,
+          "best_alpha": 0.1
+        },
+        {
+          "data_seed": 23,
+          "hardware_seed": 101,
+          "validation_nmse": 0.10045967916536563,
+          "best_alpha": 1e-10
+        },
+        {
+          "data_seed": 37,
+          "hardware_seed": 101,
+          "validation_nmse": 0.03884552077019972,
+          "best_alpha": 1e-10
+        },
+        {
+          "data_seed": 41,
+          "hardware_seed": 101,
+          "validation_nmse": 0.05375560327937695,
+          "best_alpha": 0.1
+        },
+        {
+          "data_seed": 53,
+          "hardware_seed": 101,
+          "validation_nmse": 0.04108970505407941,
+          "best_alpha": 1.0
+        },
+        {
+          "data_seed": 67,
+          "hardware_seed": 101,
+          "validation_nmse": 0.04182800746471558,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "data_seed": 71,
+          "hardware_seed": 101,
+          "validation_nmse": 0.040586981191722084,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "data_seed": 97,
+          "hardware_seed": 101,
+          "validation_nmse": 0.04566532391390018,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "data_seed": 109,
+          "hardware_seed": 101,
+          "validation_nmse": 0.04731855975795213,
+          "best_alpha": 1.0
+        },
+        {
+          "data_seed": 113,
+          "hardware_seed": 101,
+          "validation_nmse": 0.03959144724643636,
+          "best_alpha": 1.0
+        }
+      ],
+      "selected_channel_labels": [
+        "pair:0,9",
+        "pair:1,10",
+        "self:9",
+        "self:0",
+        "pair:2,11",
+        "self:10",
+        "self:1",
+        "pair:3,12",
+        "self:11",
+        "pair:4,13",
+        "lo:10",
+        "self:2",
+        "self:12",
+        "lo:11",
+        "pair:10,19",
+        "pair:5,14",
+        "lo:12",
+        "pair:6,15",
+        "self:13",
+        "pair:7,16",
+        "pair:8,17",
+        "pair:9,18",
+        "self:14",
+        "self:3",
+        "lo:13",
+        "self:15",
+        "self:17",
+        "self:16",
+        "lo:14",
+        "self:18",
+        "self:19",
+        "lo:18",
+        "lo:19",
+        "lo:17",
+        "lo:16",
+        "lo:15",
+        "lo:2",
+        "self:4",
+        "lo:3",
+        "lo:4"
+      ],
+      "passed": false
+    },
+    {
+      "channels": 40,
+      "parallel_ports": 30,
+      "time_multiplex_steps": 2,
+      "signal_power_mw_per_port": 5.0,
+      "lo_power_mw_per_port": 5.0,
+      "receiver_noise_bandwidth_factor": 1.0,
+      "hardware_realizations": 1,
+      "feasibility": {
+        "parallel_ports": 30,
+        "time_multiplex_steps": 2,
+        "symbol_rate_hz": 10000000000.0,
+        "slot_rate_hz": 20000000000.0,
+        "required_detector_bandwidth_hz": 10000000000.0,
+        "max_delay_length_cm": 14.240141755,
+        "checks": {
+          "delay_length": true,
+          "detector_bandwidth": true,
+          "switch_rate": true,
+          "total_optical_power": false
+        },
+        "passed": false,
+        "estimated_total_optical_power_mw": 300.0
+      },
+      "summary": {
+        "median_validation_nmse": 0.03059647742450398,
+        "p90_validation_nmse": 0.04704169454090591,
+        "max_validation_nmse": 0.08895980324459327,
+        "fraction_runs_at_or_below_0_05": 0.9,
+        "data_seed_medians": {
+          "11": 0.025475005022577147,
+          "23": 0.08895980324459327,
+          "37": 0.028998154561265952,
+          "41": 0.04238412690716289,
+          "53": 0.030607864751582278,
+          "67": 0.030585090097425684,
+          "71": 0.029612667690748763,
+          "97": 0.03584337580192021,
+          "109": 0.03505139872209277,
+          "113": 0.025174624413967422
+        },
+        "data_seeds_at_or_below_0_05": 9,
+        "passed": true
+      },
+      "scores": [
+        {
+          "data_seed": 11,
+          "hardware_seed": 101,
+          "validation_nmse": 0.025475005022577147,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "data_seed": 23,
+          "hardware_seed": 101,
+          "validation_nmse": 0.08895980324459327,
+          "best_alpha": 1e-10
+        },
+        {
+          "data_seed": 37,
+          "hardware_seed": 101,
+          "validation_nmse": 0.028998154561265952,
+          "best_alpha": 1e-10
+        },
+        {
+          "data_seed": 41,
+          "hardware_seed": 101,
+          "validation_nmse": 0.04238412690716289,
+          "best_alpha": 1.0
+        },
+        {
+          "data_seed": 53,
+          "hardware_seed": 101,
+          "validation_nmse": 0.030607864751582278,
+          "best_alpha": 1.0
+        },
+        {
+          "data_seed": 67,
+          "hardware_seed": 101,
+          "validation_nmse": 0.030585090097425684,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "data_seed": 71,
+          "hardware_seed": 101,
+          "validation_nmse": 0.029612667690748763,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "data_seed": 97,
+          "hardware_seed": 101,
+          "validation_nmse": 0.03584337580192021,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "data_seed": 109,
+          "hardware_seed": 101,
+          "validation_nmse": 0.03505139872209277,
+          "best_alpha": 1.0
+        },
+        {
+          "data_seed": 113,
+          "hardware_seed": 101,
+          "validation_nmse": 0.025174624413967422,
+          "best_alpha": 1.0
+        }
+      ],
+      "selected_channel_labels": [
+        "pair:0,9",
+        "pair:1,10",
+        "self:9",
+        "self:0",
+        "pair:2,11",
+        "self:10",
+        "self:1",
+        "pair:3,12",
+        "self:11",
+        "pair:4,13",
+        "lo:10",
+        "self:2",
+        "self:12",
+        "lo:11",
+        "pair:10,19",
+        "pair:5,14",
+        "lo:12",
+        "pair:6,15",
+        "self:13",
+        "pair:7,16",
+        "pair:8,17",
+        "pair:9,18",
+        "self:14",
+        "self:3",
+        "lo:13",
+        "self:15",
+        "self:17",
+        "self:16",
+        "lo:14",
+        "self:18",
+        "self:19",
+        "lo:18",
+        "lo:19",
+        "lo:17",
+        "lo:16",
+        "lo:15",
+        "lo:2",
+        "self:4",
+        "lo:3",
+        "lo:4"
+      ],
+      "passed": false
+    },
+    {
+      "channels": 40,
+      "parallel_ports": 40,
+      "time_multiplex_steps": 1,
+      "signal_power_mw_per_port": 1.0,
+      "lo_power_mw_per_port": 1.0,
+      "receiver_noise_bandwidth_factor": 1.0,
+      "hardware_realizations": 1,
+      "feasibility": {
+        "parallel_ports": 40,
+        "time_multiplex_steps": 1,
+        "symbol_rate_hz": 10000000000.0,
+        "slot_rate_hz": 10000000000.0,
+        "required_detector_bandwidth_hz": 5000000000.0,
+        "max_delay_length_cm": 14.240141755,
+        "checks": {
+          "delay_length": true,
+          "detector_bandwidth": true,
+          "switch_rate": true,
+          "total_optical_power": true
+        },
+        "passed": true,
+        "estimated_total_optical_power_mw": 80.0
+      },
+      "summary": {
+        "median_validation_nmse": 0.05056533513497882,
+        "p90_validation_nmse": 0.0668035891028605,
+        "max_validation_nmse": 0.10908988408789598,
+        "fraction_runs_at_or_below_0_05": 0.4,
+        "data_seed_medians": {
+          "11": 0.04530989808835385,
+          "23": 0.10908988408789598,
+          "37": 0.046795748256976855,
+          "41": 0.062105111882301015,
+          "53": 0.04901153207107958,
+          "67": 0.05033387329171794,
+          "71": 0.04844975769760488,
+          "97": 0.05335611516550435,
+          "109": 0.05630532435565798,
+          "113": 0.0507967969782397
+        },
+        "data_seeds_at_or_below_0_05": 4,
+        "passed": false
+      },
+      "scores": [
+        {
+          "data_seed": 11,
+          "hardware_seed": 101,
+          "validation_nmse": 0.04530989808835385,
+          "best_alpha": 1e-10
+        },
+        {
+          "data_seed": 23,
+          "hardware_seed": 101,
+          "validation_nmse": 0.10908988408789598,
+          "best_alpha": 1e-10
+        },
+        {
+          "data_seed": 37,
+          "hardware_seed": 101,
+          "validation_nmse": 0.046795748256976855,
+          "best_alpha": 1e-10
+        },
+        {
+          "data_seed": 41,
+          "hardware_seed": 101,
+          "validation_nmse": 0.062105111882301015,
+          "best_alpha": 1e-10
+        },
+        {
+          "data_seed": 53,
+          "hardware_seed": 101,
+          "validation_nmse": 0.04901153207107958,
+          "best_alpha": 1.0
+        },
+        {
+          "data_seed": 67,
+          "hardware_seed": 101,
+          "validation_nmse": 0.05033387329171794,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "data_seed": 71,
+          "hardware_seed": 101,
+          "validation_nmse": 0.04844975769760488,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "data_seed": 97,
+          "hardware_seed": 101,
+          "validation_nmse": 0.05335611516550435,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "data_seed": 109,
+          "hardware_seed": 101,
+          "validation_nmse": 0.05630532435565798,
+          "best_alpha": 1.0
+        },
+        {
+          "data_seed": 113,
+          "hardware_seed": 101,
+          "validation_nmse": 0.0507967969782397,
+          "best_alpha": 3.1622776601683795
+        }
+      ],
+      "selected_channel_labels": [
+        "pair:0,9",
+        "pair:1,10",
+        "self:9",
+        "self:0",
+        "pair:2,11",
+        "self:10",
+        "self:1",
+        "pair:3,12",
+        "self:11",
+        "pair:4,13",
+        "lo:10",
+        "self:2",
+        "self:12",
+        "lo:11",
+        "pair:10,19",
+        "pair:5,14",
+        "lo:12",
+        "pair:6,15",
+        "self:13",
+        "pair:7,16",
+        "pair:8,17",
+        "pair:9,18",
+        "self:14",
+        "self:3",
+        "lo:13",
+        "self:15",
+        "self:17",
+        "self:16",
+        "lo:14",
+        "self:18",
+        "self:19",
+        "lo:18",
+        "lo:19",
+        "lo:17",
+        "lo:16",
+        "lo:15",
+        "lo:2",
+        "self:4",
+        "lo:3",
+        "lo:4"
+      ],
+      "passed": false
+    },
+    {
+      "channels": 40,
+      "parallel_ports": 40,
+      "time_multiplex_steps": 1,
+      "signal_power_mw_per_port": 2.0,
+      "lo_power_mw_per_port": 2.0,
+      "receiver_noise_bandwidth_factor": 1.0,
+      "hardware_realizations": 1,
+      "feasibility": {
+        "parallel_ports": 40,
+        "time_multiplex_steps": 1,
+        "symbol_rate_hz": 10000000000.0,
+        "slot_rate_hz": 10000000000.0,
+        "required_detector_bandwidth_hz": 5000000000.0,
+        "max_delay_length_cm": 14.240141755,
+        "checks": {
+          "delay_length": true,
+          "detector_bandwidth": true,
+          "switch_rate": true,
+          "total_optical_power": true
+        },
+        "passed": true,
+        "estimated_total_optical_power_mw": 160.0
+      },
+      "summary": {
+        "median_validation_nmse": 0.03574858191745077,
+        "p90_validation_nmse": 0.05252210275040511,
+        "max_validation_nmse": 0.0943939113449526,
+        "fraction_runs_at_or_below_0_05": 0.9,
+        "data_seed_medians": {
+          "11": 0.030641842167061423,
+          "23": 0.0943939113449526,
+          "37": 0.033507070518374975,
+          "41": 0.04786967957323318,
+          "53": 0.03554678262061543,
+          "67": 0.0359503812142861,
+          "71": 0.034915815267907914,
+          "97": 0.040367723120507834,
+          "109": 0.04095970333210585,
+          "113": 0.03183295488639049
+        },
+        "data_seeds_at_or_below_0_05": 9,
+        "passed": true
+      },
+      "scores": [
+        {
+          "data_seed": 11,
+          "hardware_seed": 101,
+          "validation_nmse": 0.030641842167061423,
+          "best_alpha": 1.0
+        },
+        {
+          "data_seed": 23,
+          "hardware_seed": 101,
+          "validation_nmse": 0.0943939113449526,
+          "best_alpha": 1e-10
+        },
+        {
+          "data_seed": 37,
+          "hardware_seed": 101,
+          "validation_nmse": 0.033507070518374975,
+          "best_alpha": 1e-10
+        },
+        {
+          "data_seed": 41,
+          "hardware_seed": 101,
+          "validation_nmse": 0.04786967957323318,
+          "best_alpha": 1.0
+        },
+        {
+          "data_seed": 53,
+          "hardware_seed": 101,
+          "validation_nmse": 0.03554678262061543,
+          "best_alpha": 1.0
+        },
+        {
+          "data_seed": 67,
+          "hardware_seed": 101,
+          "validation_nmse": 0.0359503812142861,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "data_seed": 71,
+          "hardware_seed": 101,
+          "validation_nmse": 0.034915815267907914,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "data_seed": 97,
+          "hardware_seed": 101,
+          "validation_nmse": 0.040367723120507834,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "data_seed": 109,
+          "hardware_seed": 101,
+          "validation_nmse": 0.04095970333210585,
+          "best_alpha": 1.0
+        },
+        {
+          "data_seed": 113,
+          "hardware_seed": 101,
+          "validation_nmse": 0.03183295488639049,
+          "best_alpha": 1.0
+        }
+      ],
+      "selected_channel_labels": [
+        "pair:0,9",
+        "pair:1,10",
+        "self:9",
+        "self:0",
+        "pair:2,11",
+        "self:10",
+        "self:1",
+        "pair:3,12",
+        "self:11",
+        "pair:4,13",
+        "lo:10",
+        "self:2",
+        "self:12",
+        "lo:11",
+        "pair:10,19",
+        "pair:5,14",
+        "lo:12",
+        "pair:6,15",
+        "self:13",
+        "pair:7,16",
+        "pair:8,17",
+        "pair:9,18",
+        "self:14",
+        "self:3",
+        "lo:13",
+        "self:15",
+        "self:17",
+        "self:16",
+        "lo:14",
+        "self:18",
+        "self:19",
+        "lo:18",
+        "lo:19",
+        "lo:17",
+        "lo:16",
+        "lo:15",
+        "lo:2",
+        "self:4",
+        "lo:3",
+        "lo:4"
+      ],
+      "passed": true
+    },
+    {
+      "channels": 40,
+      "parallel_ports": 40,
+      "time_multiplex_steps": 1,
+      "signal_power_mw_per_port": 5.0,
+      "lo_power_mw_per_port": 5.0,
+      "receiver_noise_bandwidth_factor": 1.0,
+      "hardware_realizations": 1,
+      "feasibility": {
+        "parallel_ports": 40,
+        "time_multiplex_steps": 1,
+        "symbol_rate_hz": 10000000000.0,
+        "slot_rate_hz": 10000000000.0,
+        "required_detector_bandwidth_hz": 5000000000.0,
+        "max_delay_length_cm": 14.240141755,
+        "checks": {
+          "delay_length": true,
+          "detector_bandwidth": true,
+          "switch_rate": true,
+          "total_optical_power": false
+        },
+        "passed": false,
+        "estimated_total_optical_power_mw": 400.0
+      },
+      "summary": {
+        "median_validation_nmse": 0.02887662747761184,
+        "p90_validation_nmse": 0.0451540997869549,
+        "max_validation_nmse": 0.08726490041133617,
+        "fraction_runs_at_or_below_0_05": 0.9,
+        "data_seed_medians": {
+          "11": 0.023809649404474376,
+          "23": 0.08726490041133617,
+          "37": 0.027624498578842034,
+          "41": 0.04047512193980145,
+          "53": 0.0290074628249919,
+          "67": 0.02874579213023178,
+          "71": 0.02777626781611438,
+          "97": 0.03447362417448491,
+          "109": 0.03303854514509445,
+          "113": 0.023166298287080563
+        },
+        "data_seeds_at_or_below_0_05": 9,
+        "passed": true
+      },
+      "scores": [
+        {
+          "data_seed": 11,
+          "hardware_seed": 101,
+          "validation_nmse": 0.023809649404474376,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "data_seed": 23,
+          "hardware_seed": 101,
+          "validation_nmse": 0.08726490041133617,
+          "best_alpha": 1e-10
+        },
+        {
+          "data_seed": 37,
+          "hardware_seed": 101,
+          "validation_nmse": 0.027624498578842034,
+          "best_alpha": 1e-10
+        },
+        {
+          "data_seed": 41,
+          "hardware_seed": 101,
+          "validation_nmse": 0.04047512193980145,
+          "best_alpha": 1.0
+        },
+        {
+          "data_seed": 53,
+          "hardware_seed": 101,
+          "validation_nmse": 0.0290074628249919,
+          "best_alpha": 1.0
+        },
+        {
+          "data_seed": 67,
+          "hardware_seed": 101,
+          "validation_nmse": 0.02874579213023178,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "data_seed": 71,
+          "hardware_seed": 101,
+          "validation_nmse": 0.02777626781611438,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "data_seed": 97,
+          "hardware_seed": 101,
+          "validation_nmse": 0.03447362417448491,
+          "best_alpha": 3.1622776601683795
+        },
+        {
+          "data_seed": 109,
+          "hardware_seed": 101,
+          "validation_nmse": 0.03303854514509445,
+          "best_alpha": 1.0
+        },
+        {
+          "data_seed": 113,
+          "hardware_seed": 101,
+          "validation_nmse": 0.023166298287080563,
+          "best_alpha": 1.0
+        }
+      ],
+      "selected_channel_labels": [
+        "pair:0,9",
+        "pair:1,10",
+        "self:9",
+        "self:0",
+        "pair:2,11",
+        "self:10",
+        "self:1",
+        "pair:3,12",
+        "self:11",
+        "pair:4,13",
+        "lo:10",
+        "self:2",
+        "self:12",
+        "lo:11",
+        "pair:10,19",
+        "pair:5,14",
+        "lo:12",
+        "pair:6,15",
+        "self:13",
+        "pair:7,16",
+        "pair:8,17",
+        "pair:9,18",
+        "self:14",
+        "self:3",
+        "lo:13",
+        "self:15",
+        "self:17",
+        "self:16",
+        "lo:14",
+        "self:18",
+        "self:19",
+        "lo:18",
+        "lo:19",
+        "lo:17",
+        "lo:16",
+        "lo:15",
+        "lo:2",
+        "self:4",
+        "lo:3",
+        "lo:4"
+      ],
+      "passed": false
+    }
+  ],
+  "phase": "discovery",
+  "selected_candidate": {
+    "channels": 30,
+    "parallel_ports": 10,
+    "time_multiplex_steps": 3,
+    "signal_power_mw_per_port": 5.0,
+    "lo_power_mw_per_port": 5.0,
+    "receiver_noise_bandwidth_factor": 1.0,
+    "hardware_realizations": 1,
+    "feasibility": {
+      "parallel_ports": 10,
+      "time_multiplex_steps": 3,
+      "symbol_rate_hz": 10000000000.0,
+      "slot_rate_hz": 30000000000.0,
+      "required_detector_bandwidth_hz": 15000000000.0,
+      "max_delay_length_cm": 14.240141755,
+      "checks": {
+        "delay_length": true,
+        "detector_bandwidth": true,
+        "switch_rate": true,
+        "total_optical_power": true
+      },
+      "passed": true,
+      "estimated_total_optical_power_mw": 100.0
+    },
+    "summary": {
+      "median_validation_nmse": 0.03345296040842439,
+      "p90_validation_nmse": 0.049279987494891896,
+      "max_validation_nmse": 0.09387849288535287,
+      "fraction_runs_at_or_below_0_05": 0.9,
+      "data_seed_medians": {
+        "11": 0.02866236505689704,
+        "23": 0.09387849288535287,
+        "37": 0.03311248187899809,
+        "41": 0.04432459800706292,
+        "53": 0.03379343893785069,
+        "67": 0.03270293477805591,
+        "71": 0.032126375375024545,
+        "97": 0.038050541284532786,
+        "109": 0.0384679921348232,
+        "113": 0.02915776767757451
+      },
+      "data_seeds_at_or_below_0_05": 9,
+      "passed": true
+    },
+    "scores": [
+      {
+        "data_seed": 11,
+        "hardware_seed": 101,
+        "validation_nmse": 0.02866236505689704,
+        "best_alpha": 3.1622776601683795
+      },
+      {
+        "data_seed": 23,
+        "hardware_seed": 101,
+        "validation_nmse": 0.09387849288535287,
+        "best_alpha": 1e-10
+      },
+      {
+        "data_seed": 37,
+        "hardware_seed": 101,
+        "validation_nmse": 0.03311248187899809,
+        "best_alpha": 1e-10
+      },
+      {
+        "data_seed": 41,
+        "hardware_seed": 101,
+        "validation_nmse": 0.04432459800706292,
+        "best_alpha": 1.0
+      },
+      {
+        "data_seed": 53,
+        "hardware_seed": 101,
+        "validation_nmse": 0.03379343893785069,
+        "best_alpha": 1.0
+      },
+      {
+        "data_seed": 67,
+        "hardware_seed": 101,
+        "validation_nmse": 0.03270293477805591,
+        "best_alpha": 1e-10
+      },
+      {
+        "data_seed": 71,
+        "hardware_seed": 101,
+        "validation_nmse": 0.032126375375024545,
+        "best_alpha": 1.0
+      },
+      {
+        "data_seed": 97,
+        "hardware_seed": 101,
+        "validation_nmse": 0.038050541284532786,
+        "best_alpha": 3.1622776601683795
+      },
+      {
+        "data_seed": 109,
+        "hardware_seed": 101,
+        "validation_nmse": 0.0384679921348232,
+        "best_alpha": 1.0
+      },
+      {
+        "data_seed": 113,
+        "hardware_seed": 101,
+        "validation_nmse": 0.02915776767757451,
+        "best_alpha": 3.1622776601683795
+      }
+    ],
+    "selected_channel_labels": [
+      "pair:0,9",
+      "pair:1,10",
+      "self:9",
+      "self:0",
+      "pair:2,11",
+      "self:10",
+      "self:1",
+      "pair:3,12",
+      "self:11",
+      "pair:4,13",
+      "lo:10",
+      "self:2",
+      "self:12",
+      "lo:11",
+      "pair:10,19",
+      "pair:5,14",
+      "lo:12",
+      "pair:6,15",
+      "self:13",
+      "pair:7,16",
+      "pair:8,17",
+      "pair:9,18",
+      "self:14",
+      "self:3",
+      "lo:13",
+      "self:15",
+      "self:17",
+      "self:16",
+      "lo:14",
+      "self:18"
+    ],
+    "passed": true
+  },
+  "optimization_found_candidate": true,
+  "p4_gate_passed": false
+}
