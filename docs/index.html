@@ -2,17 +2,78 @@
 <html lang="en">
 <head>
   <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Photonic Reservoir — Research Archive</title>
+  <title>Photonic Reservoir (Coherent Delay) — Research Repository</title>
   <style>
     :root{--ink:#102119;--panel:#173126;--lime:#b8f04a;--gold:#f1c84a;--paper:#eff6df;--muted:#b8c9b8}
     *{box-sizing:border-box} body{margin:0;background:radial-gradient(circle at 75% 5%,#395018,transparent 28%),var(--ink);color:var(--paper);font:16px/1.55 system-ui,sans-serif}
-    main{max-width:980px;margin:auto;padding:64px 24px}.eyebrow{color:var(--lime);font-weight:700;letter-spacing:.12em;text-transform:uppercase;font-size:.75rem}.hero{padding:42px;border:1px solid #567329;background:linear-gradient(140deg,#183328,#1c2918);border-radius:24px}
-    h1{font-size:clamp(2.2rem,7vw,4.8rem);line-height:1.02;margin:.25em 0;color:#fff}h2{color:var(--gold)}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin:22px 0}.card{background:var(--panel);border:1px solid #36543d;padding:20px;border-radius:14px}.metric{font-size:1.8rem;color:var(--lime);font-weight:800}a{color:var(--gold)}.warning{border-left:4px solid var(--gold);padding:14px 18px;background:#302a16;margin:24px 0}.links{display:flex;flex-wrap:wrap;gap:10px}.links a{padding:9px 13px;border:1px solid #819f35;border-radius:8px;text-decoration:none}.links a:hover{background:#415721;color:white}img{max-width:100%;border-radius:14px;border:1px solid #516a2a;margin-top:22px}
+    main{max-width:1000px;margin:auto;padding:56px 24px}
+    .eyebrow{color:var(--lime);font-weight:700;letter-spacing:.12em;text-transform:uppercase;font-size:.75rem}
+    .hero{padding:40px;border:1px solid #567329;background:linear-gradient(140deg,#183328,#1c2918);border-radius:22px}
+    h1{font-size:clamp(1.9rem,5vw,3.2rem);line-height:1.05;margin:.2em 0;color:#fff}
+    h2{color:var(--gold);margin-top:2em}
+    a{color:var(--gold)}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px;margin:20px 0}
+    .card{background:var(--panel);border:1px solid #36543d;padding:18px;border-radius:12px}
+    .metric{font-size:1.7rem;color:var(--lime);font-weight:800}
+    .warning{border-left:4px solid var(--gold);padding:14px 18px;background:#302a16;margin:22px 0;border-radius:0 10px 10px 0}
+    .links{display:flex;flex-wrap:wrap;gap:9px}
+    .links a{padding:9px 13px;border:1px solid #819f35;border-radius:8px;text-decoration:none}
+    .links a:hover{background:#415721;color:#fff}
+    img{max-width:100%;border-radius:12px;border:1px solid #516a2a;margin-top:18px}
+    code{background:#0d1a14;padding:1px 5px;border-radius:4px}
   </style>
 </head>
 <body><main>
-  <section class="hero"><div class="eyebrow">Academic research archive</div><h1>Photonic Reservoir</h1><p>A traceable record of a reservoir-computing-inspired photonic architecture and its conceptual P6 Blender presentation model.</p><div class="links"><a href="../README.md">Repository README</a><a href="05_results.md">Results</a><a href="06_limitations.md">Limitations</a><a href="07_reproducibility.md">Reproducibility</a></div></section>
-  <div class="warning"><strong>Evidence boundary:</strong> P5 is a physically parameterized system-simulation result, not a fabricated-PIC or experimental validation. P6 is currently <code>NOT_PHYSICALLY_ACCEPTED</code>.</div>
-  <section class="grid"><article class="card"><div class="metric">20</div><div>labelled delay taps in the P6 presentation model</div></article><article class="card"><div class="metric">10 × 3</div><div>receiver/slot architecture represented in the research record</div></article><article class="card"><div class="metric">0.03870</div><div>locked blind median NARMA-10 NMSE reported for P5</div></article></section>
-  <section><h2>Documentation map</h2><div class="links"><a href="01_project_overview.md">Overview</a><a href="02_scientific_background.md">Scientific background</a><a href="03_design_rationale.md">Design rationale</a><a href="04_implementation.md">Implementation</a><a href="../references/references.md">References</a><a href="../provenance/research_log.md">Provenance</a></div><img src="figures/p6_overview_session_render.png" alt="Rendered P6 architecture overview"></section>
+  <section class="hero">
+    <div class="eyebrow">Academic research repository</div>
+    <h1>Photonic Reservoir Computing with Coherent Optical Delay and Square-Law Readout</h1>
+    <p>A staged, blind-tested study of whether coherent time-delayed optical fields plus square-law
+    photodetection can build the temporal nonlinear features NARMA-10 needs — with a component-level
+    electromagnetic validation campaign for the selected architecture.</p>
+    <div class="links">
+      <a href="../README.md">Full README</a>
+      <a href="PROJECT_OVERVIEW.md">Overview</a>
+      <a href="RESULTS_SUMMARY.md">Results</a>
+      <a href="PHYSICAL_VALIDATION.md">Physical validation</a>
+      <a href="LIMITATIONS.md">Limitations</a>
+    </div>
+  </section>
+
+  <div class="warning"><strong>Evidence boundary:</strong> the headline NARMA-10 number is a
+  <em>physically parameterized system-simulation</em> result with a locked one-shot blind test — not a
+  fabricated PIC, foundry layout, or device measurement. Physical validation (P6) is currently
+  <code>NOT_PHYSICALLY_ACCEPTED</code> (5 of 11 gates pass).</div>
+
+  <section class="grid">
+    <article class="card"><div class="metric">0.0387</div><div>blind median NARMA-10 test NMSE (target &lt; 0.05)</div></article>
+    <article class="card"><div class="metric">8 / 10</div><div>blind seeds below 0.05</div></article>
+    <article class="card"><div class="metric">74.7% / 94.9%</div><div>gain over delayed-input and no-PIC baselines</div></article>
+    <article class="card"><div class="metric">5 / 11</div><div>P6 physical gates passing</div></article>
+  </section>
+
+  <h2>Documentation map</h2>
+  <div class="links">
+    <a href="SCIENTIFIC_BACKGROUND.md">Scientific background</a>
+    <a href="METHODOLOGY.md">Methodology</a>
+    <a href="DESIGN_RATIONALE.md">Design rationale</a>
+    <a href="DEVELOPMENT_HISTORY.md">Development history</a>
+    <a href="REPRODUCIBILITY.md">Reproducibility</a>
+    <a href="references/references.md">References</a>
+    <a href="references/source_to_design_map.md">Source&rarr;design map</a>
+    <a href="references/glossary.md">Glossary</a>
+    <a href="../p6-physical-validation/README.md">P6 landing page</a>
+    <a href="../REORGANIZATION_REPORT.md">Reorganization report</a>
+  </div>
+
+  <h2>Pipeline and results</h2>
+  <img src="figures/fig1_research_pipeline.png" alt="Research pipeline P0 to P6">
+  <img src="figures/fig3_nmse_progression.png" alt="NMSE across the pipeline and against controls">
+  <img src="figures/fig5_p6_gate_status.png" alt="P6 physical gate status">
+
+  <h2>Architecture visualization</h2>
+  <p>Presentation model captured from the author's live Blender session (numbers consistent with the
+  layout records; association with the on-disk <code>mcp.blend</code> unverified):</p>
+  <img src="figures/p6_overview_session_render.png" alt="Rendered P6 architecture overview">
+  <p>Data-derived spiral reconstruction from <code>spiral-centerline-v1.csv</code>:</p>
+  <img src="figures/blender_spiral_perspective.png" alt="Data-derived spiral delay-line reference render">
 </main></body></html>

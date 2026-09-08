@@ -1,10 +1,28 @@
-path,category,description,source/origin,used_in_final_project,generated_or_manual,notes
-README.md,documentation,Academic archive entry point,Archival staging,yes,manual,States evidence boundary
-blender/scenes/mcp.blend,essential,Canonical Blender file copy,C:/Users/<username>/OneDrive/Desktop/mcp.blend,yes,imported,Byte-identical SHA-256 copy
-blender/renders/p6_overview_session_render.png,documentation,Session render,Connected Blender MCP session,yes,generated,Association with mcp.blend unverified
-docs/,documentation,Academic documentation and navigation interface,Archival staging,yes,manual,Includes yellow-green static interface
-references/,documentation,Verified-ID bibliography and mapping,Project literature review,yes,manual,No unverified metadata invented
-provenance/,reproducibility,Audit and decision records,Archival staging,yes,manual,No private machine identifiers
-archive/canonical-project-records/,historical archive,Non-destructive source snapshot,MayOS Photonic-Reservoir project,yes,imported,HDF5 and caches excluded
-archive/canonical-project-records/**/*.hdf5,excluded generated data,Raw solver output,MayOS Photonic-Reservoir project,no,generated,Excluded for size; source paths remain in archive records
-archive/canonical-project-records/**/__pycache__/,excluded temporary,Python cache,MayOS Photonic-Reservoir project,no,generated,Excluded
+path,category,description,origin,in_current_line,generated_or_manual,notes
+README.md,documentation,Academic entry point,reorganization,yes,manual,States the evidence boundary
+CITATION.cff,metadata,Citation metadata,reorganization,yes,manual,License still to be chosen
+REORGANIZATION_REPORT.md,documentation,What the reorganization changed,reorganization,yes,manual,Non-destructive change log
+P0-BENCHMARK-AND-BLIND-PROTOCOL.md,protocol,Frozen benchmark and blind protocol,MayOS Photonic-Reservoir,yes,manual,Obsidian links converted
+MODEL-AND-ACCEPTANCE.md,protocol,Frozen model and acceptance gates,MayOS Photonic-Reservoir,yes,manual,Obsidian links converted
+src/photonic_reservoir/,code,Python package (benchmark/phases/protocol guard),MayOS Photonic-Reservoir,yes,manual,Promoted from archive snapshot; unchanged
+scripts/,code,P0 verifier + P1-P5 workflows,MayOS Photonic-Reservoir,yes,manual,Plus new make_figures.py
+scripts/make_figures.py,code,Regenerates docs/figures/fig*.png from records,reorganization,yes,manual,Data-only; no model re-run
+tests/,code,unittest suite (50 tests),MayOS Photonic-Reservoir,yes,manual,All pass
+configs/,config,P0 protocol JSON (v1 retired / v2 canonical),MayOS Photonic-Reservoir,yes,manual,Hash-locked
+p1-coherent-delay/ .. p5-publication/,records,Per-phase README/RESULTS/configs/runs,MayOS Photonic-Reservoir,yes,mixed,Internal layout unchanged; links converted
+p5-publication/runs/blind-v2.json,immutable result,Locked one-shot blind evaluation,MayOS Photonic-Reservoir,yes,generated,SHA-256 b263292f...; never re-run
+p6-physical-validation/,records+code,Component/EM validation campaign,MayOS Photonic-Reservoir,yes,mixed,Internal layout unchanged
+p6-physical-validation/runs/*.hdf5,raw solver output,67 FDTD/mode-solve outputs,MayOS Photonic-Reservoir,yes,generated,Git LFS
+p6-physical-validation/layout/spiral-centerline-v1.{gds,csv,svg},layout evidence,Accepted spiral delay route,MayOS Photonic-Reservoir,yes,generated,Git LFS (gds/csv)
+p6-physical-validation/_unclassified_solver_scratch/*.hdf5,raw solver output,Unlabeled solver downloads,MayOS Photonic-Reservoir,unclear,generated,Git LFS; provenance unclear; cited by nothing
+docs/,documentation,Academic narrative + figures + references,reorganization,yes,manual,New/rewritten English docs
+docs/_source_records/,historical,Original Turkish project notes,MayOS Photonic-Reservoir,reference,manual,Verbatim; Obsidian links converted
+docs/figures/fig1..fig5*.png,figure,Generated from committed records,reorganization,yes,generated,scripts/make_figures.py
+docs/figures/blender_spiral_*.png,figure,Data-derived spiral render,reorganization,yes,generated,artifacts/blender/build_spiral_reference.py
+docs/figures/p6_overview_session_render.png,figure,Live Blender session capture,connected Blender session,yes,generated,Association with mcp.blend unverified
+artifacts/blender/scenes/mcp.blend,asset,Author presentation-scene file,Desktop/mcp.blend,yes,imported,Git LFS; near-empty (geometry was unsaved)
+artifacts/blender/scenes/spiral-reference-from-centerline.blend,asset,Data-derived spiral reference,reorganization,yes,generated,Git LFS
+artifacts/blender/build_spiral_reference.py,code,Rebuilds the spiral reference + renders,reorganization,yes,manual,Reads layout CSV/JSON
+archive/legacy_three_ring/,historical archive,2026-08 SiN three-ring TCMT study,MayOS Photonic-Reservoir,no,mixed,Research history; not a current source
+provenance/,reproducibility,Manifest / environment / decision + research logs,reorganization,yes,manual,No private machine identifiers
+requirements-lock.txt,config,Pinned runtime dependencies,MayOS Photonic-Reservoir,yes,manual,Verified on Python 3.14

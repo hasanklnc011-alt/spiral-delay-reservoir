@@ -12,5 +12,12 @@ Thumbs.db
 *.blend2
 *.blend@
 *.autosave
+# Solver output binaries are ignored by default to prevent accidental commits of
+# scratch runs elsewhere in the tree. The curated P6 evidence is already tracked
+# (via Git LFS) at its original paths and is explicitly re-included here.
 *.hdf5
+!p6-physical-validation/runs/**
+!p6-physical-validation/_unclassified_solver_scratch/**
 *.log
+*.egg-info/
+src/**/*.egg-info/

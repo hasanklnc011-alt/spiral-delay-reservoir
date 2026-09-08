@@ -1,3 +1,11 @@
-*.blend binary
-*.glb binary
+# Large binary / generated scientific artifacts tracked with Git LFS.
+*.blend filter=lfs diff=lfs merge=lfs -text
+*.glb   filter=lfs diff=lfs merge=lfs -text
+*.hdf5  filter=lfs diff=lfs merge=lfs -text
+*.gds   filter=lfs diff=lfs merge=lfs -text
+
+# Large generated layout table (kept as evidence, too big for plain diffs).
+studies/p6_physical_validation/layout/spiral-centerline-v1.csv filter=lfs diff=lfs merge=lfs -text
+
+# Small raster diagnostics stay as plain binary (not LFS).
 *.png binary
