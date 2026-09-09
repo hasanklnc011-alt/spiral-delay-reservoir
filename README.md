@@ -100,14 +100,24 @@ claimed.
 
 ## 5. How it works — a plain-language walk-through
 
-![How the system works](docs/figures/fig0_how_it_works.png)
+![Animation: a light pulse train crosses the spiral delay line past 20 taps; the electro-optic block cycles 3 slots per symbol; 10 photodiodes measure](docs/figures/system-animation.gif)
+
+*A light pulse train crawls the 14.24 cm spiral past the 20 taps; the
+electro-optic block steps through 3 slots each 100 ps symbol, routing tap pairs
+to the 10 photodiodes. Concept only — turns drawn sparser than the real 93.
+A full interactive version (with a live NARMA-10 read-out) is in
+[`docs/animation.html`](docs/animation.html).*
 
 The whole machine is one continuous laser beam that carries the data, a long
 coiled waveguide that stores the recent past of that data, and a set of detectors
 that turn interference between delayed copies into numbers. Only the very last
 step — a linear readout — is trained.
 
-The same architecture as a labelled visual model:
+The same architecture as a static schematic:
+
+![How the system works](docs/figures/fig0_how_it_works.png)
+
+…and as a labelled visual model:
 
 ![P6 architecture presentation model](docs/figures/p6_overview_session_render.png)
 

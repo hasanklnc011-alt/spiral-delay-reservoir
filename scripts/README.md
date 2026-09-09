@@ -18,6 +18,7 @@ export PYTHONPATH="$PWD/src"     # Windows: $env:PYTHONPATH="$PWD\src"
 | `create_p5_candidate_lock.py` | Write the P5 candidate lock (config + source hashes) | Only if you intend to (re)lock |
 | `run_p5_blind.py` | **Locked one-shot blind evaluation** | **NO** — see below |
 | `make_figures.py` | Regenerate `docs/figures/fig*.png` from committed result records | **Yes** |
+| `make_animation_gif.py` | Render `docs/figures/system-animation.gif` (the README animation) | **Yes** |
 
 ## Do not run `run_p5_blind.py`
 
