@@ -98,11 +98,71 @@ The word "reservoir" is used in the loose sense of *fixed nonlinear temporal
 feature map + trained linear readout*; no trained physical recurrent network is
 claimed.
 
-## 5. Architecture
+## 5. How it works — a plain-language walk-through
 
-![Architecture signal path](docs/figures/fig2_architecture.png)
+![How the system works](docs/figures/fig0_how_it_works.png)
 
-The selected P4/P5 configuration, using values from the committed result records:
+The whole machine is one continuous laser beam that carries the data, a long
+coiled waveguide that stores the recent past of that data, and a set of detectors
+that turn interference between delayed copies into numbers. Only the very last
+step — a linear readout — is trained.
+
+### Step by step
+
+1. **Input.** The NARMA-10 sequence `u[t]` is an ordinary electrical signal.
+2. **Laser + modulator.** A continuous laser beam is split in two. One copy (the
+   *local oscillator*, LO) is kept as a phase reference. The other passes through
+   an electro-optic modulator that writes `u[t]` onto the light's amplitude, at
+   **10 GBd** — one symbol every **100 picoseconds**.
+3. **Spiral delay line (block 01) — the memory.** The modulated light is injected
+   into a *single* silicon waveguide coiled into an Archimedean spiral: 14.24 cm
+   long, ~93 turns, in about 1 mm². Light travels it in ~1.9 ns, i.e. **19
+   symbols**. So at any instant the spiral holds the last 19 symbols of input,
+   in flight, like a 19-place queue.
+4. **Taps — 20 delayed copies.** At 20 fixed points along the spiral, a small
+   passive coupler pulls off a little light and lets the rest continue. The light
+   from tap `k` is a copy of `u[t−k]` — it has travelled `k` symbols' worth of
+   distance, so it is `k` symbols old. Twenty taps give `u[t]`, `u[t−1]`, …,
+   `u[t−19]`. **This is the memory made explicit.**
+5. **EO routing + combine (block 02).** A fast electro-optic layer selects which
+   pairs of tap outputs to add together (and where to send the LO). Adding two
+   optical *fields* — `E_i + E_j` — makes them interfere.
+6. **Photodiodes (block 03) — the nonlinearity.** Each detector measures optical
+   *power*, i.e. `|E_i + E_j|²`. Expanding that square produces the cross term
+   `u[t−i]·u[t−j]` — exactly the product-of-past-inputs that NARMA-10 needs. No
+   nonlinear optical material is required; the photodiode's squaring *is* the
+   nonlinearity. A trans-impedance amplifier (TIA) turns each tiny photocurrent
+   into a number.
+7. **Readout.** Ten detectors, read three times per symbol (see below), give
+   **30 numbers per symbol**. Those 30 numbers feed a trained linear
+   ridge-regression readout that outputs the NARMA-10 prediction. The readout is
+   the *only* trained part; everything before it is fixed.
+
+### Inside one 100 ps symbol
+
+Within each symbol period the EO layer runs through **3 configurations** ("slots"):
+
+| Slot (≈33 ps each) | What happens | Produces |
+|---|---|---|
+| 1 | EO wires one fixed set of tap pairs to the 10 detectors; they measure | features 1–10 |
+| 2 | EO reconfigures to a different fixed set; 10 detectors measure again | features 11–20 |
+| 3 | EO reconfigures once more; 10 detectors measure | features 21–30 |
+
+Then the next symbol enters, all the light in the spiral shifts forward by one tap
+position, and the same 3-slot pattern repeats. The wiring pattern is **fixed**
+(chosen once, on training data, in phases P2/P4); only the input marching through
+it changes.
+
+### Why a single spiral
+
+Twenty *independent* delay lines would need ~1.4 m of waveguide and a large
+chip. One continuous spiral with 20 taps along it needs only **14.24 cm** and
+fits in ~1 mm². (An early "double spiral" idea was rejected in P6 gate G2 because
+its centre U-turn fell below the minimum bend radius.)
+
+### Selected configuration (P4/P5)
+
+Values from the committed result records:
 
 | Quantity | Value | Source |
 |---|---|---|
@@ -116,23 +176,23 @@ The selected P4/P5 configuration, using values from the committed result records
 | Longest delay route | ≈ 14.24 cm (142 400.6 µm) at `n_g ≈ 4` | [`p6-physical-validation/G2-LAYOUT-ACCEPTANCE.md`](p6-physical-validation/G2-LAYOUT-ACCEPTANCE.md) |
 | Per-branch scale | 5 mW signal + 5 mW LO (normalized to `u = 1`) | [`p4-optimization/RESULTS.md`](p4-optimization/RESULTS.md) |
 
-**Signal path, conceptually:**
+Compact signal path:
 
 ```mermaid
 flowchart LR
-  A["Input sequence u[t]<br/>(NARMA-10 drive)"] --> B["Optical delay bank<br/>20 taps, up to 19 symbols"]
-  B --> C["Sparse coherent<br/>feature selection<br/>(30 channels, train-only)"]
-  C --> D["Interference / combiner<br/>+ local oscillator"]
-  D --> E["10 photodiodes<br/>x 3 time slots<br/>(square-law detection)"]
-  E --> F["Ridge linear readout<br/>(leakage-safe)"]
-  F --> G["NARMA-10 estimate"]
+  A["u[t] modulates<br/>the laser"] --> B["01 · spiral delay<br/>20 taps -> u[t], ..., u[t-19]"]
+  B --> C["02 · EO routing + combine<br/>3 slots/symbol, pick tap pairs"]
+  C --> D["03 · 10 photodiodes<br/>|E_i + E_j|^2 -> u[t-i].u[t-j]"]
+  D --> E["30 numbers/symbol"]
+  E --> F["trained linear<br/>ridge readout"]
+  F --> G["NARMA-10 prediction"]
 ```
 
-An input-modulated optical field is split into delayed replicas. A **train-data-only**
-selection keeps 30 self, LO-referenced, or tap-pair intensity measurements; these
-interfere and are detected on 10 photodiodes across 3 slots per symbol. The
-resulting 30-dimensional feature vector feeds a leakage-safe ridge readout. Full
-rationale: [`docs/DESIGN_RATIONALE.md`](docs/DESIGN_RATIONALE.md).
+Component-by-component rationale and evidence level:
+[`docs/DESIGN_RATIONALE.md`](docs/DESIGN_RATIONALE.md). The two optical elements
+that do the combining — the block 02 combiner and the block 01 tap splitters —
+are **not yet physically accepted** (P6 gates G3-C / G3-D); the figure above is
+the concept, not a fabricated device.
 
 ## 6. Research pipeline
 

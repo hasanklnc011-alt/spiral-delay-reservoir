@@ -10,7 +10,7 @@ type: software
 authors:
   - family-names: "Kılınç"
     given-names: "Hasan"
-repository-code: "https://github.com/hasanklnc011-alt/07_hybrid_electro_photonic_pic_smoked_blue"
+repository-code: "https://github.com/hasanklnc011-alt/spiral-delay-reservoir"
 date-released: "2026-09-09"
 keywords:
   - photonic reservoir computing

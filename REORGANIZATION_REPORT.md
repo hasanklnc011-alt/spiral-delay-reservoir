@@ -180,10 +180,9 @@ physical-evidence status, not a rejection of the P5 computational result.
 1. **License.** None chosen. `CITATION.cff` says "contact the author"; add a
    `LICENSE` file (e.g. CC BY 4.0 for text/data, MIT for code) before sharing
    widely.
-2. **Repository name.** `07_hybrid_electro_photonic_pic_smoked_blue` is an
-   internal codename; consider renaming the GitHub repo (e.g.
-   `photonic-reservoir-coherent-delay`) before sending the link. Not done here —
-   renaming the repo was out of scope for this reorganization.
+2. **Repository name.** Renamed from the internal codename
+   `07_hybrid_electro_photonic_pic_smoked_blue` to `spiral-delay-reservoir`
+   (2026-09-09). GitHub keeps a redirect from the old URL.
 3. **The Blender scene.** `artifacts/blender/scenes/mcp.blend` is near-empty; the
    hand-built geometry was never saved. Open it in Blender, rebuild/re-import the
    geometry, and `Save As` over that file.

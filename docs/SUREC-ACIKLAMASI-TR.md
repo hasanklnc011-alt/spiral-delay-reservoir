@@ -8,6 +8,20 @@
 
 ---
 
+## Sistem nasıl çalışıyor? (tek bakışta)
+
+![Sistem nasıl çalışıyor](figures/fig0_how_it_works.png)
+
+Tek lazer ışını veriyi taşır; spiral (01) girdinin son ~19 sembolünü uçan ışık
+olarak tutar; 20 tap bu gecikmeli kopyaları çeker; EO katmanı (02) seçtiği tap
+çiftlerini birleştirir (girişim); fotodiyotlar (03) kareyi alır
+(`|E_i+E_j|² → u[t-i]·u[t-j]` — nonlineerlik burada); her sembolde 30 sayı çıkar;
+eğitilen tek şey en sondaki lineer okuyucudur. Her 100 ps'lik sembol içinde EO
+katmanı 3 farklı ayara girer (3 slot × 10 fotodiyot = 30 sayı). Ayrıntılı adım
+adım anlatım: kök `README.md` §5.
+
+---
+
 ## 0. Büyük resim: neden 7 aşama?
 
 Bu proje tek bir "modeli eğittim, şu sonucu aldım" işi değil. Bir **kanıt merdiveni**:

@@ -13,7 +13,7 @@
 
 ```bash
 git clone <repo-url>
-cd 07_hybrid_electro_photonic_pic_smoked_blue
+cd spiral-delay-reservoir
 git lfs install && git lfs pull          # fetch the 67 HDF5 + layout binaries
 
 python -m venv .venv
