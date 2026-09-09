@@ -1,0 +1,572 @@
+<title>Light Through the Spiral</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+
+<style>
+  :root{
+    color-scheme: dark;
+    --bg:#12181f;            /* deep chip slate, blue bias */
+    --bg-panel:#171f28;
+    --bg-inset:#0d131a;
+    --edge:#2a3642;
+    --edge-soft:#212c37;
+    --ink:#e7edf2;           /* cool near-white */
+    --ink-dim:#9aa9b6;
+    --ink-faint:#63727e;
+    --gold:#c9a24b;          /* silicon waveguide trace */
+    --gold-dim:#6d5b32;
+    --cyan:#5fd6d2;          /* guided light / taps */
+    --cyan-soft:#2f7a78;
+    --violet:#b3a0e0;        /* electro-optic routing */
+    --sea:#7cc6a6;           /* photodiode + TIA */
+    --amber:#d9903f;         /* local oscillator */
+    --rust:#c9603f;          /* honest caveat */
+    --shadow:0 1px 0 rgba(255,255,255,.03), 0 12px 34px -18px rgba(0,0,0,.7);
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0}
+  body{
+    background:var(--bg);
+    color:var(--ink);
+    font:400 15px/1.55 "IBM Plex Sans","Segoe UI",system-ui,sans-serif;
+    -webkit-font-smoothing:antialiased;
+    padding:22px 18px 40px;
+  }
+  .wrap{max-width:1120px;margin:0 auto}
+
+  header{display:flex;flex-wrap:wrap;gap:18px 26px;align-items:flex-end;justify-content:space-between;margin-bottom:16px}
+  .eyebrow{font:500 11px/1 "IBM Plex Mono",monospace;letter-spacing:.16em;text-transform:uppercase;color:var(--cyan);margin:0 0 9px}
+  h1{font:600 30px/1.05 "IBM Plex Sans",sans-serif;letter-spacing:-.015em;margin:0;text-wrap:balance}
+  .thesis{margin:9px 0 0;max-width:52ch;color:var(--ink-dim);font-size:14px}
+  .thesis b{color:var(--ink);font-weight:500}
+
+  .controls{display:flex;align-items:center;gap:10px;flex-shrink:0}
+  button{
+    font:500 13px/1 "IBM Plex Sans",sans-serif;color:var(--ink);
+    background:var(--bg-panel);border:1px solid var(--edge);border-radius:7px;
+    padding:9px 14px;cursor:pointer;transition:border-color .15s,background .15s;
+  }
+  button:hover{border-color:var(--cyan-soft);background:#1b2530}
+  button:focus-visible{outline:2px solid var(--cyan);outline-offset:2px}
+  button.primary{background:var(--cyan-soft);border-color:var(--cyan);color:#04120f}
+  button.primary:hover{background:var(--cyan);color:#04120f}
+  .speed{display:flex;align-items:center;gap:8px;font:500 11px/1 "IBM Plex Mono",monospace;color:var(--ink-faint);text-transform:uppercase;letter-spacing:.12em}
+  .speed input{width:104px;accent-color:var(--cyan)}
+  .speed output{color:var(--ink-dim);min-width:2.6ch;text-align:right}
+
+  .stage{
+    position:relative;background:var(--bg-inset);border:1px solid var(--edge);
+    border-radius:12px;box-shadow:var(--shadow);overflow:hidden;
+  }
+  canvas{display:block;width:100%;height:auto}
+
+  .panels{display:grid;grid-template-columns:1.15fr .85fr;gap:14px;margin-top:14px}
+  @media (max-width:760px){ .panels{grid-template-columns:1fr} }
+  .panel{background:var(--bg-panel);border:1px solid var(--edge-soft);border-radius:10px;padding:14px 15px}
+  .panel h2{font:500 10px/1 "IBM Plex Mono",monospace;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-faint);margin:0 0 12px}
+
+  /* symbol clock */
+  .clock{display:flex;gap:5px}
+  .slot{
+    flex:1;position:relative;height:44px;border:1px solid var(--edge);border-radius:6px;
+    background:var(--bg-inset);overflow:hidden;display:flex;align-items:center;justify-content:center;
+    font:500 11px/1 "IBM Plex Mono",monospace;color:var(--ink-faint);letter-spacing:.1em;
+  }
+  .slot.active{border-color:var(--violet);color:var(--ink)}
+  .slot .fill{position:absolute;inset:0;background:linear-gradient(90deg,rgba(179,160,224,.28),rgba(179,160,224,.08));transform-origin:left;transform:scaleX(0)}
+  .clock-meta{display:flex;justify-content:space-between;margin-top:8px;font:400 11px/1.4 "IBM Plex Mono",monospace;color:var(--ink-faint)}
+
+  /* feature grid */
+  .grid30{display:grid;grid-template-columns:repeat(10,1fr);gap:4px;margin-top:2px}
+  .cell{
+    aspect-ratio:1;border-radius:3px;background:var(--bg-inset);border:1px solid var(--edge-soft);
+    position:relative;overflow:hidden;
+  }
+  .cell .bar{position:absolute;left:0;right:0;bottom:0;background:var(--sea);opacity:.85}
+  .cell.pending{border-color:var(--edge)}
+  .grid-key{display:flex;gap:14px;margin-top:9px;font:400 11px/1 "IBM Plex Mono",monospace;color:var(--ink-faint)}
+  .grid-key span{display:flex;align-items:center;gap:5px}
+  .dot{width:8px;height:8px;border-radius:2px;display:inline-block}
+
+  /* readout */
+  .readout{grid-column:1/-1}
+  .ro-head{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:10px;flex-wrap:wrap;gap:6px}
+  .nmse{font:500 13px/1 "IBM Plex Mono",monospace;color:var(--cyan)}
+  .nmse b{color:var(--ink);font-size:20px}
+  svg.spark{display:block;width:100%;height:96px}
+  .legend{display:flex;gap:16px;margin-top:8px;font:400 11px/1 "IBM Plex Mono",monospace;color:var(--ink-faint);flex-wrap:wrap}
+  .legend span{display:flex;align-items:center;gap:6px}
+  .legend i{width:14px;height:2px;display:inline-block}
+
+  footer{margin-top:20px;color:var(--ink-faint);font-size:12.5px;line-height:1.6;max-width:74ch}
+  footer .caveat{color:var(--rust)}
+  code{font-family:"IBM Plex Mono",monospace;font-size:.92em;color:var(--ink-dim)}
+
+  @media (prefers-reduced-motion:reduce){ *{animation:none!important;transition:none!important} }
+</style>
+
+<div class="wrap">
+  <header>
+    <div>
+      <p class="eyebrow">spiral-delay-reservoir · P4/P5 configuration</p>
+      <h1>Light Through the Spiral</h1>
+      <p class="thesis">One laser beam carries the NARMA&#8209;10 input. A <b>14.24&nbsp;cm</b> coiled
+        waveguide holds its last <b>19 symbols</b> in flight; twenty taps read the delayed copies;
+        interference plus square&#8209;law detection turn them into <b>30 numbers</b> every
+        <b>100&nbsp;picoseconds</b>. Only the final linear read&#8209;out is trained.</p>
+    </div>
+    <div class="controls">
+      <button id="play" class="primary" aria-label="Play or pause the animation">Pause</button>
+      <button id="step" aria-label="Advance one symbol">Step</button>
+      <label class="speed">Speed
+        <input id="speed" type="range" min="0" max="100" value="52" aria-label="Animation speed">
+        <output id="speedOut">1.0&times;</output>
+      </label>
+    </div>
+  </header>
+
+  <div class="stage">
+    <canvas id="scene" width="1120" height="620" role="img"
+      aria-label="Animated schematic: a light pulse travels a spiral delay line past 20 taps into an electro-optic routing block and ten photodiode receivers."></canvas>
+  </div>
+
+  <div class="panels">
+    <section class="panel">
+      <h2>Symbol clock — one symbol = 100&nbsp;ps = 3 slots @ 30&nbsp;GHz</h2>
+      <div class="clock" id="clock">
+        <div class="slot" data-s="0"><span class="fill"></span>SLOT&nbsp;1</div>
+        <div class="slot" data-s="1"><span class="fill"></span>SLOT&nbsp;2</div>
+        <div class="slot" data-s="2"><span class="fill"></span>SLOT&nbsp;3</div>
+      </div>
+      <div class="clock-meta">
+        <span id="symCount">symbol 0</span>
+        <span>10&nbsp;GBd · n_g&nbsp;=&nbsp;4.013 · Si&nbsp;343&times;180&nbsp;nm</span>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>Feature vector — 10 photodiodes &times; 3 slots</h2>
+      <div class="grid30" id="grid30"></div>
+      <div class="grid-key">
+        <span><i class="dot" style="background:var(--sea)"></i>|E<sub>i</sub>+E<sub>j</sub>|&sup2; measured</span>
+        <span><i class="dot" style="background:var(--edge)"></i>this slot pending</span>
+      </div>
+    </section>
+
+    <section class="panel readout">
+      <div class="ro-head">
+        <h2 style="margin:0">Trained linear read&#8209;out — prediction vs. NARMA&#8209;10 target</h2>
+        <span class="nmse">demo NMSE&nbsp; <b id="nmse">&mdash;</b> <span style="color:var(--ink-faint)">/ trailing 200</span></span>
+      </div>
+      <svg class="spark" id="spark" viewBox="0 0 1000 96" preserveAspectRatio="none" aria-hidden="true"></svg>
+      <div class="legend">
+        <span><i style="background:var(--ink-dim)"></i>NARMA&#8209;10 target y[t]</span>
+        <span><i style="background:var(--cyan)"></i>reservoir prediction &#375;[t]</span>
+        <span style="color:var(--ink-faint)">ridge fit, in&#8209;browser · illustrative, not the locked blind result</span>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    What you are watching is the concept, drawn to the project's real numbers (turns shown sparser
+    than the true 93 for legibility). The two optical parts that do the combining — the routing block
+    and the tap splitters — are <span class="caveat">not yet physically accepted</span> in the
+    component campaign (gates G3&#8209;C / G3&#8209;D), so this is a system model, not a fabricated
+    device. The <code>demo NMSE</code> comes from a small ridge read&#8209;out fitted live in your
+    browser on the features the animation produces; the repository's locked one&#8209;shot blind
+    result is <code>0.0387</code>.
+  </footer>
+</div>
+
+<script>
+(() => {
+  "use strict";
+  const css = getComputedStyle(document.documentElement);
+  const C = Object.fromEntries(["bg","bg-inset","ink","ink-dim","ink-faint","gold","gold-dim",
+    "cyan","cyan-soft","violet","sea","amber","rust","edge"].map(k => [k, css.getPropertyValue("--"+k).trim()]));
+
+  const reduce = matchMedia("(prefers-reduced-motion:reduce)").matches;
+
+  // ---------- NARMA-10 stream ----------
+  let rngState = 20260909 >>> 0;
+  const rand = () => { rngState ^= rngState<<13; rngState ^= rngState>>>17; rngState ^= rngState<<5; rngState>>>=0; return rngState/4294967296; };
+  const NTAP = 20;                 // taps 0..19  -> delays u[t] .. u[t-19]
+  const u = [], y = [];            // full history
+  const narmaStep = () => {
+    const t = u.length;
+    u.push(0.5*rand());
+    if (t < 10) { y.push(0); return; }
+    let s = 0; for (let i=0;i<10;i++) s += y[t-1-i];
+    let yn = 0.3*y[t-1] + 0.05*y[t-1]*s + 1.5*u[t-10]*u[t-1] + 0.1;
+    if (!isFinite(yn)) yn = y[t-1];
+    y.push(Math.max(0, Math.min(2, yn)));
+  };
+
+  // ---------- 30 features: (i, j) tap-pair intensities |E_i + E_j|^2, plus LO-referenced linear ----------
+  // E_k proportional to u[t-k]  (ideal coherent field, per phase P1)
+  const LO = 0.5;
+  const FEAT = [];
+  // slot 1 — the driving cross terms from unrolling the NARMA-10 recursion
+  //          (y[t] carries 1.5 u[t-1]u[t-10], then 0.3x that shifted, ...)
+  [[1,10],[2,11],[3,12],[4,13],[5,14],[6,15],[7,16],[8,17],[9,18],[10,19]].forEach(p=>FEAT.push(p));
+  // slot 2 — LO-referenced linear taps (recover u[t-k] itself)
+  [[1,"LO"],[2,"LO"],[3,"LO"],[4,"LO"],[5,"LO"],[6,"LO"],[8,"LO"],[10,"LO"],[13,"LO"],[16,"LO"]].forEach(p=>FEAT.push(p));
+  // slot 3 — self-intensities and a few extra pair products for the cubic remainder
+  [[1,1],[2,2],[5,5],[10,10],[1,2],[1,3],[2,10],[3,11],[1,19],[19,"LO"]].forEach(p=>FEAT.push(p));
+  const NF = FEAT.length; // 30
+  const featureValue = (hist, p) => {          // hist[k] = u[t-k]
+    const a = hist[p[0]] ?? 0;
+    if (p[1] === "LO") { const s = LO + a; return s*s; }        // |LO + E_i|^2  -> linear in u_i
+    const b = hist[p[1]] ?? 0; const s = a + b; return s*s;      // |E_i + E_j|^2 -> u_i^2 + u_j^2 + 2 u_i u_j
+  };
+
+  // ---------- ridge read-out (normal equations + Gaussian elimination) ----------
+  const DIM = NF + 1;            // + bias
+  let W = new Float64Array(DIM); // weights
+  let fitted = false;
+  const XtX = Array.from({length:DIM}, () => new Float64Array(DIM));
+  const Xty = new Float64Array(DIM);
+  const accumulate = (x, target) => {
+    for (let a=0;a<DIM;a++){ Xty[a] += x[a]*target; const row = XtX[a]; for (let b=0;b<DIM;b++) row[b] += x[a]*x[b]; }
+  };
+  const solveRidge = (lambda) => {
+    const A = Array.from({length:DIM}, (_,a) => Float64Array.from(XtX[a]));
+    const c = Float64Array.from(Xty);
+    for (let a=0;a<DIM;a++) A[a][a] += lambda;
+    for (let col=0; col<DIM; col++){
+      let piv = col; for (let r=col+1;r<DIM;r++) if (Math.abs(A[r][col])>Math.abs(A[piv][col])) piv=r;
+      if (Math.abs(A[piv][col]) < 1e-12) continue;
+      if (piv!==col){ const tr=A[piv];A[piv]=A[col];A[col]=tr; const tc=c[piv];c[piv]=c[col];c[col]=tc; }
+      const d = A[col][col];
+      for (let r=0;r<DIM;r++){ if (r===col) continue; const f = A[r][col]/d; if (!f) continue;
+        for (let k=col;k<DIM;k++) A[r][k] -= f*A[col][k]; c[r] -= f*c[col]; }
+    }
+    const w = new Float64Array(DIM);
+    for (let a=0;a<DIM;a++) w[a] = Math.abs(A[a][a])>1e-12 ? c[a]/A[a][a] : 0;
+    return w.every(Number.isFinite) ? w : null;
+  };
+
+  // ---------- simulation state ----------
+  let sym = 0;                 // symbols processed
+  const WARMUP = 500, FITAT = 500;
+  const featBuf = [];          // last NF feature values for the current symbol (filled slot by slot)
+  const predHist = [];         // {y, yhat}
+  const errWin = [];           // squared errors, trailing
+  const tgtWin = [];           // targets, trailing (for variance)
+
+  const histAt = (t) => { const h = new Array(NTAP); for (let k=0;k<NTAP;k++) h[k] = u[t-k] ?? 0; return h; };
+
+  const processSymbol = () => {
+    narmaStep();
+    const t = u.length - 1;
+    if (t < NTAP) { sym++; return; }
+    const h = histAt(t);
+    const x = new Float64Array(DIM); x[NF] = 1;
+    for (let f=0; f<NF; f++) x[f] = featureValue(h, FEAT[f]);
+    featBuf.length = 0; for (let f=0; f<NF; f++) featBuf.push(x[f]);
+    const target = y[t];
+
+    if (sym < FITAT) {
+      accumulate(x, target);
+      if (sym === FITAT - 1) { const w = solveRidge(0.3); if (w){ W = w; fitted = true; } }
+    } else if (fitted) {
+      accumulate(x, target);                       // keep learning slowly
+      if (sym % 60 === 0) { const w = solveRidge(0.3); if (w) W = w; }
+      let yhat = 0; for (let a=0;a<DIM;a++) yhat += W[a]*x[a];
+      if (!isFinite(yhat)) yhat = target;
+      predHist.push({y:target, yhat});
+      if (predHist.length > 90) predHist.shift();
+      const e = (yhat-target)*(yhat-target);
+      errWin.push(e); tgtWin.push(target);
+      if (errWin.length > 200){ errWin.shift(); tgtWin.shift(); }
+    }
+    sym++;
+  };
+
+  const liveNMSE = () => {
+    if (errWin.length < 30) return null;
+    const n = tgtWin.length; const m = tgtWin.reduce((a,b)=>a+b,0)/n;
+    let v = 0; for (const g of tgtWin) v += (g-m)*(g-m); v/=n;
+    const mse = errWin.reduce((a,b)=>a+b,0)/errWin.length;
+    return v>1e-9 ? mse/v : null;
+  };
+
+  // prime the stream so the page opens mid-run with a fitted read-out
+  for (let i=0;i<WARMUP+120;i++) processSymbol();
+
+  // ---------- geometry ----------
+  const cv = document.getElementById("scene"), ctx = cv.getContext("2d");
+  let W_, H_, dpr = 1, spiral = null, layout = null;
+
+  function buildLayout(){
+    const rect = cv.getBoundingClientRect();
+    dpr = Math.min(2, window.devicePixelRatio || 1);
+    W_ = rect.width; H_ = rect.width * (620/1120);
+    cv.height = Math.round(H_ * dpr); cv.width = Math.round(W_ * dpr);
+    ctx.setTransform(dpr,0,0,dpr,0,0);
+
+    const cx = W_*0.315, cy = H_*0.52, R = Math.min(W_*0.30, H_*0.42);
+    const TURNS = 13, r0 = R*0.06;
+    const b = (R - r0) / (TURNS*2*Math.PI);
+    const pts = []; const STEP = 0.06;
+    for (let th = TURNS*2*Math.PI; th >= 0; th -= STEP){
+      const r = r0 + b*th;
+      pts.push([cx + r*Math.cos(th), cy + r*Math.sin(th)]);
+    }
+    // arc-length table (entry = pts[0] outer, end = center)
+    const cum = [0];
+    for (let i=1;i<pts.length;i++){ const dx=pts[i][0]-pts[i-1][0], dy=pts[i][1]-pts[i-1][1]; cum.push(cum[i-1]+Math.hypot(dx,dy)); }
+    const total = cum[cum.length-1];
+    const at = (s) => {                       // s in [0,1] -> point on spiral
+      const target = s*total; let lo=0, hi=cum.length-1;
+      while (lo<hi){ const mid=(lo+hi)>>1; if (cum[mid]<target) lo=mid+1; else hi=mid; }
+      const i = Math.max(1,lo); const seg = cum[i]-cum[i-1] || 1; const f = (target-cum[i-1])/seg;
+      return [pts[i-1][0]+(pts[i][0]-pts[i-1][0])*f, pts[i-1][1]+(pts[i][1]-pts[i-1][1])*f];
+    };
+    const path = new Path2D();
+    path.moveTo(pts[0][0], pts[0][1]);
+    for (let i=1;i<pts.length;i++) path.lineTo(pts[i][0], pts[i][1]);
+    spiral = { cx, cy, R, pts, at, path, entry: pts[0] };
+
+    const eoX = W_*0.66, eoW = W_*0.075, eoY = H_*0.14, eoH = H_*0.72;
+    const pdX = W_*0.775, pdW = W_*0.185, pdH = H_*0.052;
+    const pdGap = (eoH - pdH*10) / 9;
+    const pds = [];
+    for (let i=0;i<10;i++) pds.push({ x:pdX, y:eoY + i*(pdH+pdGap), w:pdW, h:pdH });
+    layout = { eoX, eoW, eoY, eoH, pds, pdW, pdH, loY: eoY+eoH+H_*0.045 };
+  }
+
+  // ---------- animation timing ----------
+  let playing = !reduce;
+  let symProgress = 0;          // 0..1 within the current animated symbol
+  const speedEl = document.getElementById("speed"), speedOut = document.getElementById("speedOut");
+  const symDuration = () => { const v = +speedEl.value/100; const mult = 0.35*Math.pow(8, v); // 0.35x .. 2.8x
+    return 1500 / mult; };
+  const updSpeedOut = () => { const v=+speedEl.value/100; speedOut.textContent = (0.35*Math.pow(8,v)).toFixed(1)+"×"; };
+  speedEl.addEventListener("input", updSpeedOut); updSpeedOut();
+
+  // transient flashes: taps and pds
+  const tapFlash = new Float64Array(NTAP);
+  const pdFlash = new Float64Array(10);
+  let curSlot = 0;
+
+  const advanceSymbol = () => {
+    processSymbol();
+    for (let k=0;k<NTAP;k++) tapFlash[k] = 1;    // every tap hands off its delayed copy each symbol
+    renderPanels();
+  };
+
+  // step through the 3 slots as the symbol animates
+  let lastSlot = -1;
+  const onSlot = (slot) => {
+    curSlot = slot;
+    // which PDs are "active" this slot — all 10 measure each slot; flash them
+    for (let i=0;i<10;i++) pdFlash[i] = 1;
+    document.querySelectorAll(".slot").forEach((el,i)=> el.classList.toggle("active", i===slot));
+    // reveal this slot's 10 feature cells
+    const cells = document.querySelectorAll(".cell");
+    for (let i=0;i<10;i++){
+      const idx = slot*10 + i, cell = cells[idx];
+      const val = featBuf[idx] ?? 0;
+      cell.classList.remove("pending");
+      cell.querySelector(".bar").style.height = Math.max(4, Math.min(100, val*130)) + "%";
+    }
+  };
+
+  const resetGridForNewSymbol = () => {
+    document.querySelectorAll(".cell").forEach(c => { c.classList.add("pending"); c.querySelector(".bar").style.height = "0%"; });
+  };
+
+  // ---------- panels ----------
+  const grid = document.getElementById("grid30");
+  for (let i=0;i<30;i++){ const d=document.createElement("div"); d.className="cell pending"; d.innerHTML='<span class="bar" style="height:0%"></span>'; grid.appendChild(d); }
+  const spark = document.getElementById("spark"), symCountEl = document.getElementById("symCount"), nmseEl = document.getElementById("nmse");
+
+  function renderPanels(){
+    symCountEl.textContent = "symbol " + sym.toLocaleString();
+    const nm = liveNMSE();
+    nmseEl.textContent = nm==null ? "—" : nm.toFixed(4);
+    nmseEl.style.color = nm==null ? "" : (nm < 0.05 ? C.cyan : C.amber);
+    // sparkline
+    if (predHist.length > 2){
+      const ys = predHist.flatMap(d=>[d.y,d.yhat]);
+      let mn = Math.min(...ys), mx = Math.max(...ys); const pad=(mx-mn)*0.12||0.05; mn-=pad; mx+=pad;
+      const X = i => (i/(predHist.length-1))*1000;
+      const Y = v => 92 - ((v-mn)/(mx-mn))*84;
+      const line = (key) => predHist.map((d,i)=>(i?"L":"M")+X(i).toFixed(1)+" "+Y(d[key]).toFixed(1)).join(" ");
+      const last = predHist[predHist.length-1];
+      spark.innerHTML =
+        `<path d="${line('y')}" fill="none" stroke="${C['ink-dim']}" stroke-width="1.6" opacity="0.75"/>`+
+        `<path d="${line('yhat')}" fill="none" stroke="${C.cyan}" stroke-width="1.8"/>`+
+        `<circle cx="${X(predHist.length-1).toFixed(1)}" cy="${Y(last.yhat).toFixed(1)}" r="2.8" fill="${C.cyan}"/>`;
+    }
+  }
+  renderPanels();
+
+  // ---------- draw ----------
+  function draw(){
+    ctx.clearRect(0,0,W_,H_);
+    ctx.fillStyle = C.bg; ctx.fillRect(0,0,W_,H_);
+
+    const L = layout, S = spiral;
+
+    // --- section labels ---
+    ctx.font = '500 10px "IBM Plex Mono", monospace';
+    ctx.fillStyle = C['ink-faint']; ctx.textAlign="left";
+    ctx.fillText("01 · SPIRAL DELAY LINE — 20 TAPS — 14.24 cm — n_g ≈ 4", S.cx - S.R, S.cy + S.R + 26);
+    ctx.fillText("142 401 µm · 93.23 turns · 5 µm pitch  (drawn sparser)", S.cx - S.R, S.cy + S.R + 40);
+    ctx.textAlign="center";
+    ctx.fillText("02 · EO ROUTING + COMBINE", L.eoX + L.eoW/2, L.eoY - 14);
+    ctx.fillText("3 SLOTS / SYMBOL", L.eoX + L.eoW/2, L.eoY - 2);
+    ctx.textAlign="left";
+    ctx.fillText("03 · 10 × PHOTODIODE + TIA", L.pds[0].x, L.eoY - 14);
+    ctx.fillText("|E_i + E_j|²  →  u[t−i]·u[t−j]", L.pds[0].x, L.eoY - 2);
+
+    // --- spiral trace ---
+    ctx.lineJoin="round"; ctx.lineCap="round";
+    ctx.strokeStyle = C['gold-dim']; ctx.lineWidth = 1; ctx.stroke(S.path);
+    ctx.strokeStyle = C.gold; ctx.lineWidth = 1.4; ctx.globalAlpha = .5; ctx.stroke(S.path); ctx.globalAlpha = 1;
+
+    // --- taps ---
+    for (let k=0;k<NTAP;k++){
+      const s = k/(NTAP-1); const [px,py] = S.at(s);
+      const fl = tapFlash[k];
+      ctx.beginPath(); ctx.arc(px,py, 3.1, 0, 7);
+      ctx.fillStyle = C.gold; ctx.fill();
+      if (fl > 0.02){
+        ctx.beginPath(); ctx.arc(px,py, 3.1 + fl*7, 0, 7);
+        ctx.strokeStyle = C.cyan; ctx.globalAlpha = fl*0.9; ctx.lineWidth = 1.4; ctx.stroke(); ctx.globalAlpha = 1;
+        // hand-off streak toward EO
+        const tx = L.eoX;
+        ctx.beginPath(); ctx.moveTo(px,py);
+        ctx.lineTo(px + (tx-px)*(1-fl)*0.4 + (tx-px)*0.05, py + (L.eoY+L.eoH/2 - py)*(1-fl)*0.15);
+        ctx.strokeStyle = C.cyan; ctx.globalAlpha = fl*0.35; ctx.lineWidth = 1; ctx.stroke(); ctx.globalAlpha = 1;
+      }
+    }
+
+    // --- light pulses in flight: one per symbol age 0..19 ---
+    const frac = symProgress;                       // 0..1 progress toward next symbol
+    for (let age=0; age<NTAP; age++){
+      const s = Math.min(1, (age + frac) / (NTAP-1));
+      const [px,py] = S.at(s);
+      const head = age === 0;
+      const glow = head ? 9 : 5.5;
+      const g = ctx.createRadialGradient(px,py,0,px,py,glow*2.4);
+      g.addColorStop(0, C.cyan); g.addColorStop(0.4, "rgba(95,214,210,0.5)"); g.addColorStop(1,"rgba(95,214,210,0)");
+      ctx.fillStyle = g; ctx.beginPath(); ctx.arc(px,py, glow*2.4, 0, 7); ctx.fill();
+      ctx.fillStyle = head ? "#dffdfb" : C.cyan;
+      ctx.beginPath(); ctx.arc(px,py, head?3.4:2.3, 0, 7); ctx.fill();
+    }
+    // entry label
+    const [ex,ey] = S.entry;
+    ctx.strokeStyle = C.cyan; ctx.lineWidth = 1.6;
+    ctx.beginPath(); ctx.moveTo(ex - 34, ey); ctx.lineTo(ex, ey); ctx.stroke();
+    ctx.fillStyle = C['ink-dim']; ctx.font = '500 10px "IBM Plex Mono", monospace'; ctx.textAlign="right";
+    ctx.fillText("u[t] · 1550 nm", ex - 6, ey - 8);
+    ctx.textAlign="left";
+
+    // --- EO block ---
+    roundRect(L.eoX, L.eoY, L.eoW, L.eoH, 8);
+    ctx.fillStyle = "rgba(179,160,224,0.10)"; ctx.fill();
+    ctx.strokeStyle = C.violet; ctx.lineWidth = 1.3; ctx.stroke();
+    // slot ticks
+    for (let i=0;i<3;i++){
+      const yy = L.eoY + L.eoH*(i+0.5)/3;
+      ctx.fillStyle = i===curSlot ? C.violet : "rgba(179,160,224,0.28)";
+      ctx.fillRect(L.eoX + L.eoW/2 - 10, yy-1.2, 20, 2.4);
+    }
+    ctx.save();
+    ctx.translate(L.eoX + L.eoW/2, L.eoY + L.eoH/2); ctx.rotate(-Math.PI/2);
+    ctx.fillStyle = C.violet; ctx.font = '500 11px "IBM Plex Mono", monospace'; ctx.textAlign="center";
+    ctx.fillText("SLOT " + (curSlot+1) + " / 3", 0, 4);
+    ctx.restore();
+
+    // --- EO -> PD beams for current slot ---
+    for (let i=0;i<10;i++){
+      const pd = L.pds[i]; const fl = pdFlash[i];
+      const y0 = L.eoY + L.eoH*(curSlot+0.5)/3;
+      ctx.beginPath();
+      ctx.moveTo(L.eoX + L.eoW, y0);
+      ctx.bezierCurveTo(L.eoX + L.eoW + 26, y0, pd.x - 26, pd.y + pd.h/2, pd.x, pd.y + pd.h/2);
+      ctx.strokeStyle = C.cyan; ctx.globalAlpha = 0.12 + fl*0.5; ctx.lineWidth = 1; ctx.stroke(); ctx.globalAlpha = 1;
+    }
+
+    // --- PD boxes ---
+    for (let i=0;i<10;i++){
+      const pd = L.pds[i]; const fl = pdFlash[i];
+      roundRect(pd.x, pd.y, pd.w, pd.h, 5);
+      ctx.fillStyle = `rgba(124,198,166,${0.08 + fl*0.22})`; ctx.fill();
+      ctx.strokeStyle = C.sea; ctx.globalAlpha = 0.55 + fl*0.45; ctx.lineWidth = 1.1; ctx.stroke(); ctx.globalAlpha = 1;
+      ctx.fillStyle = C['ink-dim']; ctx.font = '400 9.5px "IBM Plex Mono", monospace'; ctx.textAlign="left";
+      ctx.fillText("PD / TIA " + String(i+1).padStart(2,"0"), pd.x + 9, pd.y + pd.h/2 + 3.4);
+    }
+
+    // --- LO rail ---
+    ctx.strokeStyle = C.amber; ctx.globalAlpha = .8; ctx.lineWidth = 1.4;
+    ctx.beginPath();
+    ctx.moveTo(L.eoX + L.eoW*0.5, L.eoY + L.eoH);
+    ctx.lineTo(L.eoX + L.eoW*0.5, L.loY);
+    ctx.lineTo(L.pds[9].x + L.pdW*0.5, L.loY);
+    ctx.stroke(); ctx.globalAlpha = 1;
+    ctx.fillStyle = C.amber; ctx.font = '500 9.5px "IBM Plex Mono", monospace'; ctx.textAlign="center";
+    ctx.fillText("LO + STATIC PHASE TRIM", (L.eoX + L.pds[9].x)/2, L.loY + 14);
+
+    // --- honest stamp ---
+    ctx.fillStyle = C.rust; ctx.font = '500 9.5px "IBM Plex Mono", monospace'; ctx.textAlign="left";
+    ctx.fillText("P6 · NOT PHYSICALLY ACCEPTED — combiner + tap splitters need redesign", S.cx - S.R, H_ - 12);
+  }
+
+  function roundRect(x,y,w,h,r){
+    ctx.beginPath();
+    ctx.moveTo(x+r,y); ctx.arcTo(x+w,y,x+w,y+h,r); ctx.arcTo(x+w,y+h,x,y+h,r);
+    ctx.arcTo(x,y+h,x,y,r); ctx.arcTo(x,y,x+w,y,r); ctx.closePath();
+  }
+
+  // ---------- loop ----------
+  let prev = performance.now();
+  function frame(now){
+    const dt = Math.min(60, now - prev); prev = now;
+    if (playing){
+      symProgress += dt / symDuration();
+      const slotNow = Math.min(2, Math.floor(symProgress*3));
+      if (slotNow !== lastSlot){ lastSlot = slotNow; onSlot(slotNow); }
+      // slot fill bars
+      document.querySelectorAll(".slot .fill").forEach((el,i)=>{
+        const local = Math.max(0, Math.min(1, symProgress*3 - i));
+        el.style.transform = "scaleX(" + local + ")";
+      });
+      if (symProgress >= 1){
+        symProgress -= 1; lastSlot = -1;
+        advanceSymbol();
+        resetGridForNewSymbol();
+      }
+    }
+    for (let k=0;k<NTAP;k++) tapFlash[k] = Math.max(0, tapFlash[k] - dt/380);
+    for (let i=0;i<10;i++) pdFlash[i] = Math.max(0, pdFlash[i] - dt/300);
+    draw();
+    requestAnimationFrame(frame);
+  }
+
+  // ---------- controls ----------
+  const playBtn = document.getElementById("play");
+  const setPlay = (p) => { playing = p; playBtn.textContent = p ? "Pause" : "Play"; playBtn.classList.toggle("primary", !p); };
+  playBtn.addEventListener("click", () => setPlay(!playing));
+  document.getElementById("step").addEventListener("click", () => {
+    setPlay(false);
+    symProgress = 0; lastSlot = -1;
+    onSlot(0); onSlot(1); onSlot(2);
+    advanceSymbol(); resetGridForNewSymbol();
+    // re-reveal so the just-computed vector stays visible
+    onSlot(0); onSlot(1); onSlot(2);
+  });
+
+  // ---------- boot ----------
+  function resize(){ buildLayout(); draw(); }
+  window.addEventListener("resize", resize);
+  buildLayout();
+  onSlot(0); onSlot(1); onSlot(2);         // show a full vector at rest
+  if (reduce) setPlay(false);
+  requestAnimationFrame(frame);
+})();
+</script>

@@ -399,6 +399,11 @@ Where to go for a specific thing:
 For a plain-language walkthrough of every phase (in Turkish, written for a reader
 new to the topic): [`docs/SUREC-ACIKLAMASI-TR.md`](docs/SUREC-ACIKLAMASI-TR.md).
 
+**Interactive:** [`docs/animation.html`](docs/animation.html) — a self-contained
+animation of the running system (light crossing the spiral, the 3-slot electro-optic
+cycle, 10 photodiodes, and a live in-browser ridge read-out predicting NARMA-10).
+Open it in a browser.
+
 ## 13. Reproducibility
 
 Python ≥ 3.11 (developed on 3.14). Dependencies are pinned in
