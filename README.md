@@ -103,9 +103,10 @@ claimed.
 ![Animation: a light pulse train crosses the spiral delay line past 20 taps; the electro-optic block cycles 3 slots per symbol; 10 photodiodes measure](docs/figures/system-animation.gif)
 
 *A light pulse train crawls the 14.24 cm spiral past the 20 taps; the
-electro-optic block steps through 3 slots each 100 ps symbol, routing tap pairs
-to the 10 photodiodes. Concept only — turns drawn sparser than the real 93.
-A full interactive version (with a live NARMA-10 read-out) is in
+electro-optic block steps through 3 slots each 100 ps symbol; the feature vector
+fills 10 values per slot; and a ridge read-out (fitted here in NumPy, demo NMSE
+≈ 0.03) tracks the NARMA-10 target. Concept only — turns drawn sparser than the
+real 93. The interactive version with speed and step controls is
 [`docs/animation.html`](docs/animation.html).*
 
 The whole machine is one continuous laser beam that carries the data, a long
