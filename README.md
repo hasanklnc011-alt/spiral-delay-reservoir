@@ -107,6 +107,19 @@ coiled waveguide that stores the recent past of that data, and a set of detector
 that turn interference between delayed copies into numbers. Only the very last
 step — a linear readout — is trained.
 
+The same architecture as a labelled visual model:
+
+![P6 architecture presentation model](docs/figures/p6_overview_session_render.png)
+
+*Left — `01` the single spiral delay line (14.24 cm, 93 turns, 5 µm pitch, Si
+343 × 180 nm; cyan dots = the 20 taps). Centre — `02` the fast electro-optic
+routing/combine layer (3 slots per symbol). Right — `03` the 10 photodiode + TIA
+receiver branches, fed a shared `LO + static phase trim` rail. This is a
+**presentation model** captured from the author's live Blender session; its
+numbers match the layout records, but the on-disk `mcp.blend` does not contain
+this geometry and `P6: NOT PHYSICALLY ACCEPTED` still applies. See
+[`artifacts/blender/README.md`](artifacts/blender/README.md).*
+
 ### Step by step
 
 1. **Input.** The NARMA-10 sequence `u[t]` is an ordinary electrical signal.
