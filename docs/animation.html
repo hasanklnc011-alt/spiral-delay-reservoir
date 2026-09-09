@@ -1,3 +1,4 @@
+<meta charset="utf-8">
 <title>Light Through the Spiral</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -302,11 +303,11 @@
   function buildLayout(){
     const rect = cv.getBoundingClientRect();
     dpr = Math.min(2, window.devicePixelRatio || 1);
-    W_ = rect.width; H_ = rect.width * (620/1120);
+    W_ = rect.width; H_ = rect.width * (700/1120);
     cv.height = Math.round(H_ * dpr); cv.width = Math.round(W_ * dpr);
     ctx.setTransform(dpr,0,0,dpr,0,0);
 
-    const cx = W_*0.315, cy = H_*0.52, R = Math.min(W_*0.30, H_*0.42);
+    const cx = W_*0.30, cy = H_*0.47, R = Math.min(W_*0.275, H_*0.375);
     const TURNS = 13, r0 = R*0.06;
     const b = (R - r0) / (TURNS*2*Math.PI);
     const pts = []; const STEP = 0.06;
@@ -414,14 +415,14 @@
     // --- section labels ---
     ctx.font = '500 10px "IBM Plex Mono", monospace';
     ctx.fillStyle = C['ink-faint']; ctx.textAlign="left";
-    ctx.fillText("01 · SPIRAL DELAY LINE — 20 TAPS — 14.24 cm — n_g ≈ 4", S.cx - S.R, S.cy + S.R + 26);
-    ctx.fillText("142 401 µm · 93.23 turns · 5 µm pitch  (drawn sparser)", S.cx - S.R, S.cy + S.R + 40);
+    ctx.fillText("01 · SPIRAL DELAY LINE — 20 TAPS — 14.24 cm — n_g ≈ 4", S.cx - S.R, S.cy + S.R + 30);
+    ctx.fillText("142 401 µm · 93.23 turns · 5 µm pitch  (turns drawn sparser)", S.cx - S.R, S.cy + S.R + 44);
     ctx.textAlign="center";
-    ctx.fillText("02 · EO ROUTING + COMBINE", L.eoX + L.eoW/2, L.eoY - 14);
-    ctx.fillText("3 SLOTS / SYMBOL", L.eoX + L.eoW/2, L.eoY - 2);
+    ctx.fillText("02 · EO", L.eoX + L.eoW/2, L.eoY - 16);
+    ctx.fillText("3 slots / symbol", L.eoX + L.eoW/2, L.eoY - 4);
     ctx.textAlign="left";
-    ctx.fillText("03 · 10 × PHOTODIODE + TIA", L.pds[0].x, L.eoY - 14);
-    ctx.fillText("|E_i + E_j|²  →  u[t−i]·u[t−j]", L.pds[0].x, L.eoY - 2);
+    ctx.fillText("03 · 10 × PHOTODIODE + TIA", L.pds[0].x, L.eoY - 16);
+    ctx.fillText("|E_i + E_j|²  →  u[t−i]·u[t−j]", L.pds[0].x, L.eoY - 4);
 
     // --- spiral trace ---
     ctx.lineJoin="round"; ctx.lineCap="round";
@@ -514,7 +515,8 @@
 
     // --- honest stamp ---
     ctx.fillStyle = C.rust; ctx.font = '500 9.5px "IBM Plex Mono", monospace'; ctx.textAlign="left";
-    ctx.fillText("P6 · NOT PHYSICALLY ACCEPTED — combiner + tap splitters need redesign", S.cx - S.R, H_ - 12);
+    ctx.fillStyle = C.rust;
+    ctx.fillText("P6 · NOT PHYSICALLY ACCEPTED — combiner + tap splitters need redesign", S.cx - S.R, S.cy + S.R + 62);
   }
 
   function roundRect(x,y,w,h,r){
@@ -566,6 +568,40 @@
   window.addEventListener("resize", resize);
   buildLayout();
   onSlot(0); onSlot(1); onSlot(2);         // show a full vector at rest
+
+  // ---------- frame-capture mode (?capture&f=<i>&n=<total>) — for building the README GIF ----------
+  const CQ = new URLSearchParams(location.search);
+  if (CQ.has("capture")){
+    playing = false; playBtn.style.visibility = "hidden"; document.getElementById("step").style.visibility = "hidden";
+    document.querySelector(".controls .speed").style.visibility = "hidden";
+    const CF = +CQ.get("f") || 0, CN = +CQ.get("n") || 48, CSYMS = 2;
+    const t = (CF % CN) * CSYMS / CN;          // total symbols of progress for this frame
+    const whole = Math.floor(t), prog = t - whole;
+    for (let i=0;i<whole;i++) processSymbol();
+    symProgress = prog;
+    const slot = Math.min(2, Math.floor(prog*3));
+    onSlot(0); if (slot>=1) onSlot(1); if (slot>=2) onSlot(2);
+    for (let i=slot+1;i<3;i++){ document.querySelectorAll(".cell")[0]; }
+    // pending cells for not-yet-reached slots
+    document.querySelectorAll(".cell").forEach((c,i)=>{ if (i >= (slot+1)*10){ c.classList.add("pending"); c.querySelector(".bar").style.height="0%"; }});
+    document.querySelectorAll(".slot").forEach((el,i)=> el.classList.toggle("active", i===slot));
+    document.querySelectorAll(".slot .fill").forEach((el,i)=> el.style.transform = "scaleX(" + Math.max(0,Math.min(1, prog*3 - i)) + ")");
+    curSlot = slot;
+    for (let k=0;k<NTAP;k++) tapFlash[k] = Math.max(0, 1 - prog*4.5);
+    for (let i=0;i<10;i++) pdFlash[i] = Math.sin(Math.max(0,Math.min(1, prog*3 - slot)) * Math.PI) * 0.9;
+    renderPanels();
+    // playhead on the sparkline
+    const ph = (CF % CN) / CN;
+    const pl = document.createElementNS("http://www.w3.org/2000/svg","line");
+    pl.setAttribute("x1", ph*1000); pl.setAttribute("x2", ph*1000);
+    pl.setAttribute("y1", 2); pl.setAttribute("y2", 94);
+    pl.setAttribute("stroke", C.violet); pl.setAttribute("stroke-width", "1.4"); pl.setAttribute("opacity","0.75");
+    spark.appendChild(pl);
+    draw();
+    document.documentElement.dataset.captureReady = "1";
+    return;
+  }
+
   if (reduce) setPlay(false);
   requestAnimationFrame(frame);
 })();
